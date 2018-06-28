@@ -1,0 +1,9 @@
+{
+  "short_name": "Subway Ti.me",
+  "name": "Subway Ti.me",
+  "icons": [],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
