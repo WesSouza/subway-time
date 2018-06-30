@@ -1,0 +1,5678 @@
+[
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-A646-D9D5D103F621",
+    "order": 1,
+    "lines": "4-6-6 Express",
+    "name": "Astor Pl",
+    "coordinates": {
+      "lon": "-73.99106999861966",
+      "lat": "40.73005400028978"
+    },
+    "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-2B57-C78D7CB77F19",
+    "order": 2,
+    "lines": "4-6-6 Express",
+    "name": "Canal St",
+    "coordinates": {
+      "lon": "-74.00019299927328",
+      "lat": "40.71880300107709"
+    },
+    "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C1A9-163DA9A569FC",
+    "order": 3,
+    "lines": "1-2",
+    "name": "50th St",
+    "coordinates": {
+      "lon": "-73.98384899986625",
+      "lat": "40.76172799961419"
+    },
+    "notes": "1-all times, 2-nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-4E1B-FABCACB932C6",
+    "order": 4,
+    "lines": "2-3-4",
+    "name": "Bergen St",
+    "coordinates": {
+      "lon": "-73.97499915116808",
+      "lat": "40.68086213682956"
+    },
+    "notes": "4-nights, 3-all other times, 2-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-7279-46A4100A64F1",
+    "order": 5,
+    "lines": "3-4",
+    "name": "Pennsylvania Ave",
+    "coordinates": {
+      "lon": "-73.89488591154061",
+      "lat": "40.66471445143568"
+    },
+    "notes": "4-nights, 3-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-46D1-393123E87ABD",
+    "order": 6,
+    "lines": "1",
+    "name": "238th St",
+    "coordinates": {
+      "lon": "-73.90087000018522",
+      "lat": "40.88466700064975"
+    },
+    "notes": "1-all times, exit only northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-7EC2-B62A3747E302",
+    "order": 7,
+    "lines": "A-B-C",
+    "name": "Cathedral Pkwy (110th St)",
+    "coordinates": {
+      "lon": "-73.95806670661364",
+      "lat": "40.800581558114956"
+    },
+    "notes": "A-nights, B-weekdays and evenings, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-AE8B-457770745BA8",
+    "order": 8,
+    "lines": "A-C",
+    "name": "Kingston - Throop Aves",
+    "coordinates": {
+      "lon": "-73.94085899871263",
+      "lat": "40.67991899941601"
+    },
+    "notes": "A-nights, C-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-43E1-6A95ABCCDFC0",
+    "order": 9,
+    "lines": "E-M-R",
+    "name": "65th St",
+    "coordinates": {
+      "lon": "-73.8987883783301",
+      "lat": "40.74971952935675"
+    },
+    "notes": "E-nights, R-all other times, M-weekdays and evenings"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-752F-62CC7114CAF3",
+    "order": 10,
+    "lines": "E-M-R",
+    "name": "36th St",
+    "coordinates": {
+      "lon": "-73.92901818461539",
+      "lat": "40.75196004401078"
+    },
+    "notes": "E-nights, R-all other times, M-weekdays and evenings"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-2457-AFC1CDA3510C",
+    "order": 11,
+    "lines": "J-M-Z",
+    "name": "Delancey St - Essex St",
+    "coordinates": {
+      "lon": "-73.98740940202974",
+      "lat": "40.71830605618619"
+    },
+    "notes": "J-all times, M-all times exc nights, Z-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9702-34B84F85AC10",
+    "order": 12,
+    "lines": "J-Z",
+    "name": "Van Siclen Ave",
+    "coordinates": {
+      "lon": "-73.89165772702445",
+      "lat": "40.67802821447783"
+    },
+    "notes": "Z-rush hours AM westbound, PM eastbound, J-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-BA8E-E06E4CEE7CEE",
+    "order": 13,
+    "lines": "J-Z",
+    "name": "Norwood Ave",
+    "coordinates": {
+      "lon": "-73.87962599910783",
+      "lat": "40.68152000045683"
+    },
+    "notes": "Z-rush hours AM westbound, PM eastbound, J-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-8917-C03A1C9495CE",
+    "order": 14,
+    "lines": "J-Z",
+    "name": "104th-102nd Sts",
+    "coordinates": {
+      "lon": "-73.84443500029684",
+      "lat": "40.69516599823373"
+    },
+    "notes": "Z-rush hours AM westbound, PM eastbound, J-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-1877-3249C3C444D6",
+    "order": 15,
+    "lines": "B-D-N-Q-R",
+    "name": "DeKalb Ave",
+    "coordinates": {
+      "lon": "-73.98177094440949",
+      "lat": "40.690648119969794"
+    },
+    "notes": "B-weekdays and evenings, D-all other times, N-nights, R-all other times, Q-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-415B-3DC1818C0DCF",
+    "order": 16,
+    "lines": "A-S",
+    "name": "Beach 105th St",
+    "coordinates": {
+      "lon": "-73.82758075034528",
+      "lat": "40.58326843810286"
+    },
+    "notes": "A-rush hours AM northbound, PM southbound, S Broad Channel to Rockaway Park-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-8FC4-F61954046C95",
+    "order": 17,
+    "lines": "A-S",
+    "name": "Beach 90th St",
+    "coordinates": {
+      "lon": "-73.81365140419632",
+      "lat": "40.58809156457325"
+    },
+    "notes": "A-rush hours AM northbound, PM southbound, S Broad Channel to Rockaway Park-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-CC91-4EDE6556F9FA",
+    "order": 18,
+    "lines": "2-5",
+    "name": "Freeman St",
+    "coordinates": {
+      "lon": "-73.89175225349464",
+      "lat": "40.829987446384116"
+    },
+    "notes": "2-all times, 5-all times exc nights, skips rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-96CD-F90B3AB308F6",
+    "order": 19,
+    "lines": "2-5",
+    "name": "Intervale Ave",
+    "coordinates": {
+      "lon": "-73.89661738461646",
+      "lat": "40.822142131170786"
+    },
+    "notes": "2-all times, 5-all times exc nights, skips rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F41A-D7F8B9CD6FE5",
+    "order": 20,
+    "lines": "B-D",
+    "name": "182nd-183rd Sts",
+    "coordinates": {
+      "lon": "-73.90074099998965",
+      "lat": "40.85609299881864"
+    },
+    "notes": "B-rush hours, D-all times, skips rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-AF56-157A9910AC43",
+    "order": 21,
+    "lines": "B-D",
+    "name": "174th-175th Sts",
+    "coordinates": {
+      "lon": "-73.91013600050078",
+      "lat": "40.84589999983414"
+    },
+    "notes": "B-rush hours, D-all times, skips rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-EBF3-84E3943718B8",
+    "order": 22,
+    "lines": "B-D",
+    "name": "167th St",
+    "coordinates": {
+      "lon": "-73.91843200082253",
+      "lat": "40.83376899862797"
+    },
+    "notes": "B-rush hours, D-all times, skips rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-95A2-1AC63CE431DA",
+    "order": 23,
+    "lines": "7-7 Express",
+    "name": "Mets - Willets Point",
+    "coordinates": {
+      "lon": "-73.8456249984179",
+      "lat": "40.75462199881262"
+    },
+    "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-8321-0D09E85E64B5",
+    "order": 24,
+    "lines": "7-7 Express",
+    "name": "Junction Blvd",
+    "coordinates": {
+      "lon": "-73.86952700103515",
+      "lat": "40.74914499948836"
+    },
+    "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-5E10-FF84FF4655A5",
+    "order": 25,
+    "lines": "7-7 Express",
+    "name": "Flushing - Main St",
+    "coordinates": {
+      "lon": "-73.83003000262508",
+      "lat": "40.75959999915012"
+    },
+    "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-EFCE-358FA2059EF2",
+    "order": 26,
+    "lines": "6-6 Express",
+    "name": "Buhre Ave",
+    "coordinates": {
+      "lon": "-73.83256900003744",
+      "lat": "40.846809998885504"
+    },
+    "notes": "6 Express-weekdays AM southbound, PM northbound, 6-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-CDDB-353730C28BBC",
+    "order": 27,
+    "lines": "6-6 Express",
+    "name": "3rd Ave - 138th St",
+    "coordinates": {
+      "lon": "-73.92613800014134",
+      "lat": "40.81047600117261"
+    },
+    "notes": "6-all times, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-2D54-988FFF4EF7D6",
+    "order": 28,
+    "lines": "6-6 Express",
+    "name": "Castle Hill Ave",
+    "coordinates": {
+      "lon": "-73.85122199961472",
+      "lat": "40.83425499825462"
+    },
+    "notes": "6 Express-weekdays AM southbound, PM northbound, 6-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-BAF6-66B500B78D2D",
+    "order": 29,
+    "lines": "4-5-6-6 Express",
+    "name": "Brooklyn Bridge - City Hall",
+    "coordinates": {
+      "lon": "-74.0041310005885",
+      "lat": "40.713064999433136"
+    },
+    "notes": "4,6-all times, 5-all times exc nights, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-E458-ACA5738FECEB",
+    "order": 30,
+    "lines": "6-6 Express",
+    "name": "Zerega Ave",
+    "coordinates": {
+      "lon": "-73.8470359987544",
+      "lat": "40.836488000608156"
+    },
+    "notes": "6 Express-weekdays AM southbound, PM northbound, 6-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-FE10-A1E523E788C9",
+    "order": 31,
+    "lines": "4-5-6-6 Express",
+    "name": "Grand Central - 42nd St",
+    "coordinates": {
+      "lon": "-73.9767132992584",
+      "lat": "40.75180742981634"
+    },
+    "notes": "4,6-all times, 5-all times exc nights, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9FF7-35F1CCFBDE39",
+    "order": 32,
+    "lines": "4-6-6 Express",
+    "name": "33rd St",
+    "coordinates": {
+      "lon": "-73.98207600148947",
+      "lat": "40.74608099909145"
+    },
+    "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-27AA-F733D4BEDF5B",
+    "order": 33,
+    "lines": "4-6-6 Express",
+    "name": "96th St",
+    "coordinates": {
+      "lon": "-73.9510700015425",
+      "lat": "40.78567199998607"
+    },
+    "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-65B9-FF9EB022EF6D",
+    "order": 34,
+    "lines": "4-6-6 Express",
+    "name": "77th St",
+    "coordinates": {
+      "lon": "-73.95987399886047",
+      "lat": "40.77362000074615"
+    },
+    "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-D5F4-DA5F90803A27",
+    "order": 35,
+    "lines": "J-Z",
+    "name": "Chauncey St",
+    "coordinates": {
+      "lon": "-73.91038357033376",
+      "lat": "40.68285130087804"
+    },
+    "notes": "Z-rush hours AM westbound, PM eastbound, J-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F608-6ED047FCAFC5",
+    "order": 36,
+    "lines": "D-N-R",
+    "name": "Union St",
+    "coordinates": {
+      "lon": "-73.98310999909673",
+      "lat": "40.67731566735096"
+    },
+    "notes": "D,N-nights, R-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-68C0-61B2B4F86D14",
+    "order": 37,
+    "lines": "E-M-R",
+    "name": "Elmhurst Ave",
+    "coordinates": {
+      "lon": "-73.8820347465864",
+      "lat": "40.74237007972169"
+    },
+    "notes": "E-nights, R-all other times, M-weekdays and evenings"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F396-A504431F25E4",
+    "order": 38,
+    "lines": "A-C",
+    "name": "Ralph Ave",
+    "coordinates": {
+      "lon": "-73.92078599933306",
+      "lat": "40.678822000873375"
+    },
+    "notes": "A-nights, C-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-A239-E21877B45C74",
+    "order": 39,
+    "lines": "2-5",
+    "name": "Pelham Pkwy",
+    "coordinates": {
+      "lon": "-73.86748067850041",
+      "lat": "40.8571924091606"
+    },
+    "notes": "2-all times, 5-rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C6CE-CF0A532AE1ED",
+    "order": 40,
+    "lines": "2-5",
+    "name": "Gun Hill Rd",
+    "coordinates": {
+      "lon": "-73.86613410538703",
+      "lat": "40.877839385172024"
+    },
+    "notes": "2-all times, 5-rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-88DF-60379990EB38",
+    "order": 41,
+    "lines": "2-5",
+    "name": "Nereid Ave (238 St)",
+    "coordinates": {
+      "lon": "-73.8543153107622",
+      "lat": "40.898286515575286"
+    },
+    "notes": "2-all times, 5-rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-BF2D-9051C7E38340",
+    "order": 42,
+    "lines": "2-3-4-5",
+    "name": "Franklin Ave",
+    "coordinates": {
+      "lon": "-73.9580997367769",
+      "lat": "40.67076515344894"
+    },
+    "notes": "2,4-all times, 3-all times exc nights, 5-weekdays"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-5C62-868AD638400E",
+    "order": 43,
+    "lines": "2-5",
+    "name": "Simpson St",
+    "coordinates": {
+      "lon": "-73.89306639507903",
+      "lat": "40.823976841237396"
+    },
+    "notes": "2-all times, 5-all times exc nights, skips rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-61A5-98B9B1738691",
+    "order": 44,
+    "lines": "2-5",
+    "name": "Bronx Park East",
+    "coordinates": {
+      "lon": "-73.86835609178098",
+      "lat": "40.848768666338934"
+    },
+    "notes": "2-all times, 5-rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-4405-4FB73DE0B9F2",
+    "order": 45,
+    "lines": "2-5",
+    "name": "Winthrop St",
+    "coordinates": {
+      "lon": "-73.95007934590994",
+      "lat": "40.65665931376077"
+    },
+    "notes": "2-all times, 5-weekdays"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-989C-80CC9C9DE7E5",
+    "order": 46,
+    "lines": "3-4",
+    "name": "Van Siclen Ave",
+    "coordinates": {
+      "lon": "-73.88940491730106",
+      "lat": "40.665517963059635"
+    },
+    "notes": "4-nights, 3-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-A9B2-44B93B2B43E1",
+    "order": 47,
+    "lines": "4",
+    "name": "149th St - Grand Concourse",
+    "coordinates": {
+      "lon": "-73.9273847542618",
+      "lat": "40.81830344372315"
+    },
+    "notes": "4-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3173-47862B7A759F",
+    "order": 48,
+    "lines": "4",
+    "name": "161st St - Yankee Stadium",
+    "coordinates": {
+      "lon": "-73.92569199505733",
+      "lat": "40.82823032742169"
+    },
+    "notes": "4-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-B325-C8DCBE2E2557",
+    "order": 49,
+    "lines": "4-5-6-6 Express",
+    "name": "Lexington Ave - 59th St",
+    "coordinates": {
+      "lon": "-73.9679670004732",
+      "lat": "40.762526000304575"
+    },
+    "notes": "4,6-all times, 5-all times exc nights, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-BC2F-80C7EE7534FC",
+    "order": 50,
+    "lines": "6",
+    "name": "E 149th St",
+    "coordinates": {
+      "lon": "-73.90409799875945",
+      "lat": "40.81211799827203"
+    },
+    "notes": "6-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-91EF-A3228D26FCC6",
+    "order": 51,
+    "lines": "6",
+    "name": "Morrison Av - Soundview",
+    "coordinates": {
+      "lon": "-73.87451599929486",
+      "lat": "40.82952100156747"
+    },
+    "notes": "6-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9605-B05230106BD5",
+    "order": 52,
+    "lines": "6",
+    "name": "Whitlock Ave",
+    "coordinates": {
+      "lon": "-73.8862829985325",
+      "lat": "40.82652500055904"
+    },
+    "notes": "6-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-A5A3-D2705DFC76C3",
+    "order": 53,
+    "lines": "6",
+    "name": "St Lawrence Ave",
+    "coordinates": {
+      "lon": "-73.86761799923673",
+      "lat": "40.8315090005233"
+    },
+    "notes": "6-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-DE14-89AACE92984F",
+    "order": 54,
+    "lines": "7-7 Express",
+    "name": "Woodside - 61st St",
+    "coordinates": {
+      "lon": "-73.90298400173006",
+      "lat": "40.745630001138395"
+    },
+    "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-A5C2-AF59AD741236",
+    "order": 55,
+    "lines": "A",
+    "name": "Far Rockaway - Mott Ave",
+    "coordinates": {
+      "lon": "-73.75540499924732",
+      "lat": "40.603995001687544"
+    },
+    "notes": "A-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-52AD-1BC5E5E01FCB",
+    "order": 56,
+    "lines": "A-B-C",
+    "name": "72nd St",
+    "coordinates": {
+      "lon": "-73.976336575218",
+      "lat": "40.77551939729258"
+    },
+    "notes": "A-nights, B-weekdays and evenings, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-2ACE-5AC7A1A31B60",
+    "order": 57,
+    "lines": "A-B-C",
+    "name": "96th St",
+    "coordinates": {
+      "lon": "-73.96460245687166",
+      "lat": "40.79161879767014"
+    },
+    "notes": "A-nights, B-weekdays and evenings, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9B32-8DF31875D160",
+    "order": 58,
+    "lines": "A-C",
+    "name": "168th St",
+    "coordinates": {
+      "lon": "-73.93956099985425",
+      "lat": "40.84071899990795"
+    },
+    "notes": "A-all times, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-67CD-9E877FB81375",
+    "order": 59,
+    "lines": "B-D",
+    "name": "Kingsbridge Rd",
+    "coordinates": {
+      "lon": "-73.8935090000331",
+      "lat": "40.86697799999945"
+    },
+    "notes": "B-rush hours, D-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-8DBC-4FE7A7B886E1",
+    "order": 60,
+    "lines": "B-D-F-M",
+    "name": "42nd St - Bryant Pk",
+    "coordinates": {
+      "lon": "-73.98459099904711",
+      "lat": "40.754184001312545"
+    },
+    "notes": "B,M-weekdays and evenings, D,F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-A0D1-9E8F11A86BB0",
+    "order": 61,
+    "lines": "B-Q-S",
+    "name": "Prospect Park",
+    "coordinates": {
+      "lon": "-73.96203130426609",
+      "lat": "40.6616334551018"
+    },
+    "notes": "B-weekdays and evenings, Q,S to Franklin Av-Fulton St-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F70C-E6549936CBC4",
+    "order": 62,
+    "lines": "D",
+    "name": "55th St",
+    "coordinates": {
+      "lon": "-73.99534882595742",
+      "lat": "40.63147876093745"
+    },
+    "notes": "D-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-4D02-4AFB14796D7A",
+    "order": 63,
+    "lines": "E",
+    "name": "Jamaica - Van Wyck",
+    "coordinates": {
+      "lon": "-73.81701287135405",
+      "lat": "40.70289855287313"
+    },
+    "notes": "E-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C25D-925DA8FF1605",
+    "order": 64,
+    "lines": "E-F",
+    "name": "Kew Gardens - Union Tpke",
+    "coordinates": {
+      "lon": "-73.8303702709878",
+      "lat": "40.714034819571026"
+    },
+    "notes": "E,F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-4FD5-6E1C7C5D14BD",
+    "order": 65,
+    "lines": "E-J-Z",
+    "name": "Sutphin Blvd - Archer Av",
+    "coordinates": {
+      "lon": "-73.80800471963833",
+      "lat": "40.700382424235"
+    },
+    "notes": "E,J-all times, Z-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-357F-A1B0EA442F8E",
+    "order": 66,
+    "lines": "E-M",
+    "name": "Court Sq - 23rd St",
+    "coordinates": {
+      "lon": "-73.94605470266329",
+      "lat": "40.747768121414325"
+    },
+    "notes": "E-all times, M-weekdays and evenings"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-ABF4-CE944DA97D8B",
+    "order": 67,
+    "lines": "E-M-R",
+    "name": "67th Ave",
+    "coordinates": {
+      "lon": "-73.85286048434907",
+      "lat": "40.726505475813006"
+    },
+    "notes": "E-nights, R-all other times, M-weekdays and evenings"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-A9DA-86FD25C00EAC",
+    "order": 68,
+    "lines": "E-M-R",
+    "name": "Grand Ave - Newtown",
+    "coordinates": {
+      "lon": "-73.87722085669182",
+      "lat": "40.736813418197144"
+    },
+    "notes": "E-nights, R-all other times, M-weekdays and evenings"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-BCE3-B5CE51CE895E",
+    "order": 69,
+    "lines": "F",
+    "name": "Ditmas Ave",
+    "coordinates": {
+      "lon": "-73.97817199965161",
+      "lat": "40.63611866666291"
+    },
+    "notes": "F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-E623-149DC9E4B1B4",
+    "order": 70,
+    "lines": "G",
+    "name": "Classon Ave",
+    "coordinates": {
+      "lon": "-73.95999000137212",
+      "lat": "40.68888900026455"
+    },
+    "notes": "G-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-D6D2-56E4F49E4D66",
+    "order": 71,
+    "lines": "G",
+    "name": "Broadway",
+    "coordinates": {
+      "lon": "-73.95031225606621",
+      "lat": "40.706126576274166"
+    },
+    "notes": "G-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-10B2-A8D95E06F519",
+    "order": 72,
+    "lines": "L",
+    "name": "Lorimer St",
+    "coordinates": {
+      "lon": "-73.95024799996972",
+      "lat": "40.71407200064717"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-6625-5D1C78CCBC42",
+    "order": 73,
+    "lines": "L",
+    "name": "Sutter Ave",
+    "coordinates": {
+      "lon": "-73.9019160004208",
+      "lat": "40.66914500061398"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-2DD4-A45F7D4523E5",
+    "order": 74,
+    "lines": "L",
+    "name": "Wilson Ave",
+    "coordinates": {
+      "lon": "-73.90395860491864",
+      "lat": "40.68886654246024"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9E6F-7A48BEB85C00",
+    "order": 75,
+    "lines": "J",
+    "name": "Halsey St",
+    "coordinates": {
+      "lon": "-73.9166388842194",
+      "lat": "40.686415270704344"
+    },
+    "notes": "J-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-1739-0848856CA30E",
+    "order": 76,
+    "lines": "J-M",
+    "name": "Lorimer St",
+    "coordinates": {
+      "lon": "-73.94735499884204",
+      "lat": "40.703844000042096"
+    },
+    "notes": "J-all times, skips weekdays AM westbound, PM eastbound, M-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F5F5-4A69B216A62D",
+    "order": 77,
+    "lines": "N",
+    "name": "8th Ave",
+    "coordinates": {
+      "lon": "-74.01151599772157",
+      "lat": "40.634970999647166"
+    },
+    "notes": "N-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-A1B2-D176EDE79733",
+    "order": 78,
+    "lines": "N-W",
+    "name": "36th Ave",
+    "coordinates": {
+      "lon": "-73.929861999118",
+      "lat": "40.7564420005104"
+    },
+    "notes": "N-all times, W part time"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F974-41AC4F498897",
+    "order": 79,
+    "lines": "N-W",
+    "name": "Broadway",
+    "coordinates": {
+      "lon": "-73.92582299919906",
+      "lat": "40.761431998800546"
+    },
+    "notes": "N-all times, W part time"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-4F9A-9A7957C6307C",
+    "order": 80,
+    "lines": "N-Q-R-W",
+    "name": "Times Sq - 42nd St",
+    "coordinates": {
+      "lon": "-73.98676800153976",
+      "lat": "40.75461199851542"
+    },
+    "notes": "N,Q-all times, R-all times exc nights, W part time"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9DFF-0BCC27613F95",
+    "order": 81,
+    "lines": "S",
+    "name": "Grand Central - 42nd St",
+    "coordinates": {
+      "lon": "-73.97918899989101",
+      "lat": "40.75276866674217"
+    },
+    "notes": "S to Times Sq-all times exc nights, closed nights-use 7"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-69E7-9EBDAC7DA615",
+    "order": 82,
+    "lines": "S",
+    "name": "Park Pl",
+    "coordinates": {
+      "lon": "-73.95762400074634",
+      "lat": "40.67477166685263"
+    },
+    "notes": "S Franklin Av-Fulton St to Prospect Park-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-FB9A-36CF241FB1EE",
+    "order": 83,
+    "lines": "A-S",
+    "name": "111th St",
+    "coordinates": {
+      "lon": "-73.83216299845388",
+      "lat": "40.68433100001238"
+    },
+    "notes": "S Euclid Av to Ozone Park-Lefferts Blvd-nights, A-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9567-B5CBA307A5F5",
+    "order": 84,
+    "lines": "B-D-F-M",
+    "name": "W 4th St - Washington Sq (Lower)",
+    "coordinates": {
+      "lon": "-74.00030814755975",
+      "lat": "40.732254493367876"
+    },
+    "notes": "B,M-weekdays and evenings, D,F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-B47C-4B953A62192B",
+    "order": 85,
+    "lines": "4-6-6 Express",
+    "name": "51st St",
+    "coordinates": {
+      "lon": "-73.97192000069982",
+      "lat": "40.75710699989316"
+    },
+    "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-96F9-C572B2E981DA",
+    "order": 86,
+    "lines": "1-2",
+    "name": "86th St",
+    "coordinates": {
+      "lon": "-73.97621799859327",
+      "lat": "40.78864400073892"
+    },
+    "notes": "1-all times, 2-nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3A3A-4CF4A84B1FB3",
+    "order": 87,
+    "lines": "2-5",
+    "name": "233rd St",
+    "coordinates": {
+      "lon": "-73.85736239521543",
+      "lat": "40.89314324138378"
+    },
+    "notes": "2-all times, 5-rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-A260-CA7C5D31AFC9",
+    "order": 88,
+    "lines": "1-2",
+    "name": "66th St - Lincoln Ctr",
+    "coordinates": {
+      "lon": "-73.98220899995783",
+      "lat": "40.77344000052039"
+    },
+    "notes": "1-all times, 2-nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-6CC6-258B5371DB05",
+    "order": 89,
+    "lines": "6-6 Express",
+    "name": "Hunts Point Ave",
+    "coordinates": {
+      "lon": "-73.89054900017344",
+      "lat": "40.82094799852307"
+    },
+    "notes": "6-all times, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-8916-E1AB2EEBFE22",
+    "order": 90,
+    "lines": "1-2",
+    "name": "Canal St",
+    "coordinates": {
+      "lon": "-74.0062770001748",
+      "lat": "40.72285399778783"
+    },
+    "notes": "1-all times, 2-nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-FA8C-58222E704935",
+    "order": 91,
+    "lines": "6-6 Express",
+    "name": "Middletown Rd",
+    "coordinates": {
+      "lon": "-73.83632199755944",
+      "lat": "40.84386300128381"
+    },
+    "notes": "6 Express-weekdays AM southbound, PM northbound, 6-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-7E9D-F94B314050D6",
+    "order": 92,
+    "lines": "4-6-6 Express",
+    "name": "23rd St",
+    "coordinates": {
+      "lon": "-73.98659900207888",
+      "lat": "40.739864000474604"
+    },
+    "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-A797-73FE5950634B",
+    "order": 93,
+    "lines": "7-7 Express",
+    "name": "Court Sq",
+    "coordinates": {
+      "lon": "-73.94526400039679",
+      "lat": "40.74702299889643"
+    },
+    "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-1A66-EFD37B2839FF",
+    "order": 94,
+    "lines": "1-2",
+    "name": "59th St - Columbus Circle",
+    "coordinates": {
+      "lon": "-73.98192900232715",
+      "lat": "40.76824700063689"
+    },
+    "notes": "1-all times, 2-nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-E6D4-0009631C550A",
+    "order": 95,
+    "lines": "7-7 Express",
+    "name": "Hunters Point Ave",
+    "coordinates": {
+      "lon": "-73.9489160009391",
+      "lat": "40.74221599986316"
+    },
+    "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9BAC-3497246499B5",
+    "order": 96,
+    "lines": "1-2",
+    "name": "23rd St",
+    "coordinates": {
+      "lon": "-73.9956570016487",
+      "lat": "40.74408099989751"
+    },
+    "notes": "1-all times, 2-nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-0884-A592B15D4757",
+    "order": 97,
+    "lines": "1-2",
+    "name": "Houston St",
+    "coordinates": {
+      "lon": "-74.00536700180581",
+      "lat": "40.728251000730204"
+    },
+    "notes": "1-all times, 2-nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-8221-84C3EE5818BC",
+    "order": 98,
+    "lines": "A-S",
+    "name": "104th St",
+    "coordinates": {
+      "lon": "-73.83768300060997",
+      "lat": "40.681711001091195"
+    },
+    "notes": "S Euclid Av to Ozone Park-Lefferts Blvd-nights, A-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-28A5-E42CEEC11479",
+    "order": 99,
+    "lines": "A-S",
+    "name": "Broad Channel",
+    "coordinates": {
+      "lon": "-73.81583268782963",
+      "lat": "40.60840218069683"
+    },
+    "notes": "A,S to Rockaway Park-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-65D5-B7513A19ED2B",
+    "order": 100,
+    "lines": "Q",
+    "name": "Ocean Pkwy",
+    "coordinates": {
+      "lon": "-73.96850099975177",
+      "lat": "40.57631166708091"
+    },
+    "notes": "Q-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3979-F59D06F65F0C",
+    "order": 101,
+    "lines": "7-7 Express",
+    "name": "Vernon Blvd - Jackson Ave",
+    "coordinates": {
+      "lon": "-73.95358099875249",
+      "lat": "40.74262599969749"
+    },
+    "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-D92F-BFCC7D34DCA4",
+    "order": 102,
+    "lines": "4-6-6 Express",
+    "name": "68th St - Hunter College",
+    "coordinates": {
+      "lon": "-73.96387000158042",
+      "lat": "40.76814100049679"
+    },
+    "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-4FF4-1B9B126194C1",
+    "order": 103,
+    "lines": "7-7 Express-N-W",
+    "name": "Queensboro Plz",
+    "coordinates": {
+      "lon": "-73.9401635351909",
+      "lat": "40.750635651014804"
+    },
+    "notes": "7,N-all times, 7 Express-rush hours AM westbound, PM eastbound, W part time"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-E7B5-B5469C68CDFE",
+    "order": 104,
+    "lines": "A-S",
+    "name": "Rockaway Blvd",
+    "coordinates": {
+      "lon": "-73.8438529979573",
+      "lat": "40.680428999588415"
+    },
+    "notes": "A-all times, S Euclid Av to Ozone Park-Lefferts Blvd-nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-8D23-B6DA78943763",
+    "order": 105,
+    "lines": "4-5-6-6 Express",
+    "name": "Union Sq - 14th St",
+    "coordinates": {
+      "lon": "-73.98995099881881",
+      "lat": "40.734673000996125"
+    },
+    "notes": "4,6-all times, 5-all times exc nights, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9E79-B03A14B6874E",
+    "order": 106,
+    "lines": "G",
+    "name": "Bedford - Nostrand Aves",
+    "coordinates": {
+      "lon": "-73.95352200064022",
+      "lat": "40.68962700158444"
+    },
+    "notes": "G-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-813D-D8E91E2F7B83",
+    "order": 107,
+    "lines": "F-G",
+    "name": "15th St - Prospect Park",
+    "coordinates": {
+      "lon": "-73.97973580592873",
+      "lat": "40.66003568810021"
+    },
+    "notes": "F,G-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-4303-A46CC8772B00",
+    "order": 108,
+    "lines": "F-G",
+    "name": "7th Ave",
+    "coordinates": {
+      "lon": "-73.98025117900944",
+      "lat": "40.66624469001985"
+    },
+    "notes": "F,G-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9745-09A0F547F04F",
+    "order": 109,
+    "lines": "F-G",
+    "name": "Ft Hamilton Pkwy",
+    "coordinates": {
+      "lon": "-73.97577599917474",
+      "lat": "40.65078166803418"
+    },
+    "notes": "F,G-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-DD9A-602144DC0009",
+    "order": 110,
+    "lines": "F-G",
+    "name": "Church Ave",
+    "coordinates": {
+      "lon": "-73.97972116229084",
+      "lat": "40.64427200012998"
+    },
+    "notes": "F,G-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C127-A89CC7F8EFEC",
+    "order": 111,
+    "lines": "Q",
+    "name": "Beverly Rd",
+    "coordinates": {
+      "lon": "-73.96435779623125",
+      "lat": "40.64390459860419"
+    },
+    "notes": "Q-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-7E2C-4E010340CE4D",
+    "order": 112,
+    "lines": "B-Q",
+    "name": "Church Ave",
+    "coordinates": {
+      "lon": "-73.96288246192114",
+      "lat": "40.65049324646484"
+    },
+    "notes": "B-weekdays and evenings, Q-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-5CC9-B0D91449B44C",
+    "order": 113,
+    "lines": "B-Q",
+    "name": "Newkirk Ave",
+    "coordinates": {
+      "lon": "-73.96269486837261",
+      "lat": "40.63514193733789"
+    },
+    "notes": "B-weekdays and evenings, Q-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-D9D7-D56A99EFF4A2",
+    "order": 114,
+    "lines": "Q",
+    "name": "Parkside Ave",
+    "coordinates": {
+      "lon": "-73.96145343987648",
+      "lat": "40.65507304163716"
+    },
+    "notes": "Q-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-402B-491226541B10",
+    "order": 115,
+    "lines": "2-3-4",
+    "name": "Grand Army Plaza",
+    "coordinates": {
+      "lon": "-73.9709563319228",
+      "lat": "40.6752946951032"
+    },
+    "notes": "4-nights, 3-all other times, 2-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-92D6-C18F62CB2749",
+    "order": 116,
+    "lines": "2-3-4-5",
+    "name": "Atlantic Av - Barclay's Center",
+    "coordinates": {
+      "lon": "-73.97754993539385",
+      "lat": "40.68442016526762"
+    },
+    "notes": "2,4-all times, 3-all times exc nights, 5-weekdays"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-54B1-B1882212094D",
+    "order": 117,
+    "lines": "A-C",
+    "name": "Rockaway Ave",
+    "coordinates": {
+      "lon": "-73.91194599726617",
+      "lat": "40.678339999883505"
+    },
+    "notes": "A-nights, C-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-AB6C-F35C3539006C",
+    "order": 118,
+    "lines": "G",
+    "name": "Fulton St",
+    "coordinates": {
+      "lon": "-73.97537499833149",
+      "lat": "40.68711899950771"
+    },
+    "notes": "G-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-EDE0-DD2F85275575",
+    "order": 119,
+    "lines": "G",
+    "name": "Clinton - Washington Aves",
+    "coordinates": {
+      "lon": "-73.9667959986695",
+      "lat": "40.68809400106055"
+    },
+    "notes": "G-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-10AD-A55730382594",
+    "order": 120,
+    "lines": "B-Q",
+    "name": "7th Ave",
+    "coordinates": {
+      "lon": "-73.97285279191024",
+      "lat": "40.67710217983294"
+    },
+    "notes": "B-weekdays and evenings, Q-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-1A0B-6BD53E82C7FE",
+    "order": 121,
+    "lines": "B-Q",
+    "name": "Atlantic Av - Barclay's Center",
+    "coordinates": {
+      "lon": "-73.97678343963167",
+      "lat": "40.684488323453685"
+    },
+    "notes": "B-weekdays and evenings, Q-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-DAF4-AA7BD9117D30",
+    "order": 122,
+    "lines": "D-N-Q-R",
+    "name": "Atlantic Av - Barclay's Center",
+    "coordinates": {
+      "lon": "-73.97880999956767",
+      "lat": "40.683665667279435"
+    },
+    "notes": "D,N-all times, R-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-7706-A51DC643E63A",
+    "order": 123,
+    "lines": "4-5",
+    "name": "Borough Hall",
+    "coordinates": {
+      "lon": "-73.99015100090539",
+      "lat": "40.692403999991036"
+    },
+    "notes": "4-all times, 5-weekdays"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-382A-C21C48D12A86",
+    "order": 124,
+    "lines": "A",
+    "name": "Aqueduct Racetrack",
+    "coordinates": {
+      "lon": "-73.83591899965162",
+      "lat": "40.672096999172844"
+    },
+    "notes": "A-to Manhattan only, racing days only"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-B1A3-E90A92F57CCD",
+    "order": 125,
+    "lines": "5",
+    "name": "Morris Park",
+    "coordinates": {
+      "lon": "-73.86049500117254",
+      "lat": "40.85436399966426"
+    },
+    "notes": "5-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-83DE-83398795879F",
+    "order": 126,
+    "lines": "5",
+    "name": "Pelham Pkwy",
+    "coordinates": {
+      "lon": "-73.85535900043564",
+      "lat": "40.858984999820116"
+    },
+    "notes": "5-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-48A7-E82D18C56525",
+    "order": 127,
+    "lines": "A-C",
+    "name": "Nostrand Ave",
+    "coordinates": {
+      "lon": "-73.95042600099683",
+      "lat": "40.68043800006226"
+    },
+    "notes": "A-all times, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-2485-353962F810B4",
+    "order": 128,
+    "lines": "2-3-4-5",
+    "name": "Nevins St",
+    "coordinates": {
+      "lon": "-73.98040679874578",
+      "lat": "40.68831058019022"
+    },
+    "notes": "2,4-all times, 3-all times exc nights, 5-weekdays"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-837B-218025395214",
+    "order": 129,
+    "lines": "2-3-4",
+    "name": "Eastern Pkwy - Bklyn Museum",
+    "coordinates": {
+      "lon": "-73.96422203748425",
+      "lat": "40.67203223545925"
+    },
+    "notes": "4-nights, 3-all other times, 2-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3803-915BC2A31CD0",
+    "order": 130,
+    "lines": "2-5",
+    "name": "Beverly Rd",
+    "coordinates": {
+      "lon": "-73.94884798381702",
+      "lat": "40.64512351894373"
+    },
+    "notes": "2-all times, 5-weekdays"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-4A84-5AFB154FAF5B",
+    "order": 131,
+    "lines": "2-5",
+    "name": "Church Ave",
+    "coordinates": {
+      "lon": "-73.94945514035334",
+      "lat": "40.6508606878022"
+    },
+    "notes": "2-all times, 5-weekdays"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-0A3D-6704CEEEFFB6",
+    "order": 132,
+    "lines": "2-5",
+    "name": "Newkirk Ave",
+    "coordinates": {
+      "lon": "-73.94829990822407",
+      "lat": "40.63999124275311"
+    },
+    "notes": "2-all times, 5-weekdays"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-35F7-336651BC44F4",
+    "order": 133,
+    "lines": "2-5",
+    "name": "Brooklyn College - Flatbush Ave",
+    "coordinates": {
+      "lon": "-73.94754120734406",
+      "lat": "40.63284240700742"
+    },
+    "notes": "2-all times, 5-weekdays"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-76A0-448EBF8E61EA",
+    "order": 134,
+    "lines": "2-5",
+    "name": "Sterling St",
+    "coordinates": {
+      "lon": "-73.95072891124937",
+      "lat": "40.6627729934283"
+    },
+    "notes": "2-all times, 5-weekdays"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-913C-0FBF52A38571",
+    "order": 135,
+    "lines": "3-4",
+    "name": "Crown Hts - Utica Ave",
+    "coordinates": {
+      "lon": "-73.93293256081851",
+      "lat": "40.66897831107809"
+    },
+    "notes": "3-all times exc nights, 4-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9024-F2179E4CFA00",
+    "order": 136,
+    "lines": "3-4",
+    "name": "Kingston Ave",
+    "coordinates": {
+      "lon": "-73.94215978392963",
+      "lat": "40.66948144864978"
+    },
+    "notes": "4-nights, 3-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-6056-23933228C6A6",
+    "order": 137,
+    "lines": "G",
+    "name": "Nassau Ave",
+    "coordinates": {
+      "lon": "-73.95118300016523",
+      "lat": "40.724479997808274"
+    },
+    "notes": "G-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-6DDC-DDB43176E847",
+    "order": 138,
+    "lines": "G",
+    "name": "Greenpoint Ave",
+    "coordinates": {
+      "lon": "-73.95442500146235",
+      "lat": "40.73126699971465"
+    },
+    "notes": "G-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-0F6F-51AC532273BA",
+    "order": 139,
+    "lines": "J-M-Z",
+    "name": "Marcy Ave",
+    "coordinates": {
+      "lon": "-73.95783200075729",
+      "lat": "40.708383000017925"
+    },
+    "notes": "J-all times, M-all times exc nights, Z-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3437-EA3CC26C493C",
+    "order": 140,
+    "lines": "J-M",
+    "name": "Hewes St",
+    "coordinates": {
+      "lon": "-73.95348800038457",
+      "lat": "40.706889998054"
+    },
+    "notes": "J-all times, skips weekdays AM westbound, PM eastbound, M-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-E7A1-CAA068FC30CF",
+    "order": 141,
+    "lines": "4-5",
+    "name": "138th St - Grand Concourse",
+    "coordinates": {
+      "lon": "-73.92984899935611",
+      "lat": "40.81322399958908"
+    },
+    "notes": "4-all times, skips rush hours AM southbound, PM northbound, 5-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-36FB-735F1E8986E5",
+    "order": 142,
+    "lines": "E-M",
+    "name": "5th Ave - 53rd St",
+    "coordinates": {
+      "lon": "-73.9752485052734",
+      "lat": "40.76008683231326"
+    },
+    "notes": "E-all times, M-weekdays and evenings"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-A012-37FEDB0C852C",
+    "order": 143,
+    "lines": "E-M",
+    "name": "Lexington Ave - 53rd St",
+    "coordinates": {
+      "lon": "-73.96907237490204",
+      "lat": "40.75746830782865"
+    },
+    "notes": "E-all times, M-weekdays and evenings"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-98CB-291E5CE0F25B",
+    "order": 144,
+    "lines": "N-Q-R-W",
+    "name": "28th St",
+    "coordinates": {
+      "lon": "-73.98869800128737",
+      "lat": "40.74545399979951"
+    },
+    "notes": "N-all times, R-all times exc nights, part time"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-2E1A-0C150EA37030",
+    "order": 145,
+    "lines": "N-Q-R-W",
+    "name": "Herald Sq - 34th St",
+    "coordinates": {
+      "lon": "-73.9879368338264",
+      "lat": "40.74964456009442"
+    },
+    "notes": "N,Q-all times, R-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-AB8E-ABA68AA0E065",
+    "order": 146,
+    "lines": "L",
+    "name": "1st Ave",
+    "coordinates": {
+      "lon": "-73.98168087489128",
+      "lat": "40.73097497580066"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-4FDD-F2736320DBF1",
+    "order": 147,
+    "lines": "S",
+    "name": "Times Sq - 42nd St",
+    "coordinates": {
+      "lon": "-73.98622899953202",
+      "lat": "40.755983000570076"
+    },
+    "notes": "S to Grand Central-all times exc nights, closed nights-use 7"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-217C-137F9ACCD16C",
+    "order": 148,
+    "lines": "G",
+    "name": "Metropolitan Ave",
+    "coordinates": {
+      "lon": "-73.9514239994525",
+      "lat": "40.71277400073426"
+    },
+    "notes": "G-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-E6EE-ED3C273A7AA4",
+    "order": 149,
+    "lines": "L",
+    "name": "Grand St",
+    "coordinates": {
+      "lon": "-73.94049699874644",
+      "lat": "40.71157600064823"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-FBAC-4F4421D3A42C",
+    "order": 150,
+    "lines": "L",
+    "name": "Graham Ave",
+    "coordinates": {
+      "lon": "-73.94394399869037",
+      "lat": "40.714575998363635"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-6B52-EB4AD8938F8C",
+    "order": 151,
+    "lines": "L",
+    "name": "Bedford Ave",
+    "coordinates": {
+      "lon": "-73.95666499806525",
+      "lat": "40.71717399858899"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-6F87-6FE873AFDE38",
+    "order": 152,
+    "lines": "L",
+    "name": "Montrose Ave",
+    "coordinates": {
+      "lon": "-73.93979284713505",
+      "lat": "40.70739106438455"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F1B3-44D23211BBDB",
+    "order": 153,
+    "lines": "G",
+    "name": "Long Island City - Court Sq",
+    "coordinates": {
+      "lon": "-73.94381559597835",
+      "lat": "40.74630503357145"
+    },
+    "notes": "G-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-60B7-6060EAA6E66E",
+    "order": 154,
+    "lines": "G",
+    "name": "21st St",
+    "coordinates": {
+      "lon": "-73.9495999997552",
+      "lat": "40.7441286664954"
+    },
+    "notes": "G-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-4BFC-1125D3154645",
+    "order": 155,
+    "lines": "N-W",
+    "name": "39th Ave",
+    "coordinates": {
+      "lon": "-73.93285137679598",
+      "lat": "40.75276306140845"
+    },
+    "notes": "N-all times, W part time"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9B5E-128233BBA7A1",
+    "order": 156,
+    "lines": "1",
+    "name": "145th St",
+    "coordinates": {
+      "lon": "-73.95035999879713",
+      "lat": "40.82655099962194"
+    },
+    "notes": "1-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-2258-6C1B3E87FAEC",
+    "order": 157,
+    "lines": "1",
+    "name": "157th St",
+    "coordinates": {
+      "lon": "-73.94488999901047",
+      "lat": "40.8340410001399"
+    },
+    "notes": "1-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-DC4E-E73BEE04E42E",
+    "order": 158,
+    "lines": "1-2-3",
+    "name": "96th St",
+    "coordinates": {
+      "lon": "-73.97232299915696",
+      "lat": "40.79391900121471"
+    },
+    "notes": "1,2,3-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-6633-6776C4AE9989",
+    "order": 159,
+    "lines": "1",
+    "name": "103rd St",
+    "coordinates": {
+      "lon": "-73.96837899960818",
+      "lat": "40.799446000334825"
+    },
+    "notes": "1-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-E964-8DC1D6FE8866",
+    "order": 160,
+    "lines": "2-3",
+    "name": "Central Park North (110th St)",
+    "coordinates": {
+      "lon": "-73.95182200176913",
+      "lat": "40.79907499977324"
+    },
+    "notes": "2,3-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3328-E10E3DF19A41",
+    "order": 161,
+    "lines": "A-B-C",
+    "name": "103rd St",
+    "coordinates": {
+      "lon": "-73.96137008267617",
+      "lat": "40.796060739904526"
+    },
+    "notes": "A-nights, B-weekdays and evenings, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-51C1-B66438A2B784",
+    "order": 162,
+    "lines": "1-2-3",
+    "name": "72nd St",
+    "coordinates": {
+      "lon": "-73.98197000159583",
+      "lat": "40.77845300068614"
+    },
+    "notes": "1,2,3-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F5B0-53EECFF63969",
+    "order": 163,
+    "lines": "A-B-C",
+    "name": "81st St",
+    "coordinates": {
+      "lon": "-73.97209794937208",
+      "lat": "40.78134608418206"
+    },
+    "notes": "A-nights, B-weekdays and evenings, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-B892-7A3DB88D63DE",
+    "order": 164,
+    "lines": "E-F",
+    "name": "75th Ave",
+    "coordinates": {
+      "lon": "-73.83692369387158",
+      "lat": "40.71804465348743"
+    },
+    "notes": "E-evenings, weekends, nights, F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-8751-06E7A5BEAF46",
+    "order": 165,
+    "lines": "A-B-C",
+    "name": "86th St",
+    "coordinates": {
+      "lon": "-73.96882849429672",
+      "lat": "40.78582304678557"
+    },
+    "notes": "A-nights, B-weekdays and evenings, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-B1B1-D5FD211B4A4F",
+    "order": 166,
+    "lines": "1",
+    "name": "Cathedral Pkwy (110th St)",
+    "coordinates": {
+      "lon": "-73.9668470005456",
+      "lat": "40.80396699961484"
+    },
+    "notes": "1-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-5292-9B23D297E6D7",
+    "order": 167,
+    "lines": "1",
+    "name": "116th St - Columbia University",
+    "coordinates": {
+      "lon": "-73.96410999757751",
+      "lat": "40.807722001230864"
+    },
+    "notes": "1-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9371-CCB681B6BCE7",
+    "order": 168,
+    "lines": "2-3",
+    "name": "125th St",
+    "coordinates": {
+      "lon": "-73.94549500011411",
+      "lat": "40.807753999182815"
+    },
+    "notes": "2,3-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-2E46-C2F61A699940",
+    "order": 169,
+    "lines": "2-3",
+    "name": "135th St",
+    "coordinates": {
+      "lon": "-73.94077000106708",
+      "lat": "40.8142290003391"
+    },
+    "notes": "2,3-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3397-AF1CCA41F427",
+    "order": 170,
+    "lines": "2-3",
+    "name": "116th St",
+    "coordinates": {
+      "lon": "-73.94962500096905",
+      "lat": "40.802097999133004"
+    },
+    "notes": "2,3-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-E9D1-354D9A8F9275",
+    "order": 171,
+    "lines": "B-D",
+    "name": "Tremont Ave",
+    "coordinates": {
+      "lon": "-73.90522700122354",
+      "lat": "40.850409999510234"
+    },
+    "notes": "B-rush hours, D-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-0E74-73A82D904069",
+    "order": 172,
+    "lines": "1",
+    "name": "137th St - City College",
+    "coordinates": {
+      "lon": "-73.95367600087873",
+      "lat": "40.82200799968475"
+    },
+    "notes": "1-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9B29-44415F20B1B4",
+    "order": 173,
+    "lines": "3",
+    "name": "145th St",
+    "coordinates": {
+      "lon": "-73.93624499873299",
+      "lat": "40.82042099969279"
+    },
+    "notes": "3-all times, exit only northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-FE2E-EEBFB5354257",
+    "order": 174,
+    "lines": "4",
+    "name": "176th St",
+    "coordinates": {
+      "lon": "-73.91179399884471",
+      "lat": "40.8484800012369"
+    },
+    "notes": "4-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-872A-E18C3DEAA3B0",
+    "order": 175,
+    "lines": "4",
+    "name": "Burnside Ave",
+    "coordinates": {
+      "lon": "-73.9076840015997",
+      "lat": "40.85345300155693"
+    },
+    "notes": "4-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-93A1-76CEFBEF2B89",
+    "order": 176,
+    "lines": "B-D",
+    "name": "170th St",
+    "coordinates": {
+      "lon": "-73.91339999846983",
+      "lat": "40.83930599964156"
+    },
+    "notes": "B-rush hours, D-all times, skips rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-5499-61E31A5ECA3A",
+    "order": 177,
+    "lines": "1",
+    "name": "168th St",
+    "coordinates": {
+      "lon": "-73.94013299907257",
+      "lat": "40.840555999148535"
+    },
+    "notes": "1-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-0BC2-ED6D1F83FC04",
+    "order": 178,
+    "lines": "1",
+    "name": "181st St",
+    "coordinates": {
+      "lon": "-73.9335959996056",
+      "lat": "40.84950499974065"
+    },
+    "notes": "1-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-B10D-1D61CDC532C8",
+    "order": 179,
+    "lines": "1",
+    "name": "191st St",
+    "coordinates": {
+      "lon": "-73.92941199742039",
+      "lat": "40.85522500175836"
+    },
+    "notes": "1-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C083-274662FCCFC4",
+    "order": 180,
+    "lines": "A",
+    "name": "175th St",
+    "coordinates": {
+      "lon": "-73.93970399761596",
+      "lat": "40.84739100072403"
+    },
+    "notes": "A-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-BEDD-A5A89CE34040",
+    "order": 181,
+    "lines": "A",
+    "name": "Beach 44th St",
+    "coordinates": {
+      "lon": "-73.77601299999507",
+      "lat": "40.59294299908617"
+    },
+    "notes": "A-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-AFB9-E463869711E6",
+    "order": 182,
+    "lines": "A",
+    "name": "Beach 60th St",
+    "coordinates": {
+      "lon": "-73.7885219980118",
+      "lat": "40.59237400121235"
+    },
+    "notes": "A-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-D6CB-764E185C2E00",
+    "order": 183,
+    "lines": "A-S",
+    "name": "Beach 98th St",
+    "coordinates": {
+      "lon": "-73.82052058959523",
+      "lat": "40.58538569133279"
+    },
+    "notes": "A-rush hours AM northbound, PM southbound, S Broad Channel to Rockaway Park-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-7BDD-F1BFD4C0C0E4",
+    "order": 184,
+    "lines": "A-S",
+    "name": "Rockaway Park - Beach 116 St",
+    "coordinates": {
+      "lon": "-73.83559008701239",
+      "lat": "40.580955865573515"
+    },
+    "notes": "A-rush hours AM northbound, PM southbound, S to Broad Channel-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C486-9C18770629A8",
+    "order": 185,
+    "lines": "A",
+    "name": "Beach 36th St",
+    "coordinates": {
+      "lon": "-73.76817499939688",
+      "lat": "40.59539800166876"
+    },
+    "notes": "A-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-1ADF-7D2EDD6EBF54",
+    "order": 186,
+    "lines": "A",
+    "name": "Beach 25th St",
+    "coordinates": {
+      "lon": "-73.76135299762073",
+      "lat": "40.60006600105881"
+    },
+    "notes": "A-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-8543-D8082F0BA485",
+    "order": 187,
+    "lines": "F",
+    "name": "Parsons Blvd",
+    "coordinates": {
+      "lon": "-73.80328900021885",
+      "lat": "40.707571999615695"
+    },
+    "notes": "F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-CD90-16F4A8403FA4",
+    "order": 188,
+    "lines": "F",
+    "name": "169th St",
+    "coordinates": {
+      "lon": "-73.79347419927721",
+      "lat": "40.710517502784"
+    },
+    "notes": "F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-87D6-DCAFDEC3234B",
+    "order": 189,
+    "lines": "7",
+    "name": "103rd St - Corona Plaza",
+    "coordinates": {
+      "lon": "-73.86269999830412",
+      "lat": "40.749865000555545"
+    },
+    "notes": "7-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-48FA-D6CE2D2CB936",
+    "order": 190,
+    "lines": "7",
+    "name": "111th St",
+    "coordinates": {
+      "lon": "-73.85533399834884",
+      "lat": "40.75172999941711"
+    },
+    "notes": "7-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9918-D179F1A17CAA",
+    "order": 191,
+    "lines": "E-M-R",
+    "name": "63rd Dr - Rego Park",
+    "coordinates": {
+      "lon": "-73.86161820097203",
+      "lat": "40.729763972422425"
+    },
+    "notes": "E-nights, R-all other times, M-weekdays and evenings"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C933-806D9BD979F6",
+    "order": 192,
+    "lines": "A-S",
+    "name": "Grant Ave",
+    "coordinates": {
+      "lon": "-73.86504999877702",
+      "lat": "40.67704400054478"
+    },
+    "notes": "A-all times, S Euclid Av to Ozone Park-Lefferts Blvd-nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F8D9-0F0171BFC411",
+    "order": 193,
+    "lines": "1-2",
+    "name": "79th St",
+    "coordinates": {
+      "lon": "-73.97991700056134",
+      "lat": "40.78393399959032"
+    },
+    "notes": "1-all times, 2-nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-1068-1F4CB473A2A3",
+    "order": 194,
+    "lines": "L",
+    "name": "Atlantic Ave",
+    "coordinates": {
+      "lon": "-73.9030969995401",
+      "lat": "40.67534466640805"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3622-8C4427518FDD",
+    "order": 195,
+    "lines": "1-2",
+    "name": "Christopher St - Sheridan Sq",
+    "coordinates": {
+      "lon": "-74.00290599855235",
+      "lat": "40.73342200104225"
+    },
+    "notes": "1-all times, 2-nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-0A45-EF5E4B70E7C2",
+    "order": 196,
+    "lines": "A-S",
+    "name": "Ozone Park - Lefferts Blvd",
+    "coordinates": {
+      "lon": "-73.82579799906613",
+      "lat": "40.68595099878361"
+    },
+    "notes": "S to Euclid Av-nights, A-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-6197-63D990D865BB",
+    "order": 197,
+    "lines": "7-7 Express",
+    "name": "Times Sq - 42nd St",
+    "coordinates": {
+      "lon": "-73.98769099825152",
+      "lat": "40.755477001982506"
+    },
+    "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3080-99F8BE2A6EF7",
+    "order": 198,
+    "lines": "F-Q",
+    "name": "W 8th St - NY Aquarium",
+    "coordinates": {
+      "lon": "-73.97595787413822",
+      "lat": "40.576033818103646"
+    },
+    "notes": "F,Q-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-810E-BED5A60043FC",
+    "order": 199,
+    "lines": "1-2",
+    "name": "28th St",
+    "coordinates": {
+      "lon": "-73.99336500134324",
+      "lat": "40.74721499918219"
+    },
+    "notes": "1-all times, 2-nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-DA84-45DD187BF48E",
+    "order": 200,
+    "lines": "4-6-6 Express",
+    "name": "28th St",
+    "coordinates": {
+      "lon": "-73.98426400110407",
+      "lat": "40.743069999259035"
+    },
+    "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3AB5-1DE9143C7D2A",
+    "order": 201,
+    "lines": "6-6 Express",
+    "name": "Pelham Bay Park",
+    "coordinates": {
+      "lon": "-73.82812100059289",
+      "lat": "40.85246199951662"
+    },
+    "notes": "6 Express-weekdays AM southbound, PM northbound, 6-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-64E1-6CAF13F2DD27",
+    "order": 202,
+    "lines": "6-6 Express",
+    "name": "Westchester Sq - E Tremont Ave",
+    "coordinates": {
+      "lon": "-73.84295199925012",
+      "lat": "40.839892001013915"
+    },
+    "notes": "6 Express-weekdays AM southbound, PM northbound, 6-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-2D48-08CBCDD7F188",
+    "order": 203,
+    "lines": "1-2",
+    "name": "18th St",
+    "coordinates": {
+      "lon": "-73.99787100060406",
+      "lat": "40.741039999802105"
+    },
+    "notes": "1-all times, 2-nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-0DBE-322ABBA4BBCB",
+    "order": 204,
+    "lines": "7-7 Express",
+    "name": "Grand Central - 42nd St",
+    "coordinates": {
+      "lon": "-73.97604100111508",
+      "lat": "40.751431000286864"
+    },
+    "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C689-AAB0028DF417",
+    "order": 205,
+    "lines": "A",
+    "name": "Beach 67th St",
+    "coordinates": {
+      "lon": "-73.7969239998421",
+      "lat": "40.59092700078133"
+    },
+    "notes": "A-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-5222-65C7EFBC3FDB",
+    "order": 206,
+    "lines": "A-C-E",
+    "name": "W 4th St - Washington Sq (Upper)",
+    "coordinates": {
+      "lon": "-74.00049500225435",
+      "lat": "40.73233799774325"
+    },
+    "notes": "A,E-all times, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-1959-3D3DAB307D2A",
+    "order": 207,
+    "lines": "J",
+    "name": "85th St - Forest Pky",
+    "coordinates": {
+      "lon": "-73.86008700006875",
+      "lat": "40.69242699966103"
+    },
+    "notes": "J-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-1FBF-3AC7086C3A14",
+    "order": 208,
+    "lines": "J-Z",
+    "name": "Woodhaven Blvd",
+    "coordinates": {
+      "lon": "-73.85205199740794",
+      "lat": "40.69370399880105"
+    },
+    "notes": "J-all times, Z-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-29B7-5548786DB10B",
+    "order": 209,
+    "lines": "J",
+    "name": "111th St",
+    "coordinates": {
+      "lon": "-73.83679338454697",
+      "lat": "40.697114810696476"
+    },
+    "notes": "J-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-816F-DFB69CB49BDE",
+    "order": 210,
+    "lines": "J-Z",
+    "name": "121st St",
+    "coordinates": {
+      "lon": "-73.82834900017954",
+      "lat": "40.700481998515315"
+    },
+    "notes": "Z-rush hours AM westbound, PM eastbound, J-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-5CAC-FAB38542B7F1",
+    "order": 211,
+    "lines": "L",
+    "name": "Halsey St",
+    "coordinates": {
+      "lon": "-73.90393400118631",
+      "lat": "40.69551800114878"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-B49C-C346ACCC8F4F",
+    "order": 212,
+    "lines": "L",
+    "name": "Myrtle - Wyckoff Aves",
+    "coordinates": {
+      "lon": "-73.9109757182647",
+      "lat": "40.699471062427136"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3888-399D3D2321B3",
+    "order": 213,
+    "lines": "3-4",
+    "name": "New Lots Ave",
+    "coordinates": {
+      "lon": "-73.88411070800329",
+      "lat": "40.6663149325969"
+    },
+    "notes": "4-nights, 3-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-2EA4-435F817BEE3C",
+    "order": 214,
+    "lines": "A-C",
+    "name": "Van Siclen Ave",
+    "coordinates": {
+      "lon": "-73.8903580002471",
+      "lat": "40.67270999906104"
+    },
+    "notes": "A-nights, C-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-EB5C-36F319ABEA85",
+    "order": 215,
+    "lines": "J",
+    "name": "Cleveland St",
+    "coordinates": {
+      "lon": "-73.8851940021643",
+      "lat": "40.679777998961164"
+    },
+    "notes": "J-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9E9C-0098ED6B56A2",
+    "order": 216,
+    "lines": "L",
+    "name": "Livonia Ave",
+    "coordinates": {
+      "lon": "-73.90056237226057",
+      "lat": "40.66405727094644"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-E623-6DCB3DE29F02",
+    "order": 217,
+    "lines": "3-4",
+    "name": "Junius St",
+    "coordinates": {
+      "lon": "-73.90244864183562",
+      "lat": "40.66358900181724"
+    },
+    "notes": "4-nights, 3-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-010B-9740E08D2F08",
+    "order": 218,
+    "lines": "3-4",
+    "name": "Rockaway Ave",
+    "coordinates": {
+      "lon": "-73.90895833584449",
+      "lat": "40.66261748815223"
+    },
+    "notes": "4-nights, 3-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-32A8-7864D298AB30",
+    "order": 219,
+    "lines": "L",
+    "name": "Canarsie - Rockaway Pkwy",
+    "coordinates": {
+      "lon": "-73.90185000017287",
+      "lat": "40.64665366739528"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-D4ED-4383A916F19B",
+    "order": 220,
+    "lines": "L",
+    "name": "E 105th St",
+    "coordinates": {
+      "lon": "-73.89954769388724",
+      "lat": "40.65046878544699"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-B77B-DEC76048DBCD",
+    "order": 221,
+    "lines": "3-4",
+    "name": "Saratoga Ave",
+    "coordinates": {
+      "lon": "-73.91633025007947",
+      "lat": "40.6615297898075"
+    },
+    "notes": "4-nights, 3-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-FCF3-8F6F41712400",
+    "order": 222,
+    "lines": "3-4",
+    "name": "Sutter Ave - Rutland Road",
+    "coordinates": {
+      "lon": "-73.92252118536001",
+      "lat": "40.66476678877493"
+    },
+    "notes": "4-nights, 3-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C274-B18732D0BD95",
+    "order": 223,
+    "lines": "L",
+    "name": "New Lots Ave",
+    "coordinates": {
+      "lon": "-73.89927796057142",
+      "lat": "40.65891477368527"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-B03D-A6271925170C",
+    "order": 224,
+    "lines": "J-Z",
+    "name": "Broadway Junction",
+    "coordinates": {
+      "lon": "-73.90428999746412",
+      "lat": "40.67936600147369"
+    },
+    "notes": "J-all times, Z-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9B33-120E3B89FB23",
+    "order": 225,
+    "lines": "J",
+    "name": "Alabama Ave",
+    "coordinates": {
+      "lon": "-73.89852600159652",
+      "lat": "40.676998000003756"
+    },
+    "notes": "J-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-6D1F-11390C267126",
+    "order": 226,
+    "lines": "A-C",
+    "name": "Shepherd Ave",
+    "coordinates": {
+      "lon": "-73.88074999747269",
+      "lat": "40.6741300014559"
+    },
+    "notes": "A-nights, C-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-E058-AA5E86EBB9BB",
+    "order": 227,
+    "lines": "J-Z",
+    "name": "Crescent St",
+    "coordinates": {
+      "lon": "-73.87392925215778",
+      "lat": "40.68315265707736"
+    },
+    "notes": "J-all times, Z-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-BB6C-DA8A81EA0ABA",
+    "order": 228,
+    "lines": "J",
+    "name": "Cypress Hills",
+    "coordinates": {
+      "lon": "-73.87332199882995",
+      "lat": "40.689616000838754"
+    },
+    "notes": "J-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-AA39-6356C44910A0",
+    "order": 229,
+    "lines": "J-Z",
+    "name": "75th St - Eldert Ln",
+    "coordinates": {
+      "lon": "-73.86728799944963",
+      "lat": "40.691290001246735"
+    },
+    "notes": "Z-rush hours AM westbound, PM eastbound, J-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-A4EE-620FDC21D23B",
+    "order": 230,
+    "lines": "7",
+    "name": "69th St",
+    "coordinates": {
+      "lon": "-73.8964029993185",
+      "lat": "40.746324999410284"
+    },
+    "notes": "7-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-E698-514AC8A9521D",
+    "order": 231,
+    "lines": "7",
+    "name": "74th St - Broadway",
+    "coordinates": {
+      "lon": "-73.8912051289911",
+      "lat": "40.746867573829114"
+    },
+    "notes": "7-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-EEE7-B5E5007567B8",
+    "order": 232,
+    "lines": "E-M-R",
+    "name": "Woodhaven Blvd - Queens Mall",
+    "coordinates": {
+      "lon": "-73.86943208612348",
+      "lat": "40.73309737380972"
+    },
+    "notes": "E-nights, R-all other times, M-weekdays and evenings"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-6E6D-DAD4B4F48102",
+    "order": 233,
+    "lines": "M",
+    "name": "Myrtle - Wyckoff Aves",
+    "coordinates": {
+      "lon": "-73.91217899939602",
+      "lat": "40.69945400090837"
+    },
+    "notes": "M-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3FEE-578DD7C0F915",
+    "order": 234,
+    "lines": "M",
+    "name": "Seneca Ave",
+    "coordinates": {
+      "lon": "-73.90758199885423",
+      "lat": "40.70291899894902"
+    },
+    "notes": "M-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-68D5-FFF9F85B7690",
+    "order": 235,
+    "lines": "L",
+    "name": "DeKalb Ave",
+    "coordinates": {
+      "lon": "-73.91823200219723",
+      "lat": "40.70369299961644"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-7CF4-C52ADCC49667",
+    "order": 236,
+    "lines": "7",
+    "name": "52nd St",
+    "coordinates": {
+      "lon": "-73.91254899891254",
+      "lat": "40.744149001021576"
+    },
+    "notes": "7-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-0385-448730A32763",
+    "order": 237,
+    "lines": "E-M-R",
+    "name": "46th St",
+    "coordinates": {
+      "lon": "-73.91352174995538",
+      "lat": "40.756316952608096"
+    },
+    "notes": "E-nights, R-all other times, M-weekdays and evenings"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-D147-514166140FD4",
+    "order": 238,
+    "lines": "E-M-R",
+    "name": "Northern Blvd",
+    "coordinates": {
+      "lon": "-73.90606508052358",
+      "lat": "40.752824829236076"
+    },
+    "notes": "E-nights, R-all other times, M-weekdays and evenings"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-AEBF-EA358C3DCFB9",
+    "order": 239,
+    "lines": "7",
+    "name": "46th St",
+    "coordinates": {
+      "lon": "-73.91843500103973",
+      "lat": "40.74313200060382"
+    },
+    "notes": "7-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-10CB-5CD73CAEC207",
+    "order": 240,
+    "lines": "7",
+    "name": "82nd St - Jackson Hts",
+    "coordinates": {
+      "lon": "-73.88369700071884",
+      "lat": "40.747658999559135"
+    },
+    "notes": "7-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F870-A405E3EB66BC",
+    "order": 241,
+    "lines": "7",
+    "name": "90th St - Elmhurst Av",
+    "coordinates": {
+      "lon": "-73.87661299986985",
+      "lat": "40.74840800060913"
+    },
+    "notes": "7-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-403A-176CF817D106",
+    "order": 242,
+    "lines": "A",
+    "name": "Howard Beach - JFK Airport",
+    "coordinates": {
+      "lon": "-73.83030100071032",
+      "lat": "40.66047600004959"
+    },
+    "notes": "A-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9DBE-51730961F852",
+    "order": 243,
+    "lines": "A",
+    "name": "Aqueduct - North Conduit Av",
+    "coordinates": {
+      "lon": "-73.83405799948723",
+      "lat": "40.668234001699815"
+    },
+    "notes": "A-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-7A5E-95AB2DFB004B",
+    "order": 244,
+    "lines": "E-F",
+    "name": "Briarwood - Van Wyck Blvd",
+    "coordinates": {
+      "lon": "-73.82069263637443",
+      "lat": "40.70916181536946"
+    },
+    "notes": "E-evenings, weekends, nights, F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-7C55-195E0EDAB4B1",
+    "order": 245,
+    "lines": "E-F-M-R",
+    "name": "Forest Hills - 71st Av",
+    "coordinates": {
+      "lon": "-73.84451672012669",
+      "lat": "40.72159430953587"
+    },
+    "notes": "E,F-all times, M-weekdays and evenings, R-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-E80F-DB2DEC5B00B1",
+    "order": 246,
+    "lines": "F",
+    "name": "Sutphin Blvd",
+    "coordinates": {
+      "lon": "-73.81083299897232",
+      "lat": "40.70541799906764"
+    },
+    "notes": "F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-8E1C-E49BFDF44F0F",
+    "order": 247,
+    "lines": "E-J-Z",
+    "name": "Jamaica Ctr - Parsons / Archer",
+    "coordinates": {
+      "lon": "-73.80109632298924",
+      "lat": "40.70206737621188"
+    },
+    "notes": "E,J-all times, Z-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C5D9-237B09F0B0B4",
+    "order": 248,
+    "lines": "2-5",
+    "name": "225th St",
+    "coordinates": {
+      "lon": "-73.86021461772737",
+      "lat": "40.88802825863786"
+    },
+    "notes": "2-all times, 5-rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-BC44-F9D58A784AA6",
+    "order": 249,
+    "lines": "6",
+    "name": "Elder Ave",
+    "coordinates": {
+      "lon": "-73.87915899874777",
+      "lat": "40.82858400108929"
+    },
+    "notes": "6-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3F79-294CCD630068",
+    "order": 250,
+    "lines": "6",
+    "name": "Longwood Ave",
+    "coordinates": {
+      "lon": "-73.89643499897414",
+      "lat": "40.816103999972405"
+    },
+    "notes": "6-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-FBD9-34A332A07865",
+    "order": 251,
+    "lines": "N-W",
+    "name": "Astoria Blvd",
+    "coordinates": {
+      "lon": "-73.91809500109238",
+      "lat": "40.77003699949086"
+    },
+    "notes": "N-all times, W part time"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F713-A7F354F2F154",
+    "order": 252,
+    "lines": "N-W",
+    "name": "Astoria - Ditmars Blvd",
+    "coordinates": {
+      "lon": "-73.9120340001031",
+      "lat": "40.775035666523664"
+    },
+    "notes": "N-all times, W part time"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-0A98-804FA6A9D087",
+    "order": 253,
+    "lines": "2-5",
+    "name": "Jackson Ave",
+    "coordinates": {
+      "lon": "-73.9077019387083",
+      "lat": "40.81643746686396"
+    },
+    "notes": "2-all times, 5-all times exc nights, skips rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-7C90-4B603A9A0914",
+    "order": 254,
+    "lines": "2-5",
+    "name": "Prospect Ave",
+    "coordinates": {
+      "lon": "-73.90177778730917",
+      "lat": "40.81948726483844"
+    },
+    "notes": "2-all times, 5-all times exc nights, skips rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-BDC1-D40E4673D18D",
+    "order": 255,
+    "lines": "6",
+    "name": "Cypress Ave",
+    "coordinates": {
+      "lon": "-73.91404199994753",
+      "lat": "40.8053680007636"
+    },
+    "notes": "6-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-DF56-5FEDEA34F018",
+    "order": 256,
+    "lines": "2-5",
+    "name": "174th St",
+    "coordinates": {
+      "lon": "-73.88769359812888",
+      "lat": "40.837195550170605"
+    },
+    "notes": "2-all times, 5-all times exc nights, skips rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-7975-9E5B449524D9",
+    "order": 257,
+    "lines": "2-5",
+    "name": "Allerton Ave",
+    "coordinates": {
+      "lon": "-73.86723422851625",
+      "lat": "40.86548337793927"
+    },
+    "notes": "2-all times, 5-rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3234-785BC3B24EC8",
+    "order": 258,
+    "lines": "6",
+    "name": "E 143rd St - St Mary's St",
+    "coordinates": {
+      "lon": "-73.90765699936489",
+      "lat": "40.80871900090143"
+    },
+    "notes": "6-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-613B-BF024FF3A349",
+    "order": 259,
+    "lines": "4",
+    "name": "Kingsbridge Rd",
+    "coordinates": {
+      "lon": "-73.89717400101743",
+      "lat": "40.867760000885795"
+    },
+    "notes": "4-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-971E-3512898AB840",
+    "order": 260,
+    "lines": "4",
+    "name": "Bedford Park Blvd - Lehman College",
+    "coordinates": {
+      "lon": "-73.89006400069478",
+      "lat": "40.87341199980121"
+    },
+    "notes": "4-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9E62-899C7CBF47CF",
+    "order": 261,
+    "lines": "3",
+    "name": "Harlem - 148 St",
+    "coordinates": {
+      "lon": "-73.93647000005559",
+      "lat": "40.82388000080457"
+    },
+    "notes": "3-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-578C-355AC3C5D680",
+    "order": 262,
+    "lines": "4",
+    "name": "Mt Eden Ave",
+    "coordinates": {
+      "lon": "-73.9146849986034",
+      "lat": "40.84443400092679"
+    },
+    "notes": "4-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-5988-54DA3AC9F715",
+    "order": 263,
+    "lines": "B-D",
+    "name": "Fordham Rd",
+    "coordinates": {
+      "lon": "-73.89774900102401",
+      "lat": "40.861295998683495"
+    },
+    "notes": "B-rush hours, D-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-2A23-62504FFC6C1A",
+    "order": 264,
+    "lines": "4",
+    "name": "170th St",
+    "coordinates": {
+      "lon": "-73.91779099745928",
+      "lat": "40.84007499993004"
+    },
+    "notes": "4-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-5AF8-DCFFA263B672",
+    "order": 265,
+    "lines": "B-D",
+    "name": "Bedford Park Blvd",
+    "coordinates": {
+      "lon": "-73.88713799889574",
+      "lat": "40.87324399861646"
+    },
+    "notes": "B-rush hours, D-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-7239-D6CA176CBECD",
+    "order": 266,
+    "lines": "1",
+    "name": "Marble Hill - 225th St",
+    "coordinates": {
+      "lon": "-73.90983099923551",
+      "lat": "40.87456099941789"
+    },
+    "notes": "1-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-190D-2166AC957B76",
+    "order": 267,
+    "lines": "1",
+    "name": "231st St",
+    "coordinates": {
+      "lon": "-73.90483400107873",
+      "lat": "40.87885599817935"
+    },
+    "notes": "1-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-1356-E6177874B143",
+    "order": 268,
+    "lines": "1",
+    "name": "215th St",
+    "coordinates": {
+      "lon": "-73.91527899954356",
+      "lat": "40.86944399946045"
+    },
+    "notes": "1-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C87E-492E29C83A79",
+    "order": 269,
+    "lines": "1",
+    "name": "207th St",
+    "coordinates": {
+      "lon": "-73.91881900132312",
+      "lat": "40.864614000525854"
+    },
+    "notes": "1-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-A069-4B7B1C4E75F7",
+    "order": 270,
+    "lines": "A",
+    "name": "Inwood - 207th St",
+    "coordinates": {
+      "lon": "-73.91989900100465",
+      "lat": "40.86807199999737"
+    },
+    "notes": "A-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-52F2-FDA46A951F18",
+    "order": 271,
+    "lines": "1",
+    "name": "Van Cortlandt Park - 242nd St",
+    "coordinates": {
+      "lon": "-73.89858300049647",
+      "lat": "40.88924800011476"
+    },
+    "notes": "1-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-A945-4CD0A6602813",
+    "order": 272,
+    "lines": "2-5",
+    "name": "West Farms Sq - E Tremont Av",
+    "coordinates": {
+      "lon": "-73.87996127877184",
+      "lat": "40.84020763241799"
+    },
+    "notes": "2-all times, 5-all times exc nights, skips rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-CD7D-22E83D8AFA22",
+    "order": 273,
+    "lines": "2-5",
+    "name": "219th St",
+    "coordinates": {
+      "lon": "-73.8625097078866",
+      "lat": "40.883887974625274"
+    },
+    "notes": "2-all times, 5-rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-6167-AB292409BEEE",
+    "order": 274,
+    "lines": "4",
+    "name": "Mosholu Pkwy",
+    "coordinates": {
+      "lon": "-73.88465499988732",
+      "lat": "40.87974999947229"
+    },
+    "notes": "4-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3DCB-33B392D93959",
+    "order": 275,
+    "lines": "D",
+    "name": "Norwood - 205th St",
+    "coordinates": {
+      "lon": "-73.87885499918691",
+      "lat": "40.87481100011182"
+    },
+    "notes": "D-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C6D7-90B631C94A77",
+    "order": 276,
+    "lines": "2-5",
+    "name": "Burke Ave",
+    "coordinates": {
+      "lon": "-73.86705361747603",
+      "lat": "40.87125880254771"
+    },
+    "notes": "2-all times, 5-rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-10C4-48F128EF69A9",
+    "order": 277,
+    "lines": "5",
+    "name": "Baychester Ave",
+    "coordinates": {
+      "lon": "-73.83859099802153",
+      "lat": "40.87866300037311"
+    },
+    "notes": "5-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-80F3-6C1966FBABA2",
+    "order": 278,
+    "lines": "5",
+    "name": "Eastchester - Dyre Ave",
+    "coordinates": {
+      "lon": "-73.8308340021742",
+      "lat": "40.88829999901007"
+    },
+    "notes": "5-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-78FA-688FC60486A8",
+    "order": 279,
+    "lines": "F",
+    "name": "Jamaica - 179th St",
+    "coordinates": {
+      "lon": "-73.78381700176453",
+      "lat": "40.712645666744045"
+    },
+    "notes": "F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-61CA-89453043B934",
+    "order": 280,
+    "lines": "2",
+    "name": "Wakefield - 241st St",
+    "coordinates": {
+      "lon": "-73.8506199987954",
+      "lat": "40.903125000541245"
+    },
+    "notes": "2-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-78BF-EF79819ACF46",
+    "order": 281,
+    "lines": "S",
+    "name": "Botanic Garden",
+    "coordinates": {
+      "lon": "-73.95924499945693",
+      "lat": "40.670342666584396"
+    },
+    "notes": "S Franklin Av-Fulton St to Prospect Park-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-6E8A-EFEE5EC49DBC",
+    "order": 282,
+    "lines": "L",
+    "name": "Bushwick - Aberdeen",
+    "coordinates": {
+      "lon": "-73.90526176305106",
+      "lat": "40.68286062551184"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-FB86-C043932A2F7F",
+    "order": 283,
+    "lines": "L",
+    "name": "Broadway Junction",
+    "coordinates": {
+      "lon": "-73.90311757920684",
+      "lat": "40.67845624842869"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-D7DE-98C247524F59",
+    "order": 284,
+    "lines": "5",
+    "name": "Gun Hill Rd",
+    "coordinates": {
+      "lon": "-73.84638400151765",
+      "lat": "40.86952599962676"
+    },
+    "notes": "5-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-24AB-75EA3D6CF20D",
+    "order": 285,
+    "lines": "2-5",
+    "name": "E 180th St",
+    "coordinates": {
+      "lon": "-73.87334609510884",
+      "lat": "40.8418630412186"
+    },
+    "notes": "2,5-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3268-37054CFD78E5",
+    "order": 286,
+    "lines": "1",
+    "name": "Dyckman St",
+    "coordinates": {
+      "lon": "-73.92553600006474",
+      "lat": "40.86053100138796"
+    },
+    "notes": "1-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-23A0-4FB3108E623D",
+    "order": 287,
+    "lines": "1",
+    "name": "125th St",
+    "coordinates": {
+      "lon": "-73.95837200097044",
+      "lat": "40.815580999978934"
+    },
+    "notes": "1-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-548D-93E8248321EF",
+    "order": 288,
+    "lines": "S",
+    "name": "Franklin Ave - Fulton St",
+    "coordinates": {
+      "lon": "-73.95582700110425",
+      "lat": "40.68059566598263"
+    },
+    "notes": "S to Prospect Park-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-5B6B-CAEEF0EE5ADE",
+    "order": 289,
+    "lines": "2-5",
+    "name": "149th St - Grand Concourse",
+    "coordinates": {
+      "lon": "-73.92672247438611",
+      "lat": "40.81833014409742"
+    },
+    "notes": "2-all times, 5-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9237-ECCCDD0E20C9",
+    "order": 290,
+    "lines": "2-5",
+    "name": "3rd Ave - 149th St",
+    "coordinates": {
+      "lon": "-73.91779152760981",
+      "lat": "40.816029252510006"
+    },
+    "notes": "2-all times, 5-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-2A07-2F2B9C99A3F1",
+    "order": 291,
+    "lines": "4",
+    "name": "167th St",
+    "coordinates": {
+      "lon": "-73.92139999784426",
+      "lat": "40.83553699933672"
+    },
+    "notes": "4-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-28AA-1D15EF38A0AA",
+    "order": 292,
+    "lines": "6",
+    "name": "Brook Ave",
+    "coordinates": {
+      "lon": "-73.91923999909432",
+      "lat": "40.80756599987699"
+    },
+    "notes": "6-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-DE32-F060406949E5",
+    "order": 293,
+    "lines": "7",
+    "name": "33rd St",
+    "coordinates": {
+      "lon": "-73.93099699953838",
+      "lat": "40.74458699983993"
+    },
+    "notes": "7-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C2CF-1AEBF54D21FE",
+    "order": 294,
+    "lines": "7",
+    "name": "40th St",
+    "coordinates": {
+      "lon": "-73.9240159984882",
+      "lat": "40.74378100149132"
+    },
+    "notes": "7-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-09B2-32915348E227",
+    "order": 295,
+    "lines": "A-B-C-D",
+    "name": "145th St",
+    "coordinates": {
+      "lon": "-73.94408792823116",
+      "lat": "40.824766360871905"
+    },
+    "notes": "A,D-all times, B-weekdays and evenings, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-E3E0-6B1EAA66C957",
+    "order": 296,
+    "lines": "B-D",
+    "name": "155th St",
+    "coordinates": {
+      "lon": "-73.93820899811622",
+      "lat": "40.8301349999812"
+    },
+    "notes": "B-rush hours, D-all times, skips rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-406F-CBD3D7AA6295",
+    "order": 297,
+    "lines": "B-D",
+    "name": "161st St - Yankee Stadium",
+    "coordinates": {
+      "lon": "-73.92565099775477",
+      "lat": "40.827904998845845"
+    },
+    "notes": "B-rush hours, D-all times, skips rush hours AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-D9D3-9E0CCBC18FF8",
+    "order": 298,
+    "lines": "A-C",
+    "name": "Utica Ave",
+    "coordinates": {
+      "lon": "-73.93072899914027",
+      "lat": "40.67936399950546"
+    },
+    "notes": "A-all times, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3947-394841058000",
+    "order": 299,
+    "lines": "E-M-R",
+    "name": "Steinway St",
+    "coordinates": {
+      "lon": "-73.9205264716827",
+      "lat": "40.75698735912575"
+    },
+    "notes": "E-nights, R-all other times, M-weekdays and evenings"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-8259-7123E42CA5DC",
+    "order": 300,
+    "lines": "J",
+    "name": "Kosciuszko St",
+    "coordinates": {
+      "lon": "-73.92850899927413",
+      "lat": "40.69317200129202"
+    },
+    "notes": "J-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F2BB-1F21EFEE7E31",
+    "order": 301,
+    "lines": "J-Z",
+    "name": "Gates Ave",
+    "coordinates": {
+      "lon": "-73.92215600150752",
+      "lat": "40.689583999013905"
+    },
+    "notes": "Z-rush hours AM westbound, PM eastbound, J-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-76EC-1980E854523E",
+    "order": 302,
+    "lines": "M",
+    "name": "Central Ave",
+    "coordinates": {
+      "lon": "-73.92724299902838",
+      "lat": "40.69787300011831"
+    },
+    "notes": "M-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-2900-CBCA2F87E164",
+    "order": 303,
+    "lines": "M",
+    "name": "Knickerbocker Ave",
+    "coordinates": {
+      "lon": "-73.91972000188625",
+      "lat": "40.69866000123805"
+    },
+    "notes": "M-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-2870-61279F1E74CC",
+    "order": 304,
+    "lines": "N-W",
+    "name": "30th Ave",
+    "coordinates": {
+      "lon": "-73.9214790001739",
+      "lat": "40.76677866673298"
+    },
+    "notes": "N-all times, W part time"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-297D-9F0AC2019436",
+    "order": 305,
+    "lines": "L",
+    "name": "Jefferson St",
+    "coordinates": {
+      "lon": "-73.9229130000312",
+      "lat": "40.706606665988716"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-5AB2-36B1B69EB828",
+    "order": 306,
+    "lines": "L",
+    "name": "Morgan Ave",
+    "coordinates": {
+      "lon": "-73.93314700024209",
+      "lat": "40.70615166680729"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-6BED-7297F7820CC6",
+    "order": 307,
+    "lines": "E-M-R",
+    "name": "Queens Plz",
+    "coordinates": {
+      "lon": "-73.93713823965695",
+      "lat": "40.74891771986323"
+    },
+    "notes": "E-all times, M-weekdays and evenings, R-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3FBB-44BEC2972AAB",
+    "order": 308,
+    "lines": "F",
+    "name": "18th Ave",
+    "coordinates": {
+      "lon": "-73.97697099965796",
+      "lat": "40.62975466638584"
+    },
+    "notes": "F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9331-12F5DA812DBB",
+    "order": 309,
+    "lines": "R",
+    "name": "77th St",
+    "coordinates": {
+      "lon": "-74.0255099996266",
+      "lat": "40.629741666886915"
+    },
+    "notes": "R-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-7408-A8178389CAB8",
+    "order": 310,
+    "lines": "R",
+    "name": "Bay Ridge Ave",
+    "coordinates": {
+      "lon": "-74.02337699950728",
+      "lat": "40.63496666682377"
+    },
+    "notes": "R-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9FF1-C755DA0C1AFA",
+    "order": 311,
+    "lines": "D",
+    "name": "50th St",
+    "coordinates": {
+      "lon": "-73.9946587805514",
+      "lat": "40.636260890961395"
+    },
+    "notes": "D-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9C51-39D78B13FD9B",
+    "order": 312,
+    "lines": "N",
+    "name": "Ft Hamilton Pkwy",
+    "coordinates": {
+      "lon": "-74.00535100046275",
+      "lat": "40.63138566722445"
+    },
+    "notes": "N-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-1B78-C9322ACBD822",
+    "order": 313,
+    "lines": "D",
+    "name": "25th Ave",
+    "coordinates": {
+      "lon": "-73.98682900011477",
+      "lat": "40.59770366695856"
+    },
+    "notes": "D-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-6383-2F0C9EC59AD3",
+    "order": 314,
+    "lines": "D",
+    "name": "Bay Pky",
+    "coordinates": {
+      "lon": "-73.9936762000529",
+      "lat": "40.601950461572315"
+    },
+    "notes": "D-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-CD8C-70D185073A4B",
+    "order": 315,
+    "lines": "N",
+    "name": "20th Ave",
+    "coordinates": {
+      "lon": "-73.98452199846113",
+      "lat": "40.617108999866005"
+    },
+    "notes": "N-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F78E-FEE329A019FC",
+    "order": 316,
+    "lines": "N",
+    "name": "18th Ave",
+    "coordinates": {
+      "lon": "-73.99045399865993",
+      "lat": "40.620686997680025"
+    },
+    "notes": "N-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-DCF8-07CE27A4E031",
+    "order": 317,
+    "lines": "R",
+    "name": "Bay Ridge - 95th St",
+    "coordinates": {
+      "lon": "-74.03087600085765",
+      "lat": "40.61662166725951"
+    },
+    "notes": "R-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F117-7AD8EA0A7877",
+    "order": 318,
+    "lines": "R",
+    "name": "86th St",
+    "coordinates": {
+      "lon": "-74.0283979999864",
+      "lat": "40.62268666715025"
+    },
+    "notes": "R-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F16C-5AAD6CD99E38",
+    "order": 319,
+    "lines": "D",
+    "name": "79th St",
+    "coordinates": {
+      "lon": "-74.00058287431507",
+      "lat": "40.61315892569516"
+    },
+    "notes": "D-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-0E0B-77ABEAC96E74",
+    "order": 320,
+    "lines": "D",
+    "name": "71st St",
+    "coordinates": {
+      "lon": "-73.99884094850685",
+      "lat": "40.61925870977273"
+    },
+    "notes": "D-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-7F15-1742A667B5D0",
+    "order": 321,
+    "lines": "D",
+    "name": "20th Ave",
+    "coordinates": {
+      "lon": "-73.99817432157568",
+      "lat": "40.60467699816932"
+    },
+    "notes": "D-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-DB6A-21480DE45675",
+    "order": 322,
+    "lines": "D",
+    "name": "18th Ave",
+    "coordinates": {
+      "lon": "-74.00159259239406",
+      "lat": "40.60773573171741"
+    },
+    "notes": "D-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-7DD9-BB26ED63B6F4",
+    "order": 323,
+    "lines": "D",
+    "name": "62nd St",
+    "coordinates": {
+      "lon": "-73.99685724994863",
+      "lat": "40.626224462922195"
+    },
+    "notes": "D-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-87FF-21343343DE57",
+    "order": 324,
+    "lines": "N",
+    "name": "New Utrecht Ave",
+    "coordinates": {
+      "lon": "-73.99635300025969",
+      "lat": "40.62484166725887"
+    },
+    "notes": "N-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-18A7-5FCEB2CC1492",
+    "order": 325,
+    "lines": "F",
+    "name": "Ave U",
+    "coordinates": {
+      "lon": "-73.97337641974885",
+      "lat": "40.59592482551748"
+    },
+    "notes": "F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-67BA-3D691E329182",
+    "order": 326,
+    "lines": "F",
+    "name": "Kings Hwy",
+    "coordinates": {
+      "lon": "-73.9723553085244",
+      "lat": "40.603258405128265"
+    },
+    "notes": "F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-A626-EA5690E2FCA7",
+    "order": 327,
+    "lines": "B-Q",
+    "name": "Brighton Beach",
+    "coordinates": {
+      "lon": "-73.96135378598797",
+      "lat": "40.577710196642435"
+    },
+    "notes": "B-weekdays and evenings, Q-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-930D-835D90C2DF5C",
+    "order": 328,
+    "lines": "B-Q",
+    "name": "Sheepshead Bay",
+    "coordinates": {
+      "lon": "-73.95405791257907",
+      "lat": "40.58654754707536"
+    },
+    "notes": "B-weekdays and evenings, Q-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-D122-8939478BB769",
+    "order": 329,
+    "lines": "Q",
+    "name": "Ave U",
+    "coordinates": {
+      "lon": "-73.95581122316301",
+      "lat": "40.59930895095475"
+    },
+    "notes": "Q-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-12A4-FFE805DE5809",
+    "order": 330,
+    "lines": "B-Q",
+    "name": "Kings Hwy",
+    "coordinates": {
+      "lon": "-73.95760873538083",
+      "lat": "40.608638645396006"
+    },
+    "notes": "B-weekdays and evenings, Q-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-FD27-523A6732189A",
+    "order": 331,
+    "lines": "N",
+    "name": "Ave U",
+    "coordinates": {
+      "lon": "-73.97908400099428",
+      "lat": "40.597235999920436"
+    },
+    "notes": "N-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-131E-06E8472E7F5B",
+    "order": 332,
+    "lines": "N",
+    "name": "Kings Hwy",
+    "coordinates": {
+      "lon": "-73.98037300229343",
+      "lat": "40.60405899980493"
+    },
+    "notes": "N-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-2234-435B7B6AF9B1",
+    "order": 333,
+    "lines": "F",
+    "name": "Neptune Ave",
+    "coordinates": {
+      "lon": "-73.97459272818807",
+      "lat": "40.580738758491464"
+    },
+    "notes": "F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C668-92E6A8888998",
+    "order": 334,
+    "lines": "F",
+    "name": "Ave X",
+    "coordinates": {
+      "lon": "-73.97426599968905",
+      "lat": "40.589449666625285"
+    },
+    "notes": "F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-8E37-CDF4C09F7BF8",
+    "order": 335,
+    "lines": "D",
+    "name": "Bay 50th St",
+    "coordinates": {
+      "lon": "-73.98376500045946",
+      "lat": "40.58884066651933"
+    },
+    "notes": "D-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9A49-BB70F02AED78",
+    "order": 336,
+    "lines": "N",
+    "name": "Gravesend - 86th St",
+    "coordinates": {
+      "lon": "-73.97818899936274",
+      "lat": "40.59246500088859"
+    },
+    "notes": "N-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-6B75-1D1225300A66",
+    "order": 337,
+    "lines": "F",
+    "name": "Ave P",
+    "coordinates": {
+      "lon": "-73.97300281528751",
+      "lat": "40.608842808949916"
+    },
+    "notes": "F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-8C5D-CC51EFAC1E15",
+    "order": 338,
+    "lines": "F",
+    "name": "Ave N",
+    "coordinates": {
+      "lon": "-73.97404850873143",
+      "lat": "40.61435671190883"
+    },
+    "notes": "F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3516-2E2C7A2A9E57",
+    "order": 339,
+    "lines": "F",
+    "name": "Bay Pky",
+    "coordinates": {
+      "lon": "-73.9752569782215",
+      "lat": "40.62073162316788"
+    },
+    "notes": "F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-269C-ADC5D31C0DA3",
+    "order": 340,
+    "lines": "Q",
+    "name": "Ave M",
+    "coordinates": {
+      "lon": "-73.9592431052215",
+      "lat": "40.617397744443736"
+    },
+    "notes": "Q-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-88D4-27869DD2D1E5",
+    "order": 341,
+    "lines": "N",
+    "name": "Bay Pky",
+    "coordinates": {
+      "lon": "-73.98178001069293",
+      "lat": "40.61145578989005"
+    },
+    "notes": "N-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-D768-BD33DA1553CB",
+    "order": 342,
+    "lines": "F",
+    "name": "Ave I",
+    "coordinates": {
+      "lon": "-73.97606933170925",
+      "lat": "40.62501744019143"
+    },
+    "notes": "F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9F30-5A3FD9EE7F01",
+    "order": 343,
+    "lines": "Q",
+    "name": "Ave J",
+    "coordinates": {
+      "lon": "-73.96069316246925",
+      "lat": "40.625022819915166"
+    },
+    "notes": "Q-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-D2D1-028C62CA1C08",
+    "order": 344,
+    "lines": "Q",
+    "name": "Ave H",
+    "coordinates": {
+      "lon": "-73.96151793942495",
+      "lat": "40.62920837758969"
+    },
+    "notes": "Q-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-122E-4E79A208CFFC",
+    "order": 345,
+    "lines": "Q",
+    "name": "Neck Rd",
+    "coordinates": {
+      "lon": "-73.95507827493762",
+      "lat": "40.59532169111695"
+    },
+    "notes": "Q-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-86AE-43D02B0637A5",
+    "order": 346,
+    "lines": "F",
+    "name": "21st St - Queensbridge",
+    "coordinates": {
+      "lon": "-73.94193761457447",
+      "lat": "40.75373927087553"
+    },
+    "notes": "F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-A308-622065D65E9F",
+    "order": 347,
+    "lines": "A-C-E",
+    "name": "50th St",
+    "coordinates": {
+      "lon": "-73.98598400026407",
+      "lat": "40.76245599925997"
+    },
+    "notes": "A-nights, C-all other times, E-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-0E99-3C860ECE4675",
+    "order": 348,
+    "lines": "B-D-E",
+    "name": "7th Ave",
+    "coordinates": {
+      "lon": "-73.98169782344476",
+      "lat": "40.76297015245628"
+    },
+    "notes": "D,E-all times, B-weekdays and evenings"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9182-9BC11E6177A8",
+    "order": 349,
+    "lines": "B-D-F-M",
+    "name": "47th-50th Sts - Rockefeller Ctr",
+    "coordinates": {
+      "lon": "-73.98133100227702",
+      "lat": "40.75864100159815"
+    },
+    "notes": "B,M-weekdays and evenings, D,F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-055C-8D473ADFD65E",
+    "order": 350,
+    "lines": "F",
+    "name": "57th St",
+    "coordinates": {
+      "lon": "-73.97736800085171",
+      "lat": "40.76408500081713"
+    },
+    "notes": "F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3B0F-1805A9F930E8",
+    "order": 351,
+    "lines": "F-Q",
+    "name": "Lexington Ave - 63rd St",
+    "coordinates": {
+      "lon": "-73.96608964413245",
+      "lat": "40.76461809442373"
+    },
+    "notes": "F-all times, Q all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-11EB-A09491FA3C2E",
+    "order": 352,
+    "lines": "F",
+    "name": "Roosevelt Island - Main St",
+    "coordinates": {
+      "lon": "-73.95323499978866",
+      "lat": "40.75917199967108"
+    },
+    "notes": "F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-B42D-5BC6F535ED72",
+    "order": 353,
+    "lines": "A-B-C-D",
+    "name": "59th St - Columbus Circle",
+    "coordinates": {
+      "lon": "-73.98164872301398",
+      "lat": "40.768249531776064"
+    },
+    "notes": "A,D-all times, B-weekdays and evenings, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-72D0-08E5A9A18E51",
+    "order": 354,
+    "lines": "N-Q-R-W",
+    "name": "49th St",
+    "coordinates": {
+      "lon": "-73.98420956591096",
+      "lat": "40.759801973870694"
+    },
+    "notes": "N-all times, Q-all times exc weekends, R-all times exc nights, W part time"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-13C7-873ED9F2EE9C",
+    "order": 355,
+    "lines": "N-Q-R-W",
+    "name": "57th St",
+    "coordinates": {
+      "lon": "-73.98072973372128",
+      "lat": "40.76456552501829"
+    },
+    "notes": "N,Q-all times, R-all times exc nights, W part time"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-82A5-6F0EA01A9738",
+    "order": 356,
+    "lines": "N-R-W",
+    "name": "5th Ave - 59th St",
+    "coordinates": {
+      "lon": "-73.97334700047045",
+      "lat": "40.764810999755284"
+    },
+    "notes": "N-all times, R-all times exc nights, W part time"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-376F-603802FF097D",
+    "order": 357,
+    "lines": "N-R-W",
+    "name": "Lexington Ave - 59th St",
+    "coordinates": {
+      "lon": "-73.96737501711436",
+      "lat": "40.762708855394564"
+    },
+    "notes": "N-all times, R-all times exc nights, W part time"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C284-EA0611B87FF0",
+    "order": 358,
+    "lines": "1-2-3",
+    "name": "34th St - Penn Station",
+    "coordinates": {
+      "lon": "-73.99105699913983",
+      "lat": "40.75037300003949"
+    },
+    "notes": "1,2,3-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-1058-EC6E28516F26",
+    "order": 359,
+    "lines": "1-2-3",
+    "name": "Times Sq - 42nd St",
+    "coordinates": {
+      "lon": "-73.98749500051885",
+      "lat": "40.75528999995681"
+    },
+    "notes": "1,2,3-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3942-BDEBE5123EBB",
+    "order": 360,
+    "lines": "A-C",
+    "name": "Fulton St",
+    "coordinates": {
+      "lon": "-74.00762309323994",
+      "lat": "40.71016216530185"
+    },
+    "notes": "A-all times, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-87C8-450A9BD6FCFB",
+    "order": 361,
+    "lines": "A-C",
+    "name": "Chambers St",
+    "coordinates": {
+      "lon": "-74.00858473570133",
+      "lat": "40.714111000774025"
+    },
+    "notes": "A-all times, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-0AC5-BA0813EC89F1",
+    "order": 362,
+    "lines": "A-C-E",
+    "name": "42nd St - Port Authority Bus Term",
+    "coordinates": {
+      "lon": "-73.98973500085859",
+      "lat": "40.757307998551504"
+    },
+    "notes": "A,E-all times, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F1D6-CDD56A9275BE",
+    "order": 363,
+    "lines": "G",
+    "name": "Myrtle-Willoughby Aves",
+    "coordinates": {
+      "lon": "-73.94906699890156",
+      "lat": "40.69461899903765"
+    },
+    "notes": "G-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-47EA-38B4248A772F",
+    "order": 364,
+    "lines": "G",
+    "name": "Flushing Ave",
+    "coordinates": {
+      "lon": "-73.9502340010257",
+      "lat": "40.70037666622154"
+    },
+    "notes": "G-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-B709-0839BC6A3DDE",
+    "order": 365,
+    "lines": "F-M",
+    "name": "23rd St",
+    "coordinates": {
+      "lon": "-73.99276500471389",
+      "lat": "40.742954317826005"
+    },
+    "notes": "F-all times, M-weekdays and evenings"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-70D6-7A920E2B5464",
+    "order": 366,
+    "lines": "B-D-F-M",
+    "name": "Herald Sq - 34th St",
+    "coordinates": {
+      "lon": "-73.98777189072918",
+      "lat": "40.74978939990011"
+    },
+    "notes": "B,M-weekdays and evenings, D,F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-EC34-2EC75C9DB385",
+    "order": 367,
+    "lines": "A-C-G",
+    "name": "Hoyt - Schermerhorn Sts",
+    "coordinates": {
+      "lon": "-73.98503624034139",
+      "lat": "40.68840847580642"
+    },
+    "notes": "A,G-all times, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-BBDA-3C8F99D0F556",
+    "order": 368,
+    "lines": "A-C-F",
+    "name": "Jay St - MetroTech",
+    "coordinates": {
+      "lon": "-73.98721815267317",
+      "lat": "40.692470636847084"
+    },
+    "notes": "A,F-all times, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-967C-692546D91541",
+    "order": 369,
+    "lines": "F",
+    "name": "East Broadway",
+    "coordinates": {
+      "lon": "-73.99017700122197",
+      "lat": "40.713855001020406"
+    },
+    "notes": "F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-0149-A3B3226A4002",
+    "order": 370,
+    "lines": "F",
+    "name": "Delancey St - Essex St",
+    "coordinates": {
+      "lon": "-73.98807806807719",
+      "lat": "40.71868074219453"
+    },
+    "notes": "F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C2D3-20CD41C3F10D",
+    "order": 371,
+    "lines": "F",
+    "name": "Lower East Side - 2nd Ave",
+    "coordinates": {
+      "lon": "-73.98993800003434",
+      "lat": "40.72340166574911"
+    },
+    "notes": "F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-8FA7-14FFACBD6ECE",
+    "order": 372,
+    "lines": "J-M",
+    "name": "Flushing Ave",
+    "coordinates": {
+      "lon": "-73.94137734838365",
+      "lat": "40.70040440298112"
+    },
+    "notes": "J-all times, skips weekdays AM westbound, PM eastbound, M-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-2E13-01F57837B69B",
+    "order": 373,
+    "lines": "J-M-Z",
+    "name": "Myrtle Ave",
+    "coordinates": {
+      "lon": "-73.9356230012996",
+      "lat": "40.6971950005145"
+    },
+    "notes": "J,M-all times, Z-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-D082-3FDB2D68B6E7",
+    "order": 374,
+    "lines": "F-G",
+    "name": "4th Av - 9th St",
+    "coordinates": {
+      "lon": "-73.98977899938897",
+      "lat": "40.67027166728493"
+    },
+    "notes": "F,G-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-28EF-EB5DBF466B4D",
+    "order": 375,
+    "lines": "F-G",
+    "name": "Smith - 9th Sts",
+    "coordinates": {
+      "lon": "-73.99589172790934",
+      "lat": "40.67364106090412"
+    },
+    "notes": "F,G-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-E2FE-A454FD26A0AB",
+    "order": 376,
+    "lines": "F-G",
+    "name": "Bergen St",
+    "coordinates": {
+      "lon": "-73.99075649573565",
+      "lat": "40.68611054725977"
+    },
+    "notes": "F,G-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-413C-445ABA51B019",
+    "order": 377,
+    "lines": "N-R",
+    "name": "Jay St - MetroTech",
+    "coordinates": {
+      "lon": "-73.98605667854612",
+      "lat": "40.69225539645323"
+    },
+    "notes": "N-nights, R-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-13E6-7335C5CED67E",
+    "order": 378,
+    "lines": "N-R",
+    "name": "Court St",
+    "coordinates": {
+      "lon": "-73.99181830901125",
+      "lat": "40.694196480776995"
+    },
+    "notes": "N-nights, R-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-685D-851E4FF44D12",
+    "order": 379,
+    "lines": "N-Q-R-W",
+    "name": "Union Sq - 14th St",
+    "coordinates": {
+      "lon": "-73.99053886181645",
+      "lat": "40.73587226699812"
+    },
+    "notes": "N,Q-all times, R-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-052A-45BD2926416C",
+    "order": 380,
+    "lines": "N-Q-R-W",
+    "name": "23rd St",
+    "coordinates": {
+      "lon": "-73.98934400102907",
+      "lat": "40.74130266729"
+    },
+    "notes": "N-all times, Q-nights, R-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-EBE0-8B1DDA0E9100",
+    "order": 381,
+    "lines": "D-N-R",
+    "name": "Prospect Ave",
+    "coordinates": {
+      "lon": "-73.99287200067424",
+      "lat": "40.66541366712979"
+    },
+    "notes": "D,N-nights, R-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-49EA-F956E70CB959",
+    "order": 382,
+    "lines": "D-N-R",
+    "name": "4th Av - 9th St",
+    "coordinates": {
+      "lon": "-73.98830199974512",
+      "lat": "40.670846666842756"
+    },
+    "notes": "D,N-nights, R-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-CF7F-04521FD52143",
+    "order": 383,
+    "lines": "L",
+    "name": "3rd Ave",
+    "coordinates": {
+      "lon": "-73.98575000112093",
+      "lat": "40.73269099971662"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-86A8-463DD08A8449",
+    "order": 384,
+    "lines": "L",
+    "name": "Union Sq - 14th St",
+    "coordinates": {
+      "lon": "-73.99066976901818",
+      "lat": "40.73476331217923"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-8CF3-B4B394A06894",
+    "order": 385,
+    "lines": "A-C",
+    "name": "Liberty Ave",
+    "coordinates": {
+      "lon": "-73.89654800103929",
+      "lat": "40.67454199987086"
+    },
+    "notes": "A-nights, C-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-BAA4-33773E3B2221",
+    "order": 386,
+    "lines": "A-C",
+    "name": "Broadway Junction",
+    "coordinates": {
+      "lon": "-73.90531600055341",
+      "lat": "40.67833366608023"
+    },
+    "notes": "A-all times, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-5037-DB60D87651CC",
+    "order": 387,
+    "lines": "N-R",
+    "name": "59th St",
+    "coordinates": {
+      "lon": "-74.01788099953987",
+      "lat": "40.6413616662838"
+    },
+    "notes": "N,R-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-5ACA-8CCBADEBF9A8",
+    "order": 388,
+    "lines": "N-R",
+    "name": "45th St",
+    "coordinates": {
+      "lon": "-74.01000600074939",
+      "lat": "40.648938666612814"
+    },
+    "notes": "N-nights, R-all times, skips nights northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-120D-72E38377B62F",
+    "order": 389,
+    "lines": "D-N-R",
+    "name": "36th St",
+    "coordinates": {
+      "lon": "-74.00354899951809",
+      "lat": "40.65514366633887"
+    },
+    "notes": "D,N,R-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F71B-5871B1C6A974",
+    "order": 390,
+    "lines": "D",
+    "name": "9th Ave",
+    "coordinates": {
+      "lon": "-73.99444874451204",
+      "lat": "40.64648407726636"
+    },
+    "notes": "D-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-2DCB-F0071F0C2E32",
+    "order": 391,
+    "lines": "N-R",
+    "name": "53rd St",
+    "coordinates": {
+      "lon": "-74.01403399986317",
+      "lat": "40.64506866735981"
+    },
+    "notes": "N-nights, R-all times, skips nights northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C0F6-B07FA1223006",
+    "order": 392,
+    "lines": "D",
+    "name": "Ft Hamilton Pkwy",
+    "coordinates": {
+      "lon": "-73.9942022375285",
+      "lat": "40.640912711444656"
+    },
+    "notes": "D-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-416D-18C536F31B06",
+    "order": 393,
+    "lines": "D-N-R",
+    "name": "25th St",
+    "coordinates": {
+      "lon": "-73.99809099974297",
+      "lat": "40.66039666692321"
+    },
+    "notes": "D,N-nights, R-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-0822-C7FE91B360A4",
+    "order": 394,
+    "lines": "F-G",
+    "name": "Carroll St",
+    "coordinates": {
+      "lon": "-73.99494697998841",
+      "lat": "40.68027335170176"
+    },
+    "notes": "F,G-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-89BC-994EEFA762AD",
+    "order": 395,
+    "lines": "A-C-E",
+    "name": "Spring St",
+    "coordinates": {
+      "lon": "-74.00373899843763",
+      "lat": "40.72622700129312"
+    },
+    "notes": "A-nights, C-all other times, E-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-31AB-46434B79948C",
+    "order": 396,
+    "lines": "A",
+    "name": "181st St",
+    "coordinates": {
+      "lon": "-73.93796900205011",
+      "lat": "40.851694999744616"
+    },
+    "notes": "A-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-49A4-114BE8727FE7",
+    "order": 397,
+    "lines": "A",
+    "name": "190th St",
+    "coordinates": {
+      "lon": "-73.93417999964333",
+      "lat": "40.85902199892482"
+    },
+    "notes": "A-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-AC2F-C585127DD0E4",
+    "order": 398,
+    "lines": "A-B-C",
+    "name": "116th St",
+    "coordinates": {
+      "lon": "-73.95479778057312",
+      "lat": "40.80505813344211"
+    },
+    "notes": "A-nights, B-weekdays and evenings, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-5222-02DDB61CE997",
+    "order": 399,
+    "lines": "A-B-C-D",
+    "name": "125th St",
+    "coordinates": {
+      "lon": "-73.95224799734774",
+      "lat": "40.811071672994565"
+    },
+    "notes": "A,D-all times, B-weekdays and evenings, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-57E6-87021438E02B",
+    "order": 400,
+    "lines": "N-Q-R-W",
+    "name": "Prince St",
+    "coordinates": {
+      "lon": "-73.99770200045987",
+      "lat": "40.72432866597571"
+    },
+    "notes": "N-all times, Q-nights, R-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-0CD4-45AAE4142E10",
+    "order": 401,
+    "lines": "N-Q-R-W",
+    "name": "8th St - NYU",
+    "coordinates": {
+      "lon": "-73.99250799849149",
+      "lat": "40.73046499853991"
+    },
+    "notes": "N-all times, Q-nights, R-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-9CDD-1560658B23AD",
+    "order": 402,
+    "lines": "2-3",
+    "name": "Fulton St",
+    "coordinates": {
+      "lon": "-74.00657099970202",
+      "lat": "40.70941599925865"
+    },
+    "notes": "2-all times, 3-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-FC33-D1601214DD8C",
+    "order": 403,
+    "lines": "2-3",
+    "name": "Park Pl",
+    "coordinates": {
+      "lon": "-74.00881099997359",
+      "lat": "40.713050999077694"
+    },
+    "notes": "2-all times, 3-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F655-976677291B1B",
+    "order": 404,
+    "lines": "1-2-3",
+    "name": "Chambers St",
+    "coordinates": {
+      "lon": "-74.00926600170112",
+      "lat": "40.71547800011327"
+    },
+    "notes": "1,2-all times, 3-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-D51E-18C451FC461E",
+    "order": 405,
+    "lines": "2-3",
+    "name": "Hoyt St",
+    "coordinates": {
+      "lon": "-73.98506379575646",
+      "lat": "40.69054418535472"
+    },
+    "notes": "2-all times, 3-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-01CF-865C0455864E",
+    "order": 406,
+    "lines": "2-3",
+    "name": "Borough Hall",
+    "coordinates": {
+      "lon": "-73.98999799960687",
+      "lat": "40.693218999611084"
+    },
+    "notes": "2-all times, 3-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F33C-63138F95DE82",
+    "order": 407,
+    "lines": "4",
+    "name": "183rd St",
+    "coordinates": {
+      "lon": "-73.90387900151532",
+      "lat": "40.85840700040842"
+    },
+    "notes": "4-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-6524-D48C4B7143E0",
+    "order": 408,
+    "lines": "4",
+    "name": "Fordham Rd",
+    "coordinates": {
+      "lon": "-73.90103399921699",
+      "lat": "40.86280299988937"
+    },
+    "notes": "4-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-1CF9-57832B3D705B",
+    "order": 409,
+    "lines": "E",
+    "name": "World Trade Center",
+    "coordinates": {
+      "lon": "-74.00974461517701",
+      "lat": "40.71256392680817"
+    },
+    "notes": "E-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-DDBC-F7785508E0AF",
+    "order": 410,
+    "lines": "A-C-E",
+    "name": "Canal St - Holland Tunnel",
+    "coordinates": {
+      "lon": "-74.0052290023424",
+      "lat": "40.72082400007119"
+    },
+    "notes": "A,E-all times, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-7FFB-B0B9FB31E46D",
+    "order": 411,
+    "lines": "A-C",
+    "name": "155th St",
+    "coordinates": {
+      "lon": "-73.94151400082208",
+      "lat": "40.83051799929251"
+    },
+    "notes": "A-nights, C-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-CB32-B832BA648967",
+    "order": 412,
+    "lines": "A-C",
+    "name": "163rd St - Amsterdam Av",
+    "coordinates": {
+      "lon": "-73.93989200188344",
+      "lat": "40.83601299923096"
+    },
+    "notes": "A-nights, C-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-0D54-EFCBA4E27CC8",
+    "order": 413,
+    "lines": "J-Z",
+    "name": "Fulton St",
+    "coordinates": {
+      "lon": "-74.00793800110387",
+      "lat": "40.71002266658424"
+    },
+    "notes": "J-all times, Z-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-BC92-73EF44BF11F7",
+    "order": 414,
+    "lines": "J-Z",
+    "name": "Chambers St",
+    "coordinates": {
+      "lon": "-74.00340673031336",
+      "lat": "40.71323378962671"
+    },
+    "notes": "J-all times, Z-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3F3E-ADAEFEC6A318",
+    "order": 415,
+    "lines": "J-Z",
+    "name": "Canal St",
+    "coordinates": {
+      "lon": "-73.99982638545937",
+      "lat": "40.71817387697391"
+    },
+    "notes": "J-all times, Z-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-6E0E-3FE42F800868",
+    "order": 416,
+    "lines": "R-W",
+    "name": "City Hall",
+    "coordinates": {
+      "lon": "-74.00698581780337",
+      "lat": "40.71327233111697"
+    },
+    "notes": "N-nights, R-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C657-BDD227733592",
+    "order": 417,
+    "lines": "R-W",
+    "name": "Canal St",
+    "coordinates": {
+      "lon": "-74.0018260000577",
+      "lat": "40.71946500105898"
+    },
+    "notes": "N-nights, R-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-0004-BEED96FACB49",
+    "order": 418,
+    "lines": "1",
+    "name": "South Ferry",
+    "coordinates": {
+      "lon": "-74.01316895919258",
+      "lat": "40.701730507574474"
+    },
+    "notes": "1-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-DE28-EA9AF04133FA",
+    "order": 419,
+    "lines": "4-5",
+    "name": "Bowling Green",
+    "coordinates": {
+      "lon": "-74.01400799803432",
+      "lat": "40.70491399928076"
+    },
+    "notes": "4-all times, 5-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-67E6-1559761A97B1",
+    "order": 420,
+    "lines": "4-5",
+    "name": "Wall St",
+    "coordinates": {
+      "lon": "-74.01186199860112",
+      "lat": "40.70755700086603"
+    },
+    "notes": "4-all times, 5-weekdays"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-A8FB-F3E30D5E55A1",
+    "order": 421,
+    "lines": "R-W",
+    "name": "Whitehall St",
+    "coordinates": {
+      "lon": "-74.0130072374272",
+      "lat": "40.703142373599135"
+    },
+    "notes": "N-nights, R-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-5E4F-EF06D7F7C90F",
+    "order": 422,
+    "lines": "R-W",
+    "name": "Rector St",
+    "coordinates": {
+      "lon": "-74.01297456253795",
+      "lat": "40.707744756294474"
+    },
+    "notes": "N-nights, R-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-04DE-3778B09443E6",
+    "order": 423,
+    "lines": "M",
+    "name": "Fresh Pond Rd",
+    "coordinates": {
+      "lon": "-73.8958980017196",
+      "lat": "40.70622599823048"
+    },
+    "notes": "M-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-EEC2-5CF9AFBB2BD3",
+    "order": 424,
+    "lines": "M",
+    "name": "Middle Village - Metropolitan Ave",
+    "coordinates": {
+      "lon": "-73.88957722978091",
+      "lat": "40.711431305058255"
+    },
+    "notes": "M-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-5CDA-EAB13F77B8DD",
+    "order": 425,
+    "lines": "1",
+    "name": "Rector St",
+    "coordinates": {
+      "lon": "-74.01378300119742",
+      "lat": "40.707512999521775"
+    },
+    "notes": "1-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-261D-34C5CDBC513B",
+    "order": 426,
+    "lines": "1",
+    "name": "Cortlandt St",
+    "coordinates": {
+      "lon": "-74.01218800112292",
+      "lat": "40.7118350008202"
+    },
+    "notes": "Temporarily closed"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F055-AD06F63D024A",
+    "order": 427,
+    "lines": "4-5",
+    "name": "Fulton St",
+    "coordinates": {
+      "lon": "-74.00950899856461",
+      "lat": "40.710367998822136"
+    },
+    "notes": "4-all times, 5-weekdays"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F8E5-4A8B2B31A6D9",
+    "order": 428,
+    "lines": "J-Z",
+    "name": "Broad St",
+    "coordinates": {
+      "lon": "-74.01105599991755",
+      "lat": "40.706476001106005"
+    },
+    "notes": "J-all times, Z-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-020E-6B516D254F2A",
+    "order": 429,
+    "lines": "R-W",
+    "name": "Cortlandt St",
+    "coordinates": {
+      "lon": "-74.01113196473266",
+      "lat": "40.7105129841524"
+    },
+    "notes": "N-nights, R-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-278B-F26FCBD022DC",
+    "order": 430,
+    "lines": "2-3",
+    "name": "Wall St",
+    "coordinates": {
+      "lon": "-74.00909999844257",
+      "lat": "40.706820999753376"
+    },
+    "notes": "2-all times, 3-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-6E18-32BE4B3DF06E",
+    "order": 431,
+    "lines": "A",
+    "name": "Dyckman St",
+    "coordinates": {
+      "lon": "-73.92727099960726",
+      "lat": "40.865490998968916"
+    },
+    "notes": "A-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F387-8D1E03DA6B7F",
+    "order": 432,
+    "lines": "B-D",
+    "name": "Grand St",
+    "coordinates": {
+      "lon": "-73.99375299913589",
+      "lat": "40.71826699954992"
+    },
+    "notes": "B-weekdays and evenings, D-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-5BF2-83374DFF80EF",
+    "order": 433,
+    "lines": "B-D-F-M",
+    "name": "Broadway - Lafayette St",
+    "coordinates": {
+      "lon": "-73.99620399876055",
+      "lat": "40.725296998738045"
+    },
+    "notes": "B,M-weekdays and evenings, D,F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-245C-213E4C7CC8F3",
+    "order": 434,
+    "lines": "J-Z",
+    "name": "Bowery",
+    "coordinates": {
+      "lon": "-73.99380690654237",
+      "lat": "40.720246883147254"
+    },
+    "notes": "J-all times, Z-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3D9D-51E86DBE9315",
+    "order": 435,
+    "lines": "N-Q",
+    "name": "Canal St",
+    "coordinates": {
+      "lon": "-74.00105471306033",
+      "lat": "40.718814263587134"
+    },
+    "notes": "N-all times, Q-weekdays and evenings"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-E8C6-6F612405862A",
+    "order": 436,
+    "lines": "A-C-E",
+    "name": "23rd St",
+    "coordinates": {
+      "lon": "-73.99804100117201",
+      "lat": "40.74590599939995"
+    },
+    "notes": "A-nights, C-all other times, E-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-D494-9774A46EA1B6",
+    "order": 437,
+    "lines": "A-C-E",
+    "name": "34th St - Penn Station",
+    "coordinates": {
+      "lon": "-73.99339099970578",
+      "lat": "40.752287000775894"
+    },
+    "notes": "A,E-all times, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-AAB2-B92A26A15970",
+    "order": 438,
+    "lines": "E-F-M-R",
+    "name": "Jackson Hts - Roosevelt Av",
+    "coordinates": {
+      "lon": "-73.89129866519697",
+      "lat": "40.74653969115889"
+    },
+    "notes": "E,F-all times, M-weekdays and evenings, R-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-743D-2483993FC03C",
+    "order": 439,
+    "lines": "1-2-3",
+    "name": "14th St",
+    "coordinates": {
+      "lon": "-74.00020100063497",
+      "lat": "40.737825999728116"
+    },
+    "notes": "1,2-all times, 3-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-E855-17400D7CBDC7",
+    "order": 440,
+    "lines": "A-B-C",
+    "name": "135th St",
+    "coordinates": {
+      "lon": "-73.94753480879213",
+      "lat": "40.817905559212676"
+    },
+    "notes": "A-nights, B-weekdays and evenings, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-5539-DBDE26510820",
+    "order": 441,
+    "lines": "F-M",
+    "name": "14th St",
+    "coordinates": {
+      "lon": "-73.99620899921355",
+      "lat": "40.73822799969515"
+    },
+    "notes": "F-all times, M-weekdays and evenings"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-D2DE-C55BC6A40E19",
+    "order": 442,
+    "lines": "L",
+    "name": "6th Ave",
+    "coordinates": {
+      "lon": "-73.99775078874781",
+      "lat": "40.73774146981052"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-F75D-F330C7DF5B63",
+    "order": 443,
+    "lines": "L",
+    "name": "8th Ave",
+    "coordinates": {
+      "lon": "-74.00257800104762",
+      "lat": "40.73977666638199"
+    },
+    "notes": "L-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-FE35-EBD368A8AE2A",
+    "order": 444,
+    "lines": "A-C-E",
+    "name": "14th St",
+    "coordinates": {
+      "lon": "-74.00168999937027",
+      "lat": "40.740893000193296"
+    },
+    "notes": "A,E-all times, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-1C10-8F74396CBC5C",
+    "order": 445,
+    "lines": "3-4",
+    "name": "Nostrand Ave",
+    "coordinates": {
+      "lon": "-73.9504262489579",
+      "lat": "40.66993815093054"
+    },
+    "notes": "4-nights, 3-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C5CF-12BC13BF3B58",
+    "order": 446,
+    "lines": "2-3",
+    "name": "Clark St",
+    "coordinates": {
+      "lon": "-73.99308599821961",
+      "lat": "40.69746599996469"
+    },
+    "notes": "2-all times, 3-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C5C7-33533C3B0432",
+    "order": 447,
+    "lines": "A-C",
+    "name": "Franklin Ave",
+    "coordinates": {
+      "lon": "-73.95684800014614",
+      "lat": "40.68137966658742"
+    },
+    "notes": "A-nights, C-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-A898-81F1C46151E1",
+    "order": 448,
+    "lines": "A-C",
+    "name": "Clinton - Washington Aves",
+    "coordinates": {
+      "lon": "-73.96583799857275",
+      "lat": "40.68326299912644"
+    },
+    "notes": "A-nights, C-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-85F1-17F3B21083D1",
+    "order": 449,
+    "lines": "M",
+    "name": "Forest Ave",
+    "coordinates": {
+      "lon": "-73.90307500005954",
+      "lat": "40.70441200087814"
+    },
+    "notes": "M-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-36A0-A52351C593DD",
+    "order": 450,
+    "lines": "4-6-6 Express",
+    "name": "110th St",
+    "coordinates": {
+      "lon": "-73.94424999687163",
+      "lat": "40.795020000113105"
+    },
+    "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-A1C4-70B58D448E8B",
+    "order": 451,
+    "lines": "4-5-6-6 Express",
+    "name": "86th St",
+    "coordinates": {
+      "lon": "-73.95558899985132",
+      "lat": "40.77949199820952"
+    },
+    "notes": "4,6-all times, 5-all times exc nights, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-AE68-EA35F84647A2",
+    "order": 452,
+    "lines": "F",
+    "name": "York St",
+    "coordinates": {
+      "lon": "-73.98688499993673",
+      "lat": "40.699742667691574"
+    },
+    "notes": "F-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-5B62-3DCAC4114C96",
+    "order": 453,
+    "lines": "A-C",
+    "name": "High St",
+    "coordinates": {
+      "lon": "-73.99053100065458",
+      "lat": "40.69933699977884"
+    },
+    "notes": "A-all times, C-all times exc nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C0B9-197EA632F147",
+    "order": 454,
+    "lines": "A-C",
+    "name": "Lafayette Ave",
+    "coordinates": {
+      "lon": "-73.97394599849406",
+      "lat": "40.68611300020567"
+    },
+    "notes": "A-nights, C-all other times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-B2A6-CAEC81EA5E34",
+    "order": 455,
+    "lines": "2-5",
+    "name": "President St",
+    "coordinates": {
+      "lon": "-73.95058920022207",
+      "lat": "40.667883603536815"
+    },
+    "notes": "2-all times, 5 weekdays"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-7837-FC7726D8A8E6",
+    "order": 456,
+    "lines": "4",
+    "name": "Woodlawn",
+    "coordinates": {
+      "lon": "-73.87875099990931",
+      "lat": "40.886037000253324"
+    },
+    "notes": "4-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-4FEE-A5657599AD75",
+    "order": 457,
+    "lines": "4-6-6 Express",
+    "name": "Bleecker St",
+    "coordinates": {
+      "lon": "-73.99465900006331",
+      "lat": "40.72591466682659"
+    },
+    "notes": "4 nights, 6-all times, 6 Express-weekdays PM"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-34BD-D8DDF7303B51",
+    "order": 458,
+    "lines": "4-6-6 Express",
+    "name": "103rd St",
+    "coordinates": {
+      "lon": "-73.94747800152219",
+      "lat": "40.79060000008452"
+    },
+    "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-3324-91CEA0B80344",
+    "order": 459,
+    "lines": "A-C-S",
+    "name": "Euclid Ave",
+    "coordinates": {
+      "lon": "-73.87210600099675",
+      "lat": "40.675376998239365"
+    },
+    "notes": "S to Ozone Park-Lefferts Blvd-nights, C-all other times, A-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-83C6-8CAF0B486966",
+    "order": 460,
+    "lines": "A-S",
+    "name": "88th St",
+    "coordinates": {
+      "lon": "-73.85147000026086",
+      "lat": "40.67984300135503"
+    },
+    "notes": "A-all times, S Euclid Av to Ozone Park-Lefferts Blvd-nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-E976-CCFBED01084D",
+    "order": 461,
+    "lines": "Q",
+    "name": "Cortelyou Rd",
+    "coordinates": {
+      "lon": "-73.96379005505493",
+      "lat": "40.6409401651401"
+    },
+    "notes": "Q-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-030C-7C15B34AFB26",
+    "order": 462,
+    "lines": "4-6-6 Express",
+    "name": "116th St",
+    "coordinates": {
+      "lon": "-73.9416169983714",
+      "lat": "40.7986290002001"
+    },
+    "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-5C34-790B2B22D216",
+    "order": 463,
+    "lines": "6-6 Express",
+    "name": "Parkchester",
+    "coordinates": {
+      "lon": "-73.86081600108396",
+      "lat": "40.83322599927859"
+    },
+    "notes": "6-all times, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-D0F9-BE4574281E19",
+    "order": 464,
+    "lines": "1-2",
+    "name": "Franklin St",
+    "coordinates": {
+      "lon": "-74.00688600277107",
+      "lat": "40.719318001302135"
+    },
+    "notes": "1-all times, 2-nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-B00F-033440AEF31C",
+    "order": 465,
+    "lines": "A-S",
+    "name": "80th St",
+    "coordinates": {
+      "lon": "-73.85899200206335",
+      "lat": "40.67937100115432"
+    },
+    "notes": "A-all times, S Euclid Av to Ozone Park-Lefferts Blvd-nights"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-20A9-CDBEAF9A8836",
+    "order": 466,
+    "lines": "7-7 Express",
+    "name": "5th Ave - Bryant Pk",
+    "coordinates": {
+      "lon": "-73.98196299856706",
+      "lat": "40.75382100064824"
+    },
+    "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-FEAC-321F362CBC5D",
+    "order": 467,
+    "lines": "4-6-6 Express",
+    "name": "Spring St",
+    "coordinates": {
+      "lon": "-73.99714100006673",
+      "lat": "40.72230099999366"
+    },
+    "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-942E-E2AFBBCA4771",
+    "order": 468,
+    "lines": "4-5-6-6 Express",
+    "name": "125th St",
+    "coordinates": {
+      "lon": "-73.93759400055725",
+      "lat": "40.804138000587244"
+    },
+    "notes": "4,6-all times, 5-all times exc nights, 6 Express-weekdays AM southbound, PM northbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-C5F6-2EC3D83BFBDD",
+    "order": 469,
+    "lines": "D-F-N-Q",
+    "name": "Coney Island - Stillwell Av",
+    "coordinates": {
+      "lon": "-73.9812359981396",
+      "lat": "40.57728100006751"
+    },
+    "notes": "D,F,N,Q-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-B3DD-71887D6DA03B",
+    "order": 470,
+    "lines": "7-7 Express",
+    "name": "34th St - Hudson Yards",
+    "coordinates": {
+      "lon": "-74.00219709442206",
+      "lat": "40.75544635961596"
+    },
+    "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-87D0-23AE5F5A4A7D",
+    "order": 641,
+    "lines": "Q",
+    "name": "72nd St",
+    "coordinates": {
+      "lon": "-73.95836178682246",
+      "lat": "40.76880251014895"
+    },
+    "notes": "Q-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-A33A-C89FB026FB5B",
+    "order": 642,
+    "lines": "Q",
+    "name": "86th St",
+    "coordinates": {
+      "lon": "-73.95177090964917",
+      "lat": "40.77786104333163"
+    },
+    "notes": "Q-all times"
+  },
+  {
+    "__typename": "LineCoordinate",
+    "id": "00000000-0000-0000-7D2E-338EEFD139C9",
+    "order": 643,
+    "lines": "Q",
+    "name": "96th St",
+    "coordinates": {
+      "lon": "-73.9470660219183",
+      "lat": "40.784236650177654"
+    },
+    "notes": "Q-all times"
+  }
+]

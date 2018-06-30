@@ -1,0 +1,117 @@
+[
+  {
+    "__typename": "Line",
+    "id": "1",
+    "color": "#E31D00"
+  },
+  {
+    "__typename": "Line",
+    "id": "2",
+    "color": "#E31D00"
+  },
+  {
+    "__typename": "Line",
+    "id": "3",
+    "color": "#E31D00"
+  },
+  {
+    "__typename": "Line",
+    "id": "4",
+    "color": "#00933C"
+  },
+  {
+    "__typename": "Line",
+    "id": "5",
+    "color": "#00933C"
+  },
+  {
+    "__typename": "Line",
+    "id": "6",
+    "color": "#00933C"
+  },
+  {
+    "__typename": "Line",
+    "id": "7",
+    "color": "#B933AD"
+  },
+  {
+    "__typename": "Line",
+    "id": "A",
+    "color": "#0079C2"
+  },
+  {
+    "__typename": "Line",
+    "id": "C",
+    "color": "#0079C2"
+  },
+  {
+    "__typename": "Line",
+    "id": "E",
+    "color": "#0079C2"
+  },
+  {
+    "__typename": "Line",
+    "id": "G",
+    "color": "#6CBE45"
+  },
+  {
+    "__typename": "Line",
+    "id": "B",
+    "color": "#F7931E"
+  },
+  {
+    "__typename": "Line",
+    "id": "D",
+    "color": "#F7931E"
+  },
+  {
+    "__typename": "Line",
+    "id": "F",
+    "color": "#F7931E"
+  },
+  {
+    "__typename": "Line",
+    "id": "M",
+    "color": "#F7931E"
+  },
+  {
+    "__typename": "Line",
+    "id": "J",
+    "color": "#a86000"
+  },
+  {
+    "__typename": "Line",
+    "id": "Z",
+    "color": "#a86000"
+  },
+  {
+    "__typename": "Line",
+    "id": "L",
+    "color": "#666666"
+  },
+  {
+    "__typename": "Line",
+    "id": "S",
+    "color": "#666666"
+  },
+  {
+    "__typename": "Line",
+    "id": "N",
+    "color": "#ffe000"
+  },
+  {
+    "__typename": "Line",
+    "id": "Q",
+    "color": "#ffe000"
+  },
+  {
+    "__typename": "Line",
+    "id": "R",
+    "color": "#ffe000"
+  },
+  {
+    "__typename": "Line",
+    "id": "W",
+    "color": "#ffe000"
+  }
+]
