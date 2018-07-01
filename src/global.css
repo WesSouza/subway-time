@@ -1,0 +1,16 @@
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+:root {
+  --color-black: #000;
+  --color-gray-darker: #494d4e;
+  --color-gray-dark: #818a8c;
+  --color-gray-lightest: #e5e5e5;
+  --color-white: #fff;
+
+  --spacing-xsmall: 8px;
+  --spacing-small: 15px;
+  --spacing-medium: 30px;
+  --spacing-large: 60px;
+}
