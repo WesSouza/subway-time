@@ -1,6 +1,12 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "paths": {
+      "components/*": ["src/components/*"],
+      "models/*": ["src/models/*"],
+      "lib/*": ["src/lib/*"],
+      "screens/*": ["src/screens/*"]
+    },
     "outDir": "build/dist",
     "module": "esnext",
     "target": "es5",
