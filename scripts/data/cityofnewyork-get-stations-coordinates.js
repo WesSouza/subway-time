@@ -12,12 +12,14 @@ const parseCoordinates = coordinatesString => {
   return { lon, lat };
 };
 
-const { subwayStationsGeoUrl } = require('../config');
+const {
+  cityofnewyork: { baseUrl, subwayStationsGeoUrl },
+} = require('../../config');
 
 (async () => {
   console.log(`Downloading coordinates...`);
 
-  let result = await got(subwayStationsGeoUrl, {
+  let result = await got(`${baseUrl}${subwayStationsGeoUrl}`, {
     json: true,
   });
 
@@ -38,7 +40,7 @@ const { subwayStationsGeoUrl } = require('../config');
   );
 
   fs.writeFileSync(
-    resolve(__dirname, '../data/subway-stations-coordinates.json'),
+    resolve(__dirname, '../../data/subway-stations-coordinates.json'),
     JSON.stringify(stations, null, 2),
   );
   console.log('Done.');

@@ -34,11 +34,13 @@ const mapTypeToEnum = type => {
   return 'UNKNOWN';
 };
 
-const { baseUrl, getStationsByLine } = require('../config');
+const {
+  mta: { baseUrl, getStationsByLine },
+} = require('../../config');
 
 (async () => {
   console.log('Opening data/subway-lines.json...');
-  const lines = require('../data/subway-lines.json');
+  const lines = require('../../data/subway-lines.json');
 
   const subwayStations = [];
 
@@ -78,12 +80,12 @@ const { baseUrl, getStationsByLine } = require('../config');
   }
 
   fs.writeFileSync(
-    resolve(__dirname, '../data/subway-lines.json'),
+    resolve(__dirname, '../../data/subway-lines.json'),
     JSON.stringify(lines, null, 2),
   );
 
   fs.writeFileSync(
-    resolve(__dirname, '../data/subway-stations.json'),
+    resolve(__dirname, '../../data/subway-stations.json'),
     JSON.stringify(subwayStations, null, 2),
   );
   console.log('Done.');

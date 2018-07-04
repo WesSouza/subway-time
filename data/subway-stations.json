@@ -9092,7 +9092,7 @@
     "lineId": "N",
     "boroughName": "QUEENS",
     "name": "Broadway",
-    "status": "NORMAL",
+    "status": "CLOSED",
     "type": "ALWAYS_STOP",
     "coordinates": {
       "lon": "-73.92582299919906",
@@ -9118,7 +9118,7 @@
     "lineId": "N",
     "boroughName": "QUEENS",
     "name": "39 Av",
-    "status": "NORMAL",
+    "status": "CLOSED",
     "type": "ALWAYS_STOP",
     "coordinates": {
       "lon": "-73.93285137679598",
@@ -10691,7 +10691,7 @@
     "lineId": "W",
     "boroughName": "QUEENS",
     "name": "Broadway",
-    "status": "NORMAL",
+    "status": "CLOSED",
     "type": "MIGHT_SKIP",
     "coordinates": {
       "lon": "-73.92582299919906",
@@ -10717,7 +10717,7 @@
     "lineId": "W",
     "boroughName": "QUEENS",
     "name": "39 Av",
-    "status": "NORMAL",
+    "status": "CLOSED",
     "type": "MIGHT_SKIP",
     "coordinates": {
       "lon": "-73.93285137679598",

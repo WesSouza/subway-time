@@ -104,10 +104,10 @@ const flipByDash = name =>
 
 (async () => {
   console.log('Opening data/subway-stations.json...');
-  const stations = require('../data/subway-stations.json');
+  const stations = require('../../data/subway-stations.json');
 
   console.log('Opening data/subway-stations-coordinates.json...');
-  let coordinates = require('../data/subway-stations-coordinates.json');
+  let coordinates = require('../../data/subway-stations-coordinates.json');
   coordinates = coordinates.map(coordinate => ({
     ...coordinate,
     nameFlattened: flattenName(coordinate.name),
@@ -170,7 +170,7 @@ const flipByDash = name =>
   });
 
   fs.writeFileSync(
-    resolve(__dirname, '../data/subway-stations.json'),
+    resolve(__dirname, '../../data/subway-stations.json'),
     JSON.stringify(stationsWithCoordinates, null, 2),
   );
   console.log('Done.');
