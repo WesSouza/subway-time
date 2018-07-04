@@ -38,7 +38,6 @@
 
 .directionName {
   text-transform: uppercase;
-  color: var(--color-gray-dark);
   font-size: 85%;
   font-weight: bold;
 }
@@ -65,5 +64,9 @@
 }
 
 .lastStationName {
+  color: var(--color-gray-dark);
   font-size: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
