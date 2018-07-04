@@ -70,6 +70,7 @@ const {
           __typename: 'Station',
           id,
           lineId: line.id,
+          lineColor: color,
           boroughName: borough,
           name,
           status: mapStatusCodeToEnum(status),
