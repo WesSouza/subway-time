@@ -14,6 +14,7 @@ export interface IStation {
   };
   lines: ILine[];
   platforms: IStationLine[];
+  distance?: number;
 }
 
 export interface IStationLine {
