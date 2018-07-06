@@ -25,6 +25,7 @@
     "autoprefixer": "^8.6.4",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
+    "color-contrast": "^0.0.1",
     "css-loader": "^0.28.11",
     "dotenv": "^6.0.0",
     "dotenv-expand": "^4.2.0",

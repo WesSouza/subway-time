@@ -7,3 +7,7 @@ declare module '*.css';
 declare module 'natural-compare-lite' {
   export default function(a: string, b: string): number;
 }
+
+declare module 'color-contrast' {
+  export default function(a: string, b: string): number;
+}

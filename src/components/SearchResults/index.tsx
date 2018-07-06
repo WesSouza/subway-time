@@ -1,6 +1,8 @@
 import { Link } from '@reach/router';
 import * as React from 'react';
 
+import LineId from 'components/LineId';
+
 import { IStation } from 'models/models';
 
 import styles from './styles.css';
@@ -21,16 +23,15 @@ const SearchResults = ({ stations, onClick }: IProps) => (
         >
           <div className={styles.lines}>
             {station.lines.map((line, index, lines) => (
-              <div
+              <LineId
+                id={line.id}
                 key={line.id}
+                color={line.color}
                 className={styles.lineId}
                 style={{
-                  backgroundColor: line.color,
                   zIndex: lines.length - index,
                 }}
-              >
-                {line.id}
-              </div>
+              />
             ))}
           </div>
           <div className={styles.name}>{station.name}</div>

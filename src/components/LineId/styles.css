@@ -1,0 +1,11 @@
+.LineId {
+  flex-shrink: 0;
+  align-self: flex-start;
+  width: var(--width-height, 25px);
+  height: var(--width-height, 25px);
+  border-radius: var(--width-height, 25px);
+  line-height: var(--width-height, 25px);
+  text-align: center;
+  font-weight: bold;
+  color: var(--color-white);
+}

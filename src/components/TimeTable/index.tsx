@@ -1,6 +1,8 @@
 import * as moment from 'moment';
 import * as React from 'react';
 
+import LineId from 'components/LineId';
+
 import { IStation } from 'models/models';
 
 import styles from './styles.css';
@@ -64,12 +66,11 @@ class TimeTable extends React.Component<IProps, IState> {
           {platforms.map(
             ({ line: { id: lineId, color: lineColor }, directions }) => (
               <div key={lineId} className={styles.line}>
-                <div
+                <LineId
+                  id={lineId}
+                  color={lineColor}
                   className={styles.lineId}
-                  style={{ backgroundColor: lineColor }}
-                >
-                  {lineId}
-                </div>
+                />
                 <div className={styles.directions}>
                   {directions ? (
                     directions.map(({ name: directionName, times }) => (

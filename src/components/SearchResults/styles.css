@@ -28,15 +28,6 @@
 
 .lineId {
   --width-height: 25px;
-  flex-shrink: 0;
-  align-self: flex-start;
-  width: var(--width-height);
-  height: var(--width-height);
-  border-radius: var(--width-height);
-  line-height: var(--width-height);
-  text-align: center;
-  font-weight: bold;
-  color: var(--color-white);
 }
 
 .lineId:not(:first-child) {
