@@ -136,7 +136,7 @@ export const searchStations = async ({
     .replace(/\s+/g, '\\s+');
   let searchRegex = new RegExp(`(^|\\s+)${searchCleaned}`, 'i');
 
-  if (search.length === 1 && search.match(/[a-z]/i)) {
+  if (search.length === 1 && search.match(/[a-z1-7]/i)) {
     searchLineId = true;
     searchRegex = new RegExp(searchCleaned, 'i');
   }
