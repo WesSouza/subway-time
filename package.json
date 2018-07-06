@@ -1,6 +1,7 @@
 {
   "name": "subway-time",
   "version": "1.0.0",
+  "homepage": "http://subway-time.wesley.so",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WesleydeSouza/subway-time"
@@ -14,6 +15,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "predeploy": "npm run build; cp build/index.html build/404.html",
+    "deploy": "gh-pages -d build",
     "test": "node scripts/test.js --env=jsdom",
     "scripts:get-data": "cd ./scripts; ./get-data.sh"
   },
@@ -28,6 +31,7 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.11",
     "fs-extra": "^6.0.1",
+    "gh-pages": "^1.2.0",
     "html-webpack-plugin": "^3.2.0",
     "object-assign": "^4.1.1",
     "postcss-flexbugs-fixes": "^3.3.1",
