@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { getStationWithTimes } from 'data/queries';
+import { getStationWithTimes } from 'data/stations';
 import { IStation } from 'models/models';
 
 import Query from 'components/Query';

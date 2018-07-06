@@ -7,13 +7,14 @@ import styles from './styles.css';
 
 interface IProps {
   stations: IStation[];
+  onClick?: () => void;
 }
 
-const SearchResults = ({ stations }: IProps) => (
+const SearchResults = ({ stations, onClick }: IProps) => (
   <ul className={styles.SearchResults}>
     {stations.map(station => (
       <li key={station.id} className={styles.station}>
-        <Link to={`/station/${station.id}`}>
+        <Link to={`/station/${station.id}`} onClick={onClick}>
           <div className={styles.lines}>
             {station.lines.map((line, index, lines) => (
               <div

@@ -5,12 +5,14 @@ import {
   IRawSubwayLine,
   IRawSubwayStation,
   IRawTimesByLineId,
-} from './api.interfaces';
+} from 'api/api.interfaces';
 
 import {
   IStationLineDirection,
   IStationLineDirectionTime,
 } from 'models/models';
+
+const cache: { [k: string]: any } = {};
 
 export const get = async (
   url: string,
@@ -26,12 +28,18 @@ export const get = async (
 
 export const getRawSubwayLines = async (): Promise<IRawSubwayLine[]> => {
   const { baseUrl, subwayLines } = config.subwaytime;
-  return get(`${baseUrl}${subwayLines}`);
+  if (!cache.getRawSubwayLines) {
+    cache.getRawSubwayLines = await get(`${baseUrl}${subwayLines}`);
+  }
+  return cache.getRawSubwayLines;
 };
 
 export const getRawSubwayStations = async (): Promise<IRawSubwayStation[]> => {
   const { baseUrl, subwayStations } = config.subwaytime;
-  return get(`${baseUrl}${subwayStations}`);
+  if (!cache.getRawSubwayStations) {
+    cache.getRawSubwayStations = await get(`${baseUrl}${subwayStations}`);
+  }
+  return cache.getRawSubwayStations;
 };
 
 export const getRawTimesByLineId = async (

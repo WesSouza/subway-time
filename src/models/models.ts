@@ -13,6 +13,7 @@ export interface IStation {
     lon: string;
   };
   lines: ILine[];
+  lineIds?: string;
   platforms: IStationLine[];
   distance?: number;
 }
