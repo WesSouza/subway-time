@@ -15,10 +15,14 @@
   flex-grow: 1;
 }
 
-.reloadData {
+.updateData {
 }
 
-.reloadDataButton {
+.updateDataButton {
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
   color: var(--color-white);
   text-decoration: underline;
 }
@@ -94,4 +98,10 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.lastUpdate {
+  font-size: 80%;
+  text-align: right;
+  padding: var(--spacing-xsmall);
 }

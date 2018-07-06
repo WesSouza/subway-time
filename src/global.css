@@ -30,6 +30,10 @@ body {
   background-color: var(--color-gray);
 }
 
+button {
+  cursor: pointer;
+}
+
 :global html,
 :global body,
 :global #root {

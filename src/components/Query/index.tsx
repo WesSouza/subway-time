@@ -3,23 +3,32 @@ import * as React from 'react';
 import shallowObjectEqual from 'lib/shallowObjectEqual';
 
 interface IState {
-  data: object;
+  data: any;
   error: string;
-  loaded: boolean;
+  lastUpdate: number;
+  loading: boolean;
 }
 
 interface IProps {
   children: (o: { [k: string]: any }) => React.ReactNode;
   parameters?: { [k: string]: string | undefined };
-  property: string;
   query: (o?: { [k: string]: string | undefined }) => Promise<any>;
+}
+
+export interface IQueryResult<T> {
+  data: T;
+  error: string;
+  lastUpdate: number;
+  loading: boolean;
+  updateData: () => void;
 }
 
 class Query extends React.Component<IProps, IState> {
   public state = {
-    data: {},
+    data: null,
     error: '',
-    loaded: false,
+    lastUpdate: 0,
+    loading: true,
   };
 
   public componentDidMount() {
@@ -37,30 +46,54 @@ class Query extends React.Component<IProps, IState> {
   }
 
   public render(): React.ReactNode {
-    const { data, error, loaded } = this.state;
-    const { property, children } = this.props;
-    const reloadData = this.updateData;
+    const { data, error, lastUpdate, loading } = this.state;
+    const { children } = this.props;
+    const updateData = this.updateData;
 
     if (error) {
-      return children({ error, reloadData });
+      return children({
+        data: null,
+        error,
+        lastUpdate,
+        loading: false,
+        updateData,
+      });
     }
 
-    if (!loaded) {
-      return children({ loading: true, reloadData });
+    if (loading) {
+      return children({
+        data: null,
+        error: '',
+        lastUpdate,
+        loading,
+        updateData,
+      });
     }
 
-    return children({ [property]: data, reloadData });
+    return children({
+      data,
+      error: '',
+      lastUpdate,
+      loading: false,
+      updateData,
+    });
   }
 
   private updateData = () => {
     const { query, parameters } = this.props;
+    const lastUpdate = Date.now();
     query(parameters)
       .then(data => {
-        this.setState({ data, loaded: true });
+        this.setState({ data, lastUpdate, loading: false });
       })
       .catch(error => {
         console.error(error);
-        this.setState({ data: {}, loaded: true, error: error.toString() });
+        this.setState({
+          data: null,
+          lastUpdate,
+          loading: false,
+          error: error.toString(),
+        });
       });
   };
 }

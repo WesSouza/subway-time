@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import NavigationBar from 'components/NavigationBar';
-import Query from 'components/Query';
+import Query, { IQueryResult } from 'components/Query';
 import SearchResults from 'components/SearchResults';
 import StoreValue from 'components/StoreValue';
 
@@ -23,17 +23,10 @@ const Search = ({  }: IProps) => (
           <Query
             query={searchStations}
             parameters={{ search: currentSearchTerm }}
-            property="stations"
           >
-            {({
-              loading,
-              stations,
-            }: {
-              loading?: boolean;
-              stations?: IStation[];
-            }) =>
-              !loading && stations ? (
-                <SearchResults stations={stations} onClick={clearSearch} />
+            {({ data, loading }: IQueryResult<IStation[]>) =>
+              !loading && data ? (
+                <SearchResults stations={data} onClick={clearSearch} />
               ) : null
             }
           </Query>

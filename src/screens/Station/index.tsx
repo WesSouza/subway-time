@@ -3,7 +3,7 @@ import * as React from 'react';
 import { getStationWithTimes } from 'data/stations';
 import { IStation } from 'models/models';
 
-import Query from 'components/Query';
+import Query, { IQueryResult } from 'components/Query';
 import TimeTable from 'components/TimeTable';
 
 import styles from './styles.css';
@@ -14,30 +14,26 @@ interface IProps {
 }
 
 const Station = ({ path, stationId }: IProps) => (
-  <Query
-    query={getStationWithTimes}
-    parameters={{ stationId }}
-    property="station"
-  >
+  <Query query={getStationWithTimes} parameters={{ stationId }}>
     {({
+      data,
       error,
+      lastUpdate,
       loading,
-      reloadData,
-      station,
-    }: {
-      error: string;
-      loading: boolean;
-      reloadData: () => void;
-      station?: IStation;
-    }) =>
+      updateData,
+    }: IQueryResult<IStation>) =>
       error ? (
         <div className={styles.centralized}>Unable to retrieve time table.</div>
       ) : loading ? (
         <div className={styles.centralized}>
           <div className={styles.loader} />
         </div>
-      ) : station ? (
-        <TimeTable station={station} reloadData={reloadData} />
+      ) : data ? (
+        <TimeTable
+          lastUpdate={lastUpdate}
+          station={data}
+          updateData={updateData}
+        />
       ) : null
     }
   </Query>
