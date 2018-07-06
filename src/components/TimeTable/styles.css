@@ -11,10 +11,12 @@
 
 .line {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .lineId {
+  flex-shrink: 0;
+  align-self: flex-start;
   width: 50px;
   height: 50px;
   border-radius: 50px;
@@ -22,12 +24,13 @@
   text-align: center;
   font-size: 35px;
   font-weight: bold;
-  margin: var(--spacing-small);
+  margin: calc(var(--spacing-small) + 5px);
   color: var(--color-white);
 }
 
 .directions {
   flex-grow: 1;
+  width: calc(100% - 50px - 3 * var(--spacing-small));
   margin: var(--spacing-small);
   margin-left: 0;
 }
@@ -47,13 +50,21 @@
   align-items: flex-end;
 }
 
+.train {
+  width: calc(33.3334% - var(--spacing-medium));
+}
+
 .train:not(:first-child) {
-  margin-left: var(--spacing-medium);
+  width: 33.3334%;
+  padding-left: var(--spacing-medium);
 }
 
 .minutes {
   font-size: 140%;
   min-width: 70px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .minutesFirst {
