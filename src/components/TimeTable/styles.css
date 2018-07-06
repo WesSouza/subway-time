@@ -1,5 +1,4 @@
 .TimeTable {
-  border-bottom: 1px solid var(--color-gray-lightest);
   background-color: var(--color-white);
 }
 
@@ -30,6 +29,7 @@
 .line {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid var(--color-gray-lightest);
 }
 
 .lineId {
