@@ -72,6 +72,10 @@ export const getStations = async (): Promise<IStation[]> => {
         color: lineColor,
       });
       stations[index].lineIds += lineId;
+      stations[index].lineIds = (stations[index].lineIds as string)
+        .split('')
+        .sort()
+        .join('');
       stations[index].lines.sort(sortByObjectKey('id'));
 
       stations[index].platforms.push({
@@ -112,6 +116,8 @@ export const getStations = async (): Promise<IStation[]> => {
       ],
     });
   });
+
+  stations.sort(sortByObjectKey('name'));
 
   getStationsCache = stations;
   return stations;
