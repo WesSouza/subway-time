@@ -1,2 +1,13 @@
 .App {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.App > div[role='group'] {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: stretch;
 }

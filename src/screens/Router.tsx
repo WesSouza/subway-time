@@ -9,7 +9,6 @@ import Station from 'screens/Station';
 const AppRouter = () => (
   <Router>
     <Home path="/" />
-    <Home path="/search" />
     <Map path="/map" />
     <Station path="/station/:stationId" />
     <NotFound default={true} />

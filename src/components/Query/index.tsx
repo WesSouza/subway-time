@@ -4,6 +4,7 @@ import shallowObjectEqual from 'lib/shallowObjectEqual';
 
 interface IState {
   data: object;
+  error: string;
   loaded: boolean;
 }
 
@@ -17,6 +18,7 @@ interface IProps {
 class Query extends React.Component<IProps, IState> {
   public state = {
     data: {},
+    error: '',
     loaded: false,
   };
 
@@ -35,19 +37,31 @@ class Query extends React.Component<IProps, IState> {
   }
 
   public render(): React.ReactNode {
-    const { data, loaded } = this.state;
+    const { data, error, loaded } = this.state;
     const { property, children } = this.props;
-    if (!loaded) {
-      return children({ loading: true });
+    const reloadData = this.updateData;
+
+    if (error) {
+      return children({ error, reloadData });
     }
 
-    return children({ [property]: data });
+    if (!loaded) {
+      return children({ loading: true, reloadData });
+    }
+
+    return children({ [property]: data, reloadData });
   }
 
-  private updateData = async () => {
+  private updateData = () => {
     const { query, parameters } = this.props;
-    const data = await query(parameters);
-    this.setState({ data, loaded: true });
+    query(parameters)
+      .then(data => {
+        this.setState({ data, loaded: true });
+      })
+      .catch(error => {
+        console.error(error);
+        this.setState({ data: {}, loaded: true, error: error.toString() });
+      });
   };
 }
 

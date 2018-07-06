@@ -9,6 +9,14 @@ interface IProps {
 }
 
 class SearchBox extends React.Component<IProps> {
+  public componentDidMount() {
+    setTimeout(() => {
+      if (this.props.onChangeWithValue) {
+        this.props.onChangeWithValue('a');
+      }
+    }, 1000);
+  }
+
   public render() {
     return (
       <form className={styles.SearchBox} onSubmit={this.onSubmit}>

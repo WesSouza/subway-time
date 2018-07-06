@@ -1,12 +1,26 @@
 .TimeTable {
-  max-width: 414px;
   border-bottom: 1px solid var(--color-gray-lightest);
+  background-color: var(--color-white);
 }
 
-.stationName {
+.stationNameGroup {
+  display: flex;
   padding: var(--spacing-xsmall) var(--spacing-small);
   color: var(--color-white);
   background-color: var(--color-gray-darker);
+  align-items: center;
+}
+
+.stationName {
+  flex-grow: 1;
+}
+
+.reloadData {
+}
+
+.reloadDataButton {
+  color: var(--color-white);
+  text-decoration: underline;
 }
 
 .line {

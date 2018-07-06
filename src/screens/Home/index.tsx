@@ -4,6 +4,8 @@ interface IProps {
   path: string;
 }
 
-const Home = ({ path }: IProps) => <div>Home</div>;
+import styles from './styles.css';
+
+const Home = ({ path }: IProps) => <div className={styles.Home} />;
 
 export default Home;

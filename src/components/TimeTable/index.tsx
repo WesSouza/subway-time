@@ -6,11 +6,26 @@ import styles from './styles.css';
 
 interface IProps {
   station: IStation;
+  reloadData: () => void;
 }
 
-const TimeTable = ({ station: { name: stationName, platforms } }: IProps) => (
+const TimeTable = ({
+  station: { name: stationName, platforms },
+  reloadData,
+}: IProps) => (
   <div className={styles.TimeTable}>
-    <div className={styles.stationName}>{stationName}</div>
+    <div className={styles.stationNameGroup}>
+      <div className={styles.stationName}>{stationName}</div>
+      <div className={styles.reloadData}>
+        <button
+          className={styles.reloadDataButton}
+          onClick={reloadData}
+          type="button"
+        >
+          Reload
+        </button>
+      </div>
+    </div>
     <div>
       {platforms.map(
         ({ line: { id: lineId, color: lineColor }, directions }) => (

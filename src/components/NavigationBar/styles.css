@@ -1,2 +1,28 @@
 .NavigationBar {
+  display: flex;
+  background-color: var(--color-gray-dark);
+}
+
+.searchBox {
+  flex-grow: 1;
+}
+
+.searchInput {
+  width: calc(100% - var(--spacing-xsmall) * 2);
+  margin: var(--spacing-xsmall);
+  padding: var(--spacing-xsmall);
+  border-radius: var(--spacing-xsmall);
+  appearance: none;
+  border: 0;
+}
+
+.menuItems {
+  flex-grow: 0;
+  display: none;
+}
+
+.menuItem {
+}
+
+.menuItem {
 }

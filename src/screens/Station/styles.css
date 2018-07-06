@@ -1,0 +1,32 @@
+.centralized {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  animation: rotate 1.1s infinite linear;
+  border: 0.15em solid #ffffff22;
+  border-left-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: var(--width, 20px);
+  height: var(--width, 20px);
+  position: relative;
+  text-indent: -9999em;
+  transform: translateZ(0);
+  width: var(--width, 20px);
+}
+.loader.dark {
+  border-color: #00000022;
+  border-left-color: #666666;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

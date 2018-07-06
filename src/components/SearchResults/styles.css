@@ -1,2 +1,50 @@
 .SearchResults {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: var(--color-white);
+}
+
+.station {
+  padding: var(--spacing-xsmall) var(--spacing-small);
+}
+
+.station:not(:first-child) {
+  border-top: 1px solid var(--color-gray-lightest);
+}
+
+.link {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+
+.lines {
+  display: flex;
+  min-width: 85px;
+  margin-right: var(--spacing-small);
+  justify-content: flex-end;
+}
+
+.lineId {
+  --width-height: 25px;
+  flex-shrink: 0;
+  align-self: flex-start;
+  width: var(--width-height);
+  height: var(--width-height);
+  border-radius: var(--width-height);
+  line-height: var(--width-height);
+  text-align: center;
+  font-weight: bold;
+  color: var(--color-white);
+}
+
+.lineId:not(:first-child) {
+  margin-left: -5px;
+}
+
+.name {
+}
+
+.distance {
 }

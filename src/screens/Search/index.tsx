@@ -1,7 +1,7 @@
 import * as React from 'react';
 
+import NavigationBar from 'components/NavigationBar';
 import Query from 'components/Query';
-import SearchBox from 'components/SearchBox';
 import SearchResults from 'components/SearchResults';
 import StoreValue from 'components/StoreValue';
 
@@ -16,7 +16,7 @@ interface IProps {
 
 const Search = ({  }: IProps) => (
   <>
-    <SearchBox onChangeWithValue={setSearchTerm} />
+    <NavigationBar onSearchChangeWithValue={setSearchTerm} />
     <StoreValue store={store} property="currentSearchTerm">
       {({ currentSearchTerm }: { currentSearchTerm?: string }) =>
         currentSearchTerm ? (

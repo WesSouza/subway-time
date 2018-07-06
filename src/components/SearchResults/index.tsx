@@ -14,7 +14,11 @@ const SearchResults = ({ stations, onClick }: IProps) => (
   <ul className={styles.SearchResults}>
     {stations.map(station => (
       <li key={station.id} className={styles.station}>
-        <Link to={`/station/${station.id}`} onClick={onClick}>
+        <Link
+          className={styles.link}
+          onClick={onClick}
+          to={`/station/${station.id}`}
+        >
           <div className={styles.lines}>
             {station.lines.map((line, index, lines) => (
               <div
