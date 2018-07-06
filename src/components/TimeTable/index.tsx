@@ -1,4 +1,3 @@
-import * as moment from 'moment';
 import * as React from 'react';
 
 import LineId from 'components/LineId';
@@ -117,8 +116,20 @@ class TimeTable extends React.Component<IProps, IState> {
 
   public updateLastUpdateString = () => {
     const { lastUpdate } = this.props;
+    let lastUpdateString = 'now';
+    let delta = Math.floor((Date.now() - lastUpdate) / 1000);
+
+    if (delta > 1) {
+      lastUpdateString = `${delta} seconds ago`;
+    }
+
+    if (delta > 60) {
+      delta = Math.floor(delta / 60);
+      lastUpdateString = `${delta} minute${delta > 1 ? 's' : ''} ago`;
+    }
+
     this.setState({
-      lastUpdateString: moment(lastUpdate).fromNow(),
+      lastUpdateString,
     });
   };
 }
