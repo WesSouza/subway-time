@@ -84,12 +84,14 @@ class TimeTable extends React.Component<IProps, IState> {
             <div key={directionName} className={styles.direction}>
               <div className={styles.directionName}>{directionName}</div>
               <div className={styles.trains}>
-                {times.map(
-                  ({ lastStationName, minutes }, index) =>
-                    index < 3 && (
+                {times
+                  .filter((_, index) => index < 3)
+                  .map(
+                    ({ lastStationName, minutes }, index, filteredTrains) => (
                       <div
                         key={`${lastStationName} ${minutes}`}
                         className={styles.train}
+                        style={{ width: `${100 / filteredTrains.length}%` }}
                       >
                         <div
                           className={`${styles.minutes} ${
@@ -103,7 +105,7 @@ class TimeTable extends React.Component<IProps, IState> {
                         </div>
                       </div>
                     ),
-                )}
+                  )}
               </div>
             </div>
           ))

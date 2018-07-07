@@ -41,24 +41,24 @@
   --width-height: 50px;
   font-size: 35px;
   margin: var(--spacing-small);
-  margin-top: calc(var(--spacing-small) + 5px);
+  margin-top: calc(var(--spacing-medium) + 5px);
 }
 
 .lineDisabled .lineId {
   --width-height: 25px;
   font-size: 1rem;
-  margin: var(--spacing-small) calc(var(--spacing-small) + 12.5px);
+  margin: var(--spacing-medium) calc(var(--spacing-small) + 12.5px);
 }
 
 .directions {
   flex-grow: 1;
   width: calc(100% - 50px - 3 * var(--spacing-small));
-  margin: var(--spacing-small);
+  margin: var(--spacing-medium) var(--spacing-small);
   margin-left: 0;
 }
 
 .direction:not(:first-child) {
-  margin-top: var(--spacing-small);
+  margin-top: var(--spacing-medium);
 }
 
 .directionName {
@@ -73,12 +73,15 @@
 }
 
 .train {
-  width: calc(33.3334% - var(--spacing-medium));
+  width: 33.3334%;
 }
 
 .train:not(:first-child) {
-  width: 33.3334%;
-  padding-left: var(--spacing-medium);
+  padding-left: calc(var(--spacing-small) / 2);
+}
+
+.train:not(:last-child) {
+  padding-right: calc(var(--spacing-small) / 2);
 }
 
 .minutes {
