@@ -75,6 +75,11 @@ export const getRawTimesByLineId = async (
           minutes: number;
           route: string;
         }) => {
+          // Because yes.
+          if (timeLineId === 'GS') {
+            timeLineId = 'S';
+          }
+
           if (!timesByLineAndDirection[timeLineId]) {
             timesByLineAndDirection[timeLineId] = {};
           }

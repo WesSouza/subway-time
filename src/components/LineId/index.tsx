@@ -6,11 +6,12 @@ import styles from './styles.css';
 interface IProps {
   id: string;
   className?: string;
-  color: string;
+  color?: string;
   style?: { [s: string]: string | number };
 }
 
 const LineId = ({ id, className, color: backgroundColor, style }: IProps) => {
+  backgroundColor = backgroundColor || '#666';
   const color = colorContrast('#fff', backgroundColor) > 1.5 ? '#fff' : '#000';
   return (
     <div
