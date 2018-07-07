@@ -4,6 +4,7 @@ import {
   getRawSubwayStations,
   getRawTimesByLineId,
 } from 'api/api';
+import { IRawTimesByLineId } from 'api/api.interfaces';
 
 import sortByObjectKey from 'lib/sortByObjectKey';
 
@@ -20,12 +21,18 @@ export const getAdvisoriesForLines = async ({
   const lineIds = lineIdsString.split(',');
 
   let advisories: ILineAdvisory[] = [];
-  const advisoriesByLine = await Promise.all(
-    lineIds.map(lineId => getAdvisoriesByLineId(lineId)),
-  );
-  advisoriesByLine.forEach(
-    lineAdvisories => (advisories = advisories.concat(lineAdvisories)),
-  );
+  for (const lineId of lineIds) {
+    try {
+      const advisory = await getAdvisoriesByLineId(lineId);
+
+      if (!advisory) {
+        continue;
+      }
+      advisories = advisories.concat(advisory);
+      // tslint:disable-next-line no-empty
+    } catch (e) {}
+  }
+
   return advisories;
 };
 
@@ -142,15 +149,21 @@ export const getStationWithTimes = async ({
 }: {
   stationId: string;
 }): Promise<IStation> => {
-  const [rawLinesAll, rawStationsAll, rawStationTimes] = await Promise.all([
+  const [rawLinesAll, rawStationsAll] = await Promise.all([
     getRawSubwayLines(),
     getRawSubwayStations(),
-    getRawTimesByLineId(stationId),
   ]);
   const rawStations = rawStationsAll.filter(({ id }) => id === stationId);
   if (!rawStations.length) {
     throw new Error('Unable to find station.');
   }
+
+  let rawStationTimes: IRawTimesByLineId = {};
+  try {
+    rawStationTimes = await getRawTimesByLineId(stationId);
+
+    // tslint:disable-next-line no-empty
+  } catch (e) {}
 
   const lineColors = rawLinesAll.reduce(
     (colors, line) => ({ ...colors, [line.id]: line.color }),
