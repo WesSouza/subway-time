@@ -6,7 +6,6 @@
 }
 
 .station {
-  padding: var(--spacing-xsmall) var(--spacing-small);
 }
 
 .station:not(:first-child) {
@@ -15,6 +14,7 @@
 
 .link {
   display: flex;
+  padding: var(--spacing-small);
   text-decoration: none;
   align-items: center;
 }
