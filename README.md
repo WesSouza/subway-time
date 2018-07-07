@@ -1,4 +1,4 @@
-# Subway Ti.me
+# SubwayTi.me
 
 Let's make a nice digital subway time table.
 
