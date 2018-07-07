@@ -1,7 +1,27 @@
 .Home {
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.footnote {
+  margin-top: var(--spacing-large);
+}
+
+.smaller,
+.smaller a {
+  font-size: 0.8rem;
+  color: var(--color-gray-darker);
+}
+
+.smaller a {
+  text-decoration: underline;
+}
+
+.love {
+  color: var(--color-love);
+  font-weight: bold;
 }
