@@ -51,7 +51,7 @@
 
 .directionName {
   text-transform: uppercase;
-  font-size: 85%;
+  font-size: 0.85rem;
   font-weight: bold;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .minutes {
-  font-size: 140%;
+  font-size: 1.4rem;
   min-width: 70px;
   overflow: hidden;
   white-space: nowrap;
@@ -78,7 +78,7 @@
 }
 
 .minutesFirst {
-  font-size: 180%;
+  font-size: 1.8rem;
 }
 
 .minutesMin {
@@ -86,14 +86,14 @@
 
 .lastStationName {
   color: var(--color-gray-dark);
-  font-size: 90%;
+  font-size: 0.9rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
 .lastUpdate {
-  font-size: 80%;
+  font-size: 0.8rem;
   text-align: right;
   padding: var(--spacing-xsmall);
 }
