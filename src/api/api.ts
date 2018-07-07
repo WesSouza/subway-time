@@ -2,6 +2,7 @@
 const config = require('../config');
 
 import {
+  IRawMtaTimes,
   IRawSubwayLine,
   IRawSubwayStation,
   IRawTimesByLineId,
@@ -47,9 +48,16 @@ export const getRawTimesByLineId = async (
 ): Promise<IRawTimesByLineId> => {
   const { baseUrl, getTime } = config.mta;
   const lineId = stationId.substr(0, 1);
-  const mtaTimes = await get(`${baseUrl}${getTime}`, { lineId, stationId });
+  const mtaTimes: IRawMtaTimes = await get(`${baseUrl}${getTime}`, {
+    lineId,
+    stationId,
+  });
 
   const timesByLineAndDirection = {};
+
+  if (mtaTimes.message.messageType === 'ERROR') {
+    throw new Error(mtaTimes.message.message);
+  }
 
   Object.keys(mtaTimes)
     .filter(key => key.startsWith('direction'))

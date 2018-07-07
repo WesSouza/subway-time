@@ -14,28 +14,25 @@ interface IProps {
 }
 
 const Station = ({ path, stationId }: IProps) => (
-  <Query query={getStationWithTimes} parameters={{ stationId }}>
-    {({
-      data,
-      error,
-      lastUpdate,
-      loading,
-      updateData,
-    }: IQueryResult<IStation>) =>
-      error ? (
-        <div className={styles.centralized}>Unable to retrieve time table.</div>
-      ) : loading ? (
-        <div className={styles.centralized}>
-          <div className={styles.loader} />
-        </div>
-      ) : data ? (
-        <TimeTable
-          lastUpdate={lastUpdate}
-          station={data}
-          updateData={updateData}
-        />
-      ) : null
+  <Query
+    query={getStationWithTimes}
+    parameters={{ stationId }}
+    renderWhenError={
+      <div className={styles.centralized}>Unable to retrieve time table.</div>
     }
+    renderWhenLoading={
+      <div className={styles.centralized}>
+        <div className={styles.loader} />
+      </div>
+    }
+  >
+    {({ data, lastUpdate, updateData }: IQueryResult<IStation>) => (
+      <TimeTable
+        lastUpdate={lastUpdate}
+        station={data}
+        updateData={updateData}
+      />
+    )}
   </Query>
 );
 

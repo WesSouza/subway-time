@@ -7,7 +7,7 @@ import StoreValue from 'components/StoreValue';
 
 import { clearSearch, setSearchTerm } from 'data/search';
 import { searchStations } from 'data/stations';
-import store from 'data/store';
+import store, { IStore } from 'data/store';
 import { IStation } from 'models/models';
 
 interface IProps {
@@ -18,17 +18,15 @@ const Search = ({  }: IProps) => (
   <>
     <NavigationBar onSearchChangeWithValue={setSearchTerm} />
     <StoreValue store={store} property="currentSearchTerm">
-      {({ currentSearchTerm }: { currentSearchTerm?: string }) =>
+      {({ currentSearchTerm }: IStore) =>
         currentSearchTerm ? (
           <Query
             query={searchStations}
             parameters={{ search: currentSearchTerm }}
           >
-            {({ data, loading }: IQueryResult<IStation[]>) =>
-              !loading && data ? (
-                <SearchResults stations={data} onClick={clearSearch} />
-              ) : null
-            }
+            {({ data }: IQueryResult<IStation[]>) => (
+              <SearchResults stations={data} onClick={clearSearch} />
+            )}
           </Query>
         ) : null
       }

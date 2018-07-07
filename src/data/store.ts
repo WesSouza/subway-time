@@ -1,6 +1,6 @@
 import Store from 'lib/store';
 
-interface IStore {
+export interface IStore {
   currentSearchTerm?: string;
 }
 

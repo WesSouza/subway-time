@@ -28,3 +28,19 @@ export interface IRawSubwayStation {
 export interface IRawTimesByLineId {
   [i: string]: IStationLineDirection[];
 }
+
+export interface IRawMtaTimes {
+  lastUpdatedTime: string;
+  lastUpdatedOn: number;
+  stationName: string;
+  message: {
+    message: string;
+    messageType: RawMtaTimesMessageType;
+    errorCode: string;
+  };
+}
+
+enum RawMtaTimesMessageType {
+  SUCCESS = 'SUCCESS',
+  ERROR = 'ERROR',
+}

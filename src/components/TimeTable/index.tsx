@@ -2,7 +2,12 @@ import * as React from 'react';
 
 import LineId from 'components/LineId';
 
-import { IStation, IStationLine } from 'models/models';
+import {
+  IStation,
+  IStationLine,
+  IStationLineDirection,
+  IStationLineDirectionTime,
+} from 'models/models';
 
 import styles from './styles.css';
 
@@ -70,49 +75,57 @@ class TimeTable extends React.Component<IProps, IState> {
   public renderPlatform = ({
     line: { id: lineId, color: lineColor },
     directions,
-  }: IStationLine) => (
-    <div
-      key={lineId}
-      className={`${styles.line} ${
-        !directions || !directions.length ? styles.lineDisabled : ''
-      }`}
-    >
-      <LineId id={lineId} color={lineColor} className={styles.lineId} />
-      <div className={styles.directions}>
-        {directions ? (
-          directions.map(({ name: directionName, times }) => (
-            <div key={directionName} className={styles.direction}>
-              <div className={styles.directionName}>{directionName}</div>
-              <div className={styles.trains}>
-                {times
-                  .filter((_, index) => index < 3)
-                  .map(
-                    ({ lastStationName, minutes }, index, filteredTrains) => (
-                      <div
-                        key={`${lastStationName} ${minutes}`}
-                        className={styles.train}
-                        style={{ width: `${100 / filteredTrains.length}%` }}
-                      >
-                        <div
-                          className={`${styles.minutes} ${
-                            index === 0 ? styles.minutesFirst : ''
-                          }`}
-                        >
-                          {minutes === 0 ? 'Now' : `${minutes} min`}
-                        </div>
-                        <div className={styles.lastStationName}>
-                          {lastStationName}
-                        </div>
-                      </div>
-                    ),
-                  )}
-              </div>
-            </div>
-          ))
-        ) : (
-          <div className={styles.directionEmpty}>No trains</div>
-        )}
+  }: IStationLine) => {
+    const hasDirections = directions && directions.length;
+    return (
+      <div
+        key={lineId}
+        className={`${styles.line} ${
+          !hasDirections ? styles.lineDisabled : ''
+        }`}
+      >
+        <LineId id={lineId} color={lineColor} className={styles.lineId} />
+        <div className={styles.directions}>
+          {hasDirections ? (
+            (directions as IStationLineDirection[]).map(this.renderDirection)
+          ) : (
+            <div className={styles.directionEmpty}>No trains</div>
+          )}
+        </div>
       </div>
+    );
+  };
+
+  public renderDirection = ({
+    name: directionName,
+    times,
+  }: IStationLineDirection) => (
+    <div key={directionName} className={styles.direction}>
+      <div className={styles.directionName}>{directionName}</div>
+      <div className={styles.trains}>
+        {times.filter((_, index) => index < 3).map(this.renderTime)}
+      </div>
+    </div>
+  );
+
+  public renderTime = (
+    { lastStationName, minutes }: IStationLineDirectionTime,
+    index: number,
+    filteredTrains: IStationLineDirectionTime[],
+  ) => (
+    <div
+      key={`${lastStationName} ${minutes}`}
+      className={styles.train}
+      style={{ width: `${100 / filteredTrains.length}%` }}
+    >
+      <div
+        className={`${styles.minutes} ${
+          index === 0 ? styles.minutesFirst : ''
+        }`}
+      >
+        {minutes === 0 ? 'Now' : `${minutes} min`}
+      </div>
+      <div className={styles.lastStationName}>{lastStationName}</div>
     </div>
   );
 

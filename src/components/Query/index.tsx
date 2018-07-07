@@ -12,14 +12,14 @@ interface IState {
 interface IProps {
   children: (o: { [k: string]: any }) => React.ReactNode;
   parameters?: { [k: string]: string | undefined };
+  renderWhenError?: React.ReactNode;
+  renderWhenLoading?: React.ReactNode;
   query: (o?: { [k: string]: string | undefined }) => Promise<any>;
 }
 
 export interface IQueryResult<T> {
   data: T;
-  error: string;
   lastUpdate: number;
-  loading: boolean;
   updateData: () => void;
 }
 
@@ -47,34 +47,20 @@ class Query extends React.Component<IProps, IState> {
 
   public render(): React.ReactNode {
     const { data, error, lastUpdate, loading } = this.state;
-    const { children } = this.props;
+    const { children, renderWhenError, renderWhenLoading } = this.props;
     const updateData = this.updateData;
 
     if (error) {
-      return children({
-        data: null,
-        error,
-        lastUpdate,
-        loading: false,
-        updateData,
-      });
+      return renderWhenError || null;
     }
 
     if (loading) {
-      return children({
-        data: null,
-        error: '',
-        lastUpdate,
-        loading,
-        updateData,
-      });
+      return renderWhenLoading || null;
     }
 
     return children({
       data,
-      error: '',
       lastUpdate,
-      loading: false,
       updateData,
     });
   }
@@ -84,15 +70,15 @@ class Query extends React.Component<IProps, IState> {
     const lastUpdate = Date.now();
     query(parameters)
       .then(data => {
-        this.setState({ data, lastUpdate, loading: false });
+        this.setState({ data, error: '', lastUpdate, loading: false });
       })
       .catch(error => {
         console.error(error);
         this.setState({
           data: null,
+          error: error.toString(),
           lastUpdate,
           loading: false,
-          error: error.toString(),
         });
       });
   };
