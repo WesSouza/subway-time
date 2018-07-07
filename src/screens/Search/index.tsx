@@ -16,7 +16,10 @@ interface IProps {
 
 const Search = ({  }: IProps) => (
   <>
-    <NavigationBar onSearchChangeWithValue={setSearchTerm} />
+    <NavigationBar
+      onSearchChangeWithValue={setSearchTerm}
+      onSearchFocusWithValue={setSearchTerm}
+    />
     <StoreValue store={store} property="currentSearchTerm">
       {({ currentSearchTerm }: IStore) =>
         currentSearchTerm ? (

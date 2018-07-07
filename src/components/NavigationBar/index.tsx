@@ -7,6 +7,7 @@ interface IProps {
   onSearchCommitValue?: () => void;
   onSearchChange?: (e: React.SyntheticEvent) => void;
   onSearchChangeWithValue?: (value: string) => void;
+  onSearchFocusWithValue?: (value: string) => void;
 }
 
 class NavigationBar extends React.Component<IProps> {
@@ -20,6 +21,7 @@ class NavigationBar extends React.Component<IProps> {
             name="search"
             onBlur={this.props.onSearchCommitValue}
             onChange={this.onSearchChange}
+            onFocus={this.onSearchFocus}
             placeholder="Station name"
             type="search"
           />
@@ -51,6 +53,13 @@ class NavigationBar extends React.Component<IProps> {
     }
     if (onSearchChangeWithValue) {
       onSearchChangeWithValue((event.target as HTMLInputElement).value);
+    }
+  };
+
+  private onSearchFocus = (event: React.SyntheticEvent) => {
+    const { onSearchFocusWithValue } = this.props;
+    if (onSearchFocusWithValue) {
+      onSearchFocusWithValue((event.target as HTMLInputElement).value);
     }
   };
 }
