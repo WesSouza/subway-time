@@ -9,7 +9,7 @@ const shallowObjectEqual = (objectA?: object, objectB?: object) => {
   let equalValues = 0;
   let equal = true;
   Object.keys(objectA).every(key => {
-    if (!objectB[key] || objectA[key] !== objectB[key]) {
+    if (!objectB.hasOwnProperty(key) || objectA[key] !== objectB[key]) {
       equal = false;
       return false;
     }
