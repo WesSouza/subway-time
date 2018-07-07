@@ -5,6 +5,7 @@ const config = {
   },
   mta: {
     baseUrl: 'http://traintimelb-367443097.us-east-1.elb.amazonaws.com',
+    getAdvisoryDetail: '/getAdvisoryDetail/:lineId',
     getStationsByLine: '/getStationsByLine/:lineId',
     getSubwaylines: '/getSubwaylines',
     getTime: '/getTime/:lineId/:stationId',

@@ -1,4 +1,5 @@
 import {
+  getAdvisoriesByLineId,
   getRawSubwayLines,
   getRawSubwayStations,
   getRawTimesByLineId,
@@ -6,72 +7,26 @@ import {
 
 import sortByObjectKey from 'lib/sortByObjectKey';
 
-import { IStation, IStationLine } from 'models/models';
+import { ILineAdvisory, IStation, IStationLine } from 'models/models';
 
-export const getStationWithTimes = async ({
-  stationId,
+export const getAdvisoriesForLines = async ({
+  lineIds: lineIdsString,
 }: {
-  stationId: string;
-}): Promise<IStation> => {
-  const [rawLinesAll, rawStationsAll, rawStationTimes] = await Promise.all([
-    getRawSubwayLines(),
-    getRawSubwayStations(),
-    getRawTimesByLineId(stationId),
-  ]);
-  const rawStations = rawStationsAll.filter(({ id }) => id === stationId);
-  if (!rawStations.length) {
-    throw new Error('Unable to find station.');
+  lineIds: string;
+}): Promise<ILineAdvisory[]> => {
+  if (typeof lineIdsString !== 'string') {
+    throw new Error('lineIds is not a string.');
   }
+  const lineIds = lineIdsString.split(',');
 
-  const lineColors = rawLinesAll.reduce(
-    (colors, line) => ({ ...colors, [line.id]: line.color }),
-    {},
+  let advisories: ILineAdvisory[] = [];
+  const advisoriesByLine = await Promise.all(
+    lineIds.map(lineId => getAdvisoriesByLineId(lineId)),
   );
-
-  const [primaryStation] = rawStations;
-
-  const platforms: IStationLine[] = rawStations.map(
-    ({ lineId, lineColor, status, type }) => ({
-      line: {
-        id: lineId,
-        color: lineColor,
-      },
-      status,
-      type,
-      directions: rawStationTimes[lineId],
-      sortKey: lineId,
-    }),
+  advisoriesByLine.forEach(
+    lineAdvisories => (advisories = advisories.concat(lineAdvisories)),
   );
-
-  const exceptionalPlatforms: IStationLine[] = Object.keys(rawStationTimes)
-    .filter(
-      lineId =>
-        !Boolean(rawStations.find(rawStation => lineId === rawStation.lineId)),
-    )
-    .map(lineId => ({
-      line: {
-        id: lineId,
-        color: lineColors[lineId],
-      },
-      directions: rawStationTimes[lineId],
-      sortKey: lineId,
-    }));
-
-  const result = {
-    id: stationId,
-    name: primaryStation.name,
-    boroughName: primaryStation.boroughName,
-    coordinates: primaryStation.coordinates,
-    lines: rawStations.map(({ lineId, lineColor }) => ({
-      id: lineId,
-      color: lineColor,
-    })),
-    platforms: platforms
-      .concat(exceptionalPlatforms)
-      .sort(sortByObjectKey('sortKey')),
-  };
-
-  return result;
+  return advisories;
 };
 
 let getStationsCache: IStation[];
@@ -104,11 +59,11 @@ export const getStations = async (): Promise<IStation[]> => {
         id: lineId,
         color: lineColor,
       });
-      stations[index].lineIds += lineId;
+      stations[index].lineIds += `,${lineId}`;
       stations[index].lineIds = (stations[index].lineIds as string)
-        .split('')
+        .split(',')
         .sort()
-        .join('');
+        .join(',');
       stations[index].lines.sort(sortByObjectKey('id'));
 
       stations[index].platforms.push({
@@ -180,4 +135,71 @@ export const searchStations = async ({
         ? station.lineIds.match(searchRegex)
         : station.name.match(searchRegex),
   );
+};
+
+export const getStationWithTimes = async ({
+  stationId,
+}: {
+  stationId: string;
+}): Promise<IStation> => {
+  const [rawLinesAll, rawStationsAll, rawStationTimes] = await Promise.all([
+    getRawSubwayLines(),
+    getRawSubwayStations(),
+    getRawTimesByLineId(stationId),
+  ]);
+  const rawStations = rawStationsAll.filter(({ id }) => id === stationId);
+  if (!rawStations.length) {
+    throw new Error('Unable to find station.');
+  }
+
+  const lineColors = rawLinesAll.reduce(
+    (colors, line) => ({ ...colors, [line.id]: line.color }),
+    {},
+  );
+
+  const [primaryStation] = rawStations;
+
+  const platforms: IStationLine[] = rawStations.map(
+    ({ lineId, lineColor, status, type }) => ({
+      line: {
+        id: lineId,
+        color: lineColor,
+      },
+      status,
+      type,
+      directions: rawStationTimes[lineId],
+      sortKey: lineId,
+    }),
+  );
+
+  const exceptionalPlatforms: IStationLine[] = Object.keys(rawStationTimes)
+    .filter(
+      lineId =>
+        !Boolean(rawStations.find(rawStation => lineId === rawStation.lineId)),
+    )
+    .map(lineId => ({
+      line: {
+        id: lineId,
+        color: lineColors[lineId],
+      },
+      directions: rawStationTimes[lineId],
+      sortKey: lineId,
+    }));
+
+  const result = {
+    id: stationId,
+    name: primaryStation.name,
+    boroughName: primaryStation.boroughName,
+    coordinates: primaryStation.coordinates,
+    lines: rawStations.map(({ lineId, lineColor }) => ({
+      id: lineId,
+      color: lineColor,
+    })),
+    lineIds: rawStations.map(rawStation => rawStation.lineId).join(','),
+    platforms: platforms
+      .concat(exceptionalPlatforms)
+      .sort(sortByObjectKey('sortKey')),
+  };
+
+  return result;
 };

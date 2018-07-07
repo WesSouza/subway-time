@@ -4,6 +4,13 @@ import {
   StationPlatformType,
 } from 'models/models';
 
+export interface IRawSubwayAdvisory {
+  SituationNumber: string;
+  ReasonName: string;
+  Summary: string;
+  LongDescription: string;
+}
+
 export interface IRawSubwayLine {
   __typename: string;
   id: string;

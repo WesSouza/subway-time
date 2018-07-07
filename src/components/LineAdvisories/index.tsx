@@ -1,0 +1,53 @@
+import * as React from 'react';
+
+import { ILineAdvisory } from 'models/models';
+
+import styles from './styles.css';
+
+interface IProps {
+  advisories: ILineAdvisory[];
+}
+
+class LineAdvisory extends React.Component<IProps> {
+  public render() {
+    const { advisories } = this.props;
+    return (
+      <div className={styles.LineAdvisories}>
+        <div className={styles.advisory}>
+          {advisories.length} advisor{advisories.length > 1 ? `ies` : 'y'}
+        </div>
+        <div className={styles.open}>
+          <button
+            type="button"
+            className={styles.openButton}
+            onClick={this.openAdvisoriesDetail}
+          >
+            View
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  public openAdvisoriesDetail = () => {
+    const { advisories } = this.props;
+    const joinedHtml = advisories.reduce(
+      (html, advisory, index) =>
+        `${html}${index === 0 ? '' : '<hr>'}${advisory.html}`,
+      '',
+    );
+    const win = window.open('about:blank', '_blank', 'width=300,height=500');
+    if (win) {
+      // Look ma, 1996!
+      win.document.write(
+        `<base href="http://subwaytime.mta.info/">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <style>body {font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;}</style>
+        <script>function ShowHide (id) {document.getElementById(id).style.display=''} </script>
+        ${joinedHtml}`,
+      );
+    }
+  };
+}
+
+export default LineAdvisory;

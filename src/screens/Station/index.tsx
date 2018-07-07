@@ -1,19 +1,20 @@
 import * as React from 'react';
 
-import { getStationWithTimes } from 'data/stations';
-import { IStation } from 'models/models';
+import { getAdvisoriesForLines, getStationWithTimes } from 'data/stations';
+import { ILineAdvisory, IStation } from 'models/models';
 
+import LineAdvisories from 'components/LineAdvisories';
 import Query, { IQueryResult } from 'components/Query';
 import TimeTable from 'components/TimeTable';
 
 import styles from './styles.css';
 
 interface IProps {
-  path: string;
+  path?: string;
   stationId?: string;
 }
 
-const Station = ({ path, stationId }: IProps) => (
+const Station = ({ stationId }: IProps) => (
   <Query
     query={getStationWithTimes}
     parameters={{ stationId }}
@@ -30,6 +31,16 @@ const Station = ({ path, stationId }: IProps) => (
       <TimeTable
         lastUpdate={lastUpdate}
         station={data}
+        advisoriesComponent={
+          <Query
+            query={getAdvisoriesForLines}
+            parameters={{ lineIds: data.lineIds }}
+          >
+            {({ data: advisoryData }: IQueryResult<ILineAdvisory[]>) => (
+              <LineAdvisories advisories={advisoryData} />
+            )}
+          </Query>
+        }
         updateData={updateData}
       />
     )}

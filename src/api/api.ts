@@ -3,12 +3,14 @@ const config = require('../config');
 
 import {
   IRawMtaTimes,
+  IRawSubwayAdvisory,
   IRawSubwayLine,
   IRawSubwayStation,
   IRawTimesByLineId,
 } from 'api/api.interfaces';
 
 import {
+  ILineAdvisory,
   IStationLineDirection,
   IStationLineDirectionTime,
 } from 'models/models';
@@ -25,6 +27,22 @@ export const get = async (
   );
   const result = await fetch(parsedUrl);
   return await result.json();
+};
+
+export const getAdvisoriesByLineId = async (
+  lineId: string,
+): Promise<ILineAdvisory[]> => {
+  const { baseUrl, getAdvisoryDetail } = config.mta;
+  const advisories: IRawSubwayAdvisory[] = await get(
+    `${baseUrl}${getAdvisoryDetail}`,
+    { lineId },
+  );
+  return advisories.map(advisory => ({
+    id: advisory.SituationNumber,
+    reason: advisory.ReasonName,
+    summary: advisory.Summary,
+    html: advisory.LongDescription,
+  }));
 };
 
 export const getRawSubwayLines = async (): Promise<IRawSubwayLine[]> => {

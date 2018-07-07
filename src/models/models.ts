@@ -2,6 +2,14 @@ export interface ILine {
   id: string;
   color: string;
   stations?: IStation[];
+  advisories?: ILineAdvisory[];
+}
+
+export interface ILineAdvisory {
+  id: string;
+  reason: string;
+  summary: string;
+  html: string;
 }
 
 export interface IStation {
@@ -13,7 +21,7 @@ export interface IStation {
     lon: string;
   };
   lines: ILine[];
-  lineIds?: string;
+  lineIds: string;
   platforms: IStationLine[];
   distance?: number;
 }

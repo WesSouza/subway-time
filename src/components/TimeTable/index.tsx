@@ -12,6 +12,7 @@ import {
 import styles from './styles.css';
 
 interface IProps {
+  advisoriesComponent?: React.ReactNode;
   lastUpdate: number;
   station: IStation;
   updateData: () => void;
@@ -48,6 +49,7 @@ class TimeTable extends React.Component<IProps, IState> {
   public render() {
     const { lastUpdateString } = this.state;
     const {
+      advisoriesComponent,
       station: { name: stationName, platforms },
       updateData,
     } = this.props;
@@ -66,6 +68,7 @@ class TimeTable extends React.Component<IProps, IState> {
             </button>
           </div>
         </div>
+        <div>{advisoriesComponent}</div>
         <div>{platforms.map(this.renderPlatform)}</div>
         <div className={styles.lastUpdate}>updated {lastUpdateString}</div>
       </div>

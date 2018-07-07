@@ -23,7 +23,7 @@ export interface IQueryResult<T> {
   updateData: () => void;
 }
 
-class Query extends React.Component<IProps, IState> {
+class Query extends React.PureComponent<IProps, IState> {
   public state = {
     data: null,
     error: '',

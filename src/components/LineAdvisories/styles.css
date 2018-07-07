@@ -1,0 +1,23 @@
+.LineAdvisories {
+  padding: var(--spacing-xsmall) var(--spacing-small);
+  color: var(--color-white);
+  background-color: var(--color-love);
+  display: flex;
+  align-items: center;
+}
+
+.advisory {
+  flex-grow: 1;
+}
+
+.open {
+}
+
+.openButton {
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  color: var(--color-white);
+  text-decoration: underline;
+}
