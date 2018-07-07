@@ -32,10 +32,22 @@
   border-bottom: 1px solid var(--color-gray-lightest);
 }
 
+.lineDisabled .lineId,
+.lineDisabled .directions {
+  opacity: 0.5;
+}
+
 .lineId {
   --width-height: 50px;
   font-size: 35px;
-  margin: calc(var(--spacing-small) + 5px);
+  margin: var(--spacing-small);
+  margin-top: calc(var(--spacing-small) + 5px);
+}
+
+.lineDisabled .lineId {
+  --width-height: 25px;
+  font-size: 1rem;
+  margin: var(--spacing-small) calc(var(--spacing-small) + 12.5px);
 }
 
 .directions {

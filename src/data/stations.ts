@@ -1,15 +1,20 @@
-import { getRawSubwayStations, getRawTimesByLineId } from 'api/api';
+import {
+  getRawSubwayLines,
+  getRawSubwayStations,
+  getRawTimesByLineId,
+} from 'api/api';
 
 import sortByObjectKey from 'lib/sortByObjectKey';
 
-import { IStation } from 'models/models';
+import { IStation, IStationLine } from 'models/models';
 
 export const getStationWithTimes = async ({
   stationId,
 }: {
   stationId: string;
 }): Promise<IStation> => {
-  const [rawStationsAll, rawStationTimes] = await Promise.all([
+  const [rawLinesAll, rawStationsAll, rawStationTimes] = await Promise.all([
+    getRawSubwayLines(),
     getRawSubwayStations(),
     getRawTimesByLineId(stationId),
   ]);
@@ -18,9 +23,41 @@ export const getStationWithTimes = async ({
     throw new Error('Unable to find station.');
   }
 
+  const lineColors = rawLinesAll.reduce(
+    (colors, line) => ({ ...colors, [line.id]: line.color }),
+    {},
+  );
+
   const [primaryStation] = rawStations;
 
-  return {
+  const platforms: IStationLine[] = rawStations.map(
+    ({ lineId, lineColor, status, type }) => ({
+      line: {
+        id: lineId,
+        color: lineColor,
+      },
+      status,
+      type,
+      directions: rawStationTimes[lineId],
+      sortKey: lineId,
+    }),
+  );
+
+  const exceptionalPlatforms: IStationLine[] = Object.keys(rawStationTimes)
+    .filter(
+      lineId =>
+        !Boolean(rawStations.find(rawStation => lineId === rawStation.lineId)),
+    )
+    .map(lineId => ({
+      line: {
+        id: lineId,
+        color: lineColors[lineId],
+      },
+      directions: rawStationTimes[lineId],
+      sortKey: lineId,
+    }));
+
+  const result = {
     id: stationId,
     name: primaryStation.name,
     boroughName: primaryStation.boroughName,
@@ -29,16 +66,12 @@ export const getStationWithTimes = async ({
       id: lineId,
       color: lineColor,
     })),
-    platforms: rawStations.map(({ lineId, lineColor, status, type }) => ({
-      line: {
-        id: lineId,
-        color: lineColor,
-      },
-      status,
-      type,
-      directions: rawStationTimes[lineId],
-    })),
+    platforms: platforms
+      .concat(exceptionalPlatforms)
+      .sort(sortByObjectKey('sortKey')),
   };
+
+  return result;
 };
 
 let getStationsCache: IStation[];

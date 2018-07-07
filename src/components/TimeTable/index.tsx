@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import LineId from 'components/LineId';
 
-import { IStation } from 'models/models';
+import { IStation, IStationLine } from 'models/models';
 
 import styles from './styles.css';
 
@@ -61,58 +61,58 @@ class TimeTable extends React.Component<IProps, IState> {
             </button>
           </div>
         </div>
-        <div>
-          {platforms.map(
-            ({ line: { id: lineId, color: lineColor }, directions }) => (
-              <div key={lineId} className={styles.line}>
-                <LineId
-                  id={lineId}
-                  color={lineColor}
-                  className={styles.lineId}
-                />
-                <div className={styles.directions}>
-                  {directions ? (
-                    directions.map(({ name: directionName, times }) => (
-                      <div key={directionName} className={styles.direction}>
-                        <div className={styles.directionName}>
-                          {directionName}
-                        </div>
-                        <div className={styles.trains}>
-                          {times.map(
-                            ({ lastStationName, minutes }, index) =>
-                              index < 3 && (
-                                <div
-                                  key={`${lastStationName} ${minutes}`}
-                                  className={styles.train}
-                                >
-                                  <div
-                                    className={`${styles.minutes} ${
-                                      index === 0 ? styles.minutesFirst : ''
-                                    }`}
-                                  >
-                                    {minutes === 0 ? 'Now' : `${minutes} min`}
-                                  </div>
-                                  <div className={styles.lastStationName}>
-                                    {lastStationName}
-                                  </div>
-                                </div>
-                              ),
-                          )}
-                        </div>
-                      </div>
-                    ))
-                  ) : (
-                    <div className={styles.directionEmpty}>No trains</div>
-                  )}
-                </div>
-              </div>
-            ),
-          )}
-        </div>
+        <div>{platforms.map(this.renderPlatform)}</div>
         <div className={styles.lastUpdate}>updated {lastUpdateString}</div>
       </div>
     );
   }
+
+  public renderPlatform = ({
+    line: { id: lineId, color: lineColor },
+    directions,
+  }: IStationLine) => (
+    <div
+      key={lineId}
+      className={`${styles.line} ${
+        !directions || !directions.length ? styles.lineDisabled : ''
+      }`}
+    >
+      <LineId id={lineId} color={lineColor} className={styles.lineId} />
+      <div className={styles.directions}>
+        {directions ? (
+          directions.map(({ name: directionName, times }) => (
+            <div key={directionName} className={styles.direction}>
+              <div className={styles.directionName}>{directionName}</div>
+              <div className={styles.trains}>
+                {times.map(
+                  ({ lastStationName, minutes }, index) =>
+                    index < 3 && (
+                      <div
+                        key={`${lastStationName} ${minutes}`}
+                        className={styles.train}
+                      >
+                        <div
+                          className={`${styles.minutes} ${
+                            index === 0 ? styles.minutesFirst : ''
+                          }`}
+                        >
+                          {minutes === 0 ? 'Now' : `${minutes} min`}
+                        </div>
+                        <div className={styles.lastStationName}>
+                          {lastStationName}
+                        </div>
+                      </div>
+                    ),
+                )}
+              </div>
+            </div>
+          ))
+        ) : (
+          <div className={styles.directionEmpty}>No trains</div>
+        )}
+      </div>
+    </div>
+  );
 
   public updateLastUpdateString = () => {
     const { lastUpdate } = this.props;

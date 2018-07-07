@@ -20,8 +20,8 @@ export interface IStation {
 
 export interface IStationLine {
   line: ILine;
-  status: StationPlatformStatus;
-  type: StationPlatformType;
+  status?: StationPlatformStatus;
+  type?: StationPlatformType;
   directions?: IStationLineDirection[];
 }
 
