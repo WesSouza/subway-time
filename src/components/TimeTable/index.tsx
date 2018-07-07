@@ -117,7 +117,7 @@ class TimeTable extends React.Component<IProps, IState> {
     filteredTrains: IStationLineDirectionTime[],
   ) => (
     <div
-      key={`${lastStationName} ${minutes}`}
+      key={`${index} ${lastStationName} ${minutes}`}
       className={styles.train}
       style={{ width: `${100 / filteredTrains.length}%` }}
     >

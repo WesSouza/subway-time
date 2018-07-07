@@ -30,8 +30,10 @@ class Query extends React.PureComponent<IProps, IState> {
     lastUpdate: 0,
     loading: true,
   };
+  private unmounted = false;
 
   public componentDidMount() {
+    this.unmounted = false;
     this.updateData();
   }
 
@@ -43,6 +45,10 @@ class Query extends React.PureComponent<IProps, IState> {
     ) {
       this.updateData();
     }
+  }
+
+  public componentWillUnmount() {
+    this.unmounted = true;
   }
 
   public render(): React.ReactNode {
@@ -68,12 +74,19 @@ class Query extends React.PureComponent<IProps, IState> {
   private updateData = () => {
     const { query, parameters } = this.props;
     const lastUpdate = Date.now();
+    this.setState({ data: null, error: '', lastUpdate: 0, loading: true });
     query(parameters)
       .then(data => {
+        if (this.unmounted) {
+          return;
+        }
         this.setState({ data, error: '', lastUpdate, loading: false });
       })
       .catch(error => {
         console.error(error);
+        if (this.unmounted) {
+          return;
+        }
         this.setState({
           data: null,
           error: error.toString(),
