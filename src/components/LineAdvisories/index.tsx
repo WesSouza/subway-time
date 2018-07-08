@@ -13,18 +13,15 @@ class LineAdvisory extends React.Component<IProps> {
     const { advisories } = this.props;
     return (
       <div className={styles.LineAdvisories}>
-        <div className={styles.advisory}>
-          {advisories.length} advisor{advisories.length > 1 ? `ies` : 'y'}
-        </div>
-        <div className={styles.open}>
+        {advisories && advisories.length ? (
           <button
             type="button"
             className={styles.openButton}
             onClick={this.openAdvisoriesDetail}
           >
-            View
+            {advisories.length} advisor{advisories.length > 1 ? `ies` : 'y'}
           </button>
-        </div>
+        ) : null}
       </div>
     );
   }
@@ -36,7 +33,7 @@ class LineAdvisory extends React.Component<IProps> {
         `${html}${index === 0 ? '' : '<hr>'}${advisory.html}`,
       '',
     );
-    const win = window.open('about:blank', '_blank', 'width=300,height=500');
+    const win = window.open('about:blank', '_blank', 'width=450,height=600');
     if (win) {
       // Look ma, 1996!
       win.document.write(

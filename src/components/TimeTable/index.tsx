@@ -68,9 +68,11 @@ class TimeTable extends React.Component<IProps, IState> {
             </button>
           </div>
         </div>
-        <div>{advisoriesComponent}</div>
         <div>{platforms.map(this.renderPlatform)}</div>
-        <div className={styles.lastUpdate}>updated {lastUpdateString}</div>
+        <div className={styles.footer}>
+          <div className={styles.advisories}>{advisoriesComponent}</div>
+          <div className={styles.lastUpdate}>updated {lastUpdateString}</div>
+        </div>
       </div>
     );
   }

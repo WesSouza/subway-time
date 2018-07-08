@@ -107,8 +107,17 @@
   text-overflow: ellipsis;
 }
 
+.footer {
+  display: flex;
+  padding: var(--spacing-xsmall);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advisories {
+}
+
 .lastUpdate {
   font-size: 0.8rem;
   text-align: right;
-  padding: var(--spacing-xsmall);
 }

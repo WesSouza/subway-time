@@ -17,6 +17,7 @@ class NavigationBar extends React.Component<IProps> {
         <form className={styles.searchBox} onSubmit={this.onSubmit}>
           <input
             aria-label="Subway station search"
+            autoComplete="off"
             className={styles.searchInput}
             name="search"
             onBlur={this.props.onSearchCommitValue}
@@ -39,9 +40,10 @@ class NavigationBar extends React.Component<IProps> {
   }
 
   private onSubmit = (event: React.SyntheticEvent) => {
+    event.preventDefault();
+
     const { onSearchCommitValue } = this.props;
     if (onSearchCommitValue) {
-      event.preventDefault();
       onSearchCommitValue();
     }
   };
