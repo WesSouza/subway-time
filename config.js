@@ -15,6 +15,11 @@ const config = {
     subwayLines: '/subway-lines.json',
     subwayStations: '/subway-stations.json',
   },
+  subwaytimeApi: {
+    baseUrl: '/api',
+    getAdvisoryDetail: '/getAdvisoryDetail/:lineId',
+    getTime: '/getTime/:lineId/:stationId',
+  },
 };
 
 module.exports = config;

@@ -32,7 +32,7 @@ export const get = async (
 export const getAdvisoriesByLineId = async (
   lineId: string,
 ): Promise<ILineAdvisory[]> => {
-  const { baseUrl, getAdvisoryDetail } = config.mta;
+  const { baseUrl, getAdvisoryDetail } = config.subwaytimeApi;
   const advisories: IRawSubwayAdvisory[] = await get(
     `${baseUrl}${getAdvisoryDetail}`,
     { lineId },
@@ -64,7 +64,7 @@ export const getRawSubwayStations = async (): Promise<IRawSubwayStation[]> => {
 export const getRawTimesByLineId = async (
   stationId: string,
 ): Promise<IRawTimesByLineId> => {
-  const { baseUrl, getTime } = config.mta;
+  const { baseUrl, getTime } = config.subwaytimeApi;
   const lineId = stationId.substr(0, 1);
   const mtaTimes: IRawMtaTimes = await get(`${baseUrl}${getTime}`, {
     lineId,
