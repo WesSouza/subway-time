@@ -1,0 +1,24 @@
+{
+  "name": "subway-time-server",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WesleydeSouza/subway-time"
+  },
+  "keywords": [
+    "subway",
+    "time table"
+  ],
+  "license": "MIT",
+  "author": "Wesley de Souza <me@wesley.so>",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "compression": "^1.7.2",
+    "express": "^4.16.3",
+    "got": "^8.3.2",
+    "serve-static": "^1.13.2"
+  }
+}
