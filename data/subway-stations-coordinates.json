@@ -3,7 +3,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-A646-D9D5D103F621",
     "order": 1,
-    "lines": "4-6-6 Express",
+    "lines": "4-6-6",
     "name": "Astor Pl",
     "coordinates": {
       "latitude": "40.73005400028978",
@@ -15,7 +15,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-2B57-C78D7CB77F19",
     "order": 2,
-    "lines": "4-6-6 Express",
+    "lines": "4-6-6",
     "name": "Canal St",
     "coordinates": {
       "latitude": "40.71880300107709",
@@ -99,7 +99,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-43E1-6A95ABCCDFC0",
     "order": 9,
-    "lines": "E-M-R",
+    "lines": "E-M-RN",
     "name": "65th St",
     "coordinates": {
       "latitude": "40.74971952935675",
@@ -111,7 +111,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-752F-62CC7114CAF3",
     "order": 10,
-    "lines": "E-M-R",
+    "lines": "E-M-RN",
     "name": "36th St",
     "coordinates": {
       "latitude": "40.75196004401078",
@@ -123,7 +123,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-2457-AFC1CDA3510C",
     "order": 11,
-    "lines": "J-M-Z",
+    "lines": "J-M-ZZ",
     "name": "Delancey St - Essex St",
     "coordinates": {
       "latitude": "40.71830605618619",
@@ -135,7 +135,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-9702-34B84F85AC10",
     "order": 12,
-    "lines": "J-Z",
+    "lines": "J-ZZ",
     "name": "Van Siclen Ave",
     "coordinates": {
       "latitude": "40.67802821447783",
@@ -147,7 +147,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-BA8E-E06E4CEE7CEE",
     "order": 13,
-    "lines": "J-Z",
+    "lines": "J-ZZ",
     "name": "Norwood Ave",
     "coordinates": {
       "latitude": "40.68152000045683",
@@ -159,7 +159,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-8917-C03A1C9495CE",
     "order": 14,
-    "lines": "J-Z",
+    "lines": "J-ZZ",
     "name": "104th-102nd Sts",
     "coordinates": {
       "latitude": "40.69516599823373",
@@ -171,7 +171,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-1877-3249C3C444D6",
     "order": 15,
-    "lines": "B-D-N-Q-R",
+    "lines": "B-D-N-Q-RN",
     "name": "DeKalb Ave",
     "coordinates": {
       "latitude": "40.690648119969794",
@@ -267,7 +267,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-95A2-1AC63CE431DA",
     "order": 23,
-    "lines": "7-7 Express",
+    "lines": "7-7",
     "name": "Mets - Willets Point",
     "coordinates": {
       "latitude": "40.75462199881262",
@@ -279,7 +279,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-8321-0D09E85E64B5",
     "order": 24,
-    "lines": "7-7 Express",
+    "lines": "7-7",
     "name": "Junction Blvd",
     "coordinates": {
       "latitude": "40.74914499948836",
@@ -291,7 +291,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-5E10-FF84FF4655A5",
     "order": 25,
-    "lines": "7-7 Express",
+    "lines": "7-7",
     "name": "Flushing - Main St",
     "coordinates": {
       "latitude": "40.75959999915012",
@@ -303,7 +303,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-EFCE-358FA2059EF2",
     "order": 26,
-    "lines": "6-6 Express",
+    "lines": "6-6",
     "name": "Buhre Ave",
     "coordinates": {
       "latitude": "40.846809998885504",
@@ -315,7 +315,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-CDDB-353730C28BBC",
     "order": 27,
-    "lines": "6-6 Express",
+    "lines": "6-6",
     "name": "3rd Ave - 138th St",
     "coordinates": {
       "latitude": "40.81047600117261",
@@ -327,7 +327,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-2D54-988FFF4EF7D6",
     "order": 28,
-    "lines": "6-6 Express",
+    "lines": "6-6",
     "name": "Castle Hill Ave",
     "coordinates": {
       "latitude": "40.83425499825462",
@@ -339,7 +339,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-BAF6-66B500B78D2D",
     "order": 29,
-    "lines": "4-5-6-6 Express",
+    "lines": "4-5-6-6",
     "name": "Brooklyn Bridge - City Hall",
     "coordinates": {
       "latitude": "40.713064999433136",
@@ -351,7 +351,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-E458-ACA5738FECEB",
     "order": 30,
-    "lines": "6-6 Express",
+    "lines": "6-6",
     "name": "Zerega Ave",
     "coordinates": {
       "latitude": "40.836488000608156",
@@ -363,7 +363,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-FE10-A1E523E788C9",
     "order": 31,
-    "lines": "4-5-6-6 Express",
+    "lines": "4-5-6-6",
     "name": "Grand Central - 42nd St",
     "coordinates": {
       "latitude": "40.75180742981634",
@@ -375,7 +375,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-9FF7-35F1CCFBDE39",
     "order": 32,
-    "lines": "4-6-6 Express",
+    "lines": "4-6-6",
     "name": "33rd St",
     "coordinates": {
       "latitude": "40.74608099909145",
@@ -387,7 +387,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-27AA-F733D4BEDF5B",
     "order": 33,
-    "lines": "4-6-6 Express",
+    "lines": "4-6-6",
     "name": "96th St",
     "coordinates": {
       "latitude": "40.78567199998607",
@@ -399,7 +399,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-65B9-FF9EB022EF6D",
     "order": 34,
-    "lines": "4-6-6 Express",
+    "lines": "4-6-6",
     "name": "77th St",
     "coordinates": {
       "latitude": "40.77362000074615",
@@ -411,7 +411,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-D5F4-DA5F90803A27",
     "order": 35,
-    "lines": "J-Z",
+    "lines": "J-ZZ",
     "name": "Chauncey St",
     "coordinates": {
       "latitude": "40.68285130087804",
@@ -423,7 +423,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-F608-6ED047FCAFC5",
     "order": 36,
-    "lines": "D-N-R",
+    "lines": "D-N-RN",
     "name": "Union St",
     "coordinates": {
       "latitude": "40.67731566735096",
@@ -435,7 +435,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-68C0-61B2B4F86D14",
     "order": 37,
-    "lines": "E-M-R",
+    "lines": "E-M-RN",
     "name": "Elmhurst Ave",
     "coordinates": {
       "latitude": "40.74237007972169",
@@ -579,7 +579,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-B325-C8DCBE2E2557",
     "order": 49,
-    "lines": "4-5-6-6 Express",
+    "lines": "4-5-6-6",
     "name": "Lexington Ave - 59th St",
     "coordinates": {
       "latitude": "40.762526000304575",
@@ -639,7 +639,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-DE14-89AACE92984F",
     "order": 54,
-    "lines": "7-7 Express",
+    "lines": "7-7",
     "name": "Woodside - 61st St",
     "coordinates": {
       "latitude": "40.745630001138395",
@@ -771,7 +771,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-4FD5-6E1C7C5D14BD",
     "order": 65,
-    "lines": "E-J-Z",
+    "lines": "E-J-ZZ",
     "name": "Sutphin Blvd - Archer Av",
     "coordinates": {
       "latitude": "40.700382424235",
@@ -795,7 +795,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-ABF4-CE944DA97D8B",
     "order": 67,
-    "lines": "E-M-R",
+    "lines": "E-M-RN",
     "name": "67th Ave",
     "coordinates": {
       "latitude": "40.726505475813006",
@@ -807,7 +807,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-A9DA-86FD25C00EAC",
     "order": 68,
-    "lines": "E-M-R",
+    "lines": "E-M-RN",
     "name": "Grand Ave - Newtown",
     "coordinates": {
       "latitude": "40.736813418197144",
@@ -891,7 +891,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-9E6F-7A48BEB85C00",
     "order": 75,
-    "lines": "J",
+    "lines": "JZ",
     "name": "Halsey St",
     "coordinates": {
       "latitude": "40.686415270704344",
@@ -903,7 +903,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-1739-0848856CA30E",
     "order": 76,
-    "lines": "J-M",
+    "lines": "J-MZ",
     "name": "Lorimer St",
     "coordinates": {
       "latitude": "40.703844000042096",
@@ -951,7 +951,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-4F9A-9A7957C6307C",
     "order": 80,
-    "lines": "N-Q-R-W",
+    "lines": "N-Q-R-WN",
     "name": "Times Sq - 42nd St",
     "coordinates": {
       "latitude": "40.75461199851542",
@@ -1011,7 +1011,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-B47C-4B953A62192B",
     "order": 85,
-    "lines": "4-6-6 Express",
+    "lines": "4-6-6",
     "name": "51st St",
     "coordinates": {
       "latitude": "40.75710699989316",
@@ -1059,7 +1059,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-6CC6-258B5371DB05",
     "order": 89,
-    "lines": "6-6 Express",
+    "lines": "6-6",
     "name": "Hunts Point Ave",
     "coordinates": {
       "latitude": "40.82094799852307",
@@ -1083,7 +1083,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-FA8C-58222E704935",
     "order": 91,
-    "lines": "6-6 Express",
+    "lines": "6-6",
     "name": "Middletown Rd",
     "coordinates": {
       "latitude": "40.84386300128381",
@@ -1095,7 +1095,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-7E9D-F94B314050D6",
     "order": 92,
-    "lines": "4-6-6 Express",
+    "lines": "4-6-6",
     "name": "23rd St",
     "coordinates": {
       "latitude": "40.739864000474604",
@@ -1107,7 +1107,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-A797-73FE5950634B",
     "order": 93,
-    "lines": "7-7 Express",
+    "lines": "7-7",
     "name": "Court Sq",
     "coordinates": {
       "latitude": "40.74702299889643",
@@ -1131,7 +1131,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-E6D4-0009631C550A",
     "order": 95,
-    "lines": "7-7 Express",
+    "lines": "7-7",
     "name": "Hunters Point Ave",
     "coordinates": {
       "latitude": "40.74221599986316",
@@ -1203,7 +1203,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-3979-F59D06F65F0C",
     "order": 101,
-    "lines": "7-7 Express",
+    "lines": "7-7",
     "name": "Vernon Blvd - Jackson Ave",
     "coordinates": {
       "latitude": "40.74262599969749",
@@ -1215,7 +1215,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-D92F-BFCC7D34DCA4",
     "order": 102,
-    "lines": "4-6-6 Express",
+    "lines": "4-6-6",
     "name": "68th St - Hunter College",
     "coordinates": {
       "latitude": "40.76814100049679",
@@ -1227,7 +1227,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-4FF4-1B9B126194C1",
     "order": 103,
-    "lines": "7-7 Express-N-W",
+    "lines": "7-7-N-W",
     "name": "Queensboro Plz",
     "coordinates": {
       "latitude": "40.750635651014804",
@@ -1251,7 +1251,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-8D23-B6DA78943763",
     "order": 105,
-    "lines": "4-5-6-6 Express",
+    "lines": "4-5-6-6",
     "name": "Union Sq - 14th St",
     "coordinates": {
       "latitude": "40.734673000996125",
@@ -1455,7 +1455,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-DAF4-AA7BD9117D30",
     "order": 122,
-    "lines": "D-N-Q-R",
+    "lines": "D-N-Q-RN",
     "name": "Atlantic Av - Barclay's Center",
     "coordinates": {
       "latitude": "40.683665667279435",
@@ -1659,7 +1659,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-0F6F-51AC532273BA",
     "order": 139,
-    "lines": "J-M-Z",
+    "lines": "J-M-ZZ",
     "name": "Marcy Ave",
     "coordinates": {
       "latitude": "40.708383000017925",
@@ -1671,7 +1671,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-3437-EA3CC26C493C",
     "order": 140,
-    "lines": "J-M",
+    "lines": "J-MZ",
     "name": "Hewes St",
     "coordinates": {
       "latitude": "40.706889998054",
@@ -1719,7 +1719,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-98CB-291E5CE0F25B",
     "order": 144,
-    "lines": "N-Q-R-W",
+    "lines": "N-Q-R-WN",
     "name": "28th St",
     "coordinates": {
       "latitude": "40.74545399979951",
@@ -1731,7 +1731,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-2E1A-0C150EA37030",
     "order": 145,
-    "lines": "N-Q-R-W",
+    "lines": "N-Q-R-WN",
     "name": "Herald Sq - 34th St",
     "coordinates": {
       "latitude": "40.74964456009442",
@@ -2283,7 +2283,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-9918-D179F1A17CAA",
     "order": 191,
-    "lines": "E-M-R",
+    "lines": "E-M-RN",
     "name": "63rd Dr - Rego Park",
     "coordinates": {
       "latitude": "40.729763972422425",
@@ -2355,7 +2355,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-6197-63D990D865BB",
     "order": 197,
-    "lines": "7-7 Express",
+    "lines": "7-7",
     "name": "Times Sq - 42nd St",
     "coordinates": {
       "latitude": "40.755477001982506",
@@ -2391,7 +2391,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-DA84-45DD187BF48E",
     "order": 200,
-    "lines": "4-6-6 Express",
+    "lines": "4-6-6",
     "name": "28th St",
     "coordinates": {
       "latitude": "40.743069999259035",
@@ -2403,7 +2403,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-3AB5-1DE9143C7D2A",
     "order": 201,
-    "lines": "6-6 Express",
+    "lines": "6-6",
     "name": "Pelham Bay Park",
     "coordinates": {
       "latitude": "40.85246199951662",
@@ -2415,7 +2415,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-64E1-6CAF13F2DD27",
     "order": 202,
-    "lines": "6-6 Express",
+    "lines": "6-6",
     "name": "Westchester Sq - E Tremont Ave",
     "coordinates": {
       "latitude": "40.839892001013915",
@@ -2439,7 +2439,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-0DBE-322ABBA4BBCB",
     "order": 204,
-    "lines": "7-7 Express",
+    "lines": "7-7",
     "name": "Grand Central - 42nd St",
     "coordinates": {
       "latitude": "40.751431000286864",
@@ -2475,7 +2475,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-1959-3D3DAB307D2A",
     "order": 207,
-    "lines": "J",
+    "lines": "JZ",
     "name": "85th St - Forest Pky",
     "coordinates": {
       "latitude": "40.69242699966103",
@@ -2487,7 +2487,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-1FBF-3AC7086C3A14",
     "order": 208,
-    "lines": "J-Z",
+    "lines": "J-ZZ",
     "name": "Woodhaven Blvd",
     "coordinates": {
       "latitude": "40.69370399880105",
@@ -2499,7 +2499,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-29B7-5548786DB10B",
     "order": 209,
-    "lines": "J",
+    "lines": "JZ",
     "name": "111th St",
     "coordinates": {
       "latitude": "40.697114810696476",
@@ -2511,7 +2511,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-816F-DFB69CB49BDE",
     "order": 210,
-    "lines": "J-Z",
+    "lines": "J-ZZ",
     "name": "121st St",
     "coordinates": {
       "latitude": "40.700481998515315",
@@ -2571,7 +2571,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-EB5C-36F319ABEA85",
     "order": 215,
-    "lines": "J",
+    "lines": "JZ",
     "name": "Cleveland St",
     "coordinates": {
       "latitude": "40.679777998961164",
@@ -2679,7 +2679,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-B03D-A6271925170C",
     "order": 224,
-    "lines": "J-Z",
+    "lines": "J-ZZ",
     "name": "Broadway Junction",
     "coordinates": {
       "latitude": "40.67936600147369",
@@ -2691,7 +2691,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-9B33-120E3B89FB23",
     "order": 225,
-    "lines": "J",
+    "lines": "JZ",
     "name": "Alabama Ave",
     "coordinates": {
       "latitude": "40.676998000003756",
@@ -2715,7 +2715,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-E058-AA5E86EBB9BB",
     "order": 227,
-    "lines": "J-Z",
+    "lines": "J-ZZ",
     "name": "Crescent St",
     "coordinates": {
       "latitude": "40.68315265707736",
@@ -2727,7 +2727,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-BB6C-DA8A81EA0ABA",
     "order": 228,
-    "lines": "J",
+    "lines": "JZ",
     "name": "Cypress Hills",
     "coordinates": {
       "latitude": "40.689616000838754",
@@ -2739,7 +2739,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-AA39-6356C44910A0",
     "order": 229,
-    "lines": "J-Z",
+    "lines": "J-ZZ",
     "name": "75th St - Eldert Ln",
     "coordinates": {
       "latitude": "40.691290001246735",
@@ -2775,7 +2775,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-EEE7-B5E5007567B8",
     "order": 232,
-    "lines": "E-M-R",
+    "lines": "E-M-RN",
     "name": "Woodhaven Blvd - Queens Mall",
     "coordinates": {
       "latitude": "40.73309737380972",
@@ -2835,7 +2835,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-0385-448730A32763",
     "order": 237,
-    "lines": "E-M-R",
+    "lines": "E-M-RN",
     "name": "46th St",
     "coordinates": {
       "latitude": "40.756316952608096",
@@ -2847,7 +2847,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-D147-514166140FD4",
     "order": 238,
-    "lines": "E-M-R",
+    "lines": "E-M-RN",
     "name": "Northern Blvd",
     "coordinates": {
       "latitude": "40.752824829236076",
@@ -2931,7 +2931,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-7C55-195E0EDAB4B1",
     "order": 245,
-    "lines": "E-F-M-R",
+    "lines": "E-F-M-RN",
     "name": "Forest Hills - 71st Av",
     "coordinates": {
       "latitude": "40.72159430953587",
@@ -2955,7 +2955,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-8E1C-E49BFDF44F0F",
     "order": 247,
-    "lines": "E-J-Z",
+    "lines": "E-J-ZZ",
     "name": "Jamaica Ctr - Parsons / Archer",
     "coordinates": {
       "latitude": "40.70206737621188",
@@ -3579,7 +3579,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-3947-394841058000",
     "order": 299,
-    "lines": "E-M-R",
+    "lines": "E-M-RN",
     "name": "Steinway St",
     "coordinates": {
       "latitude": "40.75698735912575",
@@ -3591,7 +3591,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-8259-7123E42CA5DC",
     "order": 300,
-    "lines": "J",
+    "lines": "JZ",
     "name": "Kosciuszko St",
     "coordinates": {
       "latitude": "40.69317200129202",
@@ -3603,7 +3603,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-F2BB-1F21EFEE7E31",
     "order": 301,
-    "lines": "J-Z",
+    "lines": "J-ZZ",
     "name": "Gates Ave",
     "coordinates": {
       "latitude": "40.689583999013905",
@@ -3675,7 +3675,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-6BED-7297F7820CC6",
     "order": 307,
-    "lines": "E-M-R",
+    "lines": "E-M-RN",
     "name": "Queens Plz",
     "coordinates": {
       "latitude": "40.74891771986323",
@@ -3699,7 +3699,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-9331-12F5DA812DBB",
     "order": 309,
-    "lines": "R",
+    "lines": "RN",
     "name": "77th St",
     "coordinates": {
       "latitude": "40.629741666886915",
@@ -3711,7 +3711,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-7408-A8178389CAB8",
     "order": 310,
-    "lines": "R",
+    "lines": "RN",
     "name": "Bay Ridge Ave",
     "coordinates": {
       "latitude": "40.63496666682377",
@@ -3795,7 +3795,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-DCF8-07CE27A4E031",
     "order": 317,
-    "lines": "R",
+    "lines": "RN",
     "name": "Bay Ridge - 95th St",
     "coordinates": {
       "latitude": "40.61662166725951",
@@ -3807,7 +3807,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-F117-7AD8EA0A7877",
     "order": 318,
-    "lines": "R",
+    "lines": "RN",
     "name": "86th St",
     "coordinates": {
       "latitude": "40.62268666715025",
@@ -4239,7 +4239,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-72D0-08E5A9A18E51",
     "order": 354,
-    "lines": "N-Q-R-W",
+    "lines": "N-Q-R-WN",
     "name": "49th St",
     "coordinates": {
       "latitude": "40.759801973870694",
@@ -4251,7 +4251,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-13C7-873ED9F2EE9C",
     "order": 355,
-    "lines": "N-Q-R-W",
+    "lines": "N-Q-R-WN",
     "name": "57th St",
     "coordinates": {
       "latitude": "40.76456552501829",
@@ -4263,7 +4263,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-82A5-6F0EA01A9738",
     "order": 356,
-    "lines": "N-R-W",
+    "lines": "N-R-WN",
     "name": "5th Ave - 59th St",
     "coordinates": {
       "latitude": "40.764810999755284",
@@ -4275,7 +4275,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-376F-603802FF097D",
     "order": 357,
-    "lines": "N-R-W",
+    "lines": "N-R-WN",
     "name": "Lexington Ave - 59th St",
     "coordinates": {
       "latitude": "40.762708855394564",
@@ -4455,7 +4455,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-8FA7-14FFACBD6ECE",
     "order": 372,
-    "lines": "J-M",
+    "lines": "J-MZ",
     "name": "Flushing Ave",
     "coordinates": {
       "latitude": "40.70040440298112",
@@ -4467,7 +4467,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-2E13-01F57837B69B",
     "order": 373,
-    "lines": "J-M-Z",
+    "lines": "J-M-ZZ",
     "name": "Myrtle Ave",
     "coordinates": {
       "latitude": "40.6971950005145",
@@ -4515,7 +4515,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-413C-445ABA51B019",
     "order": 377,
-    "lines": "N-R",
+    "lines": "N-RN",
     "name": "Jay St - MetroTech",
     "coordinates": {
       "latitude": "40.69225539645323",
@@ -4527,7 +4527,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-13E6-7335C5CED67E",
     "order": 378,
-    "lines": "N-R",
+    "lines": "N-RN",
     "name": "Court St",
     "coordinates": {
       "latitude": "40.694196480776995",
@@ -4539,7 +4539,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-685D-851E4FF44D12",
     "order": 379,
-    "lines": "N-Q-R-W",
+    "lines": "N-Q-R-WN",
     "name": "Union Sq - 14th St",
     "coordinates": {
       "latitude": "40.73587226699812",
@@ -4551,7 +4551,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-052A-45BD2926416C",
     "order": 380,
-    "lines": "N-Q-R-W",
+    "lines": "N-Q-R-WN",
     "name": "23rd St",
     "coordinates": {
       "latitude": "40.74130266729",
@@ -4563,7 +4563,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-EBE0-8B1DDA0E9100",
     "order": 381,
-    "lines": "D-N-R",
+    "lines": "D-N-RN",
     "name": "Prospect Ave",
     "coordinates": {
       "latitude": "40.66541366712979",
@@ -4575,7 +4575,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-49EA-F956E70CB959",
     "order": 382,
-    "lines": "D-N-R",
+    "lines": "D-N-RN",
     "name": "4th Av - 9th St",
     "coordinates": {
       "latitude": "40.670846666842756",
@@ -4635,7 +4635,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-5037-DB60D87651CC",
     "order": 387,
-    "lines": "N-R",
+    "lines": "N-RN",
     "name": "59th St",
     "coordinates": {
       "latitude": "40.6413616662838",
@@ -4647,7 +4647,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-5ACA-8CCBADEBF9A8",
     "order": 388,
-    "lines": "N-R",
+    "lines": "N-RN",
     "name": "45th St",
     "coordinates": {
       "latitude": "40.648938666612814",
@@ -4659,7 +4659,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-120D-72E38377B62F",
     "order": 389,
-    "lines": "D-N-R",
+    "lines": "D-N-RN",
     "name": "36th St",
     "coordinates": {
       "latitude": "40.65514366633887",
@@ -4683,7 +4683,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-2DCB-F0071F0C2E32",
     "order": 391,
-    "lines": "N-R",
+    "lines": "N-RN",
     "name": "53rd St",
     "coordinates": {
       "latitude": "40.64506866735981",
@@ -4707,7 +4707,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-416D-18C536F31B06",
     "order": 393,
-    "lines": "D-N-R",
+    "lines": "D-N-RN",
     "name": "25th St",
     "coordinates": {
       "latitude": "40.66039666692321",
@@ -4791,7 +4791,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-57E6-87021438E02B",
     "order": 400,
-    "lines": "N-Q-R-W",
+    "lines": "N-Q-R-WN",
     "name": "Prince St",
     "coordinates": {
       "latitude": "40.72432866597571",
@@ -4803,7 +4803,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-0CD4-45AAE4142E10",
     "order": 401,
-    "lines": "N-Q-R-W",
+    "lines": "N-Q-R-WN",
     "name": "8th St - NYU",
     "coordinates": {
       "latitude": "40.73046499853991",
@@ -4947,7 +4947,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-0D54-EFCBA4E27CC8",
     "order": 413,
-    "lines": "J-Z",
+    "lines": "J-ZZ",
     "name": "Fulton St",
     "coordinates": {
       "latitude": "40.71002266658424",
@@ -4959,7 +4959,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-BC92-73EF44BF11F7",
     "order": 414,
-    "lines": "J-Z",
+    "lines": "J-ZZ",
     "name": "Chambers St",
     "coordinates": {
       "latitude": "40.71323378962671",
@@ -4971,7 +4971,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-3F3E-ADAEFEC6A318",
     "order": 415,
-    "lines": "J-Z",
+    "lines": "J-ZZ",
     "name": "Canal St",
     "coordinates": {
       "latitude": "40.71817387697391",
@@ -4983,7 +4983,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-6E0E-3FE42F800868",
     "order": 416,
-    "lines": "R-W",
+    "lines": "R-WN",
     "name": "City Hall",
     "coordinates": {
       "latitude": "40.71327233111697",
@@ -4995,7 +4995,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-C657-BDD227733592",
     "order": 417,
-    "lines": "R-W",
+    "lines": "R-WN",
     "name": "Canal St",
     "coordinates": {
       "latitude": "40.71946500105898",
@@ -5043,7 +5043,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-A8FB-F3E30D5E55A1",
     "order": 421,
-    "lines": "R-W",
+    "lines": "R-WN",
     "name": "Whitehall St",
     "coordinates": {
       "latitude": "40.703142373599135",
@@ -5055,7 +5055,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-5E4F-EF06D7F7C90F",
     "order": 422,
-    "lines": "R-W",
+    "lines": "R-WN",
     "name": "Rector St",
     "coordinates": {
       "latitude": "40.707744756294474",
@@ -5127,7 +5127,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-F8E5-4A8B2B31A6D9",
     "order": 428,
-    "lines": "J-Z",
+    "lines": "J-ZZ",
     "name": "Broad St",
     "coordinates": {
       "latitude": "40.706476001106005",
@@ -5139,7 +5139,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-020E-6B516D254F2A",
     "order": 429,
-    "lines": "R-W",
+    "lines": "R-WN",
     "name": "Cortlandt St",
     "coordinates": {
       "latitude": "40.7105129841524",
@@ -5199,7 +5199,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-245C-213E4C7CC8F3",
     "order": 434,
-    "lines": "J-Z",
+    "lines": "J-ZZ",
     "name": "Bowery",
     "coordinates": {
       "latitude": "40.720246883147254",
@@ -5247,7 +5247,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-AAB2-B92A26A15970",
     "order": 438,
-    "lines": "E-F-M-R",
+    "lines": "E-F-M-RN",
     "name": "Jackson Hts - Roosevelt Av",
     "coordinates": {
       "latitude": "40.74653969115889",
@@ -5391,7 +5391,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-36A0-A52351C593DD",
     "order": 450,
-    "lines": "4-6-6 Express",
+    "lines": "4-6-6",
     "name": "110th St",
     "coordinates": {
       "latitude": "40.795020000113105",
@@ -5403,7 +5403,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-A1C4-70B58D448E8B",
     "order": 451,
-    "lines": "4-5-6-6 Express",
+    "lines": "4-5-6-6",
     "name": "86th St",
     "coordinates": {
       "latitude": "40.77949199820952",
@@ -5475,7 +5475,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-4FEE-A5657599AD75",
     "order": 457,
-    "lines": "4-6-6 Express",
+    "lines": "4-6-6",
     "name": "Bleecker St",
     "coordinates": {
       "latitude": "40.72591466682659",
@@ -5487,7 +5487,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-34BD-D8DDF7303B51",
     "order": 458,
-    "lines": "4-6-6 Express",
+    "lines": "4-6-6",
     "name": "103rd St",
     "coordinates": {
       "latitude": "40.79060000008452",
@@ -5535,7 +5535,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-030C-7C15B34AFB26",
     "order": 462,
-    "lines": "4-6-6 Express",
+    "lines": "4-6-6",
     "name": "116th St",
     "coordinates": {
       "latitude": "40.7986290002001",
@@ -5547,7 +5547,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-5C34-790B2B22D216",
     "order": 463,
-    "lines": "6-6 Express",
+    "lines": "6-6",
     "name": "Parkchester",
     "coordinates": {
       "latitude": "40.83322599927859",
@@ -5583,7 +5583,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-20A9-CDBEAF9A8836",
     "order": 466,
-    "lines": "7-7 Express",
+    "lines": "7-7",
     "name": "5th Ave - Bryant Pk",
     "coordinates": {
       "latitude": "40.75382100064824",
@@ -5595,7 +5595,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-FEAC-321F362CBC5D",
     "order": 467,
-    "lines": "4-6-6 Express",
+    "lines": "4-6-6",
     "name": "Spring St",
     "coordinates": {
       "latitude": "40.72230099999366",
@@ -5607,7 +5607,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-942E-E2AFBBCA4771",
     "order": 468,
-    "lines": "4-5-6-6 Express",
+    "lines": "4-5-6-6",
     "name": "125th St",
     "coordinates": {
       "latitude": "40.804138000587244",
@@ -5631,7 +5631,7 @@
     "__typename": "LineCoordinate",
     "id": "00000000-0000-0000-B3DD-71887D6DA03B",
     "order": 470,
-    "lines": "7-7 Express",
+    "lines": "7-7",
     "name": "34th St - Hudson Yards",
     "coordinates": {
       "latitude": "40.75544635961596",

@@ -134,6 +134,10 @@ const flipByDash = name =>
           lines,
         } = station;
 
+        if (!lines.includes(lineId)) {
+          return false;
+        }
+
         const weight = find({
           coordinateNameFlattened,
           coordinateNameTruncated,

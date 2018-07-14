@@ -2,6 +2,17 @@ const fs = require('fs');
 const got = require('got');
 const { resolve } = require('path');
 
+const parseLines = lines => {
+  lines = lines.replace(/\s+express\s*/i, '');
+  if (lines.includes('J')) {
+    lines += 'Z';
+  }
+  if (lines.includes('R')) {
+    lines += 'N';
+  }
+  return lines;
+};
+
 const parseCoordinates = coordinatesString => {
   const matches = coordinatesString.match(/POINT \(([-0-9\.]+) ([-0-9\.]+)\)/);
   if (!matches) {
@@ -32,7 +43,7 @@ const {
       __typename: 'LineCoordinate',
       id,
       order: Number(order),
-      lines,
+      lines: parseLines(lines),
       name,
       coordinates: parseCoordinates(coordinates),
       notes,
