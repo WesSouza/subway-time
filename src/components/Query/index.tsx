@@ -12,8 +12,8 @@ interface IState {
 interface IProps {
   children: (o: { [k: string]: any }) => React.ReactNode;
   parameters?: { [k: string]: string | undefined };
-  renderWhenError?: React.ReactNode;
-  renderWhenLoading?: React.ReactNode;
+  renderWhenError?: React.ReactNode | (() => React.ReactNode);
+  renderWhenLoading?: React.ReactNode | (() => React.ReactNode);
   query: (o?: { [k: string]: string | undefined }) => Promise<any>;
 }
 
@@ -59,10 +59,16 @@ class Query extends React.PureComponent<IProps, IState> {
     const updateData = this.updateData;
 
     if (error) {
+      if (typeof renderWhenError === 'function') {
+        return renderWhenError();
+      }
       return renderWhenError || null;
     }
 
     if (loading) {
+      if (typeof renderWhenLoading === 'function') {
+        return renderWhenLoading();
+      }
       return renderWhenLoading || null;
     }
 

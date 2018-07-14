@@ -8,8 +8,8 @@ const parseCoordinates = coordinatesString => {
     return [null, null];
   }
 
-  const [, lon, lat] = matches;
-  return { lon, lat };
+  const [, longitude, latitude] = matches;
+  return { latitude, longitude };
 };
 
 const {

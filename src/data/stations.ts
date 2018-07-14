@@ -52,7 +52,8 @@ export const getStations = async (): Promise<IStation[]> => {
       id,
       name,
       boroughName,
-      coordinates,
+      latitude,
+      longitude,
       lineId,
       lineColor,
       status,
@@ -91,7 +92,8 @@ export const getStations = async (): Promise<IStation[]> => {
       id,
       name,
       boroughName,
-      coordinates,
+      latitude,
+      longitude,
       lines: [
         {
           id: lineId,
@@ -203,7 +205,8 @@ export const getStationWithTimes = async ({
     id: stationId,
     name: primaryStation.name,
     boroughName: primaryStation.boroughName,
-    coordinates: primaryStation.coordinates,
+    latitude: primaryStation.latitude,
+    longitude: primaryStation.longitude,
     lines: rawStations.map(({ lineId, lineColor }) => ({
       id: lineId,
       color: lineColor,

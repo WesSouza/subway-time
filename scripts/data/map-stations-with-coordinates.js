@@ -116,6 +116,7 @@ const flipByDash = name =>
 
   const stationsWithCoordinates = [];
 
+  console.log('Mapping stations with coordinates...');
   stations.forEach((station, index) => {
     const { __typename, id, lineId, boroughName, name, status, type } = station;
 
@@ -160,12 +161,17 @@ const flipByDash = name =>
       );
       return;
     }
+    if (stationsWithName.length > 1) {
+      console.warn(`Multiple matches for station ${lineId} ${id} ${name}.`);
+      return;
+    }
 
     const { coordinates: stationCoordinates } = stationsWithName[0];
 
     stationsWithCoordinates.push({
       ...station,
-      coordinates: stationCoordinates,
+      latitude: Number(stationCoordinates.latitude),
+      longitude: Number(stationCoordinates.longitude),
     });
   });
 

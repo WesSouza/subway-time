@@ -6,8 +6,8 @@
     "lines": "4-6-6 Express",
     "name": "Astor Pl",
     "coordinates": {
-      "lon": "-73.99106999861966",
-      "lat": "40.73005400028978"
+      "latitude": "40.73005400028978",
+      "longitude": "-73.99106999861966"
     },
     "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -18,8 +18,8 @@
     "lines": "4-6-6 Express",
     "name": "Canal St",
     "coordinates": {
-      "lon": "-74.00019299927328",
-      "lat": "40.71880300107709"
+      "latitude": "40.71880300107709",
+      "longitude": "-74.00019299927328"
     },
     "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -30,8 +30,8 @@
     "lines": "1-2",
     "name": "50th St",
     "coordinates": {
-      "lon": "-73.98384899986625",
-      "lat": "40.76172799961419"
+      "latitude": "40.76172799961419",
+      "longitude": "-73.98384899986625"
     },
     "notes": "1-all times, 2-nights"
   },
@@ -42,8 +42,8 @@
     "lines": "2-3-4",
     "name": "Bergen St",
     "coordinates": {
-      "lon": "-73.97499915116808",
-      "lat": "40.68086213682956"
+      "latitude": "40.68086213682956",
+      "longitude": "-73.97499915116808"
     },
     "notes": "4-nights, 3-all other times, 2-all times"
   },
@@ -54,8 +54,8 @@
     "lines": "3-4",
     "name": "Pennsylvania Ave",
     "coordinates": {
-      "lon": "-73.89488591154061",
-      "lat": "40.66471445143568"
+      "latitude": "40.66471445143568",
+      "longitude": "-73.89488591154061"
     },
     "notes": "4-nights, 3-all other times"
   },
@@ -66,8 +66,8 @@
     "lines": "1",
     "name": "238th St",
     "coordinates": {
-      "lon": "-73.90087000018522",
-      "lat": "40.88466700064975"
+      "latitude": "40.88466700064975",
+      "longitude": "-73.90087000018522"
     },
     "notes": "1-all times, exit only northbound"
   },
@@ -78,8 +78,8 @@
     "lines": "A-B-C",
     "name": "Cathedral Pkwy (110th St)",
     "coordinates": {
-      "lon": "-73.95806670661364",
-      "lat": "40.800581558114956"
+      "latitude": "40.800581558114956",
+      "longitude": "-73.95806670661364"
     },
     "notes": "A-nights, B-weekdays and evenings, C-all times exc nights"
   },
@@ -90,8 +90,8 @@
     "lines": "A-C",
     "name": "Kingston - Throop Aves",
     "coordinates": {
-      "lon": "-73.94085899871263",
-      "lat": "40.67991899941601"
+      "latitude": "40.67991899941601",
+      "longitude": "-73.94085899871263"
     },
     "notes": "A-nights, C-all other times"
   },
@@ -102,8 +102,8 @@
     "lines": "E-M-R",
     "name": "65th St",
     "coordinates": {
-      "lon": "-73.8987883783301",
-      "lat": "40.74971952935675"
+      "latitude": "40.74971952935675",
+      "longitude": "-73.8987883783301"
     },
     "notes": "E-nights, R-all other times, M-weekdays and evenings"
   },
@@ -114,8 +114,8 @@
     "lines": "E-M-R",
     "name": "36th St",
     "coordinates": {
-      "lon": "-73.92901818461539",
-      "lat": "40.75196004401078"
+      "latitude": "40.75196004401078",
+      "longitude": "-73.92901818461539"
     },
     "notes": "E-nights, R-all other times, M-weekdays and evenings"
   },
@@ -126,8 +126,8 @@
     "lines": "J-M-Z",
     "name": "Delancey St - Essex St",
     "coordinates": {
-      "lon": "-73.98740940202974",
-      "lat": "40.71830605618619"
+      "latitude": "40.71830605618619",
+      "longitude": "-73.98740940202974"
     },
     "notes": "J-all times, M-all times exc nights, Z-rush hours AM westbound, PM eastbound"
   },
@@ -138,8 +138,8 @@
     "lines": "J-Z",
     "name": "Van Siclen Ave",
     "coordinates": {
-      "lon": "-73.89165772702445",
-      "lat": "40.67802821447783"
+      "latitude": "40.67802821447783",
+      "longitude": "-73.89165772702445"
     },
     "notes": "Z-rush hours AM westbound, PM eastbound, J-all other times"
   },
@@ -150,8 +150,8 @@
     "lines": "J-Z",
     "name": "Norwood Ave",
     "coordinates": {
-      "lon": "-73.87962599910783",
-      "lat": "40.68152000045683"
+      "latitude": "40.68152000045683",
+      "longitude": "-73.87962599910783"
     },
     "notes": "Z-rush hours AM westbound, PM eastbound, J-all other times"
   },
@@ -162,8 +162,8 @@
     "lines": "J-Z",
     "name": "104th-102nd Sts",
     "coordinates": {
-      "lon": "-73.84443500029684",
-      "lat": "40.69516599823373"
+      "latitude": "40.69516599823373",
+      "longitude": "-73.84443500029684"
     },
     "notes": "Z-rush hours AM westbound, PM eastbound, J-all other times"
   },
@@ -174,8 +174,8 @@
     "lines": "B-D-N-Q-R",
     "name": "DeKalb Ave",
     "coordinates": {
-      "lon": "-73.98177094440949",
-      "lat": "40.690648119969794"
+      "latitude": "40.690648119969794",
+      "longitude": "-73.98177094440949"
     },
     "notes": "B-weekdays and evenings, D-all other times, N-nights, R-all other times, Q-all times"
   },
@@ -186,8 +186,8 @@
     "lines": "A-S",
     "name": "Beach 105th St",
     "coordinates": {
-      "lon": "-73.82758075034528",
-      "lat": "40.58326843810286"
+      "latitude": "40.58326843810286",
+      "longitude": "-73.82758075034528"
     },
     "notes": "A-rush hours AM northbound, PM southbound, S Broad Channel to Rockaway Park-all times"
   },
@@ -198,8 +198,8 @@
     "lines": "A-S",
     "name": "Beach 90th St",
     "coordinates": {
-      "lon": "-73.81365140419632",
-      "lat": "40.58809156457325"
+      "latitude": "40.58809156457325",
+      "longitude": "-73.81365140419632"
     },
     "notes": "A-rush hours AM northbound, PM southbound, S Broad Channel to Rockaway Park-all times"
   },
@@ -210,8 +210,8 @@
     "lines": "2-5",
     "name": "Freeman St",
     "coordinates": {
-      "lon": "-73.89175225349464",
-      "lat": "40.829987446384116"
+      "latitude": "40.829987446384116",
+      "longitude": "-73.89175225349464"
     },
     "notes": "2-all times, 5-all times exc nights, skips rush hours AM southbound, PM northbound"
   },
@@ -222,8 +222,8 @@
     "lines": "2-5",
     "name": "Intervale Ave",
     "coordinates": {
-      "lon": "-73.89661738461646",
-      "lat": "40.822142131170786"
+      "latitude": "40.822142131170786",
+      "longitude": "-73.89661738461646"
     },
     "notes": "2-all times, 5-all times exc nights, skips rush hours AM southbound, PM northbound"
   },
@@ -234,8 +234,8 @@
     "lines": "B-D",
     "name": "182nd-183rd Sts",
     "coordinates": {
-      "lon": "-73.90074099998965",
-      "lat": "40.85609299881864"
+      "latitude": "40.85609299881864",
+      "longitude": "-73.90074099998965"
     },
     "notes": "B-rush hours, D-all times, skips rush hours AM southbound, PM northbound"
   },
@@ -246,8 +246,8 @@
     "lines": "B-D",
     "name": "174th-175th Sts",
     "coordinates": {
-      "lon": "-73.91013600050078",
-      "lat": "40.84589999983414"
+      "latitude": "40.84589999983414",
+      "longitude": "-73.91013600050078"
     },
     "notes": "B-rush hours, D-all times, skips rush hours AM southbound, PM northbound"
   },
@@ -258,8 +258,8 @@
     "lines": "B-D",
     "name": "167th St",
     "coordinates": {
-      "lon": "-73.91843200082253",
-      "lat": "40.83376899862797"
+      "latitude": "40.83376899862797",
+      "longitude": "-73.91843200082253"
     },
     "notes": "B-rush hours, D-all times, skips rush hours AM southbound, PM northbound"
   },
@@ -270,8 +270,8 @@
     "lines": "7-7 Express",
     "name": "Mets - Willets Point",
     "coordinates": {
-      "lon": "-73.8456249984179",
-      "lat": "40.75462199881262"
+      "latitude": "40.75462199881262",
+      "longitude": "-73.8456249984179"
     },
     "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
   },
@@ -282,8 +282,8 @@
     "lines": "7-7 Express",
     "name": "Junction Blvd",
     "coordinates": {
-      "lon": "-73.86952700103515",
-      "lat": "40.74914499948836"
+      "latitude": "40.74914499948836",
+      "longitude": "-73.86952700103515"
     },
     "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
   },
@@ -294,8 +294,8 @@
     "lines": "7-7 Express",
     "name": "Flushing - Main St",
     "coordinates": {
-      "lon": "-73.83003000262508",
-      "lat": "40.75959999915012"
+      "latitude": "40.75959999915012",
+      "longitude": "-73.83003000262508"
     },
     "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
   },
@@ -306,8 +306,8 @@
     "lines": "6-6 Express",
     "name": "Buhre Ave",
     "coordinates": {
-      "lon": "-73.83256900003744",
-      "lat": "40.846809998885504"
+      "latitude": "40.846809998885504",
+      "longitude": "-73.83256900003744"
     },
     "notes": "6 Express-weekdays AM southbound, PM northbound, 6-all other times"
   },
@@ -318,8 +318,8 @@
     "lines": "6-6 Express",
     "name": "3rd Ave - 138th St",
     "coordinates": {
-      "lon": "-73.92613800014134",
-      "lat": "40.81047600117261"
+      "latitude": "40.81047600117261",
+      "longitude": "-73.92613800014134"
     },
     "notes": "6-all times, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -330,8 +330,8 @@
     "lines": "6-6 Express",
     "name": "Castle Hill Ave",
     "coordinates": {
-      "lon": "-73.85122199961472",
-      "lat": "40.83425499825462"
+      "latitude": "40.83425499825462",
+      "longitude": "-73.85122199961472"
     },
     "notes": "6 Express-weekdays AM southbound, PM northbound, 6-all other times"
   },
@@ -342,8 +342,8 @@
     "lines": "4-5-6-6 Express",
     "name": "Brooklyn Bridge - City Hall",
     "coordinates": {
-      "lon": "-74.0041310005885",
-      "lat": "40.713064999433136"
+      "latitude": "40.713064999433136",
+      "longitude": "-74.0041310005885"
     },
     "notes": "4,6-all times, 5-all times exc nights, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -354,8 +354,8 @@
     "lines": "6-6 Express",
     "name": "Zerega Ave",
     "coordinates": {
-      "lon": "-73.8470359987544",
-      "lat": "40.836488000608156"
+      "latitude": "40.836488000608156",
+      "longitude": "-73.8470359987544"
     },
     "notes": "6 Express-weekdays AM southbound, PM northbound, 6-all other times"
   },
@@ -366,8 +366,8 @@
     "lines": "4-5-6-6 Express",
     "name": "Grand Central - 42nd St",
     "coordinates": {
-      "lon": "-73.9767132992584",
-      "lat": "40.75180742981634"
+      "latitude": "40.75180742981634",
+      "longitude": "-73.9767132992584"
     },
     "notes": "4,6-all times, 5-all times exc nights, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -378,8 +378,8 @@
     "lines": "4-6-6 Express",
     "name": "33rd St",
     "coordinates": {
-      "lon": "-73.98207600148947",
-      "lat": "40.74608099909145"
+      "latitude": "40.74608099909145",
+      "longitude": "-73.98207600148947"
     },
     "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -390,8 +390,8 @@
     "lines": "4-6-6 Express",
     "name": "96th St",
     "coordinates": {
-      "lon": "-73.9510700015425",
-      "lat": "40.78567199998607"
+      "latitude": "40.78567199998607",
+      "longitude": "-73.9510700015425"
     },
     "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -402,8 +402,8 @@
     "lines": "4-6-6 Express",
     "name": "77th St",
     "coordinates": {
-      "lon": "-73.95987399886047",
-      "lat": "40.77362000074615"
+      "latitude": "40.77362000074615",
+      "longitude": "-73.95987399886047"
     },
     "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -414,8 +414,8 @@
     "lines": "J-Z",
     "name": "Chauncey St",
     "coordinates": {
-      "lon": "-73.91038357033376",
-      "lat": "40.68285130087804"
+      "latitude": "40.68285130087804",
+      "longitude": "-73.91038357033376"
     },
     "notes": "Z-rush hours AM westbound, PM eastbound, J-all other times"
   },
@@ -426,8 +426,8 @@
     "lines": "D-N-R",
     "name": "Union St",
     "coordinates": {
-      "lon": "-73.98310999909673",
-      "lat": "40.67731566735096"
+      "latitude": "40.67731566735096",
+      "longitude": "-73.98310999909673"
     },
     "notes": "D,N-nights, R-all other times"
   },
@@ -438,8 +438,8 @@
     "lines": "E-M-R",
     "name": "Elmhurst Ave",
     "coordinates": {
-      "lon": "-73.8820347465864",
-      "lat": "40.74237007972169"
+      "latitude": "40.74237007972169",
+      "longitude": "-73.8820347465864"
     },
     "notes": "E-nights, R-all other times, M-weekdays and evenings"
   },
@@ -450,8 +450,8 @@
     "lines": "A-C",
     "name": "Ralph Ave",
     "coordinates": {
-      "lon": "-73.92078599933306",
-      "lat": "40.678822000873375"
+      "latitude": "40.678822000873375",
+      "longitude": "-73.92078599933306"
     },
     "notes": "A-nights, C-all other times"
   },
@@ -462,8 +462,8 @@
     "lines": "2-5",
     "name": "Pelham Pkwy",
     "coordinates": {
-      "lon": "-73.86748067850041",
-      "lat": "40.8571924091606"
+      "latitude": "40.8571924091606",
+      "longitude": "-73.86748067850041"
     },
     "notes": "2-all times, 5-rush hours AM southbound, PM northbound"
   },
@@ -474,8 +474,8 @@
     "lines": "2-5",
     "name": "Gun Hill Rd",
     "coordinates": {
-      "lon": "-73.86613410538703",
-      "lat": "40.877839385172024"
+      "latitude": "40.877839385172024",
+      "longitude": "-73.86613410538703"
     },
     "notes": "2-all times, 5-rush hours AM southbound, PM northbound"
   },
@@ -486,8 +486,8 @@
     "lines": "2-5",
     "name": "Nereid Ave (238 St)",
     "coordinates": {
-      "lon": "-73.8543153107622",
-      "lat": "40.898286515575286"
+      "latitude": "40.898286515575286",
+      "longitude": "-73.8543153107622"
     },
     "notes": "2-all times, 5-rush hours AM southbound, PM northbound"
   },
@@ -498,8 +498,8 @@
     "lines": "2-3-4-5",
     "name": "Franklin Ave",
     "coordinates": {
-      "lon": "-73.9580997367769",
-      "lat": "40.67076515344894"
+      "latitude": "40.67076515344894",
+      "longitude": "-73.9580997367769"
     },
     "notes": "2,4-all times, 3-all times exc nights, 5-weekdays"
   },
@@ -510,8 +510,8 @@
     "lines": "2-5",
     "name": "Simpson St",
     "coordinates": {
-      "lon": "-73.89306639507903",
-      "lat": "40.823976841237396"
+      "latitude": "40.823976841237396",
+      "longitude": "-73.89306639507903"
     },
     "notes": "2-all times, 5-all times exc nights, skips rush hours AM southbound, PM northbound"
   },
@@ -522,8 +522,8 @@
     "lines": "2-5",
     "name": "Bronx Park East",
     "coordinates": {
-      "lon": "-73.86835609178098",
-      "lat": "40.848768666338934"
+      "latitude": "40.848768666338934",
+      "longitude": "-73.86835609178098"
     },
     "notes": "2-all times, 5-rush hours AM southbound, PM northbound"
   },
@@ -534,8 +534,8 @@
     "lines": "2-5",
     "name": "Winthrop St",
     "coordinates": {
-      "lon": "-73.95007934590994",
-      "lat": "40.65665931376077"
+      "latitude": "40.65665931376077",
+      "longitude": "-73.95007934590994"
     },
     "notes": "2-all times, 5-weekdays"
   },
@@ -546,8 +546,8 @@
     "lines": "3-4",
     "name": "Van Siclen Ave",
     "coordinates": {
-      "lon": "-73.88940491730106",
-      "lat": "40.665517963059635"
+      "latitude": "40.665517963059635",
+      "longitude": "-73.88940491730106"
     },
     "notes": "4-nights, 3-all other times"
   },
@@ -558,8 +558,8 @@
     "lines": "4",
     "name": "149th St - Grand Concourse",
     "coordinates": {
-      "lon": "-73.9273847542618",
-      "lat": "40.81830344372315"
+      "latitude": "40.81830344372315",
+      "longitude": "-73.9273847542618"
     },
     "notes": "4-all times"
   },
@@ -570,8 +570,8 @@
     "lines": "4",
     "name": "161st St - Yankee Stadium",
     "coordinates": {
-      "lon": "-73.92569199505733",
-      "lat": "40.82823032742169"
+      "latitude": "40.82823032742169",
+      "longitude": "-73.92569199505733"
     },
     "notes": "4-all times"
   },
@@ -582,8 +582,8 @@
     "lines": "4-5-6-6 Express",
     "name": "Lexington Ave - 59th St",
     "coordinates": {
-      "lon": "-73.9679670004732",
-      "lat": "40.762526000304575"
+      "latitude": "40.762526000304575",
+      "longitude": "-73.9679670004732"
     },
     "notes": "4,6-all times, 5-all times exc nights, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -594,8 +594,8 @@
     "lines": "6",
     "name": "E 149th St",
     "coordinates": {
-      "lon": "-73.90409799875945",
-      "lat": "40.81211799827203"
+      "latitude": "40.81211799827203",
+      "longitude": "-73.90409799875945"
     },
     "notes": "6-all times"
   },
@@ -606,8 +606,8 @@
     "lines": "6",
     "name": "Morrison Av - Soundview",
     "coordinates": {
-      "lon": "-73.87451599929486",
-      "lat": "40.82952100156747"
+      "latitude": "40.82952100156747",
+      "longitude": "-73.87451599929486"
     },
     "notes": "6-all times"
   },
@@ -618,8 +618,8 @@
     "lines": "6",
     "name": "Whitlock Ave",
     "coordinates": {
-      "lon": "-73.8862829985325",
-      "lat": "40.82652500055904"
+      "latitude": "40.82652500055904",
+      "longitude": "-73.8862829985325"
     },
     "notes": "6-all times"
   },
@@ -630,8 +630,8 @@
     "lines": "6",
     "name": "St Lawrence Ave",
     "coordinates": {
-      "lon": "-73.86761799923673",
-      "lat": "40.8315090005233"
+      "latitude": "40.8315090005233",
+      "longitude": "-73.86761799923673"
     },
     "notes": "6-all times"
   },
@@ -642,8 +642,8 @@
     "lines": "7-7 Express",
     "name": "Woodside - 61st St",
     "coordinates": {
-      "lon": "-73.90298400173006",
-      "lat": "40.745630001138395"
+      "latitude": "40.745630001138395",
+      "longitude": "-73.90298400173006"
     },
     "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
   },
@@ -654,8 +654,8 @@
     "lines": "A",
     "name": "Far Rockaway - Mott Ave",
     "coordinates": {
-      "lon": "-73.75540499924732",
-      "lat": "40.603995001687544"
+      "latitude": "40.603995001687544",
+      "longitude": "-73.75540499924732"
     },
     "notes": "A-all times"
   },
@@ -666,8 +666,8 @@
     "lines": "A-B-C",
     "name": "72nd St",
     "coordinates": {
-      "lon": "-73.976336575218",
-      "lat": "40.77551939729258"
+      "latitude": "40.77551939729258",
+      "longitude": "-73.976336575218"
     },
     "notes": "A-nights, B-weekdays and evenings, C-all times exc nights"
   },
@@ -678,8 +678,8 @@
     "lines": "A-B-C",
     "name": "96th St",
     "coordinates": {
-      "lon": "-73.96460245687166",
-      "lat": "40.79161879767014"
+      "latitude": "40.79161879767014",
+      "longitude": "-73.96460245687166"
     },
     "notes": "A-nights, B-weekdays and evenings, C-all times exc nights"
   },
@@ -690,8 +690,8 @@
     "lines": "A-C",
     "name": "168th St",
     "coordinates": {
-      "lon": "-73.93956099985425",
-      "lat": "40.84071899990795"
+      "latitude": "40.84071899990795",
+      "longitude": "-73.93956099985425"
     },
     "notes": "A-all times, C-all times exc nights"
   },
@@ -702,8 +702,8 @@
     "lines": "B-D",
     "name": "Kingsbridge Rd",
     "coordinates": {
-      "lon": "-73.8935090000331",
-      "lat": "40.86697799999945"
+      "latitude": "40.86697799999945",
+      "longitude": "-73.8935090000331"
     },
     "notes": "B-rush hours, D-all times"
   },
@@ -714,8 +714,8 @@
     "lines": "B-D-F-M",
     "name": "42nd St - Bryant Pk",
     "coordinates": {
-      "lon": "-73.98459099904711",
-      "lat": "40.754184001312545"
+      "latitude": "40.754184001312545",
+      "longitude": "-73.98459099904711"
     },
     "notes": "B,M-weekdays and evenings, D,F-all times"
   },
@@ -726,8 +726,8 @@
     "lines": "B-Q-S",
     "name": "Prospect Park",
     "coordinates": {
-      "lon": "-73.96203130426609",
-      "lat": "40.6616334551018"
+      "latitude": "40.6616334551018",
+      "longitude": "-73.96203130426609"
     },
     "notes": "B-weekdays and evenings, Q,S to Franklin Av-Fulton St-all times"
   },
@@ -738,8 +738,8 @@
     "lines": "D",
     "name": "55th St",
     "coordinates": {
-      "lon": "-73.99534882595742",
-      "lat": "40.63147876093745"
+      "latitude": "40.63147876093745",
+      "longitude": "-73.99534882595742"
     },
     "notes": "D-all times"
   },
@@ -750,8 +750,8 @@
     "lines": "E",
     "name": "Jamaica - Van Wyck",
     "coordinates": {
-      "lon": "-73.81701287135405",
-      "lat": "40.70289855287313"
+      "latitude": "40.70289855287313",
+      "longitude": "-73.81701287135405"
     },
     "notes": "E-all times"
   },
@@ -762,8 +762,8 @@
     "lines": "E-F",
     "name": "Kew Gardens - Union Tpke",
     "coordinates": {
-      "lon": "-73.8303702709878",
-      "lat": "40.714034819571026"
+      "latitude": "40.714034819571026",
+      "longitude": "-73.8303702709878"
     },
     "notes": "E,F-all times"
   },
@@ -774,8 +774,8 @@
     "lines": "E-J-Z",
     "name": "Sutphin Blvd - Archer Av",
     "coordinates": {
-      "lon": "-73.80800471963833",
-      "lat": "40.700382424235"
+      "latitude": "40.700382424235",
+      "longitude": "-73.80800471963833"
     },
     "notes": "E,J-all times, Z-rush hours AM westbound, PM eastbound"
   },
@@ -786,8 +786,8 @@
     "lines": "E-M",
     "name": "Court Sq - 23rd St",
     "coordinates": {
-      "lon": "-73.94605470266329",
-      "lat": "40.747768121414325"
+      "latitude": "40.747768121414325",
+      "longitude": "-73.94605470266329"
     },
     "notes": "E-all times, M-weekdays and evenings"
   },
@@ -798,8 +798,8 @@
     "lines": "E-M-R",
     "name": "67th Ave",
     "coordinates": {
-      "lon": "-73.85286048434907",
-      "lat": "40.726505475813006"
+      "latitude": "40.726505475813006",
+      "longitude": "-73.85286048434907"
     },
     "notes": "E-nights, R-all other times, M-weekdays and evenings"
   },
@@ -810,8 +810,8 @@
     "lines": "E-M-R",
     "name": "Grand Ave - Newtown",
     "coordinates": {
-      "lon": "-73.87722085669182",
-      "lat": "40.736813418197144"
+      "latitude": "40.736813418197144",
+      "longitude": "-73.87722085669182"
     },
     "notes": "E-nights, R-all other times, M-weekdays and evenings"
   },
@@ -822,8 +822,8 @@
     "lines": "F",
     "name": "Ditmas Ave",
     "coordinates": {
-      "lon": "-73.97817199965161",
-      "lat": "40.63611866666291"
+      "latitude": "40.63611866666291",
+      "longitude": "-73.97817199965161"
     },
     "notes": "F-all times"
   },
@@ -834,8 +834,8 @@
     "lines": "G",
     "name": "Classon Ave",
     "coordinates": {
-      "lon": "-73.95999000137212",
-      "lat": "40.68888900026455"
+      "latitude": "40.68888900026455",
+      "longitude": "-73.95999000137212"
     },
     "notes": "G-all times"
   },
@@ -846,8 +846,8 @@
     "lines": "G",
     "name": "Broadway",
     "coordinates": {
-      "lon": "-73.95031225606621",
-      "lat": "40.706126576274166"
+      "latitude": "40.706126576274166",
+      "longitude": "-73.95031225606621"
     },
     "notes": "G-all times"
   },
@@ -858,8 +858,8 @@
     "lines": "L",
     "name": "Lorimer St",
     "coordinates": {
-      "lon": "-73.95024799996972",
-      "lat": "40.71407200064717"
+      "latitude": "40.71407200064717",
+      "longitude": "-73.95024799996972"
     },
     "notes": "L-all times"
   },
@@ -870,8 +870,8 @@
     "lines": "L",
     "name": "Sutter Ave",
     "coordinates": {
-      "lon": "-73.9019160004208",
-      "lat": "40.66914500061398"
+      "latitude": "40.66914500061398",
+      "longitude": "-73.9019160004208"
     },
     "notes": "L-all times"
   },
@@ -882,8 +882,8 @@
     "lines": "L",
     "name": "Wilson Ave",
     "coordinates": {
-      "lon": "-73.90395860491864",
-      "lat": "40.68886654246024"
+      "latitude": "40.68886654246024",
+      "longitude": "-73.90395860491864"
     },
     "notes": "L-all times"
   },
@@ -894,8 +894,8 @@
     "lines": "J",
     "name": "Halsey St",
     "coordinates": {
-      "lon": "-73.9166388842194",
-      "lat": "40.686415270704344"
+      "latitude": "40.686415270704344",
+      "longitude": "-73.9166388842194"
     },
     "notes": "J-all times"
   },
@@ -906,8 +906,8 @@
     "lines": "J-M",
     "name": "Lorimer St",
     "coordinates": {
-      "lon": "-73.94735499884204",
-      "lat": "40.703844000042096"
+      "latitude": "40.703844000042096",
+      "longitude": "-73.94735499884204"
     },
     "notes": "J-all times, skips weekdays AM westbound, PM eastbound, M-all times exc nights"
   },
@@ -918,8 +918,8 @@
     "lines": "N",
     "name": "8th Ave",
     "coordinates": {
-      "lon": "-74.01151599772157",
-      "lat": "40.634970999647166"
+      "latitude": "40.634970999647166",
+      "longitude": "-74.01151599772157"
     },
     "notes": "N-all times"
   },
@@ -930,8 +930,8 @@
     "lines": "N-W",
     "name": "36th Ave",
     "coordinates": {
-      "lon": "-73.929861999118",
-      "lat": "40.7564420005104"
+      "latitude": "40.7564420005104",
+      "longitude": "-73.929861999118"
     },
     "notes": "N-all times, W part time"
   },
@@ -942,8 +942,8 @@
     "lines": "N-W",
     "name": "Broadway",
     "coordinates": {
-      "lon": "-73.92582299919906",
-      "lat": "40.761431998800546"
+      "latitude": "40.761431998800546",
+      "longitude": "-73.92582299919906"
     },
     "notes": "N-all times, W part time"
   },
@@ -954,8 +954,8 @@
     "lines": "N-Q-R-W",
     "name": "Times Sq - 42nd St",
     "coordinates": {
-      "lon": "-73.98676800153976",
-      "lat": "40.75461199851542"
+      "latitude": "40.75461199851542",
+      "longitude": "-73.98676800153976"
     },
     "notes": "N,Q-all times, R-all times exc nights, W part time"
   },
@@ -966,8 +966,8 @@
     "lines": "S",
     "name": "Grand Central - 42nd St",
     "coordinates": {
-      "lon": "-73.97918899989101",
-      "lat": "40.75276866674217"
+      "latitude": "40.75276866674217",
+      "longitude": "-73.97918899989101"
     },
     "notes": "S to Times Sq-all times exc nights, closed nights-use 7"
   },
@@ -978,8 +978,8 @@
     "lines": "S",
     "name": "Park Pl",
     "coordinates": {
-      "lon": "-73.95762400074634",
-      "lat": "40.67477166685263"
+      "latitude": "40.67477166685263",
+      "longitude": "-73.95762400074634"
     },
     "notes": "S Franklin Av-Fulton St to Prospect Park-all times"
   },
@@ -990,8 +990,8 @@
     "lines": "A-S",
     "name": "111th St",
     "coordinates": {
-      "lon": "-73.83216299845388",
-      "lat": "40.68433100001238"
+      "latitude": "40.68433100001238",
+      "longitude": "-73.83216299845388"
     },
     "notes": "S Euclid Av to Ozone Park-Lefferts Blvd-nights, A-all other times"
   },
@@ -1002,8 +1002,8 @@
     "lines": "B-D-F-M",
     "name": "W 4th St - Washington Sq (Lower)",
     "coordinates": {
-      "lon": "-74.00030814755975",
-      "lat": "40.732254493367876"
+      "latitude": "40.732254493367876",
+      "longitude": "-74.00030814755975"
     },
     "notes": "B,M-weekdays and evenings, D,F-all times"
   },
@@ -1014,8 +1014,8 @@
     "lines": "4-6-6 Express",
     "name": "51st St",
     "coordinates": {
-      "lon": "-73.97192000069982",
-      "lat": "40.75710699989316"
+      "latitude": "40.75710699989316",
+      "longitude": "-73.97192000069982"
     },
     "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -1026,8 +1026,8 @@
     "lines": "1-2",
     "name": "86th St",
     "coordinates": {
-      "lon": "-73.97621799859327",
-      "lat": "40.78864400073892"
+      "latitude": "40.78864400073892",
+      "longitude": "-73.97621799859327"
     },
     "notes": "1-all times, 2-nights"
   },
@@ -1038,8 +1038,8 @@
     "lines": "2-5",
     "name": "233rd St",
     "coordinates": {
-      "lon": "-73.85736239521543",
-      "lat": "40.89314324138378"
+      "latitude": "40.89314324138378",
+      "longitude": "-73.85736239521543"
     },
     "notes": "2-all times, 5-rush hours AM southbound, PM northbound"
   },
@@ -1050,8 +1050,8 @@
     "lines": "1-2",
     "name": "66th St - Lincoln Ctr",
     "coordinates": {
-      "lon": "-73.98220899995783",
-      "lat": "40.77344000052039"
+      "latitude": "40.77344000052039",
+      "longitude": "-73.98220899995783"
     },
     "notes": "1-all times, 2-nights"
   },
@@ -1062,8 +1062,8 @@
     "lines": "6-6 Express",
     "name": "Hunts Point Ave",
     "coordinates": {
-      "lon": "-73.89054900017344",
-      "lat": "40.82094799852307"
+      "latitude": "40.82094799852307",
+      "longitude": "-73.89054900017344"
     },
     "notes": "6-all times, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -1074,8 +1074,8 @@
     "lines": "1-2",
     "name": "Canal St",
     "coordinates": {
-      "lon": "-74.0062770001748",
-      "lat": "40.72285399778783"
+      "latitude": "40.72285399778783",
+      "longitude": "-74.0062770001748"
     },
     "notes": "1-all times, 2-nights"
   },
@@ -1086,8 +1086,8 @@
     "lines": "6-6 Express",
     "name": "Middletown Rd",
     "coordinates": {
-      "lon": "-73.83632199755944",
-      "lat": "40.84386300128381"
+      "latitude": "40.84386300128381",
+      "longitude": "-73.83632199755944"
     },
     "notes": "6 Express-weekdays AM southbound, PM northbound, 6-all other times"
   },
@@ -1098,8 +1098,8 @@
     "lines": "4-6-6 Express",
     "name": "23rd St",
     "coordinates": {
-      "lon": "-73.98659900207888",
-      "lat": "40.739864000474604"
+      "latitude": "40.739864000474604",
+      "longitude": "-73.98659900207888"
     },
     "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -1110,8 +1110,8 @@
     "lines": "7-7 Express",
     "name": "Court Sq",
     "coordinates": {
-      "lon": "-73.94526400039679",
-      "lat": "40.74702299889643"
+      "latitude": "40.74702299889643",
+      "longitude": "-73.94526400039679"
     },
     "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
   },
@@ -1122,8 +1122,8 @@
     "lines": "1-2",
     "name": "59th St - Columbus Circle",
     "coordinates": {
-      "lon": "-73.98192900232715",
-      "lat": "40.76824700063689"
+      "latitude": "40.76824700063689",
+      "longitude": "-73.98192900232715"
     },
     "notes": "1-all times, 2-nights"
   },
@@ -1134,8 +1134,8 @@
     "lines": "7-7 Express",
     "name": "Hunters Point Ave",
     "coordinates": {
-      "lon": "-73.9489160009391",
-      "lat": "40.74221599986316"
+      "latitude": "40.74221599986316",
+      "longitude": "-73.9489160009391"
     },
     "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
   },
@@ -1146,8 +1146,8 @@
     "lines": "1-2",
     "name": "23rd St",
     "coordinates": {
-      "lon": "-73.9956570016487",
-      "lat": "40.74408099989751"
+      "latitude": "40.74408099989751",
+      "longitude": "-73.9956570016487"
     },
     "notes": "1-all times, 2-nights"
   },
@@ -1158,8 +1158,8 @@
     "lines": "1-2",
     "name": "Houston St",
     "coordinates": {
-      "lon": "-74.00536700180581",
-      "lat": "40.728251000730204"
+      "latitude": "40.728251000730204",
+      "longitude": "-74.00536700180581"
     },
     "notes": "1-all times, 2-nights"
   },
@@ -1170,8 +1170,8 @@
     "lines": "A-S",
     "name": "104th St",
     "coordinates": {
-      "lon": "-73.83768300060997",
-      "lat": "40.681711001091195"
+      "latitude": "40.681711001091195",
+      "longitude": "-73.83768300060997"
     },
     "notes": "S Euclid Av to Ozone Park-Lefferts Blvd-nights, A-all other times"
   },
@@ -1182,8 +1182,8 @@
     "lines": "A-S",
     "name": "Broad Channel",
     "coordinates": {
-      "lon": "-73.81583268782963",
-      "lat": "40.60840218069683"
+      "latitude": "40.60840218069683",
+      "longitude": "-73.81583268782963"
     },
     "notes": "A,S to Rockaway Park-all times"
   },
@@ -1194,8 +1194,8 @@
     "lines": "Q",
     "name": "Ocean Pkwy",
     "coordinates": {
-      "lon": "-73.96850099975177",
-      "lat": "40.57631166708091"
+      "latitude": "40.57631166708091",
+      "longitude": "-73.96850099975177"
     },
     "notes": "Q-all times"
   },
@@ -1206,8 +1206,8 @@
     "lines": "7-7 Express",
     "name": "Vernon Blvd - Jackson Ave",
     "coordinates": {
-      "lon": "-73.95358099875249",
-      "lat": "40.74262599969749"
+      "latitude": "40.74262599969749",
+      "longitude": "-73.95358099875249"
     },
     "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
   },
@@ -1218,8 +1218,8 @@
     "lines": "4-6-6 Express",
     "name": "68th St - Hunter College",
     "coordinates": {
-      "lon": "-73.96387000158042",
-      "lat": "40.76814100049679"
+      "latitude": "40.76814100049679",
+      "longitude": "-73.96387000158042"
     },
     "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -1230,8 +1230,8 @@
     "lines": "7-7 Express-N-W",
     "name": "Queensboro Plz",
     "coordinates": {
-      "lon": "-73.9401635351909",
-      "lat": "40.750635651014804"
+      "latitude": "40.750635651014804",
+      "longitude": "-73.9401635351909"
     },
     "notes": "7,N-all times, 7 Express-rush hours AM westbound, PM eastbound, W part time"
   },
@@ -1242,8 +1242,8 @@
     "lines": "A-S",
     "name": "Rockaway Blvd",
     "coordinates": {
-      "lon": "-73.8438529979573",
-      "lat": "40.680428999588415"
+      "latitude": "40.680428999588415",
+      "longitude": "-73.8438529979573"
     },
     "notes": "A-all times, S Euclid Av to Ozone Park-Lefferts Blvd-nights"
   },
@@ -1254,8 +1254,8 @@
     "lines": "4-5-6-6 Express",
     "name": "Union Sq - 14th St",
     "coordinates": {
-      "lon": "-73.98995099881881",
-      "lat": "40.734673000996125"
+      "latitude": "40.734673000996125",
+      "longitude": "-73.98995099881881"
     },
     "notes": "4,6-all times, 5-all times exc nights, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -1266,8 +1266,8 @@
     "lines": "G",
     "name": "Bedford - Nostrand Aves",
     "coordinates": {
-      "lon": "-73.95352200064022",
-      "lat": "40.68962700158444"
+      "latitude": "40.68962700158444",
+      "longitude": "-73.95352200064022"
     },
     "notes": "G-all times"
   },
@@ -1278,8 +1278,8 @@
     "lines": "F-G",
     "name": "15th St - Prospect Park",
     "coordinates": {
-      "lon": "-73.97973580592873",
-      "lat": "40.66003568810021"
+      "latitude": "40.66003568810021",
+      "longitude": "-73.97973580592873"
     },
     "notes": "F,G-all times"
   },
@@ -1290,8 +1290,8 @@
     "lines": "F-G",
     "name": "7th Ave",
     "coordinates": {
-      "lon": "-73.98025117900944",
-      "lat": "40.66624469001985"
+      "latitude": "40.66624469001985",
+      "longitude": "-73.98025117900944"
     },
     "notes": "F,G-all times"
   },
@@ -1302,8 +1302,8 @@
     "lines": "F-G",
     "name": "Ft Hamilton Pkwy",
     "coordinates": {
-      "lon": "-73.97577599917474",
-      "lat": "40.65078166803418"
+      "latitude": "40.65078166803418",
+      "longitude": "-73.97577599917474"
     },
     "notes": "F,G-all times"
   },
@@ -1314,8 +1314,8 @@
     "lines": "F-G",
     "name": "Church Ave",
     "coordinates": {
-      "lon": "-73.97972116229084",
-      "lat": "40.64427200012998"
+      "latitude": "40.64427200012998",
+      "longitude": "-73.97972116229084"
     },
     "notes": "F,G-all times"
   },
@@ -1326,8 +1326,8 @@
     "lines": "Q",
     "name": "Beverly Rd",
     "coordinates": {
-      "lon": "-73.96435779623125",
-      "lat": "40.64390459860419"
+      "latitude": "40.64390459860419",
+      "longitude": "-73.96435779623125"
     },
     "notes": "Q-all times"
   },
@@ -1338,8 +1338,8 @@
     "lines": "B-Q",
     "name": "Church Ave",
     "coordinates": {
-      "lon": "-73.96288246192114",
-      "lat": "40.65049324646484"
+      "latitude": "40.65049324646484",
+      "longitude": "-73.96288246192114"
     },
     "notes": "B-weekdays and evenings, Q-all times"
   },
@@ -1350,8 +1350,8 @@
     "lines": "B-Q",
     "name": "Newkirk Ave",
     "coordinates": {
-      "lon": "-73.96269486837261",
-      "lat": "40.63514193733789"
+      "latitude": "40.63514193733789",
+      "longitude": "-73.96269486837261"
     },
     "notes": "B-weekdays and evenings, Q-all times"
   },
@@ -1362,8 +1362,8 @@
     "lines": "Q",
     "name": "Parkside Ave",
     "coordinates": {
-      "lon": "-73.96145343987648",
-      "lat": "40.65507304163716"
+      "latitude": "40.65507304163716",
+      "longitude": "-73.96145343987648"
     },
     "notes": "Q-all times"
   },
@@ -1374,8 +1374,8 @@
     "lines": "2-3-4",
     "name": "Grand Army Plaza",
     "coordinates": {
-      "lon": "-73.9709563319228",
-      "lat": "40.6752946951032"
+      "latitude": "40.6752946951032",
+      "longitude": "-73.9709563319228"
     },
     "notes": "4-nights, 3-all other times, 2-all times"
   },
@@ -1386,8 +1386,8 @@
     "lines": "2-3-4-5",
     "name": "Atlantic Av - Barclay's Center",
     "coordinates": {
-      "lon": "-73.97754993539385",
-      "lat": "40.68442016526762"
+      "latitude": "40.68442016526762",
+      "longitude": "-73.97754993539385"
     },
     "notes": "2,4-all times, 3-all times exc nights, 5-weekdays"
   },
@@ -1398,8 +1398,8 @@
     "lines": "A-C",
     "name": "Rockaway Ave",
     "coordinates": {
-      "lon": "-73.91194599726617",
-      "lat": "40.678339999883505"
+      "latitude": "40.678339999883505",
+      "longitude": "-73.91194599726617"
     },
     "notes": "A-nights, C-all other times"
   },
@@ -1410,8 +1410,8 @@
     "lines": "G",
     "name": "Fulton St",
     "coordinates": {
-      "lon": "-73.97537499833149",
-      "lat": "40.68711899950771"
+      "latitude": "40.68711899950771",
+      "longitude": "-73.97537499833149"
     },
     "notes": "G-all times"
   },
@@ -1422,8 +1422,8 @@
     "lines": "G",
     "name": "Clinton - Washington Aves",
     "coordinates": {
-      "lon": "-73.9667959986695",
-      "lat": "40.68809400106055"
+      "latitude": "40.68809400106055",
+      "longitude": "-73.9667959986695"
     },
     "notes": "G-all times"
   },
@@ -1434,8 +1434,8 @@
     "lines": "B-Q",
     "name": "7th Ave",
     "coordinates": {
-      "lon": "-73.97285279191024",
-      "lat": "40.67710217983294"
+      "latitude": "40.67710217983294",
+      "longitude": "-73.97285279191024"
     },
     "notes": "B-weekdays and evenings, Q-all times"
   },
@@ -1446,8 +1446,8 @@
     "lines": "B-Q",
     "name": "Atlantic Av - Barclay's Center",
     "coordinates": {
-      "lon": "-73.97678343963167",
-      "lat": "40.684488323453685"
+      "latitude": "40.684488323453685",
+      "longitude": "-73.97678343963167"
     },
     "notes": "B-weekdays and evenings, Q-all times"
   },
@@ -1458,8 +1458,8 @@
     "lines": "D-N-Q-R",
     "name": "Atlantic Av - Barclay's Center",
     "coordinates": {
-      "lon": "-73.97880999956767",
-      "lat": "40.683665667279435"
+      "latitude": "40.683665667279435",
+      "longitude": "-73.97880999956767"
     },
     "notes": "D,N-all times, R-all times exc nights"
   },
@@ -1470,8 +1470,8 @@
     "lines": "4-5",
     "name": "Borough Hall",
     "coordinates": {
-      "lon": "-73.99015100090539",
-      "lat": "40.692403999991036"
+      "latitude": "40.692403999991036",
+      "longitude": "-73.99015100090539"
     },
     "notes": "4-all times, 5-weekdays"
   },
@@ -1482,8 +1482,8 @@
     "lines": "A",
     "name": "Aqueduct Racetrack",
     "coordinates": {
-      "lon": "-73.83591899965162",
-      "lat": "40.672096999172844"
+      "latitude": "40.672096999172844",
+      "longitude": "-73.83591899965162"
     },
     "notes": "A-to Manhattan only, racing days only"
   },
@@ -1494,8 +1494,8 @@
     "lines": "5",
     "name": "Morris Park",
     "coordinates": {
-      "lon": "-73.86049500117254",
-      "lat": "40.85436399966426"
+      "latitude": "40.85436399966426",
+      "longitude": "-73.86049500117254"
     },
     "notes": "5-all times"
   },
@@ -1506,8 +1506,8 @@
     "lines": "5",
     "name": "Pelham Pkwy",
     "coordinates": {
-      "lon": "-73.85535900043564",
-      "lat": "40.858984999820116"
+      "latitude": "40.858984999820116",
+      "longitude": "-73.85535900043564"
     },
     "notes": "5-all times"
   },
@@ -1518,8 +1518,8 @@
     "lines": "A-C",
     "name": "Nostrand Ave",
     "coordinates": {
-      "lon": "-73.95042600099683",
-      "lat": "40.68043800006226"
+      "latitude": "40.68043800006226",
+      "longitude": "-73.95042600099683"
     },
     "notes": "A-all times, C-all times exc nights"
   },
@@ -1530,8 +1530,8 @@
     "lines": "2-3-4-5",
     "name": "Nevins St",
     "coordinates": {
-      "lon": "-73.98040679874578",
-      "lat": "40.68831058019022"
+      "latitude": "40.68831058019022",
+      "longitude": "-73.98040679874578"
     },
     "notes": "2,4-all times, 3-all times exc nights, 5-weekdays"
   },
@@ -1542,8 +1542,8 @@
     "lines": "2-3-4",
     "name": "Eastern Pkwy - Bklyn Museum",
     "coordinates": {
-      "lon": "-73.96422203748425",
-      "lat": "40.67203223545925"
+      "latitude": "40.67203223545925",
+      "longitude": "-73.96422203748425"
     },
     "notes": "4-nights, 3-all other times, 2-all times"
   },
@@ -1554,8 +1554,8 @@
     "lines": "2-5",
     "name": "Beverly Rd",
     "coordinates": {
-      "lon": "-73.94884798381702",
-      "lat": "40.64512351894373"
+      "latitude": "40.64512351894373",
+      "longitude": "-73.94884798381702"
     },
     "notes": "2-all times, 5-weekdays"
   },
@@ -1566,8 +1566,8 @@
     "lines": "2-5",
     "name": "Church Ave",
     "coordinates": {
-      "lon": "-73.94945514035334",
-      "lat": "40.6508606878022"
+      "latitude": "40.6508606878022",
+      "longitude": "-73.94945514035334"
     },
     "notes": "2-all times, 5-weekdays"
   },
@@ -1578,8 +1578,8 @@
     "lines": "2-5",
     "name": "Newkirk Ave",
     "coordinates": {
-      "lon": "-73.94829990822407",
-      "lat": "40.63999124275311"
+      "latitude": "40.63999124275311",
+      "longitude": "-73.94829990822407"
     },
     "notes": "2-all times, 5-weekdays"
   },
@@ -1590,8 +1590,8 @@
     "lines": "2-5",
     "name": "Brooklyn College - Flatbush Ave",
     "coordinates": {
-      "lon": "-73.94754120734406",
-      "lat": "40.63284240700742"
+      "latitude": "40.63284240700742",
+      "longitude": "-73.94754120734406"
     },
     "notes": "2-all times, 5-weekdays"
   },
@@ -1602,8 +1602,8 @@
     "lines": "2-5",
     "name": "Sterling St",
     "coordinates": {
-      "lon": "-73.95072891124937",
-      "lat": "40.6627729934283"
+      "latitude": "40.6627729934283",
+      "longitude": "-73.95072891124937"
     },
     "notes": "2-all times, 5-weekdays"
   },
@@ -1614,8 +1614,8 @@
     "lines": "3-4",
     "name": "Crown Hts - Utica Ave",
     "coordinates": {
-      "lon": "-73.93293256081851",
-      "lat": "40.66897831107809"
+      "latitude": "40.66897831107809",
+      "longitude": "-73.93293256081851"
     },
     "notes": "3-all times exc nights, 4-all times"
   },
@@ -1626,8 +1626,8 @@
     "lines": "3-4",
     "name": "Kingston Ave",
     "coordinates": {
-      "lon": "-73.94215978392963",
-      "lat": "40.66948144864978"
+      "latitude": "40.66948144864978",
+      "longitude": "-73.94215978392963"
     },
     "notes": "4-nights, 3-all other times"
   },
@@ -1638,8 +1638,8 @@
     "lines": "G",
     "name": "Nassau Ave",
     "coordinates": {
-      "lon": "-73.95118300016523",
-      "lat": "40.724479997808274"
+      "latitude": "40.724479997808274",
+      "longitude": "-73.95118300016523"
     },
     "notes": "G-all times"
   },
@@ -1650,8 +1650,8 @@
     "lines": "G",
     "name": "Greenpoint Ave",
     "coordinates": {
-      "lon": "-73.95442500146235",
-      "lat": "40.73126699971465"
+      "latitude": "40.73126699971465",
+      "longitude": "-73.95442500146235"
     },
     "notes": "G-all times"
   },
@@ -1662,8 +1662,8 @@
     "lines": "J-M-Z",
     "name": "Marcy Ave",
     "coordinates": {
-      "lon": "-73.95783200075729",
-      "lat": "40.708383000017925"
+      "latitude": "40.708383000017925",
+      "longitude": "-73.95783200075729"
     },
     "notes": "J-all times, M-all times exc nights, Z-rush hours AM westbound, PM eastbound"
   },
@@ -1674,8 +1674,8 @@
     "lines": "J-M",
     "name": "Hewes St",
     "coordinates": {
-      "lon": "-73.95348800038457",
-      "lat": "40.706889998054"
+      "latitude": "40.706889998054",
+      "longitude": "-73.95348800038457"
     },
     "notes": "J-all times, skips weekdays AM westbound, PM eastbound, M-all times exc nights"
   },
@@ -1686,8 +1686,8 @@
     "lines": "4-5",
     "name": "138th St - Grand Concourse",
     "coordinates": {
-      "lon": "-73.92984899935611",
-      "lat": "40.81322399958908"
+      "latitude": "40.81322399958908",
+      "longitude": "-73.92984899935611"
     },
     "notes": "4-all times, skips rush hours AM southbound, PM northbound, 5-all times exc nights"
   },
@@ -1698,8 +1698,8 @@
     "lines": "E-M",
     "name": "5th Ave - 53rd St",
     "coordinates": {
-      "lon": "-73.9752485052734",
-      "lat": "40.76008683231326"
+      "latitude": "40.76008683231326",
+      "longitude": "-73.9752485052734"
     },
     "notes": "E-all times, M-weekdays and evenings"
   },
@@ -1710,8 +1710,8 @@
     "lines": "E-M",
     "name": "Lexington Ave - 53rd St",
     "coordinates": {
-      "lon": "-73.96907237490204",
-      "lat": "40.75746830782865"
+      "latitude": "40.75746830782865",
+      "longitude": "-73.96907237490204"
     },
     "notes": "E-all times, M-weekdays and evenings"
   },
@@ -1722,8 +1722,8 @@
     "lines": "N-Q-R-W",
     "name": "28th St",
     "coordinates": {
-      "lon": "-73.98869800128737",
-      "lat": "40.74545399979951"
+      "latitude": "40.74545399979951",
+      "longitude": "-73.98869800128737"
     },
     "notes": "N-all times, R-all times exc nights, part time"
   },
@@ -1734,8 +1734,8 @@
     "lines": "N-Q-R-W",
     "name": "Herald Sq - 34th St",
     "coordinates": {
-      "lon": "-73.9879368338264",
-      "lat": "40.74964456009442"
+      "latitude": "40.74964456009442",
+      "longitude": "-73.9879368338264"
     },
     "notes": "N,Q-all times, R-all times exc nights"
   },
@@ -1746,8 +1746,8 @@
     "lines": "L",
     "name": "1st Ave",
     "coordinates": {
-      "lon": "-73.98168087489128",
-      "lat": "40.73097497580066"
+      "latitude": "40.73097497580066",
+      "longitude": "-73.98168087489128"
     },
     "notes": "L-all times"
   },
@@ -1758,8 +1758,8 @@
     "lines": "S",
     "name": "Times Sq - 42nd St",
     "coordinates": {
-      "lon": "-73.98622899953202",
-      "lat": "40.755983000570076"
+      "latitude": "40.755983000570076",
+      "longitude": "-73.98622899953202"
     },
     "notes": "S to Grand Central-all times exc nights, closed nights-use 7"
   },
@@ -1770,8 +1770,8 @@
     "lines": "G",
     "name": "Metropolitan Ave",
     "coordinates": {
-      "lon": "-73.9514239994525",
-      "lat": "40.71277400073426"
+      "latitude": "40.71277400073426",
+      "longitude": "-73.9514239994525"
     },
     "notes": "G-all times"
   },
@@ -1782,8 +1782,8 @@
     "lines": "L",
     "name": "Grand St",
     "coordinates": {
-      "lon": "-73.94049699874644",
-      "lat": "40.71157600064823"
+      "latitude": "40.71157600064823",
+      "longitude": "-73.94049699874644"
     },
     "notes": "L-all times"
   },
@@ -1794,8 +1794,8 @@
     "lines": "L",
     "name": "Graham Ave",
     "coordinates": {
-      "lon": "-73.94394399869037",
-      "lat": "40.714575998363635"
+      "latitude": "40.714575998363635",
+      "longitude": "-73.94394399869037"
     },
     "notes": "L-all times"
   },
@@ -1806,8 +1806,8 @@
     "lines": "L",
     "name": "Bedford Ave",
     "coordinates": {
-      "lon": "-73.95666499806525",
-      "lat": "40.71717399858899"
+      "latitude": "40.71717399858899",
+      "longitude": "-73.95666499806525"
     },
     "notes": "L-all times"
   },
@@ -1818,8 +1818,8 @@
     "lines": "L",
     "name": "Montrose Ave",
     "coordinates": {
-      "lon": "-73.93979284713505",
-      "lat": "40.70739106438455"
+      "latitude": "40.70739106438455",
+      "longitude": "-73.93979284713505"
     },
     "notes": "L-all times"
   },
@@ -1830,8 +1830,8 @@
     "lines": "G",
     "name": "Long Island City - Court Sq",
     "coordinates": {
-      "lon": "-73.94381559597835",
-      "lat": "40.74630503357145"
+      "latitude": "40.74630503357145",
+      "longitude": "-73.94381559597835"
     },
     "notes": "G-all times"
   },
@@ -1842,8 +1842,8 @@
     "lines": "G",
     "name": "21st St",
     "coordinates": {
-      "lon": "-73.9495999997552",
-      "lat": "40.7441286664954"
+      "latitude": "40.7441286664954",
+      "longitude": "-73.9495999997552"
     },
     "notes": "G-all times"
   },
@@ -1854,8 +1854,8 @@
     "lines": "N-W",
     "name": "39th Ave",
     "coordinates": {
-      "lon": "-73.93285137679598",
-      "lat": "40.75276306140845"
+      "latitude": "40.75276306140845",
+      "longitude": "-73.93285137679598"
     },
     "notes": "N-all times, W part time"
   },
@@ -1866,8 +1866,8 @@
     "lines": "1",
     "name": "145th St",
     "coordinates": {
-      "lon": "-73.95035999879713",
-      "lat": "40.82655099962194"
+      "latitude": "40.82655099962194",
+      "longitude": "-73.95035999879713"
     },
     "notes": "1-all times"
   },
@@ -1878,8 +1878,8 @@
     "lines": "1",
     "name": "157th St",
     "coordinates": {
-      "lon": "-73.94488999901047",
-      "lat": "40.8340410001399"
+      "latitude": "40.8340410001399",
+      "longitude": "-73.94488999901047"
     },
     "notes": "1-all times"
   },
@@ -1890,8 +1890,8 @@
     "lines": "1-2-3",
     "name": "96th St",
     "coordinates": {
-      "lon": "-73.97232299915696",
-      "lat": "40.79391900121471"
+      "latitude": "40.79391900121471",
+      "longitude": "-73.97232299915696"
     },
     "notes": "1,2,3-all times"
   },
@@ -1902,8 +1902,8 @@
     "lines": "1",
     "name": "103rd St",
     "coordinates": {
-      "lon": "-73.96837899960818",
-      "lat": "40.799446000334825"
+      "latitude": "40.799446000334825",
+      "longitude": "-73.96837899960818"
     },
     "notes": "1-all times"
   },
@@ -1914,8 +1914,8 @@
     "lines": "2-3",
     "name": "Central Park North (110th St)",
     "coordinates": {
-      "lon": "-73.95182200176913",
-      "lat": "40.79907499977324"
+      "latitude": "40.79907499977324",
+      "longitude": "-73.95182200176913"
     },
     "notes": "2,3-all times"
   },
@@ -1926,8 +1926,8 @@
     "lines": "A-B-C",
     "name": "103rd St",
     "coordinates": {
-      "lon": "-73.96137008267617",
-      "lat": "40.796060739904526"
+      "latitude": "40.796060739904526",
+      "longitude": "-73.96137008267617"
     },
     "notes": "A-nights, B-weekdays and evenings, C-all times exc nights"
   },
@@ -1938,8 +1938,8 @@
     "lines": "1-2-3",
     "name": "72nd St",
     "coordinates": {
-      "lon": "-73.98197000159583",
-      "lat": "40.77845300068614"
+      "latitude": "40.77845300068614",
+      "longitude": "-73.98197000159583"
     },
     "notes": "1,2,3-all times"
   },
@@ -1950,8 +1950,8 @@
     "lines": "A-B-C",
     "name": "81st St",
     "coordinates": {
-      "lon": "-73.97209794937208",
-      "lat": "40.78134608418206"
+      "latitude": "40.78134608418206",
+      "longitude": "-73.97209794937208"
     },
     "notes": "A-nights, B-weekdays and evenings, C-all times exc nights"
   },
@@ -1962,8 +1962,8 @@
     "lines": "E-F",
     "name": "75th Ave",
     "coordinates": {
-      "lon": "-73.83692369387158",
-      "lat": "40.71804465348743"
+      "latitude": "40.71804465348743",
+      "longitude": "-73.83692369387158"
     },
     "notes": "E-evenings, weekends, nights, F-all times"
   },
@@ -1974,8 +1974,8 @@
     "lines": "A-B-C",
     "name": "86th St",
     "coordinates": {
-      "lon": "-73.96882849429672",
-      "lat": "40.78582304678557"
+      "latitude": "40.78582304678557",
+      "longitude": "-73.96882849429672"
     },
     "notes": "A-nights, B-weekdays and evenings, C-all times exc nights"
   },
@@ -1986,8 +1986,8 @@
     "lines": "1",
     "name": "Cathedral Pkwy (110th St)",
     "coordinates": {
-      "lon": "-73.9668470005456",
-      "lat": "40.80396699961484"
+      "latitude": "40.80396699961484",
+      "longitude": "-73.9668470005456"
     },
     "notes": "1-all times"
   },
@@ -1998,8 +1998,8 @@
     "lines": "1",
     "name": "116th St - Columbia University",
     "coordinates": {
-      "lon": "-73.96410999757751",
-      "lat": "40.807722001230864"
+      "latitude": "40.807722001230864",
+      "longitude": "-73.96410999757751"
     },
     "notes": "1-all times"
   },
@@ -2010,8 +2010,8 @@
     "lines": "2-3",
     "name": "125th St",
     "coordinates": {
-      "lon": "-73.94549500011411",
-      "lat": "40.807753999182815"
+      "latitude": "40.807753999182815",
+      "longitude": "-73.94549500011411"
     },
     "notes": "2,3-all times"
   },
@@ -2022,8 +2022,8 @@
     "lines": "2-3",
     "name": "135th St",
     "coordinates": {
-      "lon": "-73.94077000106708",
-      "lat": "40.8142290003391"
+      "latitude": "40.8142290003391",
+      "longitude": "-73.94077000106708"
     },
     "notes": "2,3-all times"
   },
@@ -2034,8 +2034,8 @@
     "lines": "2-3",
     "name": "116th St",
     "coordinates": {
-      "lon": "-73.94962500096905",
-      "lat": "40.802097999133004"
+      "latitude": "40.802097999133004",
+      "longitude": "-73.94962500096905"
     },
     "notes": "2,3-all times"
   },
@@ -2046,8 +2046,8 @@
     "lines": "B-D",
     "name": "Tremont Ave",
     "coordinates": {
-      "lon": "-73.90522700122354",
-      "lat": "40.850409999510234"
+      "latitude": "40.850409999510234",
+      "longitude": "-73.90522700122354"
     },
     "notes": "B-rush hours, D-all times"
   },
@@ -2058,8 +2058,8 @@
     "lines": "1",
     "name": "137th St - City College",
     "coordinates": {
-      "lon": "-73.95367600087873",
-      "lat": "40.82200799968475"
+      "latitude": "40.82200799968475",
+      "longitude": "-73.95367600087873"
     },
     "notes": "1-all times"
   },
@@ -2070,8 +2070,8 @@
     "lines": "3",
     "name": "145th St",
     "coordinates": {
-      "lon": "-73.93624499873299",
-      "lat": "40.82042099969279"
+      "latitude": "40.82042099969279",
+      "longitude": "-73.93624499873299"
     },
     "notes": "3-all times, exit only northbound"
   },
@@ -2082,8 +2082,8 @@
     "lines": "4",
     "name": "176th St",
     "coordinates": {
-      "lon": "-73.91179399884471",
-      "lat": "40.8484800012369"
+      "latitude": "40.8484800012369",
+      "longitude": "-73.91179399884471"
     },
     "notes": "4-all times"
   },
@@ -2094,8 +2094,8 @@
     "lines": "4",
     "name": "Burnside Ave",
     "coordinates": {
-      "lon": "-73.9076840015997",
-      "lat": "40.85345300155693"
+      "latitude": "40.85345300155693",
+      "longitude": "-73.9076840015997"
     },
     "notes": "4-all times"
   },
@@ -2106,8 +2106,8 @@
     "lines": "B-D",
     "name": "170th St",
     "coordinates": {
-      "lon": "-73.91339999846983",
-      "lat": "40.83930599964156"
+      "latitude": "40.83930599964156",
+      "longitude": "-73.91339999846983"
     },
     "notes": "B-rush hours, D-all times, skips rush hours AM southbound, PM northbound"
   },
@@ -2118,8 +2118,8 @@
     "lines": "1",
     "name": "168th St",
     "coordinates": {
-      "lon": "-73.94013299907257",
-      "lat": "40.840555999148535"
+      "latitude": "40.840555999148535",
+      "longitude": "-73.94013299907257"
     },
     "notes": "1-all times"
   },
@@ -2130,8 +2130,8 @@
     "lines": "1",
     "name": "181st St",
     "coordinates": {
-      "lon": "-73.9335959996056",
-      "lat": "40.84950499974065"
+      "latitude": "40.84950499974065",
+      "longitude": "-73.9335959996056"
     },
     "notes": "1-all times"
   },
@@ -2142,8 +2142,8 @@
     "lines": "1",
     "name": "191st St",
     "coordinates": {
-      "lon": "-73.92941199742039",
-      "lat": "40.85522500175836"
+      "latitude": "40.85522500175836",
+      "longitude": "-73.92941199742039"
     },
     "notes": "1-all times"
   },
@@ -2154,8 +2154,8 @@
     "lines": "A",
     "name": "175th St",
     "coordinates": {
-      "lon": "-73.93970399761596",
-      "lat": "40.84739100072403"
+      "latitude": "40.84739100072403",
+      "longitude": "-73.93970399761596"
     },
     "notes": "A-all times"
   },
@@ -2166,8 +2166,8 @@
     "lines": "A",
     "name": "Beach 44th St",
     "coordinates": {
-      "lon": "-73.77601299999507",
-      "lat": "40.59294299908617"
+      "latitude": "40.59294299908617",
+      "longitude": "-73.77601299999507"
     },
     "notes": "A-all times"
   },
@@ -2178,8 +2178,8 @@
     "lines": "A",
     "name": "Beach 60th St",
     "coordinates": {
-      "lon": "-73.7885219980118",
-      "lat": "40.59237400121235"
+      "latitude": "40.59237400121235",
+      "longitude": "-73.7885219980118"
     },
     "notes": "A-all times"
   },
@@ -2190,8 +2190,8 @@
     "lines": "A-S",
     "name": "Beach 98th St",
     "coordinates": {
-      "lon": "-73.82052058959523",
-      "lat": "40.58538569133279"
+      "latitude": "40.58538569133279",
+      "longitude": "-73.82052058959523"
     },
     "notes": "A-rush hours AM northbound, PM southbound, S Broad Channel to Rockaway Park-all times"
   },
@@ -2202,8 +2202,8 @@
     "lines": "A-S",
     "name": "Rockaway Park - Beach 116 St",
     "coordinates": {
-      "lon": "-73.83559008701239",
-      "lat": "40.580955865573515"
+      "latitude": "40.580955865573515",
+      "longitude": "-73.83559008701239"
     },
     "notes": "A-rush hours AM northbound, PM southbound, S to Broad Channel-all times"
   },
@@ -2214,8 +2214,8 @@
     "lines": "A",
     "name": "Beach 36th St",
     "coordinates": {
-      "lon": "-73.76817499939688",
-      "lat": "40.59539800166876"
+      "latitude": "40.59539800166876",
+      "longitude": "-73.76817499939688"
     },
     "notes": "A-all times"
   },
@@ -2226,8 +2226,8 @@
     "lines": "A",
     "name": "Beach 25th St",
     "coordinates": {
-      "lon": "-73.76135299762073",
-      "lat": "40.60006600105881"
+      "latitude": "40.60006600105881",
+      "longitude": "-73.76135299762073"
     },
     "notes": "A-all times"
   },
@@ -2238,8 +2238,8 @@
     "lines": "F",
     "name": "Parsons Blvd",
     "coordinates": {
-      "lon": "-73.80328900021885",
-      "lat": "40.707571999615695"
+      "latitude": "40.707571999615695",
+      "longitude": "-73.80328900021885"
     },
     "notes": "F-all times"
   },
@@ -2250,8 +2250,8 @@
     "lines": "F",
     "name": "169th St",
     "coordinates": {
-      "lon": "-73.79347419927721",
-      "lat": "40.710517502784"
+      "latitude": "40.710517502784",
+      "longitude": "-73.79347419927721"
     },
     "notes": "F-all times"
   },
@@ -2262,8 +2262,8 @@
     "lines": "7",
     "name": "103rd St - Corona Plaza",
     "coordinates": {
-      "lon": "-73.86269999830412",
-      "lat": "40.749865000555545"
+      "latitude": "40.749865000555545",
+      "longitude": "-73.86269999830412"
     },
     "notes": "7-all times"
   },
@@ -2274,8 +2274,8 @@
     "lines": "7",
     "name": "111th St",
     "coordinates": {
-      "lon": "-73.85533399834884",
-      "lat": "40.75172999941711"
+      "latitude": "40.75172999941711",
+      "longitude": "-73.85533399834884"
     },
     "notes": "7-all times"
   },
@@ -2286,8 +2286,8 @@
     "lines": "E-M-R",
     "name": "63rd Dr - Rego Park",
     "coordinates": {
-      "lon": "-73.86161820097203",
-      "lat": "40.729763972422425"
+      "latitude": "40.729763972422425",
+      "longitude": "-73.86161820097203"
     },
     "notes": "E-nights, R-all other times, M-weekdays and evenings"
   },
@@ -2298,8 +2298,8 @@
     "lines": "A-S",
     "name": "Grant Ave",
     "coordinates": {
-      "lon": "-73.86504999877702",
-      "lat": "40.67704400054478"
+      "latitude": "40.67704400054478",
+      "longitude": "-73.86504999877702"
     },
     "notes": "A-all times, S Euclid Av to Ozone Park-Lefferts Blvd-nights"
   },
@@ -2310,8 +2310,8 @@
     "lines": "1-2",
     "name": "79th St",
     "coordinates": {
-      "lon": "-73.97991700056134",
-      "lat": "40.78393399959032"
+      "latitude": "40.78393399959032",
+      "longitude": "-73.97991700056134"
     },
     "notes": "1-all times, 2-nights"
   },
@@ -2322,8 +2322,8 @@
     "lines": "L",
     "name": "Atlantic Ave",
     "coordinates": {
-      "lon": "-73.9030969995401",
-      "lat": "40.67534466640805"
+      "latitude": "40.67534466640805",
+      "longitude": "-73.9030969995401"
     },
     "notes": "L-all times"
   },
@@ -2334,8 +2334,8 @@
     "lines": "1-2",
     "name": "Christopher St - Sheridan Sq",
     "coordinates": {
-      "lon": "-74.00290599855235",
-      "lat": "40.73342200104225"
+      "latitude": "40.73342200104225",
+      "longitude": "-74.00290599855235"
     },
     "notes": "1-all times, 2-nights"
   },
@@ -2346,8 +2346,8 @@
     "lines": "A-S",
     "name": "Ozone Park - Lefferts Blvd",
     "coordinates": {
-      "lon": "-73.82579799906613",
-      "lat": "40.68595099878361"
+      "latitude": "40.68595099878361",
+      "longitude": "-73.82579799906613"
     },
     "notes": "S to Euclid Av-nights, A-all other times"
   },
@@ -2358,8 +2358,8 @@
     "lines": "7-7 Express",
     "name": "Times Sq - 42nd St",
     "coordinates": {
-      "lon": "-73.98769099825152",
-      "lat": "40.755477001982506"
+      "latitude": "40.755477001982506",
+      "longitude": "-73.98769099825152"
     },
     "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
   },
@@ -2370,8 +2370,8 @@
     "lines": "F-Q",
     "name": "W 8th St - NY Aquarium",
     "coordinates": {
-      "lon": "-73.97595787413822",
-      "lat": "40.576033818103646"
+      "latitude": "40.576033818103646",
+      "longitude": "-73.97595787413822"
     },
     "notes": "F,Q-all times"
   },
@@ -2382,8 +2382,8 @@
     "lines": "1-2",
     "name": "28th St",
     "coordinates": {
-      "lon": "-73.99336500134324",
-      "lat": "40.74721499918219"
+      "latitude": "40.74721499918219",
+      "longitude": "-73.99336500134324"
     },
     "notes": "1-all times, 2-nights"
   },
@@ -2394,8 +2394,8 @@
     "lines": "4-6-6 Express",
     "name": "28th St",
     "coordinates": {
-      "lon": "-73.98426400110407",
-      "lat": "40.743069999259035"
+      "latitude": "40.743069999259035",
+      "longitude": "-73.98426400110407"
     },
     "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -2406,8 +2406,8 @@
     "lines": "6-6 Express",
     "name": "Pelham Bay Park",
     "coordinates": {
-      "lon": "-73.82812100059289",
-      "lat": "40.85246199951662"
+      "latitude": "40.85246199951662",
+      "longitude": "-73.82812100059289"
     },
     "notes": "6 Express-weekdays AM southbound, PM northbound, 6-all other times"
   },
@@ -2418,8 +2418,8 @@
     "lines": "6-6 Express",
     "name": "Westchester Sq - E Tremont Ave",
     "coordinates": {
-      "lon": "-73.84295199925012",
-      "lat": "40.839892001013915"
+      "latitude": "40.839892001013915",
+      "longitude": "-73.84295199925012"
     },
     "notes": "6 Express-weekdays AM southbound, PM northbound, 6-all other times"
   },
@@ -2430,8 +2430,8 @@
     "lines": "1-2",
     "name": "18th St",
     "coordinates": {
-      "lon": "-73.99787100060406",
-      "lat": "40.741039999802105"
+      "latitude": "40.741039999802105",
+      "longitude": "-73.99787100060406"
     },
     "notes": "1-all times, 2-nights"
   },
@@ -2442,8 +2442,8 @@
     "lines": "7-7 Express",
     "name": "Grand Central - 42nd St",
     "coordinates": {
-      "lon": "-73.97604100111508",
-      "lat": "40.751431000286864"
+      "latitude": "40.751431000286864",
+      "longitude": "-73.97604100111508"
     },
     "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
   },
@@ -2454,8 +2454,8 @@
     "lines": "A",
     "name": "Beach 67th St",
     "coordinates": {
-      "lon": "-73.7969239998421",
-      "lat": "40.59092700078133"
+      "latitude": "40.59092700078133",
+      "longitude": "-73.7969239998421"
     },
     "notes": "A-all times"
   },
@@ -2466,8 +2466,8 @@
     "lines": "A-C-E",
     "name": "W 4th St - Washington Sq (Upper)",
     "coordinates": {
-      "lon": "-74.00049500225435",
-      "lat": "40.73233799774325"
+      "latitude": "40.73233799774325",
+      "longitude": "-74.00049500225435"
     },
     "notes": "A,E-all times, C-all times exc nights"
   },
@@ -2478,8 +2478,8 @@
     "lines": "J",
     "name": "85th St - Forest Pky",
     "coordinates": {
-      "lon": "-73.86008700006875",
-      "lat": "40.69242699966103"
+      "latitude": "40.69242699966103",
+      "longitude": "-73.86008700006875"
     },
     "notes": "J-all times"
   },
@@ -2490,8 +2490,8 @@
     "lines": "J-Z",
     "name": "Woodhaven Blvd",
     "coordinates": {
-      "lon": "-73.85205199740794",
-      "lat": "40.69370399880105"
+      "latitude": "40.69370399880105",
+      "longitude": "-73.85205199740794"
     },
     "notes": "J-all times, Z-rush hours AM westbound, PM eastbound"
   },
@@ -2502,8 +2502,8 @@
     "lines": "J",
     "name": "111th St",
     "coordinates": {
-      "lon": "-73.83679338454697",
-      "lat": "40.697114810696476"
+      "latitude": "40.697114810696476",
+      "longitude": "-73.83679338454697"
     },
     "notes": "J-all times"
   },
@@ -2514,8 +2514,8 @@
     "lines": "J-Z",
     "name": "121st St",
     "coordinates": {
-      "lon": "-73.82834900017954",
-      "lat": "40.700481998515315"
+      "latitude": "40.700481998515315",
+      "longitude": "-73.82834900017954"
     },
     "notes": "Z-rush hours AM westbound, PM eastbound, J-all other times"
   },
@@ -2526,8 +2526,8 @@
     "lines": "L",
     "name": "Halsey St",
     "coordinates": {
-      "lon": "-73.90393400118631",
-      "lat": "40.69551800114878"
+      "latitude": "40.69551800114878",
+      "longitude": "-73.90393400118631"
     },
     "notes": "L-all times"
   },
@@ -2538,8 +2538,8 @@
     "lines": "L",
     "name": "Myrtle - Wyckoff Aves",
     "coordinates": {
-      "lon": "-73.9109757182647",
-      "lat": "40.699471062427136"
+      "latitude": "40.699471062427136",
+      "longitude": "-73.9109757182647"
     },
     "notes": "L-all times"
   },
@@ -2550,8 +2550,8 @@
     "lines": "3-4",
     "name": "New Lots Ave",
     "coordinates": {
-      "lon": "-73.88411070800329",
-      "lat": "40.6663149325969"
+      "latitude": "40.6663149325969",
+      "longitude": "-73.88411070800329"
     },
     "notes": "4-nights, 3-all other times"
   },
@@ -2562,8 +2562,8 @@
     "lines": "A-C",
     "name": "Van Siclen Ave",
     "coordinates": {
-      "lon": "-73.8903580002471",
-      "lat": "40.67270999906104"
+      "latitude": "40.67270999906104",
+      "longitude": "-73.8903580002471"
     },
     "notes": "A-nights, C-all other times"
   },
@@ -2574,8 +2574,8 @@
     "lines": "J",
     "name": "Cleveland St",
     "coordinates": {
-      "lon": "-73.8851940021643",
-      "lat": "40.679777998961164"
+      "latitude": "40.679777998961164",
+      "longitude": "-73.8851940021643"
     },
     "notes": "J-all times"
   },
@@ -2586,8 +2586,8 @@
     "lines": "L",
     "name": "Livonia Ave",
     "coordinates": {
-      "lon": "-73.90056237226057",
-      "lat": "40.66405727094644"
+      "latitude": "40.66405727094644",
+      "longitude": "-73.90056237226057"
     },
     "notes": "L-all times"
   },
@@ -2598,8 +2598,8 @@
     "lines": "3-4",
     "name": "Junius St",
     "coordinates": {
-      "lon": "-73.90244864183562",
-      "lat": "40.66358900181724"
+      "latitude": "40.66358900181724",
+      "longitude": "-73.90244864183562"
     },
     "notes": "4-nights, 3-all other times"
   },
@@ -2610,8 +2610,8 @@
     "lines": "3-4",
     "name": "Rockaway Ave",
     "coordinates": {
-      "lon": "-73.90895833584449",
-      "lat": "40.66261748815223"
+      "latitude": "40.66261748815223",
+      "longitude": "-73.90895833584449"
     },
     "notes": "4-nights, 3-all other times"
   },
@@ -2622,8 +2622,8 @@
     "lines": "L",
     "name": "Canarsie - Rockaway Pkwy",
     "coordinates": {
-      "lon": "-73.90185000017287",
-      "lat": "40.64665366739528"
+      "latitude": "40.64665366739528",
+      "longitude": "-73.90185000017287"
     },
     "notes": "L-all times"
   },
@@ -2634,8 +2634,8 @@
     "lines": "L",
     "name": "E 105th St",
     "coordinates": {
-      "lon": "-73.89954769388724",
-      "lat": "40.65046878544699"
+      "latitude": "40.65046878544699",
+      "longitude": "-73.89954769388724"
     },
     "notes": "L-all times"
   },
@@ -2646,8 +2646,8 @@
     "lines": "3-4",
     "name": "Saratoga Ave",
     "coordinates": {
-      "lon": "-73.91633025007947",
-      "lat": "40.6615297898075"
+      "latitude": "40.6615297898075",
+      "longitude": "-73.91633025007947"
     },
     "notes": "4-nights, 3-all other times"
   },
@@ -2658,8 +2658,8 @@
     "lines": "3-4",
     "name": "Sutter Ave - Rutland Road",
     "coordinates": {
-      "lon": "-73.92252118536001",
-      "lat": "40.66476678877493"
+      "latitude": "40.66476678877493",
+      "longitude": "-73.92252118536001"
     },
     "notes": "4-nights, 3-all other times"
   },
@@ -2670,8 +2670,8 @@
     "lines": "L",
     "name": "New Lots Ave",
     "coordinates": {
-      "lon": "-73.89927796057142",
-      "lat": "40.65891477368527"
+      "latitude": "40.65891477368527",
+      "longitude": "-73.89927796057142"
     },
     "notes": "L-all times"
   },
@@ -2682,8 +2682,8 @@
     "lines": "J-Z",
     "name": "Broadway Junction",
     "coordinates": {
-      "lon": "-73.90428999746412",
-      "lat": "40.67936600147369"
+      "latitude": "40.67936600147369",
+      "longitude": "-73.90428999746412"
     },
     "notes": "J-all times, Z-rush hours AM westbound, PM eastbound"
   },
@@ -2694,8 +2694,8 @@
     "lines": "J",
     "name": "Alabama Ave",
     "coordinates": {
-      "lon": "-73.89852600159652",
-      "lat": "40.676998000003756"
+      "latitude": "40.676998000003756",
+      "longitude": "-73.89852600159652"
     },
     "notes": "J-all times"
   },
@@ -2706,8 +2706,8 @@
     "lines": "A-C",
     "name": "Shepherd Ave",
     "coordinates": {
-      "lon": "-73.88074999747269",
-      "lat": "40.6741300014559"
+      "latitude": "40.6741300014559",
+      "longitude": "-73.88074999747269"
     },
     "notes": "A-nights, C-all other times"
   },
@@ -2718,8 +2718,8 @@
     "lines": "J-Z",
     "name": "Crescent St",
     "coordinates": {
-      "lon": "-73.87392925215778",
-      "lat": "40.68315265707736"
+      "latitude": "40.68315265707736",
+      "longitude": "-73.87392925215778"
     },
     "notes": "J-all times, Z-rush hours AM westbound, PM eastbound"
   },
@@ -2730,8 +2730,8 @@
     "lines": "J",
     "name": "Cypress Hills",
     "coordinates": {
-      "lon": "-73.87332199882995",
-      "lat": "40.689616000838754"
+      "latitude": "40.689616000838754",
+      "longitude": "-73.87332199882995"
     },
     "notes": "J-all times"
   },
@@ -2742,8 +2742,8 @@
     "lines": "J-Z",
     "name": "75th St - Eldert Ln",
     "coordinates": {
-      "lon": "-73.86728799944963",
-      "lat": "40.691290001246735"
+      "latitude": "40.691290001246735",
+      "longitude": "-73.86728799944963"
     },
     "notes": "Z-rush hours AM westbound, PM eastbound, J-all other times"
   },
@@ -2754,8 +2754,8 @@
     "lines": "7",
     "name": "69th St",
     "coordinates": {
-      "lon": "-73.8964029993185",
-      "lat": "40.746324999410284"
+      "latitude": "40.746324999410284",
+      "longitude": "-73.8964029993185"
     },
     "notes": "7-all times"
   },
@@ -2766,8 +2766,8 @@
     "lines": "7",
     "name": "74th St - Broadway",
     "coordinates": {
-      "lon": "-73.8912051289911",
-      "lat": "40.746867573829114"
+      "latitude": "40.746867573829114",
+      "longitude": "-73.8912051289911"
     },
     "notes": "7-all times"
   },
@@ -2778,8 +2778,8 @@
     "lines": "E-M-R",
     "name": "Woodhaven Blvd - Queens Mall",
     "coordinates": {
-      "lon": "-73.86943208612348",
-      "lat": "40.73309737380972"
+      "latitude": "40.73309737380972",
+      "longitude": "-73.86943208612348"
     },
     "notes": "E-nights, R-all other times, M-weekdays and evenings"
   },
@@ -2790,8 +2790,8 @@
     "lines": "M",
     "name": "Myrtle - Wyckoff Aves",
     "coordinates": {
-      "lon": "-73.91217899939602",
-      "lat": "40.69945400090837"
+      "latitude": "40.69945400090837",
+      "longitude": "-73.91217899939602"
     },
     "notes": "M-all times"
   },
@@ -2802,8 +2802,8 @@
     "lines": "M",
     "name": "Seneca Ave",
     "coordinates": {
-      "lon": "-73.90758199885423",
-      "lat": "40.70291899894902"
+      "latitude": "40.70291899894902",
+      "longitude": "-73.90758199885423"
     },
     "notes": "M-all times"
   },
@@ -2814,8 +2814,8 @@
     "lines": "L",
     "name": "DeKalb Ave",
     "coordinates": {
-      "lon": "-73.91823200219723",
-      "lat": "40.70369299961644"
+      "latitude": "40.70369299961644",
+      "longitude": "-73.91823200219723"
     },
     "notes": "L-all times"
   },
@@ -2826,8 +2826,8 @@
     "lines": "7",
     "name": "52nd St",
     "coordinates": {
-      "lon": "-73.91254899891254",
-      "lat": "40.744149001021576"
+      "latitude": "40.744149001021576",
+      "longitude": "-73.91254899891254"
     },
     "notes": "7-all times"
   },
@@ -2838,8 +2838,8 @@
     "lines": "E-M-R",
     "name": "46th St",
     "coordinates": {
-      "lon": "-73.91352174995538",
-      "lat": "40.756316952608096"
+      "latitude": "40.756316952608096",
+      "longitude": "-73.91352174995538"
     },
     "notes": "E-nights, R-all other times, M-weekdays and evenings"
   },
@@ -2850,8 +2850,8 @@
     "lines": "E-M-R",
     "name": "Northern Blvd",
     "coordinates": {
-      "lon": "-73.90606508052358",
-      "lat": "40.752824829236076"
+      "latitude": "40.752824829236076",
+      "longitude": "-73.90606508052358"
     },
     "notes": "E-nights, R-all other times, M-weekdays and evenings"
   },
@@ -2862,8 +2862,8 @@
     "lines": "7",
     "name": "46th St",
     "coordinates": {
-      "lon": "-73.91843500103973",
-      "lat": "40.74313200060382"
+      "latitude": "40.74313200060382",
+      "longitude": "-73.91843500103973"
     },
     "notes": "7-all times"
   },
@@ -2874,8 +2874,8 @@
     "lines": "7",
     "name": "82nd St - Jackson Hts",
     "coordinates": {
-      "lon": "-73.88369700071884",
-      "lat": "40.747658999559135"
+      "latitude": "40.747658999559135",
+      "longitude": "-73.88369700071884"
     },
     "notes": "7-all times"
   },
@@ -2886,8 +2886,8 @@
     "lines": "7",
     "name": "90th St - Elmhurst Av",
     "coordinates": {
-      "lon": "-73.87661299986985",
-      "lat": "40.74840800060913"
+      "latitude": "40.74840800060913",
+      "longitude": "-73.87661299986985"
     },
     "notes": "7-all times"
   },
@@ -2898,8 +2898,8 @@
     "lines": "A",
     "name": "Howard Beach - JFK Airport",
     "coordinates": {
-      "lon": "-73.83030100071032",
-      "lat": "40.66047600004959"
+      "latitude": "40.66047600004959",
+      "longitude": "-73.83030100071032"
     },
     "notes": "A-all times"
   },
@@ -2910,8 +2910,8 @@
     "lines": "A",
     "name": "Aqueduct - North Conduit Av",
     "coordinates": {
-      "lon": "-73.83405799948723",
-      "lat": "40.668234001699815"
+      "latitude": "40.668234001699815",
+      "longitude": "-73.83405799948723"
     },
     "notes": "A-all times"
   },
@@ -2922,8 +2922,8 @@
     "lines": "E-F",
     "name": "Briarwood - Van Wyck Blvd",
     "coordinates": {
-      "lon": "-73.82069263637443",
-      "lat": "40.70916181536946"
+      "latitude": "40.70916181536946",
+      "longitude": "-73.82069263637443"
     },
     "notes": "E-evenings, weekends, nights, F-all times"
   },
@@ -2934,8 +2934,8 @@
     "lines": "E-F-M-R",
     "name": "Forest Hills - 71st Av",
     "coordinates": {
-      "lon": "-73.84451672012669",
-      "lat": "40.72159430953587"
+      "latitude": "40.72159430953587",
+      "longitude": "-73.84451672012669"
     },
     "notes": "E,F-all times, M-weekdays and evenings, R-all times exc nights"
   },
@@ -2946,8 +2946,8 @@
     "lines": "F",
     "name": "Sutphin Blvd",
     "coordinates": {
-      "lon": "-73.81083299897232",
-      "lat": "40.70541799906764"
+      "latitude": "40.70541799906764",
+      "longitude": "-73.81083299897232"
     },
     "notes": "F-all times"
   },
@@ -2958,8 +2958,8 @@
     "lines": "E-J-Z",
     "name": "Jamaica Ctr - Parsons / Archer",
     "coordinates": {
-      "lon": "-73.80109632298924",
-      "lat": "40.70206737621188"
+      "latitude": "40.70206737621188",
+      "longitude": "-73.80109632298924"
     },
     "notes": "E,J-all times, Z-rush hours AM westbound, PM eastbound"
   },
@@ -2970,8 +2970,8 @@
     "lines": "2-5",
     "name": "225th St",
     "coordinates": {
-      "lon": "-73.86021461772737",
-      "lat": "40.88802825863786"
+      "latitude": "40.88802825863786",
+      "longitude": "-73.86021461772737"
     },
     "notes": "2-all times, 5-rush hours AM southbound, PM northbound"
   },
@@ -2982,8 +2982,8 @@
     "lines": "6",
     "name": "Elder Ave",
     "coordinates": {
-      "lon": "-73.87915899874777",
-      "lat": "40.82858400108929"
+      "latitude": "40.82858400108929",
+      "longitude": "-73.87915899874777"
     },
     "notes": "6-all times"
   },
@@ -2994,8 +2994,8 @@
     "lines": "6",
     "name": "Longwood Ave",
     "coordinates": {
-      "lon": "-73.89643499897414",
-      "lat": "40.816103999972405"
+      "latitude": "40.816103999972405",
+      "longitude": "-73.89643499897414"
     },
     "notes": "6-all times"
   },
@@ -3006,8 +3006,8 @@
     "lines": "N-W",
     "name": "Astoria Blvd",
     "coordinates": {
-      "lon": "-73.91809500109238",
-      "lat": "40.77003699949086"
+      "latitude": "40.77003699949086",
+      "longitude": "-73.91809500109238"
     },
     "notes": "N-all times, W part time"
   },
@@ -3018,8 +3018,8 @@
     "lines": "N-W",
     "name": "Astoria - Ditmars Blvd",
     "coordinates": {
-      "lon": "-73.9120340001031",
-      "lat": "40.775035666523664"
+      "latitude": "40.775035666523664",
+      "longitude": "-73.9120340001031"
     },
     "notes": "N-all times, W part time"
   },
@@ -3030,8 +3030,8 @@
     "lines": "2-5",
     "name": "Jackson Ave",
     "coordinates": {
-      "lon": "-73.9077019387083",
-      "lat": "40.81643746686396"
+      "latitude": "40.81643746686396",
+      "longitude": "-73.9077019387083"
     },
     "notes": "2-all times, 5-all times exc nights, skips rush hours AM southbound, PM northbound"
   },
@@ -3042,8 +3042,8 @@
     "lines": "2-5",
     "name": "Prospect Ave",
     "coordinates": {
-      "lon": "-73.90177778730917",
-      "lat": "40.81948726483844"
+      "latitude": "40.81948726483844",
+      "longitude": "-73.90177778730917"
     },
     "notes": "2-all times, 5-all times exc nights, skips rush hours AM southbound, PM northbound"
   },
@@ -3054,8 +3054,8 @@
     "lines": "6",
     "name": "Cypress Ave",
     "coordinates": {
-      "lon": "-73.91404199994753",
-      "lat": "40.8053680007636"
+      "latitude": "40.8053680007636",
+      "longitude": "-73.91404199994753"
     },
     "notes": "6-all times"
   },
@@ -3066,8 +3066,8 @@
     "lines": "2-5",
     "name": "174th St",
     "coordinates": {
-      "lon": "-73.88769359812888",
-      "lat": "40.837195550170605"
+      "latitude": "40.837195550170605",
+      "longitude": "-73.88769359812888"
     },
     "notes": "2-all times, 5-all times exc nights, skips rush hours AM southbound, PM northbound"
   },
@@ -3078,8 +3078,8 @@
     "lines": "2-5",
     "name": "Allerton Ave",
     "coordinates": {
-      "lon": "-73.86723422851625",
-      "lat": "40.86548337793927"
+      "latitude": "40.86548337793927",
+      "longitude": "-73.86723422851625"
     },
     "notes": "2-all times, 5-rush hours AM southbound, PM northbound"
   },
@@ -3090,8 +3090,8 @@
     "lines": "6",
     "name": "E 143rd St - St Mary's St",
     "coordinates": {
-      "lon": "-73.90765699936489",
-      "lat": "40.80871900090143"
+      "latitude": "40.80871900090143",
+      "longitude": "-73.90765699936489"
     },
     "notes": "6-all times"
   },
@@ -3102,8 +3102,8 @@
     "lines": "4",
     "name": "Kingsbridge Rd",
     "coordinates": {
-      "lon": "-73.89717400101743",
-      "lat": "40.867760000885795"
+      "latitude": "40.867760000885795",
+      "longitude": "-73.89717400101743"
     },
     "notes": "4-all times"
   },
@@ -3114,8 +3114,8 @@
     "lines": "4",
     "name": "Bedford Park Blvd - Lehman College",
     "coordinates": {
-      "lon": "-73.89006400069478",
-      "lat": "40.87341199980121"
+      "latitude": "40.87341199980121",
+      "longitude": "-73.89006400069478"
     },
     "notes": "4-all times"
   },
@@ -3126,8 +3126,8 @@
     "lines": "3",
     "name": "Harlem - 148 St",
     "coordinates": {
-      "lon": "-73.93647000005559",
-      "lat": "40.82388000080457"
+      "latitude": "40.82388000080457",
+      "longitude": "-73.93647000005559"
     },
     "notes": "3-all times"
   },
@@ -3138,8 +3138,8 @@
     "lines": "4",
     "name": "Mt Eden Ave",
     "coordinates": {
-      "lon": "-73.9146849986034",
-      "lat": "40.84443400092679"
+      "latitude": "40.84443400092679",
+      "longitude": "-73.9146849986034"
     },
     "notes": "4-all times"
   },
@@ -3150,8 +3150,8 @@
     "lines": "B-D",
     "name": "Fordham Rd",
     "coordinates": {
-      "lon": "-73.89774900102401",
-      "lat": "40.861295998683495"
+      "latitude": "40.861295998683495",
+      "longitude": "-73.89774900102401"
     },
     "notes": "B-rush hours, D-all times"
   },
@@ -3162,8 +3162,8 @@
     "lines": "4",
     "name": "170th St",
     "coordinates": {
-      "lon": "-73.91779099745928",
-      "lat": "40.84007499993004"
+      "latitude": "40.84007499993004",
+      "longitude": "-73.91779099745928"
     },
     "notes": "4-all times"
   },
@@ -3174,8 +3174,8 @@
     "lines": "B-D",
     "name": "Bedford Park Blvd",
     "coordinates": {
-      "lon": "-73.88713799889574",
-      "lat": "40.87324399861646"
+      "latitude": "40.87324399861646",
+      "longitude": "-73.88713799889574"
     },
     "notes": "B-rush hours, D-all times"
   },
@@ -3186,8 +3186,8 @@
     "lines": "1",
     "name": "Marble Hill - 225th St",
     "coordinates": {
-      "lon": "-73.90983099923551",
-      "lat": "40.87456099941789"
+      "latitude": "40.87456099941789",
+      "longitude": "-73.90983099923551"
     },
     "notes": "1-all times"
   },
@@ -3198,8 +3198,8 @@
     "lines": "1",
     "name": "231st St",
     "coordinates": {
-      "lon": "-73.90483400107873",
-      "lat": "40.87885599817935"
+      "latitude": "40.87885599817935",
+      "longitude": "-73.90483400107873"
     },
     "notes": "1-all times"
   },
@@ -3210,8 +3210,8 @@
     "lines": "1",
     "name": "215th St",
     "coordinates": {
-      "lon": "-73.91527899954356",
-      "lat": "40.86944399946045"
+      "latitude": "40.86944399946045",
+      "longitude": "-73.91527899954356"
     },
     "notes": "1-all times"
   },
@@ -3222,8 +3222,8 @@
     "lines": "1",
     "name": "207th St",
     "coordinates": {
-      "lon": "-73.91881900132312",
-      "lat": "40.864614000525854"
+      "latitude": "40.864614000525854",
+      "longitude": "-73.91881900132312"
     },
     "notes": "1-all times"
   },
@@ -3234,8 +3234,8 @@
     "lines": "A",
     "name": "Inwood - 207th St",
     "coordinates": {
-      "lon": "-73.91989900100465",
-      "lat": "40.86807199999737"
+      "latitude": "40.86807199999737",
+      "longitude": "-73.91989900100465"
     },
     "notes": "A-all times"
   },
@@ -3246,8 +3246,8 @@
     "lines": "1",
     "name": "Van Cortlandt Park - 242nd St",
     "coordinates": {
-      "lon": "-73.89858300049647",
-      "lat": "40.88924800011476"
+      "latitude": "40.88924800011476",
+      "longitude": "-73.89858300049647"
     },
     "notes": "1-all times"
   },
@@ -3258,8 +3258,8 @@
     "lines": "2-5",
     "name": "West Farms Sq - E Tremont Av",
     "coordinates": {
-      "lon": "-73.87996127877184",
-      "lat": "40.84020763241799"
+      "latitude": "40.84020763241799",
+      "longitude": "-73.87996127877184"
     },
     "notes": "2-all times, 5-all times exc nights, skips rush hours AM southbound, PM northbound"
   },
@@ -3270,8 +3270,8 @@
     "lines": "2-5",
     "name": "219th St",
     "coordinates": {
-      "lon": "-73.8625097078866",
-      "lat": "40.883887974625274"
+      "latitude": "40.883887974625274",
+      "longitude": "-73.8625097078866"
     },
     "notes": "2-all times, 5-rush hours AM southbound, PM northbound"
   },
@@ -3282,8 +3282,8 @@
     "lines": "4",
     "name": "Mosholu Pkwy",
     "coordinates": {
-      "lon": "-73.88465499988732",
-      "lat": "40.87974999947229"
+      "latitude": "40.87974999947229",
+      "longitude": "-73.88465499988732"
     },
     "notes": "4-all times"
   },
@@ -3294,8 +3294,8 @@
     "lines": "D",
     "name": "Norwood - 205th St",
     "coordinates": {
-      "lon": "-73.87885499918691",
-      "lat": "40.87481100011182"
+      "latitude": "40.87481100011182",
+      "longitude": "-73.87885499918691"
     },
     "notes": "D-all times"
   },
@@ -3306,8 +3306,8 @@
     "lines": "2-5",
     "name": "Burke Ave",
     "coordinates": {
-      "lon": "-73.86705361747603",
-      "lat": "40.87125880254771"
+      "latitude": "40.87125880254771",
+      "longitude": "-73.86705361747603"
     },
     "notes": "2-all times, 5-rush hours AM southbound, PM northbound"
   },
@@ -3318,8 +3318,8 @@
     "lines": "5",
     "name": "Baychester Ave",
     "coordinates": {
-      "lon": "-73.83859099802153",
-      "lat": "40.87866300037311"
+      "latitude": "40.87866300037311",
+      "longitude": "-73.83859099802153"
     },
     "notes": "5-all times"
   },
@@ -3330,8 +3330,8 @@
     "lines": "5",
     "name": "Eastchester - Dyre Ave",
     "coordinates": {
-      "lon": "-73.8308340021742",
-      "lat": "40.88829999901007"
+      "latitude": "40.88829999901007",
+      "longitude": "-73.8308340021742"
     },
     "notes": "5-all times"
   },
@@ -3342,8 +3342,8 @@
     "lines": "F",
     "name": "Jamaica - 179th St",
     "coordinates": {
-      "lon": "-73.78381700176453",
-      "lat": "40.712645666744045"
+      "latitude": "40.712645666744045",
+      "longitude": "-73.78381700176453"
     },
     "notes": "F-all times"
   },
@@ -3354,8 +3354,8 @@
     "lines": "2",
     "name": "Wakefield - 241st St",
     "coordinates": {
-      "lon": "-73.8506199987954",
-      "lat": "40.903125000541245"
+      "latitude": "40.903125000541245",
+      "longitude": "-73.8506199987954"
     },
     "notes": "2-all times"
   },
@@ -3366,8 +3366,8 @@
     "lines": "S",
     "name": "Botanic Garden",
     "coordinates": {
-      "lon": "-73.95924499945693",
-      "lat": "40.670342666584396"
+      "latitude": "40.670342666584396",
+      "longitude": "-73.95924499945693"
     },
     "notes": "S Franklin Av-Fulton St to Prospect Park-all times"
   },
@@ -3378,8 +3378,8 @@
     "lines": "L",
     "name": "Bushwick - Aberdeen",
     "coordinates": {
-      "lon": "-73.90526176305106",
-      "lat": "40.68286062551184"
+      "latitude": "40.68286062551184",
+      "longitude": "-73.90526176305106"
     },
     "notes": "L-all times"
   },
@@ -3390,8 +3390,8 @@
     "lines": "L",
     "name": "Broadway Junction",
     "coordinates": {
-      "lon": "-73.90311757920684",
-      "lat": "40.67845624842869"
+      "latitude": "40.67845624842869",
+      "longitude": "-73.90311757920684"
     },
     "notes": "L-all times"
   },
@@ -3402,8 +3402,8 @@
     "lines": "5",
     "name": "Gun Hill Rd",
     "coordinates": {
-      "lon": "-73.84638400151765",
-      "lat": "40.86952599962676"
+      "latitude": "40.86952599962676",
+      "longitude": "-73.84638400151765"
     },
     "notes": "5-all times"
   },
@@ -3414,8 +3414,8 @@
     "lines": "2-5",
     "name": "E 180th St",
     "coordinates": {
-      "lon": "-73.87334609510884",
-      "lat": "40.8418630412186"
+      "latitude": "40.8418630412186",
+      "longitude": "-73.87334609510884"
     },
     "notes": "2,5-all times"
   },
@@ -3426,8 +3426,8 @@
     "lines": "1",
     "name": "Dyckman St",
     "coordinates": {
-      "lon": "-73.92553600006474",
-      "lat": "40.86053100138796"
+      "latitude": "40.86053100138796",
+      "longitude": "-73.92553600006474"
     },
     "notes": "1-all times"
   },
@@ -3438,8 +3438,8 @@
     "lines": "1",
     "name": "125th St",
     "coordinates": {
-      "lon": "-73.95837200097044",
-      "lat": "40.815580999978934"
+      "latitude": "40.815580999978934",
+      "longitude": "-73.95837200097044"
     },
     "notes": "1-all times"
   },
@@ -3450,8 +3450,8 @@
     "lines": "S",
     "name": "Franklin Ave - Fulton St",
     "coordinates": {
-      "lon": "-73.95582700110425",
-      "lat": "40.68059566598263"
+      "latitude": "40.68059566598263",
+      "longitude": "-73.95582700110425"
     },
     "notes": "S to Prospect Park-all times"
   },
@@ -3462,8 +3462,8 @@
     "lines": "2-5",
     "name": "149th St - Grand Concourse",
     "coordinates": {
-      "lon": "-73.92672247438611",
-      "lat": "40.81833014409742"
+      "latitude": "40.81833014409742",
+      "longitude": "-73.92672247438611"
     },
     "notes": "2-all times, 5-all times exc nights"
   },
@@ -3474,8 +3474,8 @@
     "lines": "2-5",
     "name": "3rd Ave - 149th St",
     "coordinates": {
-      "lon": "-73.91779152760981",
-      "lat": "40.816029252510006"
+      "latitude": "40.816029252510006",
+      "longitude": "-73.91779152760981"
     },
     "notes": "2-all times, 5-all times exc nights"
   },
@@ -3486,8 +3486,8 @@
     "lines": "4",
     "name": "167th St",
     "coordinates": {
-      "lon": "-73.92139999784426",
-      "lat": "40.83553699933672"
+      "latitude": "40.83553699933672",
+      "longitude": "-73.92139999784426"
     },
     "notes": "4-all times"
   },
@@ -3498,8 +3498,8 @@
     "lines": "6",
     "name": "Brook Ave",
     "coordinates": {
-      "lon": "-73.91923999909432",
-      "lat": "40.80756599987699"
+      "latitude": "40.80756599987699",
+      "longitude": "-73.91923999909432"
     },
     "notes": "6-all times"
   },
@@ -3510,8 +3510,8 @@
     "lines": "7",
     "name": "33rd St",
     "coordinates": {
-      "lon": "-73.93099699953838",
-      "lat": "40.74458699983993"
+      "latitude": "40.74458699983993",
+      "longitude": "-73.93099699953838"
     },
     "notes": "7-all times"
   },
@@ -3522,8 +3522,8 @@
     "lines": "7",
     "name": "40th St",
     "coordinates": {
-      "lon": "-73.9240159984882",
-      "lat": "40.74378100149132"
+      "latitude": "40.74378100149132",
+      "longitude": "-73.9240159984882"
     },
     "notes": "7-all times"
   },
@@ -3534,8 +3534,8 @@
     "lines": "A-B-C-D",
     "name": "145th St",
     "coordinates": {
-      "lon": "-73.94408792823116",
-      "lat": "40.824766360871905"
+      "latitude": "40.824766360871905",
+      "longitude": "-73.94408792823116"
     },
     "notes": "A,D-all times, B-weekdays and evenings, C-all times exc nights"
   },
@@ -3546,8 +3546,8 @@
     "lines": "B-D",
     "name": "155th St",
     "coordinates": {
-      "lon": "-73.93820899811622",
-      "lat": "40.8301349999812"
+      "latitude": "40.8301349999812",
+      "longitude": "-73.93820899811622"
     },
     "notes": "B-rush hours, D-all times, skips rush hours AM southbound, PM northbound"
   },
@@ -3558,8 +3558,8 @@
     "lines": "B-D",
     "name": "161st St - Yankee Stadium",
     "coordinates": {
-      "lon": "-73.92565099775477",
-      "lat": "40.827904998845845"
+      "latitude": "40.827904998845845",
+      "longitude": "-73.92565099775477"
     },
     "notes": "B-rush hours, D-all times, skips rush hours AM southbound, PM northbound"
   },
@@ -3570,8 +3570,8 @@
     "lines": "A-C",
     "name": "Utica Ave",
     "coordinates": {
-      "lon": "-73.93072899914027",
-      "lat": "40.67936399950546"
+      "latitude": "40.67936399950546",
+      "longitude": "-73.93072899914027"
     },
     "notes": "A-all times, C-all times exc nights"
   },
@@ -3582,8 +3582,8 @@
     "lines": "E-M-R",
     "name": "Steinway St",
     "coordinates": {
-      "lon": "-73.9205264716827",
-      "lat": "40.75698735912575"
+      "latitude": "40.75698735912575",
+      "longitude": "-73.9205264716827"
     },
     "notes": "E-nights, R-all other times, M-weekdays and evenings"
   },
@@ -3594,8 +3594,8 @@
     "lines": "J",
     "name": "Kosciuszko St",
     "coordinates": {
-      "lon": "-73.92850899927413",
-      "lat": "40.69317200129202"
+      "latitude": "40.69317200129202",
+      "longitude": "-73.92850899927413"
     },
     "notes": "J-all times"
   },
@@ -3606,8 +3606,8 @@
     "lines": "J-Z",
     "name": "Gates Ave",
     "coordinates": {
-      "lon": "-73.92215600150752",
-      "lat": "40.689583999013905"
+      "latitude": "40.689583999013905",
+      "longitude": "-73.92215600150752"
     },
     "notes": "Z-rush hours AM westbound, PM eastbound, J-all other times"
   },
@@ -3618,8 +3618,8 @@
     "lines": "M",
     "name": "Central Ave",
     "coordinates": {
-      "lon": "-73.92724299902838",
-      "lat": "40.69787300011831"
+      "latitude": "40.69787300011831",
+      "longitude": "-73.92724299902838"
     },
     "notes": "M-all times"
   },
@@ -3630,8 +3630,8 @@
     "lines": "M",
     "name": "Knickerbocker Ave",
     "coordinates": {
-      "lon": "-73.91972000188625",
-      "lat": "40.69866000123805"
+      "latitude": "40.69866000123805",
+      "longitude": "-73.91972000188625"
     },
     "notes": "M-all times"
   },
@@ -3642,8 +3642,8 @@
     "lines": "N-W",
     "name": "30th Ave",
     "coordinates": {
-      "lon": "-73.9214790001739",
-      "lat": "40.76677866673298"
+      "latitude": "40.76677866673298",
+      "longitude": "-73.9214790001739"
     },
     "notes": "N-all times, W part time"
   },
@@ -3654,8 +3654,8 @@
     "lines": "L",
     "name": "Jefferson St",
     "coordinates": {
-      "lon": "-73.9229130000312",
-      "lat": "40.706606665988716"
+      "latitude": "40.706606665988716",
+      "longitude": "-73.9229130000312"
     },
     "notes": "L-all times"
   },
@@ -3666,8 +3666,8 @@
     "lines": "L",
     "name": "Morgan Ave",
     "coordinates": {
-      "lon": "-73.93314700024209",
-      "lat": "40.70615166680729"
+      "latitude": "40.70615166680729",
+      "longitude": "-73.93314700024209"
     },
     "notes": "L-all times"
   },
@@ -3678,8 +3678,8 @@
     "lines": "E-M-R",
     "name": "Queens Plz",
     "coordinates": {
-      "lon": "-73.93713823965695",
-      "lat": "40.74891771986323"
+      "latitude": "40.74891771986323",
+      "longitude": "-73.93713823965695"
     },
     "notes": "E-all times, M-weekdays and evenings, R-all times exc nights"
   },
@@ -3690,8 +3690,8 @@
     "lines": "F",
     "name": "18th Ave",
     "coordinates": {
-      "lon": "-73.97697099965796",
-      "lat": "40.62975466638584"
+      "latitude": "40.62975466638584",
+      "longitude": "-73.97697099965796"
     },
     "notes": "F-all times"
   },
@@ -3702,8 +3702,8 @@
     "lines": "R",
     "name": "77th St",
     "coordinates": {
-      "lon": "-74.0255099996266",
-      "lat": "40.629741666886915"
+      "latitude": "40.629741666886915",
+      "longitude": "-74.0255099996266"
     },
     "notes": "R-all times"
   },
@@ -3714,8 +3714,8 @@
     "lines": "R",
     "name": "Bay Ridge Ave",
     "coordinates": {
-      "lon": "-74.02337699950728",
-      "lat": "40.63496666682377"
+      "latitude": "40.63496666682377",
+      "longitude": "-74.02337699950728"
     },
     "notes": "R-all times"
   },
@@ -3726,8 +3726,8 @@
     "lines": "D",
     "name": "50th St",
     "coordinates": {
-      "lon": "-73.9946587805514",
-      "lat": "40.636260890961395"
+      "latitude": "40.636260890961395",
+      "longitude": "-73.9946587805514"
     },
     "notes": "D-all times"
   },
@@ -3738,8 +3738,8 @@
     "lines": "N",
     "name": "Ft Hamilton Pkwy",
     "coordinates": {
-      "lon": "-74.00535100046275",
-      "lat": "40.63138566722445"
+      "latitude": "40.63138566722445",
+      "longitude": "-74.00535100046275"
     },
     "notes": "N-all times"
   },
@@ -3750,8 +3750,8 @@
     "lines": "D",
     "name": "25th Ave",
     "coordinates": {
-      "lon": "-73.98682900011477",
-      "lat": "40.59770366695856"
+      "latitude": "40.59770366695856",
+      "longitude": "-73.98682900011477"
     },
     "notes": "D-all times"
   },
@@ -3762,8 +3762,8 @@
     "lines": "D",
     "name": "Bay Pky",
     "coordinates": {
-      "lon": "-73.9936762000529",
-      "lat": "40.601950461572315"
+      "latitude": "40.601950461572315",
+      "longitude": "-73.9936762000529"
     },
     "notes": "D-all times"
   },
@@ -3774,8 +3774,8 @@
     "lines": "N",
     "name": "20th Ave",
     "coordinates": {
-      "lon": "-73.98452199846113",
-      "lat": "40.617108999866005"
+      "latitude": "40.617108999866005",
+      "longitude": "-73.98452199846113"
     },
     "notes": "N-all times"
   },
@@ -3786,8 +3786,8 @@
     "lines": "N",
     "name": "18th Ave",
     "coordinates": {
-      "lon": "-73.99045399865993",
-      "lat": "40.620686997680025"
+      "latitude": "40.620686997680025",
+      "longitude": "-73.99045399865993"
     },
     "notes": "N-all times"
   },
@@ -3798,8 +3798,8 @@
     "lines": "R",
     "name": "Bay Ridge - 95th St",
     "coordinates": {
-      "lon": "-74.03087600085765",
-      "lat": "40.61662166725951"
+      "latitude": "40.61662166725951",
+      "longitude": "-74.03087600085765"
     },
     "notes": "R-all times"
   },
@@ -3810,8 +3810,8 @@
     "lines": "R",
     "name": "86th St",
     "coordinates": {
-      "lon": "-74.0283979999864",
-      "lat": "40.62268666715025"
+      "latitude": "40.62268666715025",
+      "longitude": "-74.0283979999864"
     },
     "notes": "R-all times"
   },
@@ -3822,8 +3822,8 @@
     "lines": "D",
     "name": "79th St",
     "coordinates": {
-      "lon": "-74.00058287431507",
-      "lat": "40.61315892569516"
+      "latitude": "40.61315892569516",
+      "longitude": "-74.00058287431507"
     },
     "notes": "D-all times"
   },
@@ -3834,8 +3834,8 @@
     "lines": "D",
     "name": "71st St",
     "coordinates": {
-      "lon": "-73.99884094850685",
-      "lat": "40.61925870977273"
+      "latitude": "40.61925870977273",
+      "longitude": "-73.99884094850685"
     },
     "notes": "D-all times"
   },
@@ -3846,8 +3846,8 @@
     "lines": "D",
     "name": "20th Ave",
     "coordinates": {
-      "lon": "-73.99817432157568",
-      "lat": "40.60467699816932"
+      "latitude": "40.60467699816932",
+      "longitude": "-73.99817432157568"
     },
     "notes": "D-all times"
   },
@@ -3858,8 +3858,8 @@
     "lines": "D",
     "name": "18th Ave",
     "coordinates": {
-      "lon": "-74.00159259239406",
-      "lat": "40.60773573171741"
+      "latitude": "40.60773573171741",
+      "longitude": "-74.00159259239406"
     },
     "notes": "D-all times"
   },
@@ -3870,8 +3870,8 @@
     "lines": "D",
     "name": "62nd St",
     "coordinates": {
-      "lon": "-73.99685724994863",
-      "lat": "40.626224462922195"
+      "latitude": "40.626224462922195",
+      "longitude": "-73.99685724994863"
     },
     "notes": "D-all times"
   },
@@ -3882,8 +3882,8 @@
     "lines": "N",
     "name": "New Utrecht Ave",
     "coordinates": {
-      "lon": "-73.99635300025969",
-      "lat": "40.62484166725887"
+      "latitude": "40.62484166725887",
+      "longitude": "-73.99635300025969"
     },
     "notes": "N-all times"
   },
@@ -3894,8 +3894,8 @@
     "lines": "F",
     "name": "Ave U",
     "coordinates": {
-      "lon": "-73.97337641974885",
-      "lat": "40.59592482551748"
+      "latitude": "40.59592482551748",
+      "longitude": "-73.97337641974885"
     },
     "notes": "F-all times"
   },
@@ -3906,8 +3906,8 @@
     "lines": "F",
     "name": "Kings Hwy",
     "coordinates": {
-      "lon": "-73.9723553085244",
-      "lat": "40.603258405128265"
+      "latitude": "40.603258405128265",
+      "longitude": "-73.9723553085244"
     },
     "notes": "F-all times"
   },
@@ -3918,8 +3918,8 @@
     "lines": "B-Q",
     "name": "Brighton Beach",
     "coordinates": {
-      "lon": "-73.96135378598797",
-      "lat": "40.577710196642435"
+      "latitude": "40.577710196642435",
+      "longitude": "-73.96135378598797"
     },
     "notes": "B-weekdays and evenings, Q-all times"
   },
@@ -3930,8 +3930,8 @@
     "lines": "B-Q",
     "name": "Sheepshead Bay",
     "coordinates": {
-      "lon": "-73.95405791257907",
-      "lat": "40.58654754707536"
+      "latitude": "40.58654754707536",
+      "longitude": "-73.95405791257907"
     },
     "notes": "B-weekdays and evenings, Q-all times"
   },
@@ -3942,8 +3942,8 @@
     "lines": "Q",
     "name": "Ave U",
     "coordinates": {
-      "lon": "-73.95581122316301",
-      "lat": "40.59930895095475"
+      "latitude": "40.59930895095475",
+      "longitude": "-73.95581122316301"
     },
     "notes": "Q-all times"
   },
@@ -3954,8 +3954,8 @@
     "lines": "B-Q",
     "name": "Kings Hwy",
     "coordinates": {
-      "lon": "-73.95760873538083",
-      "lat": "40.608638645396006"
+      "latitude": "40.608638645396006",
+      "longitude": "-73.95760873538083"
     },
     "notes": "B-weekdays and evenings, Q-all times"
   },
@@ -3966,8 +3966,8 @@
     "lines": "N",
     "name": "Ave U",
     "coordinates": {
-      "lon": "-73.97908400099428",
-      "lat": "40.597235999920436"
+      "latitude": "40.597235999920436",
+      "longitude": "-73.97908400099428"
     },
     "notes": "N-all times"
   },
@@ -3978,8 +3978,8 @@
     "lines": "N",
     "name": "Kings Hwy",
     "coordinates": {
-      "lon": "-73.98037300229343",
-      "lat": "40.60405899980493"
+      "latitude": "40.60405899980493",
+      "longitude": "-73.98037300229343"
     },
     "notes": "N-all times"
   },
@@ -3990,8 +3990,8 @@
     "lines": "F",
     "name": "Neptune Ave",
     "coordinates": {
-      "lon": "-73.97459272818807",
-      "lat": "40.580738758491464"
+      "latitude": "40.580738758491464",
+      "longitude": "-73.97459272818807"
     },
     "notes": "F-all times"
   },
@@ -4002,8 +4002,8 @@
     "lines": "F",
     "name": "Ave X",
     "coordinates": {
-      "lon": "-73.97426599968905",
-      "lat": "40.589449666625285"
+      "latitude": "40.589449666625285",
+      "longitude": "-73.97426599968905"
     },
     "notes": "F-all times"
   },
@@ -4014,8 +4014,8 @@
     "lines": "D",
     "name": "Bay 50th St",
     "coordinates": {
-      "lon": "-73.98376500045946",
-      "lat": "40.58884066651933"
+      "latitude": "40.58884066651933",
+      "longitude": "-73.98376500045946"
     },
     "notes": "D-all times"
   },
@@ -4026,8 +4026,8 @@
     "lines": "N",
     "name": "Gravesend - 86th St",
     "coordinates": {
-      "lon": "-73.97818899936274",
-      "lat": "40.59246500088859"
+      "latitude": "40.59246500088859",
+      "longitude": "-73.97818899936274"
     },
     "notes": "N-all times"
   },
@@ -4038,8 +4038,8 @@
     "lines": "F",
     "name": "Ave P",
     "coordinates": {
-      "lon": "-73.97300281528751",
-      "lat": "40.608842808949916"
+      "latitude": "40.608842808949916",
+      "longitude": "-73.97300281528751"
     },
     "notes": "F-all times"
   },
@@ -4050,8 +4050,8 @@
     "lines": "F",
     "name": "Ave N",
     "coordinates": {
-      "lon": "-73.97404850873143",
-      "lat": "40.61435671190883"
+      "latitude": "40.61435671190883",
+      "longitude": "-73.97404850873143"
     },
     "notes": "F-all times"
   },
@@ -4062,8 +4062,8 @@
     "lines": "F",
     "name": "Bay Pky",
     "coordinates": {
-      "lon": "-73.9752569782215",
-      "lat": "40.62073162316788"
+      "latitude": "40.62073162316788",
+      "longitude": "-73.9752569782215"
     },
     "notes": "F-all times"
   },
@@ -4074,8 +4074,8 @@
     "lines": "Q",
     "name": "Ave M",
     "coordinates": {
-      "lon": "-73.9592431052215",
-      "lat": "40.617397744443736"
+      "latitude": "40.617397744443736",
+      "longitude": "-73.9592431052215"
     },
     "notes": "Q-all times"
   },
@@ -4086,8 +4086,8 @@
     "lines": "N",
     "name": "Bay Pky",
     "coordinates": {
-      "lon": "-73.98178001069293",
-      "lat": "40.61145578989005"
+      "latitude": "40.61145578989005",
+      "longitude": "-73.98178001069293"
     },
     "notes": "N-all times"
   },
@@ -4098,8 +4098,8 @@
     "lines": "F",
     "name": "Ave I",
     "coordinates": {
-      "lon": "-73.97606933170925",
-      "lat": "40.62501744019143"
+      "latitude": "40.62501744019143",
+      "longitude": "-73.97606933170925"
     },
     "notes": "F-all times"
   },
@@ -4110,8 +4110,8 @@
     "lines": "Q",
     "name": "Ave J",
     "coordinates": {
-      "lon": "-73.96069316246925",
-      "lat": "40.625022819915166"
+      "latitude": "40.625022819915166",
+      "longitude": "-73.96069316246925"
     },
     "notes": "Q-all times"
   },
@@ -4122,8 +4122,8 @@
     "lines": "Q",
     "name": "Ave H",
     "coordinates": {
-      "lon": "-73.96151793942495",
-      "lat": "40.62920837758969"
+      "latitude": "40.62920837758969",
+      "longitude": "-73.96151793942495"
     },
     "notes": "Q-all times"
   },
@@ -4134,8 +4134,8 @@
     "lines": "Q",
     "name": "Neck Rd",
     "coordinates": {
-      "lon": "-73.95507827493762",
-      "lat": "40.59532169111695"
+      "latitude": "40.59532169111695",
+      "longitude": "-73.95507827493762"
     },
     "notes": "Q-all times"
   },
@@ -4146,8 +4146,8 @@
     "lines": "F",
     "name": "21st St - Queensbridge",
     "coordinates": {
-      "lon": "-73.94193761457447",
-      "lat": "40.75373927087553"
+      "latitude": "40.75373927087553",
+      "longitude": "-73.94193761457447"
     },
     "notes": "F-all times"
   },
@@ -4158,8 +4158,8 @@
     "lines": "A-C-E",
     "name": "50th St",
     "coordinates": {
-      "lon": "-73.98598400026407",
-      "lat": "40.76245599925997"
+      "latitude": "40.76245599925997",
+      "longitude": "-73.98598400026407"
     },
     "notes": "A-nights, C-all other times, E-all times"
   },
@@ -4170,8 +4170,8 @@
     "lines": "B-D-E",
     "name": "7th Ave",
     "coordinates": {
-      "lon": "-73.98169782344476",
-      "lat": "40.76297015245628"
+      "latitude": "40.76297015245628",
+      "longitude": "-73.98169782344476"
     },
     "notes": "D,E-all times, B-weekdays and evenings"
   },
@@ -4182,8 +4182,8 @@
     "lines": "B-D-F-M",
     "name": "47th-50th Sts - Rockefeller Ctr",
     "coordinates": {
-      "lon": "-73.98133100227702",
-      "lat": "40.75864100159815"
+      "latitude": "40.75864100159815",
+      "longitude": "-73.98133100227702"
     },
     "notes": "B,M-weekdays and evenings, D,F-all times"
   },
@@ -4194,8 +4194,8 @@
     "lines": "F",
     "name": "57th St",
     "coordinates": {
-      "lon": "-73.97736800085171",
-      "lat": "40.76408500081713"
+      "latitude": "40.76408500081713",
+      "longitude": "-73.97736800085171"
     },
     "notes": "F-all times"
   },
@@ -4206,8 +4206,8 @@
     "lines": "F-Q",
     "name": "Lexington Ave - 63rd St",
     "coordinates": {
-      "lon": "-73.96608964413245",
-      "lat": "40.76461809442373"
+      "latitude": "40.76461809442373",
+      "longitude": "-73.96608964413245"
     },
     "notes": "F-all times, Q all times"
   },
@@ -4218,8 +4218,8 @@
     "lines": "F",
     "name": "Roosevelt Island - Main St",
     "coordinates": {
-      "lon": "-73.95323499978866",
-      "lat": "40.75917199967108"
+      "latitude": "40.75917199967108",
+      "longitude": "-73.95323499978866"
     },
     "notes": "F-all times"
   },
@@ -4230,8 +4230,8 @@
     "lines": "A-B-C-D",
     "name": "59th St - Columbus Circle",
     "coordinates": {
-      "lon": "-73.98164872301398",
-      "lat": "40.768249531776064"
+      "latitude": "40.768249531776064",
+      "longitude": "-73.98164872301398"
     },
     "notes": "A,D-all times, B-weekdays and evenings, C-all times exc nights"
   },
@@ -4242,8 +4242,8 @@
     "lines": "N-Q-R-W",
     "name": "49th St",
     "coordinates": {
-      "lon": "-73.98420956591096",
-      "lat": "40.759801973870694"
+      "latitude": "40.759801973870694",
+      "longitude": "-73.98420956591096"
     },
     "notes": "N-all times, Q-all times exc weekends, R-all times exc nights, W part time"
   },
@@ -4254,8 +4254,8 @@
     "lines": "N-Q-R-W",
     "name": "57th St",
     "coordinates": {
-      "lon": "-73.98072973372128",
-      "lat": "40.76456552501829"
+      "latitude": "40.76456552501829",
+      "longitude": "-73.98072973372128"
     },
     "notes": "N,Q-all times, R-all times exc nights, W part time"
   },
@@ -4266,8 +4266,8 @@
     "lines": "N-R-W",
     "name": "5th Ave - 59th St",
     "coordinates": {
-      "lon": "-73.97334700047045",
-      "lat": "40.764810999755284"
+      "latitude": "40.764810999755284",
+      "longitude": "-73.97334700047045"
     },
     "notes": "N-all times, R-all times exc nights, W part time"
   },
@@ -4278,8 +4278,8 @@
     "lines": "N-R-W",
     "name": "Lexington Ave - 59th St",
     "coordinates": {
-      "lon": "-73.96737501711436",
-      "lat": "40.762708855394564"
+      "latitude": "40.762708855394564",
+      "longitude": "-73.96737501711436"
     },
     "notes": "N-all times, R-all times exc nights, W part time"
   },
@@ -4290,8 +4290,8 @@
     "lines": "1-2-3",
     "name": "34th St - Penn Station",
     "coordinates": {
-      "lon": "-73.99105699913983",
-      "lat": "40.75037300003949"
+      "latitude": "40.75037300003949",
+      "longitude": "-73.99105699913983"
     },
     "notes": "1,2,3-all times"
   },
@@ -4302,8 +4302,8 @@
     "lines": "1-2-3",
     "name": "Times Sq - 42nd St",
     "coordinates": {
-      "lon": "-73.98749500051885",
-      "lat": "40.75528999995681"
+      "latitude": "40.75528999995681",
+      "longitude": "-73.98749500051885"
     },
     "notes": "1,2,3-all times"
   },
@@ -4314,8 +4314,8 @@
     "lines": "A-C",
     "name": "Fulton St",
     "coordinates": {
-      "lon": "-74.00762309323994",
-      "lat": "40.71016216530185"
+      "latitude": "40.71016216530185",
+      "longitude": "-74.00762309323994"
     },
     "notes": "A-all times, C-all times exc nights"
   },
@@ -4326,8 +4326,8 @@
     "lines": "A-C",
     "name": "Chambers St",
     "coordinates": {
-      "lon": "-74.00858473570133",
-      "lat": "40.714111000774025"
+      "latitude": "40.714111000774025",
+      "longitude": "-74.00858473570133"
     },
     "notes": "A-all times, C-all times exc nights"
   },
@@ -4338,8 +4338,8 @@
     "lines": "A-C-E",
     "name": "42nd St - Port Authority Bus Term",
     "coordinates": {
-      "lon": "-73.98973500085859",
-      "lat": "40.757307998551504"
+      "latitude": "40.757307998551504",
+      "longitude": "-73.98973500085859"
     },
     "notes": "A,E-all times, C-all times exc nights"
   },
@@ -4350,8 +4350,8 @@
     "lines": "G",
     "name": "Myrtle-Willoughby Aves",
     "coordinates": {
-      "lon": "-73.94906699890156",
-      "lat": "40.69461899903765"
+      "latitude": "40.69461899903765",
+      "longitude": "-73.94906699890156"
     },
     "notes": "G-all times"
   },
@@ -4362,8 +4362,8 @@
     "lines": "G",
     "name": "Flushing Ave",
     "coordinates": {
-      "lon": "-73.9502340010257",
-      "lat": "40.70037666622154"
+      "latitude": "40.70037666622154",
+      "longitude": "-73.9502340010257"
     },
     "notes": "G-all times"
   },
@@ -4374,8 +4374,8 @@
     "lines": "F-M",
     "name": "23rd St",
     "coordinates": {
-      "lon": "-73.99276500471389",
-      "lat": "40.742954317826005"
+      "latitude": "40.742954317826005",
+      "longitude": "-73.99276500471389"
     },
     "notes": "F-all times, M-weekdays and evenings"
   },
@@ -4386,8 +4386,8 @@
     "lines": "B-D-F-M",
     "name": "Herald Sq - 34th St",
     "coordinates": {
-      "lon": "-73.98777189072918",
-      "lat": "40.74978939990011"
+      "latitude": "40.74978939990011",
+      "longitude": "-73.98777189072918"
     },
     "notes": "B,M-weekdays and evenings, D,F-all times"
   },
@@ -4398,8 +4398,8 @@
     "lines": "A-C-G",
     "name": "Hoyt - Schermerhorn Sts",
     "coordinates": {
-      "lon": "-73.98503624034139",
-      "lat": "40.68840847580642"
+      "latitude": "40.68840847580642",
+      "longitude": "-73.98503624034139"
     },
     "notes": "A,G-all times, C-all times exc nights"
   },
@@ -4410,8 +4410,8 @@
     "lines": "A-C-F",
     "name": "Jay St - MetroTech",
     "coordinates": {
-      "lon": "-73.98721815267317",
-      "lat": "40.692470636847084"
+      "latitude": "40.692470636847084",
+      "longitude": "-73.98721815267317"
     },
     "notes": "A,F-all times, C-all times exc nights"
   },
@@ -4422,8 +4422,8 @@
     "lines": "F",
     "name": "East Broadway",
     "coordinates": {
-      "lon": "-73.99017700122197",
-      "lat": "40.713855001020406"
+      "latitude": "40.713855001020406",
+      "longitude": "-73.99017700122197"
     },
     "notes": "F-all times"
   },
@@ -4434,8 +4434,8 @@
     "lines": "F",
     "name": "Delancey St - Essex St",
     "coordinates": {
-      "lon": "-73.98807806807719",
-      "lat": "40.71868074219453"
+      "latitude": "40.71868074219453",
+      "longitude": "-73.98807806807719"
     },
     "notes": "F-all times"
   },
@@ -4446,8 +4446,8 @@
     "lines": "F",
     "name": "Lower East Side - 2nd Ave",
     "coordinates": {
-      "lon": "-73.98993800003434",
-      "lat": "40.72340166574911"
+      "latitude": "40.72340166574911",
+      "longitude": "-73.98993800003434"
     },
     "notes": "F-all times"
   },
@@ -4458,8 +4458,8 @@
     "lines": "J-M",
     "name": "Flushing Ave",
     "coordinates": {
-      "lon": "-73.94137734838365",
-      "lat": "40.70040440298112"
+      "latitude": "40.70040440298112",
+      "longitude": "-73.94137734838365"
     },
     "notes": "J-all times, skips weekdays AM westbound, PM eastbound, M-all times exc nights"
   },
@@ -4470,8 +4470,8 @@
     "lines": "J-M-Z",
     "name": "Myrtle Ave",
     "coordinates": {
-      "lon": "-73.9356230012996",
-      "lat": "40.6971950005145"
+      "latitude": "40.6971950005145",
+      "longitude": "-73.9356230012996"
     },
     "notes": "J,M-all times, Z-rush hours AM westbound, PM eastbound"
   },
@@ -4482,8 +4482,8 @@
     "lines": "F-G",
     "name": "4th Av - 9th St",
     "coordinates": {
-      "lon": "-73.98977899938897",
-      "lat": "40.67027166728493"
+      "latitude": "40.67027166728493",
+      "longitude": "-73.98977899938897"
     },
     "notes": "F,G-all times"
   },
@@ -4494,8 +4494,8 @@
     "lines": "F-G",
     "name": "Smith - 9th Sts",
     "coordinates": {
-      "lon": "-73.99589172790934",
-      "lat": "40.67364106090412"
+      "latitude": "40.67364106090412",
+      "longitude": "-73.99589172790934"
     },
     "notes": "F,G-all times"
   },
@@ -4506,8 +4506,8 @@
     "lines": "F-G",
     "name": "Bergen St",
     "coordinates": {
-      "lon": "-73.99075649573565",
-      "lat": "40.68611054725977"
+      "latitude": "40.68611054725977",
+      "longitude": "-73.99075649573565"
     },
     "notes": "F,G-all times"
   },
@@ -4518,8 +4518,8 @@
     "lines": "N-R",
     "name": "Jay St - MetroTech",
     "coordinates": {
-      "lon": "-73.98605667854612",
-      "lat": "40.69225539645323"
+      "latitude": "40.69225539645323",
+      "longitude": "-73.98605667854612"
     },
     "notes": "N-nights, R-all other times"
   },
@@ -4530,8 +4530,8 @@
     "lines": "N-R",
     "name": "Court St",
     "coordinates": {
-      "lon": "-73.99181830901125",
-      "lat": "40.694196480776995"
+      "latitude": "40.694196480776995",
+      "longitude": "-73.99181830901125"
     },
     "notes": "N-nights, R-all other times"
   },
@@ -4542,8 +4542,8 @@
     "lines": "N-Q-R-W",
     "name": "Union Sq - 14th St",
     "coordinates": {
-      "lon": "-73.99053886181645",
-      "lat": "40.73587226699812"
+      "latitude": "40.73587226699812",
+      "longitude": "-73.99053886181645"
     },
     "notes": "N,Q-all times, R-all times exc nights"
   },
@@ -4554,8 +4554,8 @@
     "lines": "N-Q-R-W",
     "name": "23rd St",
     "coordinates": {
-      "lon": "-73.98934400102907",
-      "lat": "40.74130266729"
+      "latitude": "40.74130266729",
+      "longitude": "-73.98934400102907"
     },
     "notes": "N-all times, Q-nights, R-all times exc nights"
   },
@@ -4566,8 +4566,8 @@
     "lines": "D-N-R",
     "name": "Prospect Ave",
     "coordinates": {
-      "lon": "-73.99287200067424",
-      "lat": "40.66541366712979"
+      "latitude": "40.66541366712979",
+      "longitude": "-73.99287200067424"
     },
     "notes": "D,N-nights, R-all other times"
   },
@@ -4578,8 +4578,8 @@
     "lines": "D-N-R",
     "name": "4th Av - 9th St",
     "coordinates": {
-      "lon": "-73.98830199974512",
-      "lat": "40.670846666842756"
+      "latitude": "40.670846666842756",
+      "longitude": "-73.98830199974512"
     },
     "notes": "D,N-nights, R-all other times"
   },
@@ -4590,8 +4590,8 @@
     "lines": "L",
     "name": "3rd Ave",
     "coordinates": {
-      "lon": "-73.98575000112093",
-      "lat": "40.73269099971662"
+      "latitude": "40.73269099971662",
+      "longitude": "-73.98575000112093"
     },
     "notes": "L-all times"
   },
@@ -4602,8 +4602,8 @@
     "lines": "L",
     "name": "Union Sq - 14th St",
     "coordinates": {
-      "lon": "-73.99066976901818",
-      "lat": "40.73476331217923"
+      "latitude": "40.73476331217923",
+      "longitude": "-73.99066976901818"
     },
     "notes": "L-all times"
   },
@@ -4614,8 +4614,8 @@
     "lines": "A-C",
     "name": "Liberty Ave",
     "coordinates": {
-      "lon": "-73.89654800103929",
-      "lat": "40.67454199987086"
+      "latitude": "40.67454199987086",
+      "longitude": "-73.89654800103929"
     },
     "notes": "A-nights, C-all other times"
   },
@@ -4626,8 +4626,8 @@
     "lines": "A-C",
     "name": "Broadway Junction",
     "coordinates": {
-      "lon": "-73.90531600055341",
-      "lat": "40.67833366608023"
+      "latitude": "40.67833366608023",
+      "longitude": "-73.90531600055341"
     },
     "notes": "A-all times, C-all times exc nights"
   },
@@ -4638,8 +4638,8 @@
     "lines": "N-R",
     "name": "59th St",
     "coordinates": {
-      "lon": "-74.01788099953987",
-      "lat": "40.6413616662838"
+      "latitude": "40.6413616662838",
+      "longitude": "-74.01788099953987"
     },
     "notes": "N,R-all times"
   },
@@ -4650,8 +4650,8 @@
     "lines": "N-R",
     "name": "45th St",
     "coordinates": {
-      "lon": "-74.01000600074939",
-      "lat": "40.648938666612814"
+      "latitude": "40.648938666612814",
+      "longitude": "-74.01000600074939"
     },
     "notes": "N-nights, R-all times, skips nights northbound"
   },
@@ -4662,8 +4662,8 @@
     "lines": "D-N-R",
     "name": "36th St",
     "coordinates": {
-      "lon": "-74.00354899951809",
-      "lat": "40.65514366633887"
+      "latitude": "40.65514366633887",
+      "longitude": "-74.00354899951809"
     },
     "notes": "D,N,R-all times"
   },
@@ -4674,8 +4674,8 @@
     "lines": "D",
     "name": "9th Ave",
     "coordinates": {
-      "lon": "-73.99444874451204",
-      "lat": "40.64648407726636"
+      "latitude": "40.64648407726636",
+      "longitude": "-73.99444874451204"
     },
     "notes": "D-all times"
   },
@@ -4686,8 +4686,8 @@
     "lines": "N-R",
     "name": "53rd St",
     "coordinates": {
-      "lon": "-74.01403399986317",
-      "lat": "40.64506866735981"
+      "latitude": "40.64506866735981",
+      "longitude": "-74.01403399986317"
     },
     "notes": "N-nights, R-all times, skips nights northbound"
   },
@@ -4698,8 +4698,8 @@
     "lines": "D",
     "name": "Ft Hamilton Pkwy",
     "coordinates": {
-      "lon": "-73.9942022375285",
-      "lat": "40.640912711444656"
+      "latitude": "40.640912711444656",
+      "longitude": "-73.9942022375285"
     },
     "notes": "D-all times"
   },
@@ -4710,8 +4710,8 @@
     "lines": "D-N-R",
     "name": "25th St",
     "coordinates": {
-      "lon": "-73.99809099974297",
-      "lat": "40.66039666692321"
+      "latitude": "40.66039666692321",
+      "longitude": "-73.99809099974297"
     },
     "notes": "D,N-nights, R-all other times"
   },
@@ -4722,8 +4722,8 @@
     "lines": "F-G",
     "name": "Carroll St",
     "coordinates": {
-      "lon": "-73.99494697998841",
-      "lat": "40.68027335170176"
+      "latitude": "40.68027335170176",
+      "longitude": "-73.99494697998841"
     },
     "notes": "F,G-all times"
   },
@@ -4734,8 +4734,8 @@
     "lines": "A-C-E",
     "name": "Spring St",
     "coordinates": {
-      "lon": "-74.00373899843763",
-      "lat": "40.72622700129312"
+      "latitude": "40.72622700129312",
+      "longitude": "-74.00373899843763"
     },
     "notes": "A-nights, C-all other times, E-all times"
   },
@@ -4746,8 +4746,8 @@
     "lines": "A",
     "name": "181st St",
     "coordinates": {
-      "lon": "-73.93796900205011",
-      "lat": "40.851694999744616"
+      "latitude": "40.851694999744616",
+      "longitude": "-73.93796900205011"
     },
     "notes": "A-all times"
   },
@@ -4758,8 +4758,8 @@
     "lines": "A",
     "name": "190th St",
     "coordinates": {
-      "lon": "-73.93417999964333",
-      "lat": "40.85902199892482"
+      "latitude": "40.85902199892482",
+      "longitude": "-73.93417999964333"
     },
     "notes": "A-all times"
   },
@@ -4770,8 +4770,8 @@
     "lines": "A-B-C",
     "name": "116th St",
     "coordinates": {
-      "lon": "-73.95479778057312",
-      "lat": "40.80505813344211"
+      "latitude": "40.80505813344211",
+      "longitude": "-73.95479778057312"
     },
     "notes": "A-nights, B-weekdays and evenings, C-all times exc nights"
   },
@@ -4782,8 +4782,8 @@
     "lines": "A-B-C-D",
     "name": "125th St",
     "coordinates": {
-      "lon": "-73.95224799734774",
-      "lat": "40.811071672994565"
+      "latitude": "40.811071672994565",
+      "longitude": "-73.95224799734774"
     },
     "notes": "A,D-all times, B-weekdays and evenings, C-all times exc nights"
   },
@@ -4794,8 +4794,8 @@
     "lines": "N-Q-R-W",
     "name": "Prince St",
     "coordinates": {
-      "lon": "-73.99770200045987",
-      "lat": "40.72432866597571"
+      "latitude": "40.72432866597571",
+      "longitude": "-73.99770200045987"
     },
     "notes": "N-all times, Q-nights, R-all times exc nights"
   },
@@ -4806,8 +4806,8 @@
     "lines": "N-Q-R-W",
     "name": "8th St - NYU",
     "coordinates": {
-      "lon": "-73.99250799849149",
-      "lat": "40.73046499853991"
+      "latitude": "40.73046499853991",
+      "longitude": "-73.99250799849149"
     },
     "notes": "N-all times, Q-nights, R-all times exc nights"
   },
@@ -4818,8 +4818,8 @@
     "lines": "2-3",
     "name": "Fulton St",
     "coordinates": {
-      "lon": "-74.00657099970202",
-      "lat": "40.70941599925865"
+      "latitude": "40.70941599925865",
+      "longitude": "-74.00657099970202"
     },
     "notes": "2-all times, 3-all times exc nights"
   },
@@ -4830,8 +4830,8 @@
     "lines": "2-3",
     "name": "Park Pl",
     "coordinates": {
-      "lon": "-74.00881099997359",
-      "lat": "40.713050999077694"
+      "latitude": "40.713050999077694",
+      "longitude": "-74.00881099997359"
     },
     "notes": "2-all times, 3-all times exc nights"
   },
@@ -4842,8 +4842,8 @@
     "lines": "1-2-3",
     "name": "Chambers St",
     "coordinates": {
-      "lon": "-74.00926600170112",
-      "lat": "40.71547800011327"
+      "latitude": "40.71547800011327",
+      "longitude": "-74.00926600170112"
     },
     "notes": "1,2-all times, 3-all times exc nights"
   },
@@ -4854,8 +4854,8 @@
     "lines": "2-3",
     "name": "Hoyt St",
     "coordinates": {
-      "lon": "-73.98506379575646",
-      "lat": "40.69054418535472"
+      "latitude": "40.69054418535472",
+      "longitude": "-73.98506379575646"
     },
     "notes": "2-all times, 3-all times exc nights"
   },
@@ -4866,8 +4866,8 @@
     "lines": "2-3",
     "name": "Borough Hall",
     "coordinates": {
-      "lon": "-73.98999799960687",
-      "lat": "40.693218999611084"
+      "latitude": "40.693218999611084",
+      "longitude": "-73.98999799960687"
     },
     "notes": "2-all times, 3-all times exc nights"
   },
@@ -4878,8 +4878,8 @@
     "lines": "4",
     "name": "183rd St",
     "coordinates": {
-      "lon": "-73.90387900151532",
-      "lat": "40.85840700040842"
+      "latitude": "40.85840700040842",
+      "longitude": "-73.90387900151532"
     },
     "notes": "4-all times"
   },
@@ -4890,8 +4890,8 @@
     "lines": "4",
     "name": "Fordham Rd",
     "coordinates": {
-      "lon": "-73.90103399921699",
-      "lat": "40.86280299988937"
+      "latitude": "40.86280299988937",
+      "longitude": "-73.90103399921699"
     },
     "notes": "4-all times"
   },
@@ -4902,8 +4902,8 @@
     "lines": "E",
     "name": "World Trade Center",
     "coordinates": {
-      "lon": "-74.00974461517701",
-      "lat": "40.71256392680817"
+      "latitude": "40.71256392680817",
+      "longitude": "-74.00974461517701"
     },
     "notes": "E-all times"
   },
@@ -4914,8 +4914,8 @@
     "lines": "A-C-E",
     "name": "Canal St - Holland Tunnel",
     "coordinates": {
-      "lon": "-74.0052290023424",
-      "lat": "40.72082400007119"
+      "latitude": "40.72082400007119",
+      "longitude": "-74.0052290023424"
     },
     "notes": "A,E-all times, C-all times exc nights"
   },
@@ -4926,8 +4926,8 @@
     "lines": "A-C",
     "name": "155th St",
     "coordinates": {
-      "lon": "-73.94151400082208",
-      "lat": "40.83051799929251"
+      "latitude": "40.83051799929251",
+      "longitude": "-73.94151400082208"
     },
     "notes": "A-nights, C-all other times"
   },
@@ -4938,8 +4938,8 @@
     "lines": "A-C",
     "name": "163rd St - Amsterdam Av",
     "coordinates": {
-      "lon": "-73.93989200188344",
-      "lat": "40.83601299923096"
+      "latitude": "40.83601299923096",
+      "longitude": "-73.93989200188344"
     },
     "notes": "A-nights, C-all other times"
   },
@@ -4950,8 +4950,8 @@
     "lines": "J-Z",
     "name": "Fulton St",
     "coordinates": {
-      "lon": "-74.00793800110387",
-      "lat": "40.71002266658424"
+      "latitude": "40.71002266658424",
+      "longitude": "-74.00793800110387"
     },
     "notes": "J-all times, Z-rush hours AM westbound, PM eastbound"
   },
@@ -4962,8 +4962,8 @@
     "lines": "J-Z",
     "name": "Chambers St",
     "coordinates": {
-      "lon": "-74.00340673031336",
-      "lat": "40.71323378962671"
+      "latitude": "40.71323378962671",
+      "longitude": "-74.00340673031336"
     },
     "notes": "J-all times, Z-rush hours AM westbound, PM eastbound"
   },
@@ -4974,8 +4974,8 @@
     "lines": "J-Z",
     "name": "Canal St",
     "coordinates": {
-      "lon": "-73.99982638545937",
-      "lat": "40.71817387697391"
+      "latitude": "40.71817387697391",
+      "longitude": "-73.99982638545937"
     },
     "notes": "J-all times, Z-rush hours AM westbound, PM eastbound"
   },
@@ -4986,8 +4986,8 @@
     "lines": "R-W",
     "name": "City Hall",
     "coordinates": {
-      "lon": "-74.00698581780337",
-      "lat": "40.71327233111697"
+      "latitude": "40.71327233111697",
+      "longitude": "-74.00698581780337"
     },
     "notes": "N-nights, R-all other times"
   },
@@ -4998,8 +4998,8 @@
     "lines": "R-W",
     "name": "Canal St",
     "coordinates": {
-      "lon": "-74.0018260000577",
-      "lat": "40.71946500105898"
+      "latitude": "40.71946500105898",
+      "longitude": "-74.0018260000577"
     },
     "notes": "N-nights, R-all other times"
   },
@@ -5010,8 +5010,8 @@
     "lines": "1",
     "name": "South Ferry",
     "coordinates": {
-      "lon": "-74.01316895919258",
-      "lat": "40.701730507574474"
+      "latitude": "40.701730507574474",
+      "longitude": "-74.01316895919258"
     },
     "notes": "1-all times"
   },
@@ -5022,8 +5022,8 @@
     "lines": "4-5",
     "name": "Bowling Green",
     "coordinates": {
-      "lon": "-74.01400799803432",
-      "lat": "40.70491399928076"
+      "latitude": "40.70491399928076",
+      "longitude": "-74.01400799803432"
     },
     "notes": "4-all times, 5-all times exc nights"
   },
@@ -5034,8 +5034,8 @@
     "lines": "4-5",
     "name": "Wall St",
     "coordinates": {
-      "lon": "-74.01186199860112",
-      "lat": "40.70755700086603"
+      "latitude": "40.70755700086603",
+      "longitude": "-74.01186199860112"
     },
     "notes": "4-all times, 5-weekdays"
   },
@@ -5046,8 +5046,8 @@
     "lines": "R-W",
     "name": "Whitehall St",
     "coordinates": {
-      "lon": "-74.0130072374272",
-      "lat": "40.703142373599135"
+      "latitude": "40.703142373599135",
+      "longitude": "-74.0130072374272"
     },
     "notes": "N-nights, R-all other times"
   },
@@ -5058,8 +5058,8 @@
     "lines": "R-W",
     "name": "Rector St",
     "coordinates": {
-      "lon": "-74.01297456253795",
-      "lat": "40.707744756294474"
+      "latitude": "40.707744756294474",
+      "longitude": "-74.01297456253795"
     },
     "notes": "N-nights, R-all other times"
   },
@@ -5070,8 +5070,8 @@
     "lines": "M",
     "name": "Fresh Pond Rd",
     "coordinates": {
-      "lon": "-73.8958980017196",
-      "lat": "40.70622599823048"
+      "latitude": "40.70622599823048",
+      "longitude": "-73.8958980017196"
     },
     "notes": "M-all times"
   },
@@ -5082,8 +5082,8 @@
     "lines": "M",
     "name": "Middle Village - Metropolitan Ave",
     "coordinates": {
-      "lon": "-73.88957722978091",
-      "lat": "40.711431305058255"
+      "latitude": "40.711431305058255",
+      "longitude": "-73.88957722978091"
     },
     "notes": "M-all times"
   },
@@ -5094,8 +5094,8 @@
     "lines": "1",
     "name": "Rector St",
     "coordinates": {
-      "lon": "-74.01378300119742",
-      "lat": "40.707512999521775"
+      "latitude": "40.707512999521775",
+      "longitude": "-74.01378300119742"
     },
     "notes": "1-all times"
   },
@@ -5106,8 +5106,8 @@
     "lines": "1",
     "name": "Cortlandt St",
     "coordinates": {
-      "lon": "-74.01218800112292",
-      "lat": "40.7118350008202"
+      "latitude": "40.7118350008202",
+      "longitude": "-74.01218800112292"
     },
     "notes": "Temporarily closed"
   },
@@ -5118,8 +5118,8 @@
     "lines": "4-5",
     "name": "Fulton St",
     "coordinates": {
-      "lon": "-74.00950899856461",
-      "lat": "40.710367998822136"
+      "latitude": "40.710367998822136",
+      "longitude": "-74.00950899856461"
     },
     "notes": "4-all times, 5-weekdays"
   },
@@ -5130,8 +5130,8 @@
     "lines": "J-Z",
     "name": "Broad St",
     "coordinates": {
-      "lon": "-74.01105599991755",
-      "lat": "40.706476001106005"
+      "latitude": "40.706476001106005",
+      "longitude": "-74.01105599991755"
     },
     "notes": "J-all times, Z-rush hours AM westbound, PM eastbound"
   },
@@ -5142,8 +5142,8 @@
     "lines": "R-W",
     "name": "Cortlandt St",
     "coordinates": {
-      "lon": "-74.01113196473266",
-      "lat": "40.7105129841524"
+      "latitude": "40.7105129841524",
+      "longitude": "-74.01113196473266"
     },
     "notes": "N-nights, R-all other times"
   },
@@ -5154,8 +5154,8 @@
     "lines": "2-3",
     "name": "Wall St",
     "coordinates": {
-      "lon": "-74.00909999844257",
-      "lat": "40.706820999753376"
+      "latitude": "40.706820999753376",
+      "longitude": "-74.00909999844257"
     },
     "notes": "2-all times, 3-all times exc nights"
   },
@@ -5166,8 +5166,8 @@
     "lines": "A",
     "name": "Dyckman St",
     "coordinates": {
-      "lon": "-73.92727099960726",
-      "lat": "40.865490998968916"
+      "latitude": "40.865490998968916",
+      "longitude": "-73.92727099960726"
     },
     "notes": "A-all times"
   },
@@ -5178,8 +5178,8 @@
     "lines": "B-D",
     "name": "Grand St",
     "coordinates": {
-      "lon": "-73.99375299913589",
-      "lat": "40.71826699954992"
+      "latitude": "40.71826699954992",
+      "longitude": "-73.99375299913589"
     },
     "notes": "B-weekdays and evenings, D-all times"
   },
@@ -5190,8 +5190,8 @@
     "lines": "B-D-F-M",
     "name": "Broadway - Lafayette St",
     "coordinates": {
-      "lon": "-73.99620399876055",
-      "lat": "40.725296998738045"
+      "latitude": "40.725296998738045",
+      "longitude": "-73.99620399876055"
     },
     "notes": "B,M-weekdays and evenings, D,F-all times"
   },
@@ -5202,8 +5202,8 @@
     "lines": "J-Z",
     "name": "Bowery",
     "coordinates": {
-      "lon": "-73.99380690654237",
-      "lat": "40.720246883147254"
+      "latitude": "40.720246883147254",
+      "longitude": "-73.99380690654237"
     },
     "notes": "J-all times, Z-rush hours AM westbound, PM eastbound"
   },
@@ -5214,8 +5214,8 @@
     "lines": "N-Q",
     "name": "Canal St",
     "coordinates": {
-      "lon": "-74.00105471306033",
-      "lat": "40.718814263587134"
+      "latitude": "40.718814263587134",
+      "longitude": "-74.00105471306033"
     },
     "notes": "N-all times, Q-weekdays and evenings"
   },
@@ -5226,8 +5226,8 @@
     "lines": "A-C-E",
     "name": "23rd St",
     "coordinates": {
-      "lon": "-73.99804100117201",
-      "lat": "40.74590599939995"
+      "latitude": "40.74590599939995",
+      "longitude": "-73.99804100117201"
     },
     "notes": "A-nights, C-all other times, E-all times"
   },
@@ -5238,8 +5238,8 @@
     "lines": "A-C-E",
     "name": "34th St - Penn Station",
     "coordinates": {
-      "lon": "-73.99339099970578",
-      "lat": "40.752287000775894"
+      "latitude": "40.752287000775894",
+      "longitude": "-73.99339099970578"
     },
     "notes": "A,E-all times, C-all times exc nights"
   },
@@ -5250,8 +5250,8 @@
     "lines": "E-F-M-R",
     "name": "Jackson Hts - Roosevelt Av",
     "coordinates": {
-      "lon": "-73.89129866519697",
-      "lat": "40.74653969115889"
+      "latitude": "40.74653969115889",
+      "longitude": "-73.89129866519697"
     },
     "notes": "E,F-all times, M-weekdays and evenings, R-all times exc nights"
   },
@@ -5262,8 +5262,8 @@
     "lines": "1-2-3",
     "name": "14th St",
     "coordinates": {
-      "lon": "-74.00020100063497",
-      "lat": "40.737825999728116"
+      "latitude": "40.737825999728116",
+      "longitude": "-74.00020100063497"
     },
     "notes": "1,2-all times, 3-all times exc nights"
   },
@@ -5274,8 +5274,8 @@
     "lines": "A-B-C",
     "name": "135th St",
     "coordinates": {
-      "lon": "-73.94753480879213",
-      "lat": "40.817905559212676"
+      "latitude": "40.817905559212676",
+      "longitude": "-73.94753480879213"
     },
     "notes": "A-nights, B-weekdays and evenings, C-all times exc nights"
   },
@@ -5286,8 +5286,8 @@
     "lines": "F-M",
     "name": "14th St",
     "coordinates": {
-      "lon": "-73.99620899921355",
-      "lat": "40.73822799969515"
+      "latitude": "40.73822799969515",
+      "longitude": "-73.99620899921355"
     },
     "notes": "F-all times, M-weekdays and evenings"
   },
@@ -5298,8 +5298,8 @@
     "lines": "L",
     "name": "6th Ave",
     "coordinates": {
-      "lon": "-73.99775078874781",
-      "lat": "40.73774146981052"
+      "latitude": "40.73774146981052",
+      "longitude": "-73.99775078874781"
     },
     "notes": "L-all times"
   },
@@ -5310,8 +5310,8 @@
     "lines": "L",
     "name": "8th Ave",
     "coordinates": {
-      "lon": "-74.00257800104762",
-      "lat": "40.73977666638199"
+      "latitude": "40.73977666638199",
+      "longitude": "-74.00257800104762"
     },
     "notes": "L-all times"
   },
@@ -5322,8 +5322,8 @@
     "lines": "A-C-E",
     "name": "14th St",
     "coordinates": {
-      "lon": "-74.00168999937027",
-      "lat": "40.740893000193296"
+      "latitude": "40.740893000193296",
+      "longitude": "-74.00168999937027"
     },
     "notes": "A,E-all times, C-all times exc nights"
   },
@@ -5334,8 +5334,8 @@
     "lines": "3-4",
     "name": "Nostrand Ave",
     "coordinates": {
-      "lon": "-73.9504262489579",
-      "lat": "40.66993815093054"
+      "latitude": "40.66993815093054",
+      "longitude": "-73.9504262489579"
     },
     "notes": "4-nights, 3-all other times"
   },
@@ -5346,8 +5346,8 @@
     "lines": "2-3",
     "name": "Clark St",
     "coordinates": {
-      "lon": "-73.99308599821961",
-      "lat": "40.69746599996469"
+      "latitude": "40.69746599996469",
+      "longitude": "-73.99308599821961"
     },
     "notes": "2-all times, 3-all times exc nights"
   },
@@ -5358,8 +5358,8 @@
     "lines": "A-C",
     "name": "Franklin Ave",
     "coordinates": {
-      "lon": "-73.95684800014614",
-      "lat": "40.68137966658742"
+      "latitude": "40.68137966658742",
+      "longitude": "-73.95684800014614"
     },
     "notes": "A-nights, C-all other times"
   },
@@ -5370,8 +5370,8 @@
     "lines": "A-C",
     "name": "Clinton - Washington Aves",
     "coordinates": {
-      "lon": "-73.96583799857275",
-      "lat": "40.68326299912644"
+      "latitude": "40.68326299912644",
+      "longitude": "-73.96583799857275"
     },
     "notes": "A-nights, C-all other times"
   },
@@ -5382,8 +5382,8 @@
     "lines": "M",
     "name": "Forest Ave",
     "coordinates": {
-      "lon": "-73.90307500005954",
-      "lat": "40.70441200087814"
+      "latitude": "40.70441200087814",
+      "longitude": "-73.90307500005954"
     },
     "notes": "M-all times"
   },
@@ -5394,8 +5394,8 @@
     "lines": "4-6-6 Express",
     "name": "110th St",
     "coordinates": {
-      "lon": "-73.94424999687163",
-      "lat": "40.795020000113105"
+      "latitude": "40.795020000113105",
+      "longitude": "-73.94424999687163"
     },
     "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -5406,8 +5406,8 @@
     "lines": "4-5-6-6 Express",
     "name": "86th St",
     "coordinates": {
-      "lon": "-73.95558899985132",
-      "lat": "40.77949199820952"
+      "latitude": "40.77949199820952",
+      "longitude": "-73.95558899985132"
     },
     "notes": "4,6-all times, 5-all times exc nights, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -5418,8 +5418,8 @@
     "lines": "F",
     "name": "York St",
     "coordinates": {
-      "lon": "-73.98688499993673",
-      "lat": "40.699742667691574"
+      "latitude": "40.699742667691574",
+      "longitude": "-73.98688499993673"
     },
     "notes": "F-all times"
   },
@@ -5430,8 +5430,8 @@
     "lines": "A-C",
     "name": "High St",
     "coordinates": {
-      "lon": "-73.99053100065458",
-      "lat": "40.69933699977884"
+      "latitude": "40.69933699977884",
+      "longitude": "-73.99053100065458"
     },
     "notes": "A-all times, C-all times exc nights"
   },
@@ -5442,8 +5442,8 @@
     "lines": "A-C",
     "name": "Lafayette Ave",
     "coordinates": {
-      "lon": "-73.97394599849406",
-      "lat": "40.68611300020567"
+      "latitude": "40.68611300020567",
+      "longitude": "-73.97394599849406"
     },
     "notes": "A-nights, C-all other times"
   },
@@ -5454,8 +5454,8 @@
     "lines": "2-5",
     "name": "President St",
     "coordinates": {
-      "lon": "-73.95058920022207",
-      "lat": "40.667883603536815"
+      "latitude": "40.667883603536815",
+      "longitude": "-73.95058920022207"
     },
     "notes": "2-all times, 5 weekdays"
   },
@@ -5466,8 +5466,8 @@
     "lines": "4",
     "name": "Woodlawn",
     "coordinates": {
-      "lon": "-73.87875099990931",
-      "lat": "40.886037000253324"
+      "latitude": "40.886037000253324",
+      "longitude": "-73.87875099990931"
     },
     "notes": "4-all times"
   },
@@ -5478,8 +5478,8 @@
     "lines": "4-6-6 Express",
     "name": "Bleecker St",
     "coordinates": {
-      "lon": "-73.99465900006331",
-      "lat": "40.72591466682659"
+      "latitude": "40.72591466682659",
+      "longitude": "-73.99465900006331"
     },
     "notes": "4 nights, 6-all times, 6 Express-weekdays PM"
   },
@@ -5490,8 +5490,8 @@
     "lines": "4-6-6 Express",
     "name": "103rd St",
     "coordinates": {
-      "lon": "-73.94747800152219",
-      "lat": "40.79060000008452"
+      "latitude": "40.79060000008452",
+      "longitude": "-73.94747800152219"
     },
     "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -5502,8 +5502,8 @@
     "lines": "A-C-S",
     "name": "Euclid Ave",
     "coordinates": {
-      "lon": "-73.87210600099675",
-      "lat": "40.675376998239365"
+      "latitude": "40.675376998239365",
+      "longitude": "-73.87210600099675"
     },
     "notes": "S to Ozone Park-Lefferts Blvd-nights, C-all other times, A-all times"
   },
@@ -5514,8 +5514,8 @@
     "lines": "A-S",
     "name": "88th St",
     "coordinates": {
-      "lon": "-73.85147000026086",
-      "lat": "40.67984300135503"
+      "latitude": "40.67984300135503",
+      "longitude": "-73.85147000026086"
     },
     "notes": "A-all times, S Euclid Av to Ozone Park-Lefferts Blvd-nights"
   },
@@ -5526,8 +5526,8 @@
     "lines": "Q",
     "name": "Cortelyou Rd",
     "coordinates": {
-      "lon": "-73.96379005505493",
-      "lat": "40.6409401651401"
+      "latitude": "40.6409401651401",
+      "longitude": "-73.96379005505493"
     },
     "notes": "Q-all times"
   },
@@ -5538,8 +5538,8 @@
     "lines": "4-6-6 Express",
     "name": "116th St",
     "coordinates": {
-      "lon": "-73.9416169983714",
-      "lat": "40.7986290002001"
+      "latitude": "40.7986290002001",
+      "longitude": "-73.9416169983714"
     },
     "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -5550,8 +5550,8 @@
     "lines": "6-6 Express",
     "name": "Parkchester",
     "coordinates": {
-      "lon": "-73.86081600108396",
-      "lat": "40.83322599927859"
+      "latitude": "40.83322599927859",
+      "longitude": "-73.86081600108396"
     },
     "notes": "6-all times, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -5562,8 +5562,8 @@
     "lines": "1-2",
     "name": "Franklin St",
     "coordinates": {
-      "lon": "-74.00688600277107",
-      "lat": "40.719318001302135"
+      "latitude": "40.719318001302135",
+      "longitude": "-74.00688600277107"
     },
     "notes": "1-all times, 2-nights"
   },
@@ -5574,8 +5574,8 @@
     "lines": "A-S",
     "name": "80th St",
     "coordinates": {
-      "lon": "-73.85899200206335",
-      "lat": "40.67937100115432"
+      "latitude": "40.67937100115432",
+      "longitude": "-73.85899200206335"
     },
     "notes": "A-all times, S Euclid Av to Ozone Park-Lefferts Blvd-nights"
   },
@@ -5586,8 +5586,8 @@
     "lines": "7-7 Express",
     "name": "5th Ave - Bryant Pk",
     "coordinates": {
-      "lon": "-73.98196299856706",
-      "lat": "40.75382100064824"
+      "latitude": "40.75382100064824",
+      "longitude": "-73.98196299856706"
     },
     "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
   },
@@ -5598,8 +5598,8 @@
     "lines": "4-6-6 Express",
     "name": "Spring St",
     "coordinates": {
-      "lon": "-73.99714100006673",
-      "lat": "40.72230099999366"
+      "latitude": "40.72230099999366",
+      "longitude": "-73.99714100006673"
     },
     "notes": "4 nights, 6-all times, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -5610,8 +5610,8 @@
     "lines": "4-5-6-6 Express",
     "name": "125th St",
     "coordinates": {
-      "lon": "-73.93759400055725",
-      "lat": "40.804138000587244"
+      "latitude": "40.804138000587244",
+      "longitude": "-73.93759400055725"
     },
     "notes": "4,6-all times, 5-all times exc nights, 6 Express-weekdays AM southbound, PM northbound"
   },
@@ -5622,8 +5622,8 @@
     "lines": "D-F-N-Q",
     "name": "Coney Island - Stillwell Av",
     "coordinates": {
-      "lon": "-73.9812359981396",
-      "lat": "40.57728100006751"
+      "latitude": "40.57728100006751",
+      "longitude": "-73.9812359981396"
     },
     "notes": "D,F,N,Q-all times"
   },
@@ -5634,8 +5634,8 @@
     "lines": "7-7 Express",
     "name": "34th St - Hudson Yards",
     "coordinates": {
-      "lon": "-74.00219709442206",
-      "lat": "40.75544635961596"
+      "latitude": "40.75544635961596",
+      "longitude": "-74.00219709442206"
     },
     "notes": "7-all times, 7 Express-rush hours AM westbound, PM eastbound"
   },
@@ -5646,8 +5646,8 @@
     "lines": "Q",
     "name": "72nd St",
     "coordinates": {
-      "lon": "-73.95836178682246",
-      "lat": "40.76880251014895"
+      "latitude": "40.76880251014895",
+      "longitude": "-73.95836178682246"
     },
     "notes": "Q-all times"
   },
@@ -5658,8 +5658,8 @@
     "lines": "Q",
     "name": "86th St",
     "coordinates": {
-      "lon": "-73.95177090964917",
-      "lat": "40.77786104333163"
+      "latitude": "40.77786104333163",
+      "longitude": "-73.95177090964917"
     },
     "notes": "Q-all times"
   },
@@ -5670,8 +5670,8 @@
     "lines": "Q",
     "name": "96th St",
     "coordinates": {
-      "lon": "-73.9470660219183",
-      "lat": "40.784236650177654"
+      "latitude": "40.784236650177654",
+      "longitude": "-73.9470660219183"
     },
     "notes": "Q-all times"
   }

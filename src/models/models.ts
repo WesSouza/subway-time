@@ -16,10 +16,8 @@ export interface IStation {
   id: string;
   name: string;
   boroughName: string;
-  coordinates: {
-    lat: string;
-    lon: string;
-  };
+  latitude: number;
+  longitude: number;
   lines: ILine[];
   lineIds: string;
   platforms: IStationLine[];

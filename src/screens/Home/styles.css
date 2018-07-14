@@ -1,14 +1,28 @@
 .Home {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: center;
+}
+
+.error {
+  padding: var(--spacing-medium);
   text-align: center;
 }
 
-.footnote {
-  margin-top: var(--spacing-large);
+.errorMessage {
+}
+
+.errorRetry {
+  margin-top: var(--spacing-medium);
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  font-size: 1rem;
+  color: var(--color-blue);
+  text-decoration: underline;
+}
+
+.credits {
+  padding: var(--spacing-medium);
+  text-align: center;
 }
 
 .smaller,

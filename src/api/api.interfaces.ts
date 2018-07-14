@@ -26,10 +26,8 @@ export interface IRawSubwayStation {
   name: string;
   status: StationPlatformStatus;
   type: StationPlatformType;
-  coordinates: {
-    lat: string;
-    lon: string;
-  };
+  latitude: number;
+  longitude: number;
 }
 
 export interface IRawTimesByLineId {
