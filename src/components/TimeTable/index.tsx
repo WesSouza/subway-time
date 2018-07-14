@@ -9,6 +9,7 @@ import {
   IStationLineDirectionTime,
 } from 'models/models';
 
+import Skeleton from './Skeleton';
 import styles from './styles.css';
 
 interface IProps {
@@ -23,6 +24,8 @@ interface IState {
 }
 
 class TimeTable extends React.Component<IProps, IState> {
+  public static Skeleton: React.ComponentClass = Skeleton;
+
   public timer: any = null;
   public state = {
     lastUpdateString: '',
@@ -125,10 +128,14 @@ class TimeTable extends React.Component<IProps, IState> {
     >
       <div
         className={`${styles.minutes} ${
-          index === 0 ? styles.minutesFirst : ''
+          index === 0 && typeof minutes === 'number' ? styles.minutesFirst : ''
         }`}
       >
-        {minutes === 0 ? 'Now' : `${minutes} min`}
+        {minutes === 0
+          ? 'Now'
+          : typeof minutes === 'number'
+            ? `${minutes} min`
+            : minutes}
       </div>
       <div className={styles.lastStationName}>{lastStationName}</div>
     </div>

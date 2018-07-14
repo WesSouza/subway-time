@@ -1,6 +1,5 @@
 .NavigationBar {
   display: flex;
-  background-color: var(--color-gray-dark);
 }
 
 .searchBox {
@@ -10,10 +9,17 @@
 .searchInput {
   width: calc(100% - var(--spacing-xsmall) * 2);
   margin: var(--spacing-xsmall);
-  padding: var(--spacing-xsmall);
+  margin-bottom: 0;
+  padding: var(--spacing-small) var(--spacing-xsmall);
   border-radius: var(--spacing-xsmall);
   appearance: none;
-  border: 0;
+  border: 1px solid var(--color-gray-lightest);
+}
+
+.searchInput:focus {
+  outline: 0;
+  border: 2px solid var(--color-gray-dark);
+  padding: calc(var(--spacing-small) - 1px) calc(var(--spacing-xsmall) - 1px);
 }
 
 .menuItems {

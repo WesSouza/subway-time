@@ -6,6 +6,7 @@
   --color-gray-lightest: #e5e5e5;
   --color-white: #fff;
   --color-red: #e21a1a;
+  --color-blue: rgb(1, 95, 150);
 
   --spacing-xsmall: 8px;
   --spacing-small: 15px;
@@ -28,7 +29,6 @@ a {
 }
 
 body {
-  background-color: var(--color-gray);
 }
 
 button {

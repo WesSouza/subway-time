@@ -31,6 +31,8 @@ class Query extends React.PureComponent<IProps, IState> {
     loading: true,
   };
   private unmounted = false;
+  private loadingDelay = 200;
+  private loadingTimer: any = null;
 
   public componentDidMount() {
     this.unmounted = false;
@@ -74,12 +76,15 @@ class Query extends React.PureComponent<IProps, IState> {
   private updateData = () => {
     const { query, parameters } = this.props;
     const lastUpdate = Date.now();
-    this.setState({ data: null, error: '', lastUpdate: 0, loading: true });
+    this.loadingTimer = setTimeout(() => {
+      this.setState({ data: null, error: '', lastUpdate: 0, loading: true });
+    }, this.loadingDelay);
     query(parameters)
       .then(data => {
         if (this.unmounted) {
           return;
         }
+        clearTimeout(this.loadingTimer);
         this.setState({ data, error: '', lastUpdate, loading: false });
       })
       .catch(error => {
@@ -87,6 +92,7 @@ class Query extends React.PureComponent<IProps, IState> {
         if (this.unmounted) {
           return;
         }
+        clearTimeout(this.loadingTimer);
         this.setState({
           data: null,
           error: error.toString(),

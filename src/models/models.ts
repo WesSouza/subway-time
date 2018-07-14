@@ -39,7 +39,7 @@ export interface IStationLineDirection {
 }
 
 export interface IStationLineDirectionTime {
-  minutes: number;
+  minutes: number | string;
   lastStationName: string;
 }
 

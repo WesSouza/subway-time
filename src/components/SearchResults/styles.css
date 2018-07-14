@@ -6,10 +6,7 @@
 }
 
 .station {
-}
-
-.station:not(:first-child) {
-  border-top: 1px solid var(--color-gray-lightest);
+  border-bottom: 1px solid var(--color-gray-lightest);
 }
 
 .link {
@@ -35,6 +32,8 @@
 }
 
 .name {
+  text-decoration: underline;
+  color: var(--color-blue);
 }
 
 .distance {

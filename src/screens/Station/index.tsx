@@ -21,11 +21,7 @@ const Station = ({ stationId }: IProps) => (
     renderWhenError={
       <div className={styles.centralized}>Unable to retrieve time table.</div>
     }
-    renderWhenLoading={
-      <div className={styles.centralized}>
-        <div className={styles.loader} />
-      </div>
-    }
+    renderWhenLoading={<TimeTable.Skeleton />}
   >
     {({ data, lastUpdate, updateData }: IQueryResult<IStation>) => (
       <TimeTable
