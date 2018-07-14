@@ -4,4 +4,8 @@ import App from './App';
 
 import './global.css';
 
-ReactDOM.render(<App />, document.getElementById('root') as HTMLElement);
+if (location.protocol !== 'https:') {
+  location.href = location.href.replace(/^http:\/\//, 'https://');
+} else {
+  ReactDOM.render(<App />, document.getElementById('root') as HTMLElement);
+}
