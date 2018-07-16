@@ -10,8 +10,9 @@ const get = async (url, params) => {
 };
 
 const passthrough = (pathKey, cacheExpire) => (req, res) => {
-  if (cacheExpire && cache[pathKey] && cache[pathKey].expire >= Date.now()) {
-    res.send(cache[pathKey].data);
+  const { path } = req;
+  if (cacheExpire && cache[path] && cache[path].expire >= Date.now()) {
+    res.send(cache[path].data);
     return;
   }
 
@@ -20,7 +21,7 @@ const passthrough = (pathKey, cacheExpire) => (req, res) => {
     .then(response => {
       const data = response.body;
       if (cacheExpire) {
-        cache[pathKey] = {
+        cache[path] = {
           data,
           expire: Date.now() + cacheExpire,
         };
