@@ -97,7 +97,7 @@ class TimeTable extends React.Component<IProps, IState> {
           {hasDirections ? (
             (directions as IStationLineDirection[]).map(this.renderDirection)
           ) : (
-            <div className={styles.directionEmpty}>No trains</div>
+            <div className={styles.directionEmpty}>No train information.</div>
           )}
         </div>
       </div>
