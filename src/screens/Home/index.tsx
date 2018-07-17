@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Helmet } from 'react-helmet';
 
 import { getNearbyStations } from 'data/geolocation';
 import { getAdvisoriesForLines, getStationWithTimes } from 'data/stations';
@@ -18,6 +19,11 @@ class Home extends React.Component<IProps> {
   public render() {
     return (
       <div className={styles.Home}>
+        <Helmet>
+          <title>Subway Ti.me</title>
+          <link rel="shortcut icon" href="/icons/S.png" type="image/png" />
+          <link rel="apple-touch-icon" href="/icons/S@8x.png" />
+        </Helmet>
         <Query
           query={getNearbyStations(4)}
           renderWhenError={this.renderNoLocation}

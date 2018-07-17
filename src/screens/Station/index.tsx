@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Helmet } from 'react-helmet';
 
 import { getAdvisoriesForLines, getStationWithTimes } from 'data/stations';
 import { ILineAdvisory, IStation } from 'models/models';
@@ -24,21 +25,35 @@ const Station = ({ stationId }: IProps) => (
     renderWhenLoading={<TimeTable.Skeleton />}
   >
     {({ data, lastUpdate, updateData }: IQueryResult<IStation>) => (
-      <TimeTable
-        lastUpdate={lastUpdate}
-        station={data}
-        advisoriesComponent={
-          <Query
-            query={getAdvisoriesForLines}
-            parameters={{ lineIds: data.lineIds }}
-          >
-            {({ data: advisoryData }: IQueryResult<ILineAdvisory[]>) => (
-              <LineAdvisories advisories={advisoryData} />
-            )}
-          </Query>
-        }
-        updateData={updateData}
-      />
+      <React.Fragment>
+        <Helmet>
+          <title>{data.name}</title>
+          <link
+            rel="shortcut icon"
+            href={`/icons/${data.lines[0] ? data.lines[0].id : 'S'}.png`}
+            type="image/png"
+          />
+          <link
+            rel="apple-touch-icon"
+            href={`/icons/${data.lines[0] ? data.lines[0].id : 'S'}@8x.png`}
+          />
+        </Helmet>
+        <TimeTable
+          lastUpdate={lastUpdate}
+          station={data}
+          advisoriesComponent={
+            <Query
+              query={getAdvisoriesForLines}
+              parameters={{ lineIds: data.lineIds }}
+            >
+              {({ data: advisoryData }: IQueryResult<ILineAdvisory[]>) => (
+                <LineAdvisories advisories={advisoryData} />
+              )}
+            </Query>
+          }
+          updateData={updateData}
+        />
+      </React.Fragment>
     )}
   </Query>
 );

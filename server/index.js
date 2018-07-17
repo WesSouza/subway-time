@@ -20,22 +20,29 @@ const setHeaders = (res, path) => {
   }
 };
 
+const indexContents = readFileSync(resolve(publicPath, './index.html'), 'utf8');
 const sendIndex = (req, res) => {
-  res.sendFile(resolve(publicPath, './index.html'));
+  let LINEID = 'S';
+  if (req.params && req.params.stationId) {
+    LINEID = req.params.stationId.charAt(0);
+  }
+  const data = indexContents.replace(/\{\{LINEID\}\}/g, LINEID);
+  res.send(data);
 };
 
 app.use(compression());
-app.use(serveStatic(publicPath));
 
 app.get('/', sendIndex);
 app.get('/map', sendIndex);
-app.get('/station/*', sendIndex);
+app.get('/station/:stationId', sendIndex);
 
 app.get(
   '/api/getAdvisoryDetail/:lineId',
   passthrough('getAdvisoryDetail', 60 * 1000),
 );
 app.get('/api/getTime/:lineId/:stationId', passthrough('getTime', 10 * 1000));
+
+app.use(serveStatic(publicPath));
 
 app.all('*', (req, res) => {
   res.status(404);

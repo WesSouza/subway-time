@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@reach/router": "^1.1.1",
+    "@types/react-helmet": "^5.0.6",
     "autoprefixer": "^8.6.4",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
@@ -44,6 +45,7 @@
     "react": "^16.4.1",
     "react-dev-utils": "^5.0.1",
     "react-dom": "^16.4.1",
+    "react-helmet": "^5.2.0",
     "react-icons": "^2.2.7",
     "resolve": "^1.8.1",
     "sanitize.css": "^6.0.0",
