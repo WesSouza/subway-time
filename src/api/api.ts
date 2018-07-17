@@ -9,6 +9,8 @@ import {
   IRawTimesByLineId,
 } from 'api/api.interfaces';
 
+import { cacheAsyncCalls } from 'lib/cacheAsyncCalls';
+
 import {
   ILineAdvisory,
   IStationLineDirection,
@@ -45,21 +47,27 @@ export const getAdvisoriesByLineId = async (
   }));
 };
 
-export const getRawSubwayLines = async (): Promise<IRawSubwayLine[]> => {
-  const { baseUrl, subwayLines } = config.subwaytime;
-  if (!cache.getRawSubwayLines) {
-    cache.getRawSubwayLines = await get(`${baseUrl}${subwayLines}`);
-  }
-  return cache.getRawSubwayLines;
-};
+export const getRawSubwayLines = cacheAsyncCalls(
+  'getRawSubwayLines',
+  async (): Promise<IRawSubwayLine[]> => {
+    const { baseUrl, subwayLines } = config.subwaytime;
+    if (!cache.getRawSubwayLines) {
+      cache.getRawSubwayLines = await get(`${baseUrl}${subwayLines}`);
+    }
+    return cache.getRawSubwayLines;
+  },
+);
 
-export const getRawSubwayStations = async (): Promise<IRawSubwayStation[]> => {
-  const { baseUrl, subwayStations } = config.subwaytime;
-  if (!cache.getRawSubwayStations) {
-    cache.getRawSubwayStations = await get(`${baseUrl}${subwayStations}`);
-  }
-  return cache.getRawSubwayStations;
-};
+export const getRawSubwayStations = cacheAsyncCalls(
+  'getRawSubwayLines',
+  async (): Promise<IRawSubwayStation[]> => {
+    const { baseUrl, subwayStations } = config.subwaytime;
+    if (!cache.getRawSubwayStations) {
+      cache.getRawSubwayStations = await get(`${baseUrl}${subwayStations}`);
+    }
+    return cache.getRawSubwayStations;
+  },
+);
 
 export const getRawTimesByLineId = async (
   stationId: string,
