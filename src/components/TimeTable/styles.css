@@ -4,7 +4,7 @@
 
 .stationNameGroup {
   display: flex;
-  padding: var(--spacing-small);
+  padding: var(--spacing-small) var(--spacing-small) 0 var(--spacing-small);
   align-items: center;
   font-size: 1.3rem;
   font-weight: bold;
@@ -29,7 +29,11 @@
 
 .line {
   display: flex;
+  margin: 0 var(--spacing-small);
   align-items: center;
+}
+
+.line:not(:first-child) {
   border-top: 1px solid var(--color-gray-lightest);
 }
 
@@ -41,8 +45,8 @@
 .lineId {
   --width-height: 50px;
   font-size: 35px;
-  margin: var(--spacing-small);
-  margin-top: calc(var(--spacing-medium) + 5px);
+  margin: calc(var(--spacing-medium) + 5px) var(--spacing-small)
+    var(--spacing-small) 0;
 }
 
 .lineDisabled .lineId {
@@ -54,8 +58,7 @@
 .directions {
   flex-grow: 1;
   width: calc(100% - 50px - 3 * var(--spacing-small));
-  margin: var(--spacing-medium) var(--spacing-small);
-  margin-left: 0;
+  margin: var(--spacing-medium) 0;
 }
 
 .direction:not(:first-child) {
@@ -109,10 +112,10 @@
 }
 
 .footer {
-  border: 1px solid var(--color-gray-lightest);
-  border-width: 1px 0;
+  border-bottom: 3px solid var(--color-gray-lightest);
   display: flex;
-  padding: var(--spacing-xsmall);
+  margin: 0 var(--spacing-small);
+  padding-bottom: var(--spacing-small);
   justify-content: space-between;
   align-items: center;
 }
