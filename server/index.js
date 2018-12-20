@@ -1,13 +1,11 @@
 const compression = require('compression');
 const express = require('express');
 const { readFileSync } = require('fs');
-const https = require('https');
 const { resolve } = require('path');
 const serveStatic = require('serve-static');
 
 const { passthrough } = require('./mtaPassthrough');
 
-const certificatesPath = resolve(__dirname, '../../certificates/');
 const publicPath = resolve(__dirname, '../build');
 
 const app = express();
@@ -20,8 +18,11 @@ const setHeaders = (res, path) => {
   }
 };
 
-const indexContents = readFileSync(resolve(publicPath, './index.html'), 'utf8');
+let indexContents;
 const sendIndex = (req, res) => {
+  if (!indexContents) {
+    indexContents = readFileSync(resolve(publicPath, './index.html'), 'utf8');
+  }
   let LINEID = 'S';
   if (req.params && req.params.stationId) {
     LINEID = req.params.stationId.charAt(0);
@@ -50,16 +51,3 @@ app.all('*', (req, res) => {
 });
 
 app.listen(process.env.PORT || 3080);
-
-try {
-  const key = readFileSync(resolve(certificatesPath, './privkey1.pem'), 'utf8');
-  const cert = readFileSync(
-    resolve(certificatesPath, './fullchain1.pem'),
-    'utf8',
-  );
-
-  const httpsServer = https.createServer({ key, cert }, app);
-  httpsServer.listen(process.env.PORT_HTTPS || 3443);
-
-  // tslint:disable-next-line no-empty
-} catch (e) {}
