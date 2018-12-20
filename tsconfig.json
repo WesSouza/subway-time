@@ -27,12 +27,15 @@
     "noUnusedLocals": true
   },
   "exclude": [
-    "node_modules",
-    "build",
-    "scripts",
     "acceptance-tests",
-    "webpack",
+    "build",
+    "config",
+    "config.js",
     "jest",
-    "src/setupTests.ts"
+    "node_modules",
+    "server",
+    "scripts",
+    "src/setupTests.ts",
+    "webpack"
   ]
 }

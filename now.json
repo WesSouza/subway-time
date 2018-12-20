@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "name": "subway-time",
+  "alias": ["subway-time"],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "build" }
+    },
+    { "src": "server/index.js", "use": "@now/node-server" }
+  ],
+  "routes": [{ "src": "/api/.*", "dest": "server/index.js" }]
+}
