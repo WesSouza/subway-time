@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "subway-time",
-  "alias": ["subway-time"],
+  "alias": ["subwayti.me"],
   "builds": [
     {
       "src": "package.json",
@@ -10,5 +10,8 @@
     },
     { "src": "server/index.js", "use": "@now/node-server" }
   ],
-  "routes": [{ "src": "/api/.*", "dest": "server/index.js" }]
+  "routes": [
+    { "src": "/api/.*", "dest": "server/index.js" },
+    { "src": "/(map|station)/.*", "dest": "index.html" }
+  ]
 }
