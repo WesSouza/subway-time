@@ -9,4 +9,4 @@ yarn start
 
 ## License
 
-MIT, http://wesleydesouza.mit-license.org/
+MIT, https://wes.dev/LICENSE.txt

@@ -41,13 +41,13 @@ class Home extends React.Component<IProps> {
         <div className={styles.credits}>
           <p className={styles.smaller}>
             Built with <span className={styles.love}>&lt;3</span> by{' '}
-            <a href="https://wesley.so/" target="_blank">
-              @WesleydeSouza
+            <a href="https://wes.dev/" target="_blank">
+              @WesSouza
             </a>.
           </p>
           <p className={styles.smaller}>
             <a
-              href="https://github.com/WesleydeSouza/subway-time"
+              href="https://github.com/WesSouza/subway-time"
               target="_blank"
             >
               Fork it on GitHub.

@@ -4,14 +4,14 @@
   "homepage": "http://subwayti.me/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WesleydeSouza/subway-time"
+    "url": "git+https://github.com/WesSouza/subway-time"
   },
   "keywords": [
     "subway",
     "time table"
   ],
   "license": "MIT",
-  "author": "Wesley de Souza <me@wesley.so>",
+  "author": "Wes Souza <hey@wes.dev>",
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
