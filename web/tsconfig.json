@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "lib": ["dom", "es2018"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": false,
+    "paths": {
+      "~/*": ["./*"]
+    },
+    "rootDir": "./src",
+    "target": "es2018"
+  }
+}

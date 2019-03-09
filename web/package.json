@@ -1,0 +1,62 @@
+{
+  "name": "subway-time-web",
+  "version": "1.0.0",
+  "homepage": "http://subwayti.me/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WesSouza/subway-time"
+  },
+  "keywords": [
+    "subway",
+    "time table"
+  ],
+  "license": "MIT",
+  "author": "Wes Souza <hey@wes.dev>",
+  "scripts": {
+    "build": "npm run type-check && npm run lint && parcel build ./src/index.html --public-url '/'",
+    "dev": "concurrently -r \"npm:type-check:watch\" \"npm:start\"",
+    "lint": "tslint -p .",
+    "now-build": "npm run build",
+    "prettify": "prettier --write './**/*.{ts,tsx}'",
+    "start": "parcel ./src/index.html",
+    "type-check:watch": "tsc --noEmit --watch",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@reach/router": "^1.2.1",
+    "color-contrast": "0.0.1",
+    "geolib": "^2.0.24",
+    "natural-compare-lite": "^1.4.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-helmet": "^5.2.0",
+    "sanitize.css": "^8.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "@types/react": "^16.8.8",
+    "@types/react-dom": "^16.8.2",
+    "autoprefixer": "^9.4.10",
+    "concurrently": "^4.1.0",
+    "parcel-bundler": "^1.12.0",
+    "parcel-plugin-json-url-loader": "^0.1.2",
+    "postcss-modules": "^1.4.1",
+    "prettier": "^1.16.4",
+    "tslint": "^5.13.1",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.3.3333"
+  },
+  "engines": {
+    "browsers": "last 2 Chrome versions",
+    "node": ">= 8.10.0",
+    "npm": ">= 6.9.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  }
+}
