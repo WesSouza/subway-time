@@ -12,12 +12,5 @@ indent_size = 2
 charset = utf-8
 trim_trailing_whitespace = true
 
-[*.{gradle,xml,pbxproj,plist,xcscheme,xcworkspacedata}]
-indent_size = 4
-
-[*.{java,kt}]
-indent_size = 4
-continuation_indent_size = 8
-
 [*.md]
 trim_trailing_whitespace = false

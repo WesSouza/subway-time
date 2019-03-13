@@ -2,9 +2,9 @@
 
 Let's make a nice digital subway time table.
 
-```
+```sh
 yarn install
-yarn start
+yarn dev
 ```
 
 ## License

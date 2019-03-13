@@ -1,0 +1,33 @@
+{
+  "name": "subway-time-api",
+  "version": "2.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WesSouza/subway-time"
+  },
+  "keywords": [
+    "subway",
+    "time table"
+  ],
+  "license": "MIT",
+  "author": "Wes Souza <hey@wes.dev>",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon"
+  },
+  "dependencies": {
+    "compression": "^1.7.2",
+    "express": "^4.16.3",
+    "got": "^8.3.2",
+    "serve-static": "^1.13.2"
+  },
+  "devDependencies": {
+    "@types/compression": "^0.0.36",
+    "@types/express": "^4.16.1",
+    "@types/got": "^9.4.1",
+    "@types/node": "^11.11.3",
+    "nodemon": "^1.18.10",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.3.3333"
+  }
+}

@@ -1,6 +1,11 @@
 {
   "name": "subway-time",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "private": true,
+  "workspaces": [
+    "api",
+    "web"
+  ],
   "homepage": "http://subwayti.me/",
   "repository": {
     "type": "git",
@@ -13,125 +18,13 @@
   "license": "MIT",
   "author": "Wes Souza <hey@wes.dev>",
   "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "now-build": "tsc --noEmit && tslint -p tsconfig.json && npm run build",
-    "scripts:get-data": "cd ./scripts; ./get-data.sh"
+    "dev": "concurrently -r -n proxy,api,web \"npm run dev-server\" \"cd api; npm run dev\" \"cd web; npm run dev\"",
+    "dev-server": "node ./dev-server.js"
   },
-  "dependencies": {
-    "@reach/router": "^1.1.1",
-    "@types/react-helmet": "^5.0.6",
-    "autoprefixer": "^8.6.4",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "color-contrast": "^0.0.1",
-    "css-loader": "^0.28.11",
-    "dotenv": "^6.0.0",
-    "dotenv-expand": "^4.2.0",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^1.1.11",
-    "fs-extra": "^6.0.1",
-    "geolib": "^2.0.24",
-    "gh-pages": "^1.2.0",
-    "html-webpack-plugin": "^3.2.0",
-    "natural-compare-lite": "^1.4.0",
-    "object-assign": "^4.1.1",
-    "postcss-flexbugs-fixes": "^3.3.1",
-    "postcss-loader": "^2.1.5",
-    "promise": "^8.0.1",
-    "raf": "^3.4.0",
-    "react": "^16.4.1",
-    "react-dev-utils": "^5.0.1",
-    "react-dom": "^16.4.1",
-    "react-helmet": "^5.2.0",
-    "react-icons": "^2.2.7",
-    "resolve": "^1.8.1",
-    "sanitize.css": "^6.0.0",
-    "source-map-loader": "^0.2.3",
-    "style-loader": "^0.21.0",
-    "sw-precache-webpack-plugin": "^0.11.5",
-    "ts-loader": "^3.5.0",
-    "tsconfig-paths-webpack-plugin": "^3.2.0",
-    "uglifyjs-webpack-plugin": "^1.2.7",
-    "url-loader": "^1.0.1",
-    "webpack": "^3.12.0",
-    "webpack-manifest-plugin": "^2.0.3",
-    "whatwg-fetch": "^2.0.4"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@types/jest": "^23.1.4",
-    "@types/node": "^10.5.2",
-    "@types/reach__router": "^1.0.0",
-    "@types/react": "^16.4.4",
-    "@types/react-dom": "^16.0.6",
-    "babel-jest": "^23.2.0",
-    "babel-preset-react-app": "^3.1.2",
-    "babel-runtime": "^6.26.0",
-    "case-sensitive-paths-webpack-plugin": "^2.1.2",
-    "chalk": "^2.4.1",
-    "fork-ts-checker-webpack-plugin": "^0.4.2",
-    "got": "^8.3.2",
-    "jest": "^23.3.0",
-    "prettier": "^1.13.7",
-    "prop-types": "^15.6.2",
-    "ts-jest": "^23.0.0",
-    "tslint": "^5.10.0",
-    "tslint-config-prettier": "^1.13.0",
-    "tslint-react": "^3.6.0",
-    "typescript": "^2.9.2",
-    "webpack-dev-server": "^2.11.2"
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx,ts,tsx}"
-    ],
-    "setupFiles": [
-      "<rootDir>/config/polyfills.js"
-    ],
-    "testMatch": [
-      "<rootDir>/src/**/__tests__/**/*.(j|t)s?(x)",
-      "<rootDir>/src/**/?(*.)(spec|test).(j|t)s?(x)"
-    ],
-    "testEnvironment": "node",
-    "testURL": "http://localhost",
-    "transform": {
-      "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
-      "^.+\\.tsx?$": "<rootDir>/config/jest/typescriptTransform.js",
-      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-      "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
-    },
-    "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|ts|tsx)$"
-    ],
-    "moduleNameMapper": {
-      "^react-native$": "react-native-web"
-    },
-    "moduleFileExtensions": [
-      "web.ts",
-      "ts",
-      "web.tsx",
-      "tsx",
-      "web.js",
-      "js",
-      "web.jsx",
-      "jsx",
-      "json",
-      "node",
-      "mjs"
-    ],
-    "globals": {
-      "ts-jest": {
-        "tsConfigFile": "/Users/wesley/Sites/subway-time/tsconfig.test.json"
-      }
-    }
-  },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "proxy": "http://localhost:3080/"
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "express-http-proxy": "^1.5.1"
+  }
 }

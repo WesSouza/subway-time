@@ -4,14 +4,15 @@
   "alias": ["subwayti.me"],
   "builds": [
     {
-      "src": "package.json",
+      "src": "web/package.json",
       "use": "@now/static-build",
-      "config": { "distDir": "build" }
+      "config": { "distDir": "dist" }
     },
-    { "src": "server/index.js", "use": "@now/node-server" }
+    { "src": "./api/src/server.ts", "use": "@now/node@canary" }
   ],
   "routes": [
-    { "src": "/api/.*", "dest": "server/index.js" },
-    { "src": "/(map|station)/.*", "dest": "index.html" }
+    { "src": "/api/.*", "dest": "api/src/server.ts" },
+    { "src": "/station/.*", "dest": "web/index.html" },
+    { "src": "/(.*)", "dest": "web/$1" }
   ]
 }
