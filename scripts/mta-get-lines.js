@@ -4,7 +4,7 @@ const { resolve } = require('path');
 
 const {
   mta: { baseUrl, getSubwaylines },
-} = require('../../config');
+} = require('./config');
 
 const unsupportedLines = ['SIR'];
 
@@ -20,7 +20,7 @@ const unsupportedLines = ['SIR'];
       id,
     }));
   fs.writeFileSync(
-    resolve(__dirname, '../../data/subway-lines.json'),
+    resolve(__dirname, '../data/subway-lines.json'),
     JSON.stringify(subwayLines, null, 2),
   );
   console.log('Done.');
