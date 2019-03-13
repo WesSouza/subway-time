@@ -7,9 +7,11 @@
       "src": "web/package.json",
       "use": "@now/static-build",
       "config": { "distDir": "dist" }
-    }
+    },
+    { "src": "./api/src/server.ts", "use": "@now/node@canary" }
   ],
   "routes": [
+    { "src": "/api/.*", "dest": "api/src/server.ts" },
     { "src": "/station/.*", "dest": "web/index.html" },
     { "src": "/(.*)", "dest": "web/$1" }
   ]

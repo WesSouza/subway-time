@@ -1,22 +1,30 @@
-const got = require('got');
+import { Response, Request } from 'express';
+import got from 'got';
 
-const { mta } = require('../config.js');
+import config from './config';
+import { MtaPathKeys } from './constants';
 
-const cache = {};
+const { mta } = config;
+const cache: {
+  [parsedUrl: string]: any;
+} = {};
 
-const get = async (url, params) => {
+const get = async (url: string, params: { [param: string]: string }) => {
   const parsedUrl = url.replace(/:([^\/]+)/g, (_, key) => params[key] || '');
   return got(parsedUrl, { json: true });
 };
 
-const passthrough = (pathKey, cacheExpire) => (req, res) => {
+export const passthrough = (pathKey: MtaPathKeys, cacheExpire: number) => (
+  req: Request,
+  res: Response,
+) => {
   const { path } = req;
   if (cacheExpire && cache[path] && cache[path].expire >= Date.now()) {
     res.send(cache[path].data);
     return;
   }
 
-  const { params } = req;
+  const { params }: { params: { [param: string]: string } } = req;
   get(`${mta.baseUrl}${mta[pathKey]}`, params)
     .then(response => {
       const data = response.body;
@@ -33,5 +41,3 @@ const passthrough = (pathKey, cacheExpire) => (req, res) => {
       res.json({ error: e.toString() });
     });
 };
-
-module.exports = { passthrough };
