@@ -4,20 +4,20 @@ import {
   StationPlatformType,
 } from '~/models/models';
 
-export interface IRawSubwayAdvisory {
+export interface IApiSubwayAdvisory {
   SituationNumber: string;
   ReasonName: string;
   Summary: string;
   LongDescription: string;
 }
 
-export interface IRawSubwayLine {
+export interface IApiSubwayLine {
   __typename: string;
   id: string;
   color: string;
 }
 
-export interface IRawSubwayStation {
+export interface IApiSubwayStation {
   __typename: string;
   id: string;
   lineId: string;
@@ -30,11 +30,11 @@ export interface IRawSubwayStation {
   longitude: number;
 }
 
-export interface IRawTimesByLineId {
+export interface IApiTimesByLineId {
   [i: string]: IStationLineDirection[];
 }
 
-export interface IRawMtaTimes {
+export interface IApiMtaTimes {
   lastUpdatedTime: string;
   lastUpdatedOn: number;
   stationName: string;
