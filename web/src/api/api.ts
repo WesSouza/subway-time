@@ -4,11 +4,11 @@ import subwayLinesPath from '~/data/subway-lines.json';
 import subwayStationsPath from '~/data/subway-stations.json';
 
 import {
-  IRawMtaTimes,
-  IRawSubwayAdvisory,
-  IRawSubwayLine,
-  IRawSubwayStation,
-  IRawTimesByLineId,
+  IApiMtaTimes,
+  IApiSubwayAdvisory,
+  IApiSubwayLine,
+  IApiSubwayStation,
+  IApiTimesByLineId,
 } from '~/api/api.interfaces';
 
 import {
@@ -35,7 +35,7 @@ export const getAdvisoriesByLineId = async (
   lineId: string,
 ): Promise<ILineAdvisory[]> => {
   const { baseUrl, getAdvisoryDetail } = config.subwaytimeApi;
-  const advisories: IRawSubwayAdvisory[] = await get(
+  const advisories: IApiSubwayAdvisory[] = await get(
     `${baseUrl}${getAdvisoryDetail}`,
     { lineId },
   );
@@ -47,14 +47,14 @@ export const getAdvisoriesByLineId = async (
   }));
 };
 
-export const getRawSubwayLines = async (): Promise<IRawSubwayLine[]> => {
+export const getRawSubwayLines = async (): Promise<IApiSubwayLine[]> => {
   if (!cache.getRawSubwayLines) {
     cache.getRawSubwayLines = await get(subwayLinesPath);
   }
   return cache.getRawSubwayLines;
 };
 
-export const getRawSubwayStations = async (): Promise<IRawSubwayStation[]> => {
+export const getRawSubwayStations = async (): Promise<IApiSubwayStation[]> => {
   if (!cache.getRawSubwayStations) {
     cache.getRawSubwayStations = await get(subwayStationsPath);
   }
@@ -63,10 +63,10 @@ export const getRawSubwayStations = async (): Promise<IRawSubwayStation[]> => {
 
 export const getRawTimesByLineId = async (
   stationId: string,
-): Promise<IRawTimesByLineId> => {
+): Promise<IApiTimesByLineId> => {
   const { baseUrl, getTime } = config.subwaytimeApi;
   const lineId = stationId.substr(0, 1);
-  const mtaTimes: IRawMtaTimes = await get(`${baseUrl}${getTime}`, {
+  const mtaTimes: IApiMtaTimes = await get(`${baseUrl}${getTime}`, {
     lineId,
     stationId,
   });

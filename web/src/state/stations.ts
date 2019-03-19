@@ -4,7 +4,7 @@ import {
   getRawSubwayStations,
   getRawTimesByLineId,
 } from '~/api/api';
-import { IRawTimesByLineId } from '~/api/api.interfaces';
+import { IApiTimesByLineId } from '~/api/api.interfaces';
 
 import sortByObjectKey from '~/lib/sortByObjectKey';
 
@@ -138,11 +138,10 @@ export const searchStations = async ({
     searchRegex = new RegExp(searchCleaned, 'i');
   }
 
-  return stations.filter(
-    station =>
-      searchLineId && station.lineIds
-        ? station.lineIds.match(searchRegex)
-        : station.name.match(searchRegex),
+  return stations.filter(station =>
+    searchLineId && station.lineIds
+      ? station.lineIds.match(searchRegex)
+      : station.name.match(searchRegex),
   );
 };
 
@@ -160,7 +159,7 @@ export const getStationWithTimes = async ({
     throw new Error('Unable to find station.');
   }
 
-  let rawStationTimes: IRawTimesByLineId = {};
+  let rawStationTimes: IApiTimesByLineId = {};
   try {
     rawStationTimes = await getRawTimesByLineId(stationId);
 
