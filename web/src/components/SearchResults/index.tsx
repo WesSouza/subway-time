@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import LineId from '~/components/LineId';
 
-import { IStation } from '~/models/models';
+import { IStation } from '~/state/station';
 
 import styles from './styles.css';
 

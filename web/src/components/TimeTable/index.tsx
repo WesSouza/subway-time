@@ -7,7 +7,7 @@ import {
   IStationLine,
   IStationLineDirection,
   IStationLineDirectionTime,
-} from '~/models/models';
+} from '~/state/station';
 
 import Skeleton from './Skeleton';
 import styles from './styles.css';
