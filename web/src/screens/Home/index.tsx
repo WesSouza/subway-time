@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 
-import { ILineAdvisory, IStation } from '~/models/models';
+import { ILineAdvisory } from '~/state/line';
+import { IStation } from '~/state/station';
 import { getNearbyStations } from '~/state/geolocation';
 import { getAdvisoriesForLines, getStationWithTimes } from '~/state/stations';
 

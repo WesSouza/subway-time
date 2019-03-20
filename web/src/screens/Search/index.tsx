@@ -5,7 +5,7 @@ import Query, { IQueryResult } from '~/components/Query';
 import SearchResults from '~/components/SearchResults';
 import StoreValue from '~/components/StoreValue';
 
-import { IStation } from '~/models/models';
+import { IStation } from '~/state/station';
 import { clearSearch, setSearchTerm } from '~/state/search';
 import { searchStations } from '~/state/stations';
 import store, { IStore } from '~/state/store';

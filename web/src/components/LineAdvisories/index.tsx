@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { ILineAdvisory } from '~/models/models';
+import { ILineAdvisory } from '~/state/line';
 
 import styles from './styles.css';
 
