@@ -3,8 +3,6 @@ import { Helmet } from 'react-helmet';
 
 import { ILineAdvisory } from '~/state/line';
 import { IStation } from '~/state/station';
-import { getNearbyStations } from '~/state/geolocation';
-import { getAdvisoriesForLines, getStationWithTimes } from '~/state/stations';
 
 import LineAdvisories from '~/components/LineAdvisories';
 import Query, { IQueryResult } from '~/components/Query';

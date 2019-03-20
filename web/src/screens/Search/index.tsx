@@ -1,40 +1,54 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import NavigationBar from '~/components/NavigationBar';
-import Query, { IQueryResult } from '~/components/Query';
 import SearchResults from '~/components/SearchResults';
-import StoreValue from '~/components/StoreValue';
 
-import { IStation } from '~/state/station';
-import { clearSearch, setSearchTerm } from '~/state/search';
-import { searchStations } from '~/state/stations';
-import store, { IStore } from '~/state/store';
+import { stationState, IStation } from '~/state/station';
+import { lineState } from '~/state/line';
+import { search } from '~/state/station/helpers';
 
 interface IProps {
   path?: string;
 }
 
-const Search = ({  }: IProps) => (
-  <>
-    <NavigationBar
-      onSearchChangeWithValue={setSearchTerm}
-      onSearchFocusWithValue={setSearchTerm}
-    />
-    <StoreValue store={store} property="currentSearchTerm">
-      {({ currentSearchTerm }: IStore) =>
-        currentSearchTerm ? (
-          <Query
-            query={searchStations}
-            parameters={{ search: currentSearchTerm }}
-          >
-            {({ data }: IQueryResult<IStation[]>) => (
-              <SearchResults stations={data} onClick={clearSearch} />
-            )}
-          </Query>
-        ) : null
-      }
-    </StoreValue>
-  </>
-);
+const Search = ({  }: IProps) => {
+  const [linesById] = lineState.useFutureObserver(({ linesById }) => linesById);
+  const [stationsById] = stationState.useFutureObserver(
+    ({ stationsById }) => stationsById,
+  );
+
+  const [searchTerm, setSearchTerm] = useState('');
+  const [resultStations, setResultStations] = useState<IStation[]>([]);
+
+  useEffect(() => {
+    if (stationsById) {
+      setResultStations(search(Object.values(stationsById), searchTerm));
+    }
+  }, [stationsById, searchTerm]);
+
+  if (!linesById || !stationsById) {
+    return null;
+  }
+
+  const clearSearch = () => {
+    setSearchTerm('');
+  };
+
+  return (
+    <>
+      <NavigationBar
+        onSearchChangeWithValue={setSearchTerm}
+        onSearchFocusWithValue={setSearchTerm}
+      />
+      {resultStations.length ? (
+        <SearchResults
+          linesById={linesById}
+          stations={resultStations}
+          onClick={clearSearch}
+        />
+      ) : null}
+    </>
+  );
+};
 
 export default Search;
