@@ -6,7 +6,7 @@ import styles from './styles.css';
 interface IProps {
   id: string;
   className?: string;
-  color?: string;
+  color: string | null;
   style?: { [s: string]: string | number };
 }
 

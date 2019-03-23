@@ -23,7 +23,7 @@ class TimeTableSkeleton extends React.Component {
   public renderPlatform = () => {
     return (
       <div className={styles.line}>
-        <LineId id={' '} className={styles.lineId} />
+        <LineId id={' '} color={null} className={styles.lineId} />
         <div className={styles.directions}>
           {this.renderDirection()}
           {this.renderDirection()}

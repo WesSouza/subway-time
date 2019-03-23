@@ -1,22 +1,26 @@
 import * as React from 'react';
 
+import LineAdvisories from '~/components/LineAdvisories';
 import LineId from '~/components/LineId';
-
+import { IEntities } from '~/lib/entities';
+import { IFuture } from '~/lib/future';
+import { ILine, ILineAdvisory } from '~/state/line';
 import {
   IStation,
-  IStationLine,
-  IStationLineDirection,
-  IStationLineDirectionTime,
+  IStationPlatform,
+  IStationPlatformDirection,
+  IStationPlatformDirectionTime,
 } from '~/state/station';
 
 import Skeleton from './Skeleton';
 import styles from './styles.css';
 
 interface IProps {
-  advisoriesComponent?: React.ReactNode;
-  lastUpdate: number;
+  advisoriesFuture: IFuture<IEntities<ILineAdvisory[] | null>>;
+  linesFuture: IFuture<IEntities<ILine>>;
+  platformsFuture: IFuture<IEntities<IStationPlatform[] | null>>;
+  reloadData: () => void;
   station: IStation;
-  updateData: () => void;
 }
 
 interface IState {
@@ -33,14 +37,11 @@ class TimeTable extends React.Component<IProps, IState> {
 
   public componentDidMount() {
     this.updateLastUpdateString();
-    this.timer = setInterval(() => {
-      this.updateLastUpdateString();
-    }, 5000);
   }
 
   public componentDidUpdate(prevProps: IProps) {
-    const { lastUpdate } = this.props;
-    if (lastUpdate !== prevProps.lastUpdate) {
+    const { platformsFuture } = this.props;
+    if (platformsFuture !== prevProps.platformsFuture) {
       this.updateLastUpdateString();
     }
   }
@@ -52,19 +53,32 @@ class TimeTable extends React.Component<IProps, IState> {
   public render() {
     const { lastUpdateString } = this.state;
     const {
-      advisoriesComponent,
-      station: { name: stationName, platforms },
-      updateData,
+      advisoriesFuture,
+      platformsFuture,
+      reloadData,
+      station,
     } = this.props;
+
+    const [platformsByStationId, { error, loading }] = platformsFuture;
+
+    if (loading && platformsByStationId && !platformsByStationId[station.id]) {
+      return <div>Loading</div>;
+    }
+
+    if (error || !platformsByStationId) {
+      return <div>Loading</div>;
+    }
+
+    const platforms = platformsByStationId[station.id] || [];
 
     return (
       <div className={styles.TimeTable}>
         <div className={styles.stationNameGroup}>
-          <div className={styles.stationName}>{stationName}</div>
+          <div className={styles.stationName}>{station.name}</div>
           <div className={styles.updateData}>
             <button
               className={styles.updateDataButton}
-              onClick={updateData}
+              onClick={reloadData}
               type="button"
             >
               Reload
@@ -73,17 +87,27 @@ class TimeTable extends React.Component<IProps, IState> {
         </div>
         <div>{platforms.map(this.renderPlatform)}</div>
         <div className={styles.footer}>
-          <div className={styles.advisories}>{advisoriesComponent}</div>
-          <div className={styles.lastUpdate}>updated {lastUpdateString}</div>
+          <div className={styles.advisories}>
+            <LineAdvisories
+              advisoriesFuture={advisoriesFuture}
+              filterByLineIds={station.lineIds}
+            />
+          </div>
+          <div className={styles.lastUpdate}>{lastUpdateString}</div>
         </div>
       </div>
     );
   }
 
-  public renderPlatform = ({
-    line: { id: lineId, color: lineColor },
-    directions,
-  }: IStationLine) => {
+  public renderPlatform = ({ lineId, directions }: IStationPlatform) => {
+    let lineColor: string | null = null;
+
+    const { linesFuture } = this.props;
+    const [linesById] = linesFuture;
+    if (linesById && linesById[lineId]) {
+      lineColor = linesById[lineId].color;
+    }
+
     const hasDirections = directions && directions.length;
     return (
       <div
@@ -95,7 +119,9 @@ class TimeTable extends React.Component<IProps, IState> {
         <LineId id={lineId} color={lineColor} className={styles.lineId} />
         <div className={styles.directions}>
           {hasDirections ? (
-            (directions as IStationLineDirection[]).map(this.renderDirection)
+            (directions as IStationPlatformDirection[]).map(
+              this.renderDirection,
+            )
           ) : (
             <div className={styles.directionEmpty}>No train information.</div>
           )}
@@ -107,7 +133,7 @@ class TimeTable extends React.Component<IProps, IState> {
   public renderDirection = ({
     name: directionName,
     times,
-  }: IStationLineDirection) => (
+  }: IStationPlatformDirection) => (
     <div key={directionName} className={styles.direction}>
       <div className={styles.directionName}>{directionName}</div>
       <div className={styles.trains}>
@@ -117,9 +143,9 @@ class TimeTable extends React.Component<IProps, IState> {
   );
 
   public renderTime = (
-    { lastStationName, minutes }: IStationLineDirectionTime,
+    { lastStationName, minutes }: IStationPlatformDirectionTime,
     index: number,
-    filteredTrains: IStationLineDirectionTime[],
+    filteredTrains: IStationPlatformDirectionTime[],
   ) => (
     <div
       key={`${index} ${lastStationName} ${minutes}`}
@@ -134,25 +160,48 @@ class TimeTable extends React.Component<IProps, IState> {
         {minutes === 0
           ? 'Now'
           : typeof minutes === 'number'
-            ? `${minutes} min`
-            : minutes}
+          ? `${minutes} min`
+          : minutes}
       </div>
       <div className={styles.lastStationName}>{lastStationName}</div>
     </div>
   );
 
   public updateLastUpdateString = () => {
-    const { lastUpdate } = this.props;
+    clearTimeout(this.timer);
+    this.timer = setTimeout(() => {
+      this.updateLastUpdateString();
+    }, 5000);
+
+    const { platformsFuture, station } = this.props;
+    const [platformsByStationId] = platformsFuture;
+
+    if (!platformsByStationId) {
+      return;
+    }
+
+    const platforms = platformsByStationId[station.id] || [];
+
+    if (!platforms[0] || !platforms[0].lastUpdate) {
+      return;
+    }
+
+    const { lastUpdate } = platformsByStationId[station.id]![0];
+
     let lastUpdateString = 'now';
-    let delta = Math.floor((Date.now() - lastUpdate) / 1000);
+    let delta = Math.floor((Date.now() - lastUpdate.getTime()) / 1000);
 
     if (delta > 1) {
       lastUpdateString = `${delta} seconds ago`;
     }
 
-    if (delta > 60) {
+    if (delta >= 60) {
       delta = Math.floor(delta / 60);
       lastUpdateString = `${delta} minute${delta > 1 ? 's' : ''} ago`;
+    }
+
+    if (delta > 300) {
+      lastUpdateString = `more than 5 minutes ago`;
     }
 
     this.setState({

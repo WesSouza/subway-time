@@ -1,61 +1,103 @@
-import * as React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 
-import { ILineAdvisory } from '~/state/line';
-import { IStation } from '~/state/station';
+import { lineActions, lineState } from '~/state/line';
+import { stationState, stationActions } from '~/state/station';
 
-import LineAdvisories from '~/components/LineAdvisories';
-import Query, { IQueryResult } from '~/components/Query';
 import TimeTable from '~/components/TimeTable';
-
-import styles from './styles.css';
+import { flatFutureEntities, flatFutures } from '~/lib/future';
 
 interface IProps {
   path?: string;
   stationId?: string;
 }
 
-const Station = ({ stationId }: IProps) => (
-  <Query
-    query={getStationWithTimes}
-    parameters={{ stationId }}
-    renderWhenError={
-      <div className={styles.centralized}>Unable to retrieve time table.</div>
-    }
-    renderWhenLoading={<TimeTable.Skeleton />}
-  >
-    {({ data, lastUpdate, updateData }: IQueryResult<IStation>) => (
-      <React.Fragment>
-        <Helmet>
-          <title>{data.name}</title>
-          <link
-            rel="shortcut icon"
-            href={`/icons/${data.lines[0] ? data.lines[0].id : 'S'}.png`}
-            type="image/png"
-          />
-          <link
-            rel="apple-touch-icon"
-            href={`/icons/${data.lines[0] ? data.lines[0].id : 'S'}@8x.png`}
-          />
-        </Helmet>
-        <TimeTable
-          lastUpdate={lastUpdate}
-          station={data}
-          advisoriesComponent={
-            <Query
-              query={getAdvisoriesForLines}
-              parameters={{ lineIds: data.lineIds }}
-            >
-              {({ data: advisoryData }: IQueryResult<ILineAdvisory[]>) => (
-                <LineAdvisories advisories={advisoryData} />
-              )}
-            </Query>
-          }
-          updateData={updateData}
-        />
-      </React.Fragment>
-    )}
-  </Query>
-);
+const Station = ({ stationId }: IProps) => {
+  if (!stationId) {
+    return null;
+  }
+
+  // # Data dependencies
+
+  const advisoriesFuture = lineState.useFutureObserver(
+    ({ advisoriesByLineId }) => flatFutureEntities(advisoriesByLineId),
+  );
+
+  const linesFuture = lineState.useFutureObserver(({ linesById }) => linesById);
+
+  const platformsFuture = stationState.useFutureObserver(
+    ({ platformsByStationId }) => flatFutureEntities(platformsByStationId),
+  );
+
+  const stationsFuture = stationState.useFutureObserver(
+    ({ stationsById }) => stationsById,
+  );
+
+  // # Data
+
+  const [, { error, loading }] = flatFutures<any>([
+    linesFuture,
+    stationsFuture,
+  ]);
+  const [stationsById] = stationsFuture;
+  const station = stationsById ? stationsById[stationId] : null;
+  const lineIds = station ? station.lineIds : [];
+
+  // # Effects
+
+  useEffect(() => {
+    fetchStationPlatforms();
+  }, [stationId]);
+
+  useEffect(() => {
+    fetchAdvisories(lineIds);
+  }, [lineIds.join()]);
+
+  const fetchAdvisories = (lineIds: string[]) => {
+    lineIds.forEach(lineId => {
+      lineActions.fetchLineAdvisories(lineId);
+    });
+  };
+
+  // # Actions
+
+  const fetchStationPlatforms = () => {
+    stationActions.fetchStationPlatformsByStationId(stationId);
+  };
+
+  const reloadAll = () => {
+    fetchStationPlatforms();
+    fetchAdvisories(lineIds);
+  };
+
+  // # Render
+
+  if (loading) {
+    return <div>Loading.</div>;
+  }
+
+  if (error) {
+    return <div>Error.</div>;
+  }
+
+  if (!station) {
+    return <div>404.</div>;
+  }
+
+  return (
+    <>
+      <Helmet>
+        <title>{station.name}</title>
+      </Helmet>
+      <TimeTable
+        advisoriesFuture={advisoriesFuture}
+        linesFuture={linesFuture}
+        platformsFuture={platformsFuture}
+        reloadData={reloadAll}
+        station={station}
+      />
+    </>
+  );
+};
 
 export default Station;
