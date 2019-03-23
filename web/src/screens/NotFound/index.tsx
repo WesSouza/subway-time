@@ -5,6 +5,6 @@ interface IProps {
   path?: string;
 }
 
-const NotFound = ({ path }: IProps) => <div>Not Found</div>;
+const NotFound = (_props: IProps) => <div>Not Found</div>;
 
 export default NotFound;
