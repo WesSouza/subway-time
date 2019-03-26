@@ -5,7 +5,7 @@
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
-    "lib": ["dom", "es2018"],
+    "lib": ["dom", "esnext"],
     "module": "esnext",
     "moduleResolution": "node",
     "noUnusedLocals": true,
