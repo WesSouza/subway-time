@@ -1,6 +1,9 @@
 # dependencies
 node_modules
 
+# certificates
+certs/*.pem
+
 # misc
 .DS_Store
 .env.local
