@@ -1,11 +1,12 @@
-import * as React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 
-import { ILineAdvisory } from '~/state/line';
-import { IStation } from '~/state/station';
+import { flatFutures, flatFutureEntities } from '~/lib/future';
+import { sortStationsByProximity } from '~/lib/sortStationsByProximity';
+import { useGeolocation } from '~/lib/useGeolocation';
+import { lineState, lineActions } from '~/state/line';
+import { IStation, stationState, stationActions } from '~/state/station';
 
-import LineAdvisories from '~/components/LineAdvisories';
-import Query, { IQueryResult } from '~/components/Query';
 import TimeTable from '~/components/TimeTable';
 
 interface IProps {
@@ -14,29 +15,107 @@ interface IProps {
 
 import styles from './styles.css';
 
-class Home extends React.Component<IProps> {
-  public render() {
-    return (
+const Home = (_props: IProps) => {
+  // # Geolocation data
+  const [coordinates] = useGeolocation({ updateMinimumDistance: 25 });
+
+  // # Data dependencies
+  const advisoriesFuture = lineState.useFutureObserver(
+    ({ advisoriesByLineId }) => flatFutureEntities(advisoriesByLineId),
+  );
+
+  const linesFuture = lineState.useFutureObserver(({ linesById }) => linesById);
+
+  const stationsFuture = stationState.useFutureObserver(
+    ({ stationsById }) => stationsById,
+  );
+
+  const platformsFuture = stationState.useFutureObserver(
+    ({ platformsByStationId }) => flatFutureEntities(platformsByStationId),
+  );
+
+  // # Data
+  const [, { error, loading }] = flatFutures<any>([
+    linesFuture,
+    stationsFuture,
+  ]);
+
+  const [stationsById] = stationsFuture;
+
+  const [sortedStations, setSortedStations] = useState<IStation[]>([]);
+  const [sortedStationIds, setSortedStationIds] = useState<string[]>([]);
+  const [lineIds, setLineIds] = useState<string[]>([]);
+
+  const fetchAdvisories = (lineIds: string[]) => {
+    lineIds.forEach(lineId => {
+      lineActions.fetchLineAdvisories(lineId);
+    });
+  };
+
+  const fetchStationPlatforms = (stationIds: string[]) => {
+    stationIds.forEach(stationId => {
+      stationActions.fetchStationPlatformsByStationId(stationId);
+    });
+  };
+
+  const reloadAll = () => {
+    fetchStationPlatforms(sortedStationIds);
+    fetchAdvisories(lineIds);
+  };
+
+  useEffect(() => {
+    if (!stationsById || !coordinates) {
+      return;
+    }
+
+    const stations = Object.values(stationsById);
+
+    const localSortedStations = sortStationsByProximity(
+      stations,
+      coordinates.latitude,
+      coordinates.longitude,
+    ).slice(0, 5);
+    setSortedStations(localSortedStations);
+    setSortedStationIds(localSortedStations.map(station => station.id));
+
+    setLineIds([
+      ...new Set(localSortedStations.map(station => station.lineIds).flat()),
+    ]);
+  }, [stationsById, coordinates]);
+
+  useEffect(() => {
+    fetchStationPlatforms(sortedStationIds);
+    fetchAdvisories(lineIds);
+  }, [sortedStationIds.join(), lineIds.join()]);
+
+  if (loading) {
+    return <div>Loading.</div>;
+  }
+
+  if (error) {
+    return <div>Error.</div>;
+  }
+
+  if (!coordinates) {
+    return <div>Where are you?</div>;
+  }
+
+  return (
+    <>
+      <Helmet>
+        <title>SubwayTi.me</title>
+      </Helmet>
       <div className={styles.Home}>
-        <Helmet>
-          <title>Subway Ti.me</title>
-          <link rel="shortcut icon" href="/icons/S.png" type="image/png" />
-          <link rel="apple-touch-icon" href="/icons/S@8x.png" />
-        </Helmet>
-        <Query
-          query={getNearbyStations(4)}
-          renderWhenError={this.renderNoLocation}
-          renderWhenLoading={
-            <React.Fragment>
-              <TimeTable.Skeleton />
-              <TimeTable.Skeleton />
-            </React.Fragment>
-          }
-        >
-          {({ data }: IQueryResult<string[]>) =>
-            data.map(stationId => this.renderTimeTable(stationId))
-          }
-        </Query>
+        {sortedStations.map(station => (
+          <TimeTable
+            advisoriesFuture={advisoriesFuture}
+            key={station.id}
+            linesFuture={linesFuture}
+            platformsFuture={platformsFuture}
+            reloadData={reloadAll}
+            station={station}
+          />
+        ))}
         <div className={styles.credits}>
           <p className={styles.smaller}>
             Built with <span className={styles.love}>&lt;3</span> by{' '}
@@ -47,71 +126,13 @@ class Home extends React.Component<IProps> {
           </p>
           <p className={styles.smaller}>
             <a href="https://github.com/WesSouza/subway-time" target="_blank">
-              Fork it on GitHub.
+              Source code available on GitHub.
             </a>
           </p>
         </div>
       </div>
-    );
-  }
-
-  public renderTimeTable(stationId: string) {
-    return (
-      <Query
-        key={stationId}
-        query={getStationWithTimes}
-        parameters={{ stationId }}
-        renderWhenError={
-          <div className={styles.centralized}>
-            Unable to retrieve time table.
-          </div>
-        }
-        renderWhenLoading={<TimeTable.Skeleton />}
-      >
-        {({ data, lastUpdate, updateData }: IQueryResult<IStation>) => (
-          <TimeTable
-            lastUpdate={lastUpdate}
-            station={data}
-            advisoriesComponent={
-              <Query
-                query={getAdvisoriesForLines}
-                parameters={{ lineIds: data.lineIds }}
-              >
-                {({ data: advisoryData }: IQueryResult<ILineAdvisory[]>) => (
-                  <LineAdvisories advisories={advisoryData} />
-                )}
-              </Query>
-            }
-            updateData={updateData}
-          />
-        )}
-      </Query>
-    );
-  }
-
-  public renderNoLocation = () => {
-    return (
-      <div className={styles.error}>
-        <div className={styles.errorMessage}>
-          Unable to find nearby stations.
-          <br />
-          <br />
-          Please allow location access.
-        </div>
-        <button
-          className={styles.errorRetry}
-          onClick={this.handleRetryClick}
-          type="button"
-        >
-          Try again
-        </button>
-      </div>
-    );
-  };
-
-  public handleRetryClick = () => {
-    location.reload();
-  };
-}
+    </>
+  );
+};
 
 export default Home;
