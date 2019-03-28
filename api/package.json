@@ -18,7 +18,7 @@
   "dependencies": {
     "compression": "^1.7.2",
     "express": "^4.16.3",
-    "got": "^8.3.2",
+    "got": "^9.6.0",
     "serve-static": "^1.13.2"
   },
   "devDependencies": {
