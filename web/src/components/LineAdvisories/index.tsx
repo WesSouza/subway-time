@@ -13,14 +13,11 @@ interface IProps {
 
 class LineAdvisory extends React.Component<IProps> {
   public render() {
-    const [advisories, { error, loading }] = this.getAdvisories();
+    const [advisories, { error }] = this.getAdvisories();
 
     if (error) {
-      return <div className={styles.LineAdvisories}>Error.</div>;
-    }
-
-    if (loading) {
-      return <div className={styles.LineAdvisories}>Loading.</div>;
+      console.error(error);
+      return <div className={styles.LineAdvisories}>Unknown advisories</div>;
     }
 
     if (!advisories) {

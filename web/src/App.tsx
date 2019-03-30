@@ -8,6 +8,8 @@ import Router from '~/screens/Router';
 import Search from '~/screens/Search';
 
 import styles from './App.styles.css';
+import LineId from './components/LineId';
+import ErrorMessage from './components/ErrorMessage';
 
 const App = () => {
   // # Data dependencies
@@ -29,14 +31,29 @@ const App = () => {
     stationActions.fetchStations();
   }, []);
 
+  // # Actions
+
+  const reloadPage = () => {
+    location.reload();
+  };
+
   // # Render
 
   if (error) {
-    return <div>Error {error.toString()}</div>;
+    console.error(error);
+    return (
+      <ErrorMessage retryOnClick={reloadPage}>
+        There was a problem loading the app.
+      </ErrorMessage>
+    );
   }
 
   if (loading) {
-    return <div>Loading.</div>;
+    return (
+      <div className={`${styles.App} ${styles.loading}`}>
+        <LineId id={'S'} className={styles.splashLineId} color={null} />
+      </div>
+    );
   }
 
   return (

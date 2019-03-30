@@ -1,25 +1,6 @@
 .Home {
 }
 
-.error {
-  padding: var(--spacing-medium);
-  text-align: center;
-}
-
-.errorMessage {
-}
-
-.errorRetry {
-  margin-top: var(--spacing-medium);
-  appearance: none;
-  background-color: transparent;
-  border: 0;
-  padding: 0;
-  font-size: 1rem;
-  color: var(--color-blue);
-  text-decoration: underline;
-}
-
 .credits {
   padding: var(--spacing-medium);
   text-align: center;

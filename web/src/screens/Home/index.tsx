@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 
-import { flatFutures, flatFutureEntities } from '~/lib/future';
+import { flatFutureEntities } from '~/lib/future';
 import { sortStationsByProximity } from '~/lib/sortStationsByProximity';
-import { useGeolocation } from '~/lib/useGeolocation';
+import { useGeolocation, GeolocationErrors } from '~/lib/useGeolocation';
 import { lineState, lineActions } from '~/state/line';
 import { IStation, stationState, stationActions } from '~/state/station';
 
@@ -14,10 +14,14 @@ interface IProps {
 }
 
 import styles from './styles.css';
+import ErrorMessage from '~/components/ErrorMessage';
 
 const Home = (_props: IProps) => {
   // # Geolocation data
-  const [coordinates] = useGeolocation({ updateMinimumDistance: 25 });
+  const [
+    coordinates,
+    { error: coordinatesError, loading: coordinatesLoading },
+  ] = useGeolocation({ updateMinimumDistance: 25 });
 
   // # Data dependencies
   const advisoriesFuture = lineState.useFutureObserver(
@@ -35,11 +39,6 @@ const Home = (_props: IProps) => {
   );
 
   // # Data
-  const [, { error, loading }] = flatFutures<any>([
-    linesFuture,
-    stationsFuture,
-  ]);
-
   const [stationsById] = stationsFuture;
 
   const [sortedStations, setSortedStations] = useState<IStation[]>([]);
@@ -58,9 +57,13 @@ const Home = (_props: IProps) => {
     });
   };
 
-  const reloadAll = () => {
+  const reloadData = () => {
     fetchStationPlatforms(sortedStationIds);
     fetchAdvisories(lineIds);
+  };
+
+  const reloadPage = () => {
+    location.reload();
   };
 
   useEffect(() => {
@@ -88,16 +91,37 @@ const Home = (_props: IProps) => {
     fetchAdvisories(lineIds);
   }, [sortedStationIds.join(), lineIds.join()]);
 
-  if (loading) {
-    return <div>Loading.</div>;
+  if (coordinatesLoading) {
+    return (
+      <ErrorMessage retryOnClick={reloadPage}>
+        Finding nearby stations...
+      </ErrorMessage>
+    );
   }
 
-  if (error) {
-    return <div>Error.</div>;
+  if (
+    coordinatesError &&
+    coordinatesError.message === GeolocationErrors.PERMISSION_DENIED
+  ) {
+    return (
+      <ErrorMessage retryOnClick={reloadPage}>
+        Unable to find nearby stations.
+        <br />
+        <br />
+        Please allow location access.
+      </ErrorMessage>
+    );
   }
 
-  if (!coordinates) {
-    return <div>Where are you?</div>;
+  if (coordinatesError || !coordinates) {
+    return (
+      <ErrorMessage retryOnClick={reloadPage}>
+        Unable to find nearby stations.
+        <br />
+        <br />
+        Please use the search bar above.
+      </ErrorMessage>
+    );
   }
 
   return (
@@ -112,7 +136,7 @@ const Home = (_props: IProps) => {
             key={station.id}
             linesFuture={linesFuture}
             platformsFuture={platformsFuture}
-            reloadData={reloadAll}
+            reloadData={reloadData}
             station={station}
           />
         ))}

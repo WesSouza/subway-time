@@ -5,7 +5,9 @@ import { lineActions, lineState } from '~/state/line';
 import { stationState, stationActions } from '~/state/station';
 
 import TimeTable from '~/components/TimeTable';
-import { flatFutureEntities, flatFutures } from '~/lib/future';
+import { flatFutureEntities } from '~/lib/future';
+import ErrorMessage from '~/components/ErrorMessage';
+import { Link } from '@reach/router';
 
 interface IProps {
   path?: string;
@@ -35,10 +37,6 @@ const Station = ({ stationId }: IProps) => {
 
   // # Data
 
-  const [, { error, loading }] = flatFutures<any>([
-    linesFuture,
-    stationsFuture,
-  ]);
   const [stationsById] = stationsFuture;
   const station = stationsById ? stationsById[stationId] : null;
   const lineIds = station ? station.lineIds : [];
@@ -72,16 +70,15 @@ const Station = ({ stationId }: IProps) => {
 
   // # Render
 
-  if (loading) {
-    return <div>Loading.</div>;
-  }
-
-  if (error) {
-    return <div>Error.</div>;
-  }
-
   if (!station) {
-    return <div>404.</div>;
+    return (
+      <ErrorMessage>
+        Station not found.
+        <br />
+        <br />
+        <Link to="/">View nearby stations</Link>
+      </ErrorMessage>
+    );
   }
 
   return (

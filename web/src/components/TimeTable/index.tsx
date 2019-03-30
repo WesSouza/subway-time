@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import ErrorMessage from '~/components/ErrorMessage';
 import LineAdvisories from '~/components/LineAdvisories';
 import LineId from '~/components/LineId';
 import { IEntities } from '~/lib/entities';
@@ -28,8 +29,6 @@ interface IState {
 }
 
 class TimeTable extends React.Component<IProps, IState> {
-  public static Skeleton: React.ComponentClass = Skeleton;
-
   public timer: any = null;
   public state = {
     lastUpdateString: '',
@@ -61,39 +60,54 @@ class TimeTable extends React.Component<IProps, IState> {
 
     const [platformsByStationId, { error, loading }] = platformsFuture;
 
-    if (loading && platformsByStationId && !platformsByStationId[station.id]) {
-      return <div>Loading</div>;
+    const isLoadingThisStation =
+      loading && platformsByStationId && !platformsByStationId[station.id];
+
+    if (error) {
+      console.error(error);
     }
 
-    if (error || !platformsByStationId) {
-      return <div>Loading</div>;
-    }
-
-    const platforms = platformsByStationId[station.id] || [];
+    const platforms =
+      (platformsByStationId && platformsByStationId[station.id]) || [];
 
     return (
       <div className={styles.TimeTable}>
         <div className={styles.stationNameGroup}>
           <div className={styles.stationName}>{station.name}</div>
-          <div className={styles.updateData}>
-            <button
-              className={styles.updateDataButton}
-              onClick={reloadData}
-              type="button"
-            >
-              Reload
-            </button>
-          </div>
         </div>
-        <div>{platforms.map(this.renderPlatform)}</div>
+        {!error && !isLoadingThisStation ? (
+          platforms.map(this.renderPlatform)
+        ) : isLoadingThisStation ? (
+          <Skeleton />
+        ) : (
+          <ErrorMessage retryOnClick={reloadData}>
+            There was a problem loading train times.
+          </ErrorMessage>
+        )}
         <div className={styles.footer}>
           <div className={styles.advisories}>
-            <LineAdvisories
-              advisoriesFuture={advisoriesFuture}
-              filterByLineIds={station.lineIds}
-            />
+            {!error && (
+              <LineAdvisories
+                advisoriesFuture={advisoriesFuture}
+                filterByLineIds={station.lineIds}
+              />
+            )}
           </div>
-          <div className={styles.lastUpdate}>{lastUpdateString}</div>
+          <div className={styles.lastUpdate}>
+            {lastUpdateString}
+            {lastUpdateString && (
+              <>
+                <span className={styles.footerSeparator}>|</span>
+                <button
+                  className={styles.updateDataButton}
+                  onClick={reloadData}
+                  type="button"
+                >
+                  reload
+                </button>
+              </>
+            )}
+          </div>
         </div>
       </div>
     );
