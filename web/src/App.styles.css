@@ -11,3 +11,15 @@
   flex-direction: column;
   justify-content: stretch;
 }
+
+.App.loading {
+  justify-content: center;
+}
+
+.splashLineId {
+  --width-height: 80px;
+  align-self: center;
+  flex-grow: 0;
+  flex-basis: auto;
+  font-size: 70px;
+}

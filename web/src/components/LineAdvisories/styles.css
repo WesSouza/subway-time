@@ -1,4 +1,5 @@
 .LineAdvisories {
+  font-size: 0.8rem;
 }
 
 .openButton {
@@ -8,5 +9,5 @@
   color: var(--color-red);
   background-color: transparent;
   text-decoration: underline;
-  font-size: 0.8rem;
+  font-size: inherit;
 }

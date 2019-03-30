@@ -4,7 +4,7 @@
 
 .stationNameGroup {
   display: flex;
-  padding: var(--spacing-small) var(--spacing-small) 0 var(--spacing-small);
+  padding: var(--spacing-small);
   align-items: center;
   font-size: 1.3rem;
   font-weight: bold;
@@ -12,19 +12,6 @@
 
 .stationName {
   flex-grow: 1;
-}
-
-.updateData {
-}
-
-.updateDataButton {
-  appearance: none;
-  background-color: transparent;
-  border: 0;
-  padding: 0;
-  font-size: 1rem;
-  color: var(--color-blue);
-  text-decoration: underline;
 }
 
 .line {
@@ -118,6 +105,24 @@
   padding-bottom: var(--spacing-small);
   justify-content: space-between;
   align-items: center;
+}
+
+.footerSeparator {
+  color: var(--color-gray-dark);
+  padding: 0 var(--spacing-xsmall);
+}
+
+.updateData {
+}
+
+.updateDataButton {
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  font-size: inherit;
+  color: var(--color-blue);
+  text-decoration: underline;
 }
 
 .advisories {
