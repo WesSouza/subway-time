@@ -28,7 +28,7 @@ export const passthrough = (pathKey: MtaPathKeys, cacheExpire: number) => (
   get(`${mta.baseUrl}${mta[pathKey]}`, params)
     .then(response => {
       const data = response.body;
-      if (cacheExpire) {
+      if (data && cacheExpire) {
         cache[path] = {
           data,
           expire: Date.now() + cacheExpire,
