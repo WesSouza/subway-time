@@ -2,6 +2,7 @@
   "version": 2,
   "name": "subway-time",
   "alias": ["subwayti.me"],
+  "scope": "wessouza",
   "builds": [
     {
       "src": "web/package.json",
