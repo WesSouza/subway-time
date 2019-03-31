@@ -1,13 +1,13 @@
 import * as React from 'react';
 
 import { IEntities } from '~/lib/entities';
-import { IFuture, valueFuture } from '~/lib/future';
+import { emptyFuture, IFuture, IFutureLoading } from '~/lib/future';
 import { ILineAdvisory } from '~/state/line';
 
 import styles from './styles.css';
 
 interface IProps {
-  advisoriesFuture: IFuture<IEntities<ILineAdvisory[] | null>>;
+  advisoriesByLineId: IEntities<IFuture<ILineAdvisory[] | null> | null>;
   filterByLineIds: string[];
 }
 
@@ -40,32 +40,43 @@ class LineAdvisory extends React.Component<IProps> {
   }
 
   public getAdvisories = (): IFuture<ILineAdvisory[]> => {
-    const { advisoriesFuture, filterByLineIds } = this.props;
-    const [advisoriesByLineId, { error, loading }] = advisoriesFuture;
-
-    let advisories: ILineAdvisory[] = [];
-
-    if (!advisoriesByLineId || error || loading) {
-      return [[], { error, loading }];
+    const { advisoriesByLineId, filterByLineIds } = this.props;
+    if (!advisoriesByLineId) {
+      return emptyFuture();
     }
+
+    let mergedAdvisories: ILineAdvisory[] = [];
+    let error: Error | null = null;
+    let loading: IFutureLoading | null = null;
 
     if (filterByLineIds.length) {
       filterByLineIds.forEach(lineId => {
-        const advisoriesForLine = advisoriesByLineId[lineId];
-        if (advisoriesForLine) {
-          advisories = [...advisories, ...advisoriesForLine];
+        const advisoriesFuture = advisoriesByLineId[lineId];
+        if (!advisoriesFuture) {
+          return;
+        }
+        const [
+          advisories,
+          { error: advisoriesError, loading: advisoriesLoading },
+        ] = advisoriesFuture;
+
+        if (advisories && advisories.length) {
+          mergedAdvisories = mergedAdvisories.concat(advisories);
+        }
+
+        if (advisoriesError) {
+          error = advisoriesError;
+        }
+
+        if (advisoriesLoading) {
+          loading = advisoriesLoading;
         }
       });
     } else {
-      Object.keys(advisoriesByLineId).forEach(lineId => {
-        const advisoriesForLine = advisoriesByLineId[lineId];
-        if (advisoriesForLine) {
-          advisories = [...advisories, ...advisoriesForLine];
-        }
-      });
+      return emptyFuture();
     }
 
-    return valueFuture(advisories);
+    return [mergedAdvisories, { error, loading }];
   };
 
   public openAdvisoriesDetail = () => {

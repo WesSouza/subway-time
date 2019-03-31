@@ -5,7 +5,6 @@ import { lineActions, lineState } from '~/state/line';
 import { stationState, stationActions } from '~/state/station';
 
 import TimeTable from '~/components/TimeTable';
-import { flatFutureEntities } from '~/lib/future';
 import ErrorMessage from '~/components/ErrorMessage';
 import { Link } from '@reach/router';
 
@@ -21,14 +20,14 @@ const Station = ({ stationId }: IProps) => {
 
   // # Data dependencies
 
-  const advisoriesFuture = lineState.useFutureObserver(
-    ({ advisoriesByLineId }) => flatFutureEntities(advisoriesByLineId),
+  const advisoriesByLineId = lineState.useObserver(
+    ({ advisoriesByLineId }) => advisoriesByLineId,
   );
 
   const linesFuture = lineState.useFutureObserver(({ linesById }) => linesById);
 
-  const platformsFuture = stationState.useFutureObserver(
-    ({ platformsByStationId }) => flatFutureEntities(platformsByStationId),
+  const platformsByStationId = stationState.useObserver(
+    ({ platformsByStationId }) => platformsByStationId,
   );
 
   const stationsFuture = stationState.useFutureObserver(
@@ -87,9 +86,9 @@ const Station = ({ stationId }: IProps) => {
         <title>{station.name}</title>
       </Helmet>
       <TimeTable
-        advisoriesFuture={advisoriesFuture}
+        advisoriesByLineId={advisoriesByLineId}
         linesFuture={linesFuture}
-        platformsFuture={platformsFuture}
+        platformsByStationId={platformsByStationId}
         reloadData={reloadAll}
         station={station}
       />

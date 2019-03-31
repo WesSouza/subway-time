@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 
-import { flatFutureEntities } from '~/lib/future';
 import { sortStationsByProximity } from '~/lib/sortStationsByProximity';
 import { useGeolocation, GeolocationErrors } from '~/lib/useGeolocation';
 import { lineState, lineActions } from '~/state/line';
@@ -24,8 +23,8 @@ const Home = (_props: IProps) => {
   ] = useGeolocation({ updateMinimumDistance: 25 });
 
   // # Data dependencies
-  const advisoriesFuture = lineState.useFutureObserver(
-    ({ advisoriesByLineId }) => flatFutureEntities(advisoriesByLineId),
+  const advisoriesByLineId = lineState.useObserver(
+    ({ advisoriesByLineId }) => advisoriesByLineId,
   );
 
   const linesFuture = lineState.useFutureObserver(({ linesById }) => linesById);
@@ -34,8 +33,8 @@ const Home = (_props: IProps) => {
     ({ stationsById }) => stationsById,
   );
 
-  const platformsFuture = stationState.useFutureObserver(
-    ({ platformsByStationId }) => flatFutureEntities(platformsByStationId),
+  const platformsByStationId = stationState.useObserver(
+    ({ platformsByStationId }) => platformsByStationId,
   );
 
   // # Data
@@ -132,10 +131,10 @@ const Home = (_props: IProps) => {
       <div className={styles.Home}>
         {sortedStations.map(station => (
           <TimeTable
-            advisoriesFuture={advisoriesFuture}
+            advisoriesByLineId={advisoriesByLineId}
             key={station.id}
             linesFuture={linesFuture}
-            platformsFuture={platformsFuture}
+            platformsByStationId={platformsByStationId}
             reloadData={reloadData}
             station={station}
           />

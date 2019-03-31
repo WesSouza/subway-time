@@ -17,9 +17,9 @@ import Skeleton from './Skeleton';
 import styles from './styles.css';
 
 interface IProps {
-  advisoriesFuture: IFuture<IEntities<ILineAdvisory[] | null>>;
+  advisoriesByLineId: IEntities<IFuture<ILineAdvisory[] | null>>;
   linesFuture: IFuture<IEntities<ILine>>;
-  platformsFuture: IFuture<IEntities<IStationPlatform[] | null>>;
+  platformsByStationId: IEntities<IFuture<IStationPlatform[]> | null>;
   reloadData: () => void;
   station: IStation;
 }
@@ -39,8 +39,8 @@ class TimeTable extends React.Component<IProps, IState> {
   }
 
   public componentDidUpdate(prevProps: IProps) {
-    const { platformsFuture } = this.props;
-    if (platformsFuture !== prevProps.platformsFuture) {
+    const { platformsByStationId } = this.props;
+    if (platformsByStationId !== prevProps.platformsByStationId) {
       this.updateLastUpdateString();
     }
   }
@@ -52,46 +52,42 @@ class TimeTable extends React.Component<IProps, IState> {
   public render() {
     const { lastUpdateString } = this.state;
     const {
-      advisoriesFuture,
-      platformsFuture,
+      advisoriesByLineId,
+      platformsByStationId,
       reloadData,
       station,
     } = this.props;
 
-    const [platformsByStationId, { error, loading }] = platformsFuture;
-
-    const isLoadingThisStation =
-      loading && platformsByStationId && !platformsByStationId[station.id];
+    const platformFuture = platformsByStationId[station.id];
+    if (!platformFuture) {
+      return null;
+    }
+    const [platforms, { error, loading }] = platformFuture;
 
     if (error) {
       console.error(error);
     }
-
-    const platforms =
-      (platformsByStationId && platformsByStationId[station.id]) || [];
 
     return (
       <div className={styles.TimeTable}>
         <div className={styles.stationNameGroup}>
           <div className={styles.stationName}>{station.name}</div>
         </div>
-        {!error && !isLoadingThisStation ? (
-          platforms.map(this.renderPlatform)
-        ) : isLoadingThisStation ? (
-          <Skeleton />
-        ) : (
+        {error ? (
           <ErrorMessage retryOnClick={reloadData}>
             There was a problem loading train times.
           </ErrorMessage>
+        ) : loading || !platforms || !platforms.length ? (
+          <Skeleton />
+        ) : (
+          platforms.map(this.renderPlatform)
         )}
         <div className={styles.footer}>
           <div className={styles.advisories}>
-            {!error && (
-              <LineAdvisories
-                advisoriesFuture={advisoriesFuture}
-                filterByLineIds={station.lineIds}
-              />
-            )}
+            <LineAdvisories
+              advisoriesByLineId={advisoriesByLineId}
+              filterByLineIds={station.lineIds}
+            />
           </div>
           <div className={styles.lastUpdate}>
             {lastUpdateString}
@@ -183,24 +179,23 @@ class TimeTable extends React.Component<IProps, IState> {
 
   public updateLastUpdateString = () => {
     clearTimeout(this.timer);
-    this.timer = setTimeout(() => {
-      this.updateLastUpdateString();
-    }, 5000);
 
-    const { platformsFuture, station } = this.props;
-    const [platformsByStationId] = platformsFuture;
-
-    if (!platformsByStationId) {
+    const { platformsByStationId, station } = this.props;
+    const platformFuture = platformsByStationId[station.id];
+    if (!platformFuture) {
       return;
     }
 
-    const platforms = platformsByStationId[station.id] || [];
+    const [platforms] = platformFuture;
 
-    if (!platforms[0] || !platforms[0].lastUpdate) {
+    if (!platforms || !platforms[0] || !platforms[0].lastUpdate) {
+      this.setState({
+        lastUpdateString: '',
+      });
       return;
     }
 
-    const { lastUpdate } = platformsByStationId[station.id]![0];
+    const { lastUpdate } = platforms[0];
 
     let lastUpdateString = 'now';
     let delta = Math.floor((Date.now() - lastUpdate.getTime()) / 1000);
@@ -221,6 +216,10 @@ class TimeTable extends React.Component<IProps, IState> {
     this.setState({
       lastUpdateString,
     });
+
+    this.timer = setTimeout(() => {
+      this.updateLastUpdateString();
+    }, 5000);
   };
 }
 
