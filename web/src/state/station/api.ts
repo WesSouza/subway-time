@@ -111,6 +111,9 @@ export const apiStationPlatformsByStationId = async (
         if (lineId === 'GS') {
           lineId = 'S';
         }
+        if (lineId.match(/x$/i)) {
+          lineId = lineId.replace(/x$/i, '');
+        }
 
         if (!timesByLineAndDirection[lineId]) {
           timesByLineAndDirection[lineId] = {};
