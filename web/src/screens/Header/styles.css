@@ -1,0 +1,24 @@
+.Header {
+}
+
+.logoIcons {
+  border-radius: var(--lineDimensions, 25px);
+  display: flex;
+}
+
+.logoIcon:not(:first-child) {
+  margin-left: -10px;
+}
+
+.header {
+  display: block;
+  margin-left: 66px;
+  padding-top: 10px;
+}
+
+.headerTitle {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 0;
+}

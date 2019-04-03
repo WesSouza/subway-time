@@ -23,7 +23,7 @@ class NavigationBar extends React.Component<IProps> {
             onBlur={this.props.onSearchCommitValue}
             onChange={this.onSearchChange}
             onFocus={this.onSearchFocus}
-            placeholder="Station name"
+            placeholder="Search station name"
             type="search"
           />
         </form>
