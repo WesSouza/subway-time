@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { Helmet } from 'react-helmet';
 
 import { sortStationsByProximity } from '~/lib/sortStationsByProximity';
@@ -14,20 +14,21 @@ interface IProps {
 
 import styles from './styles.css';
 import ErrorMessage from '~/components/ErrorMessage';
+import { LinedBlock } from '~/components/LinedBlock';
 
 const Home = (_props: IProps) => {
   // # Geolocation data
   const [
     coordinates,
     { error: coordinatesError, loading: coordinatesLoading },
-  ] = useGeolocation({ updateMinimumDistance: 25 });
+  ] = useGeolocation({ updateMinimumDistance: 250 });
 
   // # Data dependencies
   const advisoriesByLineId = lineState.useObserver(
     ({ advisoriesByLineId }) => advisoriesByLineId,
   );
 
-  const stationsFuture = stationState.useFutureObserver(
+  const [stationsById] = stationState.useFutureObserver(
     ({ stationsById }) => stationsById,
   );
 
@@ -36,32 +37,11 @@ const Home = (_props: IProps) => {
   );
 
   // # Data
-  const [stationsById] = stationsFuture;
-
   const [sortedStations, setSortedStations] = useState<IStation[]>([]);
   const [sortedStationIds, setSortedStationIds] = useState<string[]>([]);
   const [lineIds, setLineIds] = useState<string[]>([]);
 
-  const fetchAdvisories = (lineIds: string[]) => {
-    lineIds.forEach(lineId => {
-      lineActions.fetchLineAdvisories(lineId);
-    });
-  };
-
-  const fetchStationPlatforms = (stationIds: string[]) => {
-    stationIds.forEach(stationId => {
-      stationActions.fetchStationPlatformsByStationId(stationId);
-    });
-  };
-
-  const reloadData = () => {
-    fetchStationPlatforms(sortedStationIds);
-    fetchAdvisories(lineIds);
-  };
-
-  const reloadPage = () => {
-    location.reload();
-  };
+  // # Effects
 
   useEffect(() => {
     if (!stationsById || !coordinates) {
@@ -84,15 +64,31 @@ const Home = (_props: IProps) => {
   }, [stationsById, coordinates]);
 
   useEffect(() => {
-    fetchStationPlatforms(sortedStationIds);
-    fetchAdvisories(lineIds);
-  }, [sortedStationIds.join(), lineIds.join()]);
+    reloadData(sortedStationIds, lineIds);
+  }, [sortedStationIds, lineIds]);
+
+  // # Callbacks
+
+  const reloadData = useCallback((stationIds: string[], lineIds: string[]) => {
+    stationIds.forEach(stationId => {
+      stationActions.fetchStationPlatformsByStationId(stationId);
+    });
+    lineIds.forEach(lineId => {
+      lineActions.fetchLineAdvisories(lineId);
+    });
+  }, []);
+
+  const reloadPage = useCallback(() => {
+    location.reload();
+  }, []);
 
   if (coordinatesLoading) {
     return (
-      <ErrorMessage retryOnClick={reloadPage}>
-        Finding nearby stations...
-      </ErrorMessage>
+      <LinedBlock>
+        <ErrorMessage retryOnClick={reloadPage}>
+          Finding nearby stations...
+        </ErrorMessage>
+      </LinedBlock>
     );
   }
 
@@ -101,23 +97,27 @@ const Home = (_props: IProps) => {
     coordinatesError.message === GeolocationErrors.PERMISSION_DENIED
   ) {
     return (
-      <ErrorMessage retryOnClick={reloadPage}>
-        Unable to find nearby stations.
-        <br />
-        <br />
-        Please allow location access.
-      </ErrorMessage>
+      <LinedBlock>
+        <ErrorMessage retryOnClick={reloadPage}>
+          Unable to find nearby stations.
+          <br />
+          <br />
+          Please allow location access.
+        </ErrorMessage>
+      </LinedBlock>
     );
   }
 
   if (coordinatesError || !coordinates) {
     return (
-      <ErrorMessage retryOnClick={reloadPage}>
-        Unable to find nearby stations.
-        <br />
-        <br />
-        Please use the search bar above.
-      </ErrorMessage>
+      <LinedBlock>
+        <ErrorMessage retryOnClick={reloadPage}>
+          Unable to find nearby stations.
+          <br />
+          <br />
+          Please use the search bar above.
+        </ErrorMessage>
+      </LinedBlock>
     );
   }
 
@@ -136,20 +136,22 @@ const Home = (_props: IProps) => {
             station={station}
           />
         ))}
-        <div className={styles.credits}>
-          <p className={styles.smaller}>
-            Built with <span className={styles.love}>&lt;3</span> by{' '}
-            <a href="https://wes.dev/" target="_blank">
-              @WesSouza
-            </a>
-            .
-          </p>
-          <p className={styles.smaller}>
-            <a href="https://github.com/WesSouza/subway-time" target="_blank">
-              Source code available on GitHub.
-            </a>
-          </p>
-        </div>
+        <LinedBlock>
+          <div className={styles.credits}>
+            <p className={styles.smaller}>
+              Built with <span className={styles.love}>&lt;3</span> by{' '}
+              <a href="https://wes.dev/" target="_blank">
+                @WesSouza
+              </a>
+              .
+            </p>
+            <p className={styles.smaller}>
+              <a href="https://github.com/WesSouza/subway-time" target="_blank">
+                Source code available on GitHub.
+              </a>
+            </p>
+          </div>
+        </LinedBlock>
       </div>
     </>
   );

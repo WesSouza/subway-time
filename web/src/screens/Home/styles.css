@@ -2,14 +2,12 @@
 }
 
 .credits {
-  padding: var(--spacing-medium);
-  text-align: center;
 }
 
 .smaller,
 .smaller a {
   font-size: 0.8rem;
-  color: var(--color-gray-darker);
+  color: var(--color-gray-dark);
 }
 
 .smaller a {
