@@ -27,8 +27,6 @@ const Home = (_props: IProps) => {
     ({ advisoriesByLineId }) => advisoriesByLineId,
   );
 
-  const linesFuture = lineState.useFutureObserver(({ linesById }) => linesById);
-
   const stationsFuture = stationState.useFutureObserver(
     ({ stationsById }) => stationsById,
   );
@@ -133,7 +131,6 @@ const Home = (_props: IProps) => {
           <TimeTable
             advisoriesByLineId={advisoriesByLineId}
             key={station.id}
-            linesFuture={linesFuture}
             platformsByStationId={platformsByStationId}
             reloadData={reloadData}
             station={station}

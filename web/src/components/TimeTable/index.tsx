@@ -1,11 +1,10 @@
+import { Link } from '@reach/router';
 import * as React from 'react';
+import naturalCompare from 'natural-compare-lite';
 
-import ErrorMessage from '~/components/ErrorMessage';
-import LineAdvisories from '~/components/LineAdvisories';
-import LineId from '~/components/LineId';
 import { IEntities } from '~/lib/entities';
 import { IFuture } from '~/lib/future';
-import { ILine, ILineAdvisory } from '~/state/line';
+import { ILineAdvisory } from '~/state/line';
 import {
   IStation,
   IStationPlatform,
@@ -13,14 +12,18 @@ import {
   IStationPlatformDirectionTime,
 } from '~/state/station';
 
-import Skeleton from './Skeleton';
+import { ButtonLink } from '../ButtonLink';
+import LineAdvisories from '../LineAdvisories';
+import { LinedBlock } from '../LinedBlock';
+import { LoadingBlock } from '../LoadingBlock';
+
 import styles from './styles.css';
+import sortByObjectKey from '~/lib/sortByObjectKey';
 
 interface IProps {
   advisoriesByLineId: IEntities<IFuture<ILineAdvisory[] | null>>;
-  linesFuture: IFuture<IEntities<ILine>>;
   platformsByStationId: IEntities<IFuture<IStationPlatform[]> | null>;
-  reloadData: () => void;
+  reloadData: (stationIds: string[], lineIds: string[]) => void;
   station: IStation;
 }
 
@@ -50,6 +53,95 @@ class TimeTable extends React.Component<IProps, IState> {
   }
 
   public render() {
+    const { platformsByStationId, station } = this.props;
+
+    const platformFuture = platformsByStationId[station.id];
+    if (!platformFuture) {
+      return null;
+    }
+    const [platforms, { error }] = platformFuture;
+
+    return (
+      <div className={styles.TimeTable}>
+        {error
+          ? station.lineIds.map(this.renderErrorLine)
+          : platforms && platforms.length
+          ? platforms.sort(sortByObjectKey('lineId')).map(this.renderPlatform)
+          : station.lineIds.sort(naturalCompare).map(this.renderLoadingLine)}
+      </div>
+    );
+  }
+
+  public renderErrorLine = (lineId: string) => {
+    const { advisoriesByLineId, reloadData, station } = this.props;
+
+    return (
+      <LinedBlock
+        key={lineId}
+        lineId={lineId}
+        title={
+          <Link to={`/station/${station.id}?lineId=${lineId}`}>
+            {station.name}
+          </Link>
+        }
+        subtitle={
+          <>
+            <LineAdvisories advisoriesFuture={advisoriesByLineId[lineId]} />
+            <ButtonLink
+              onClick={() => reloadData([station.id], station.lineIds)}
+            >
+              reload
+            </ButtonLink>
+          </>
+        }
+      >
+        <div className={styles.directionsError}>No train information</div>
+      </LinedBlock>
+    );
+  };
+
+  public renderLoadingLine = (lineId: string) => {
+    const { advisoriesByLineId, station } = this.props;
+
+    return (
+      <LinedBlock
+        lineId={lineId}
+        title={
+          <Link to={`/station/${station.id}?lineId=${lineId}`}>
+            {station.name}
+          </Link>
+        }
+        subtitle={
+          <>
+            <LineAdvisories advisoriesFuture={advisoriesByLineId[lineId]} />
+            loading
+          </>
+        }
+        key={lineId}
+      >
+        <div className={styles.directions}>
+          <div className={styles.direction}>
+            <div className={styles.directionName}>
+              <LoadingBlock width={100} />
+            </div>
+            <div className={styles.times}>
+              <LoadingBlock width={210} />
+            </div>
+          </div>
+          <div className={styles.direction}>
+            <div className={styles.directionName}>
+              <LoadingBlock width={80} />
+            </div>
+            <div className={styles.times}>
+              <LoadingBlock width={230} />
+            </div>
+          </div>
+        </div>
+      </LinedBlock>
+    );
+  };
+
+  public renderPlatform = ({ lineId, directions }: IStationPlatform) => {
     const { lastUpdateString } = this.state;
     const {
       advisoriesByLineId,
@@ -62,81 +154,48 @@ class TimeTable extends React.Component<IProps, IState> {
     if (!platformFuture) {
       return null;
     }
-    const [platforms, { error, loading }] = platformFuture;
 
-    if (error) {
-      console.error(error);
-    }
-
-    return (
-      <div className={styles.TimeTable}>
-        <div className={styles.stationNameGroup}>
-          <div className={styles.stationName}>{station.name}</div>
-        </div>
-        {error ? (
-          <ErrorMessage retryOnClick={reloadData}>
-            There was a problem loading train times.
-          </ErrorMessage>
-        ) : loading || !platforms || !platforms.length ? (
-          <Skeleton />
-        ) : (
-          platforms.map(this.renderPlatform)
-        )}
-        <div className={styles.footer}>
-          <div className={styles.advisories}>
-            <LineAdvisories
-              advisoriesByLineId={advisoriesByLineId}
-              filterByLineIds={station.lineIds}
-            />
-          </div>
-          <div className={styles.lastUpdate}>
-            {lastUpdateString}
-            {lastUpdateString && (
-              <>
-                <span className={styles.footerSeparator}>|</span>
-                <button
-                  className={styles.updateDataButton}
-                  onClick={reloadData}
-                  type="button"
-                >
-                  reload
-                </button>
-              </>
-            )}
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  public renderPlatform = ({ lineId, directions }: IStationPlatform) => {
-    let lineColor: string | null = null;
-
-    const { linesFuture } = this.props;
-    const [linesById] = linesFuture;
-    if (linesById && linesById[lineId]) {
-      lineColor = linesById[lineId].color;
-    }
+    const [, { loading }] = platformFuture;
 
     const hasDirections = directions && directions.length;
     return (
-      <div
+      <LinedBlock
+        lineId={lineId}
+        title={
+          <Link to={`/station/${station.id}?lineId=${lineId}`}>
+            {station.name}
+          </Link>
+        }
+        subtitle={
+          loading ? (
+            'loading'
+          ) : (
+            <>
+              <LineAdvisories advisoriesFuture={advisoriesByLineId[lineId]} />
+              {lastUpdateString}
+              {lastUpdateString && (
+                <>
+                  {', '}
+                  <ButtonLink
+                    onClick={() => reloadData([station.id], station.lineIds)}
+                  >
+                    reload
+                  </ButtonLink>
+                </>
+              )}
+            </>
+          )
+        }
         key={lineId}
-        className={`${styles.line} ${
-          !hasDirections ? styles.lineDisabled : ''
-        }`}
       >
-        <LineId id={lineId} color={lineColor} className={styles.lineId} />
         <div className={styles.directions}>
           {hasDirections ? (
-            (directions as IStationPlatformDirection[]).map(
-              this.renderDirection,
-            )
+            directions.map(this.renderDirection)
           ) : (
             <div className={styles.directionEmpty}>No train information.</div>
           )}
         </div>
-      </div>
+      </LinedBlock>
     );
   };
 
@@ -146,36 +205,21 @@ class TimeTable extends React.Component<IProps, IState> {
   }: IStationPlatformDirection) => (
     <div key={directionName} className={styles.direction}>
       <div className={styles.directionName}>{directionName}</div>
-      <div className={styles.trains}>
-        {times.filter((_, index) => index < 3).map(this.renderTime)}
+      <div className={styles.times}>
+        {times
+          .filter((_, index) => index < 3)
+          .map(this.renderTime)
+          .join(', ')}
       </div>
     </div>
   );
 
-  public renderTime = (
-    { lastStationName, minutes }: IStationPlatformDirectionTime,
-    index: number,
-    filteredTrains: IStationPlatformDirectionTime[],
-  ) => (
-    <div
-      key={`${index} ${lastStationName} ${minutes}`}
-      className={styles.train}
-      style={{ width: `${100 / filteredTrains.length}%` }}
-    >
-      <div
-        className={`${styles.minutes} ${
-          index === 0 && typeof minutes === 'number' ? styles.minutesFirst : ''
-        }`}
-      >
-        {minutes === 0
-          ? 'Now'
-          : typeof minutes === 'number'
-          ? `${minutes} min`
-          : minutes}
-      </div>
-      <div className={styles.lastStationName}>{lastStationName}</div>
-    </div>
-  );
+  public renderTime = ({ minutes }: IStationPlatformDirectionTime) =>
+    minutes === 0
+      ? 'Now'
+      : typeof minutes === 'number'
+      ? `${minutes} min`
+      : minutes;
 
   public updateLastUpdateString = () => {
     clearTimeout(this.timer);
@@ -197,10 +241,10 @@ class TimeTable extends React.Component<IProps, IState> {
 
     const { lastUpdate } = platforms[0];
 
-    let lastUpdateString = 'now';
+    let lastUpdateString = 'seconds ago';
     let delta = Math.floor((Date.now() - lastUpdate.getTime()) / 1000);
 
-    if (delta > 1) {
+    if (delta > 10) {
       lastUpdateString = `${delta} seconds ago`;
     }
 

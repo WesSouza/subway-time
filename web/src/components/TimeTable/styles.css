@@ -1,134 +1,32 @@
 .TimeTable {
-  background-color: var(--color-white);
-}
-
-.stationNameGroup {
   display: flex;
-  padding: var(--spacing-small);
-  align-items: center;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-.stationName {
   flex-grow: 1;
-}
-
-.line {
-  display: flex;
-  margin: 0 var(--spacing-small);
-  align-items: center;
-}
-
-.line:not(:first-child) {
-  border-top: 1px solid var(--color-gray-lightest);
-}
-
-.lineDisabled .lineId,
-.lineDisabled .directions {
-  opacity: 0.5;
-}
-
-.lineId {
-  --width-height: 50px;
-  font-size: 35px;
-  margin: calc(var(--spacing-medium) + 5px) var(--spacing-small)
-    var(--spacing-small) 0;
-}
-
-.lineDisabled .lineId {
-  --width-height: 25px;
-  font-size: 1rem;
-  margin: var(--spacing-medium) calc(var(--spacing-small) + 12.5px);
+  flex-direction: column;
+  justify-content: stretch;
 }
 
 .directions {
-  flex-grow: 1;
-  width: calc(100% - 50px - 3 * var(--spacing-small));
-  margin: var(--spacing-medium) 0;
 }
 
-.direction:not(:first-child) {
-  margin-top: var(--spacing-medium);
+.directionsError {
+  color: var(--color-gray-dark);
+}
+
+.direction {
+}
+
+.direction:not(:last-child) {
+  margin-bottom: var(--spacing-medium);
 }
 
 .directionName {
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  font-weight: bold;
-}
-
-.trains {
-  display: flex;
-  align-items: flex-end;
-}
-
-.train {
-  width: 33.3334%;
-}
-
-.train:not(:first-child) {
-  padding-left: calc(var(--spacing-small) / 2);
-}
-
-.train:not(:last-child) {
-  padding-right: calc(var(--spacing-small) / 2);
-}
-
-.minutes {
-  font-size: 1.4rem;
-  min-width: 70px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.minutesFirst {
-  font-size: 1.8rem;
-}
-
-.minutesMin {
-}
-
-.lastStationName {
-  color: var(--color-gray-dark);
+  font-weight: normal;
   font-size: 0.9rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  margin-bottom: 3px;
+  text-transform: uppercase;
 }
 
-.footer {
-  border-bottom: 3px solid var(--color-gray-lightest);
-  display: flex;
-  margin: 0 var(--spacing-small);
-  padding-bottom: var(--spacing-small);
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footerSeparator {
-  color: var(--color-gray-dark);
-  padding: 0 var(--spacing-xsmall);
-}
-
-.updateData {
-}
-
-.updateDataButton {
-  appearance: none;
-  background-color: transparent;
-  border: 0;
-  padding: 0;
-  font-size: inherit;
-  color: var(--color-blue);
-  text-decoration: underline;
-}
-
-.advisories {
-}
-
-.lastUpdate {
-  font-size: 0.8rem;
-  text-align: right;
+.times {
+  font-weight: 300;
+  font-size: 1.4rem;
 }

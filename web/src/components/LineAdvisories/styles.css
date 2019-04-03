@@ -1,13 +1,2 @@
 .LineAdvisories {
-  font-size: 0.8rem;
-}
-
-.openButton {
-  appearance: none;
-  border: 0;
-  padding: 0;
-  color: var(--color-red);
-  background-color: transparent;
-  text-decoration: underline;
-  font-size: inherit;
 }
