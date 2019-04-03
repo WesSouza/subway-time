@@ -1,0 +1,14 @@
+.LineIcon {
+  align-self: center;
+  color: var(--color-white);
+  background-color: var(--color-gray);
+  border-radius: var(--lineDimensions, 25px);
+  display: block;
+  flex-shrink: 0;
+  font-weight: bold;
+  height: var(--lineDimensions, 25px);
+  line-height: var(--lineDimensions, 25px);
+  mix-blend-mode: multiply;
+  text-align: center;
+  width: var(--lineDimensions, 25px);
+}

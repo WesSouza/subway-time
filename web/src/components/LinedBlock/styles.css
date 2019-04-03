@@ -1,0 +1,64 @@
+.LinedBlock {
+  display: flex;
+}
+
+.line {
+  --lineDimensions: 36px;
+  --lineSize: 1.4rem;
+  --lineWidth: 18px;
+  --lineOffset: calc(calc(var(--lineWidth) - var(--lineDimensions)) / 2);
+  flex-shrink: 0;
+  font-size: var(--lineSize);
+  font-weight: bold;
+  margin: 0 calc(calc(var(--lineOffset) * -1) + var(--spacing-small)) 0
+    var(--spacing-medium);
+  padding: var(--spacing-medium) 0;
+  text-align: center;
+  width: var(--lineWidth);
+}
+
+.icon {
+  --border: 8px;
+  --lineDimensionsWithBorder: calc(var(--lineDimensions) + var(--border));
+  align-self: flex-start;
+  color: var(--color-white);
+  background-color: var(--color-white);
+  border-radius: var(--lineDimensionsWithBorder);
+  display: flex;
+  flex-shrink: 0;
+  font-weight: bold;
+  height: var(--lineDimensionsWithBorder);
+  line-height: var(--lineDimensionsWithBorder);
+  margin-left: calc(var(--lineOffset) - calc(var(--border) / 2));
+  padding: calc(var(--border) / 2);
+  width: var(--lineDimensionsWithBorder);
+}
+
+.content {
+  flex-grow: 1;
+  margin: var(--spacing-medium) var(--spacing-small) var(--spacing-medium) 0;
+}
+
+.content.alignLineIdTitle {
+  padding-top: 1px;
+}
+
+.title {
+  margin: 0 0 4px 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.subtitle {
+  color: var(--color-gray-dark);
+  font-size: 0.8rem;
+}
+
+.title ~ .children,
+.subtitle ~ .children {
+  margin-top: var(--spacing-medium);
+}
+
+.children {
+  flex-grow: 1;
+}
