@@ -1,39 +1,75 @@
 :root {
-  --color-black: #000;
-  --color-gray-darker: #494d4e;
-  --color-gray-dark: #818a8c;
-  --color-gray: #bec9cc;
-  --color-gray-lightest: #e5e5e5;
+  --color-black: #323330;
+  --color-gray-darker: #5a5d57;
+  --color-gray-dark: #868883;
+  --color-gray: #adafa8;
+  --color-gray-light: #dbddd5;
+  --color-gray-lightest: #eff1e8;
   --color-white: #fff;
+  --color-brightWhite: #f4f5f0;
   --color-red: #e21a1a;
   --color-blue: rgb(1, 95, 150);
+  --color-line-default: var(--color-gray-light);
+
+  --color-line-red: #e2583e;
+  --color-line-green: #4ca752;
+  --color-line-purple: #4527a0;
+  --color-line-blue: #0277bd;
+  --color-line-lightGreen: #9ccc65;
+  --color-line-orange: #ef6c00;
+  --color-line-brown: #795548;
+  --color-line-gray: #546e7a;
+  --color-line-yellow: #f4c522;
 
   --spacing-xsmall: 8px;
   --spacing-small: 15px;
   --spacing-medium: 30px;
   --spacing-large: 60px;
+
+  --width-app: 600px;
+  --width-line: 18px;
 }
 
-html,
+html {
+  background-image: linear-gradient(
+    to right,
+    var(--color-white) var(--spacing-medium),
+    var(--color-gray-light) calc(var(--spacing-medium) + 1px),
+    var(--color-gray-light) calc(var(--spacing-medium) + var(--width-line)),
+    var(--color-white)
+      calc(calc(var(--spacing-medium) + var(--width-line)) + 1px)
+  );
+  background-repeat: repeat-y;
+  background-size: var(--width-app) 20px;
+  background-position: center;
+  color: var(--color-black);
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+@media (max-width: 600px) {
+  html {
+    background-position: left;
+  }
+}
+
+a,
 input,
 textarea,
 select,
 button {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
 }
 
-html,
 a {
-  color: var(--color-black);
-  text-decoration: none;
-}
-
-body {
+  text-decoration-color: var(--color-gray);
+  text-underline-offset: 2px;
 }
 
 :global #root {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: var(--width-app);
 }
 
 button {
