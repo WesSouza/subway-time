@@ -6,6 +6,7 @@ import { LinedBlock } from './components/LinedBlock';
 import { flatFutures } from './lib/future';
 import { lineActions, lineState } from './state/line';
 import { stationActions, stationState } from './state/station';
+import { Header } from './screens/Header';
 import Router from './screens/Router';
 
 import styles from './App.styles.css';
@@ -40,9 +41,9 @@ const App = () => {
 
   return (
     <div className={styles.App}>
-      {/* <Header /> */}
+      <Header />
       {error ? (
-        <LinedBlock flexGrow={true}>
+        <LinedBlock>
           <ErrorMessage retryOnClick={reloadPage}>
             There was a problem loading the app.
           </ErrorMessage>
