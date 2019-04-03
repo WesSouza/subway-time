@@ -1,11 +1,13 @@
 import React, { ReactNode } from 'react';
 
+import { ButtonLink } from '../ButtonLink';
+
+import styles from './styles.css';
+
 interface IProps {
   children: ReactNode;
   retryOnClick?: () => void;
 }
-
-import styles from './styles.css';
 
 const ErrorMessage = ({ children, retryOnClick }: IProps) => {
   return (
@@ -16,13 +18,7 @@ const ErrorMessage = ({ children, retryOnClick }: IProps) => {
           <>
             <br />
             <br />
-            <button
-              className={styles.errorRetry}
-              onClick={retryOnClick}
-              type="button"
-            >
-              Try again
-            </button>
+            <ButtonLink onClick={retryOnClick}>Try again</ButtonLink>
           </>
         )}
       </div>
