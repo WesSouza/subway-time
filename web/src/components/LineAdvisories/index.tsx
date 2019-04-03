@@ -1,86 +1,50 @@
 import * as React from 'react';
 
-import { IEntities } from '~/lib/entities';
-import { emptyFuture, IFuture, IFutureLoading } from '~/lib/future';
+import { IFuture } from '~/lib/future';
 import { ILineAdvisory } from '~/state/line';
+
+import { ButtonLink } from '../ButtonLink';
 
 import styles from './styles.css';
 
 interface IProps {
-  advisoriesByLineId: IEntities<IFuture<ILineAdvisory[] | null> | null>;
-  filterByLineIds: string[];
+  advisoriesFuture: IFuture<ILineAdvisory[] | null> | null;
 }
 
 class LineAdvisory extends React.Component<IProps> {
   public render() {
-    const [advisories, { error }] = this.getAdvisories();
-
-    if (error) {
-      console.error(error);
-      return <div className={styles.LineAdvisories}>Unknown advisories</div>;
+    const { advisoriesFuture } = this.props;
+    if (!advisoriesFuture) {
+      return null;
     }
 
-    if (!advisories) {
+    const [advisories, { error }] = advisoriesFuture;
+
+    if (error || !advisories || !advisories.length) {
       return null;
     }
 
     return (
-      <div className={styles.LineAdvisories}>
+      <span className={styles.LineAdvisories}>
         {advisories.length ? (
-          <button
-            type="button"
-            className={styles.openButton}
-            onClick={this.openAdvisoriesDetail}
-          >
-            {advisories.length} advisor{advisories.length > 1 ? `ies` : 'y'}
-          </button>
+          <>
+            <ButtonLink onClick={this.openAdvisoriesDetail}>
+              {advisories.length} advisor{advisories.length > 1 ? `ies` : 'y'}
+            </ButtonLink>
+            {', '}
+          </>
         ) : null}
-      </div>
+      </span>
     );
   }
 
-  public getAdvisories = (): IFuture<ILineAdvisory[]> => {
-    const { advisoriesByLineId, filterByLineIds } = this.props;
-    if (!advisoriesByLineId) {
-      return emptyFuture();
-    }
-
-    let mergedAdvisories: ILineAdvisory[] = [];
-    let error: Error | null = null;
-    let loading: IFutureLoading | null = null;
-
-    if (filterByLineIds.length) {
-      filterByLineIds.forEach(lineId => {
-        const advisoriesFuture = advisoriesByLineId[lineId];
-        if (!advisoriesFuture) {
-          return;
-        }
-        const [
-          advisories,
-          { error: advisoriesError, loading: advisoriesLoading },
-        ] = advisoriesFuture;
-
-        if (advisories && advisories.length) {
-          mergedAdvisories = mergedAdvisories.concat(advisories);
-        }
-
-        if (advisoriesError) {
-          error = advisoriesError;
-        }
-
-        if (advisoriesLoading) {
-          loading = advisoriesLoading;
-        }
-      });
-    } else {
-      return emptyFuture();
-    }
-
-    return [mergedAdvisories, { error, loading }];
-  };
-
   public openAdvisoriesDetail = () => {
-    const [advisories] = this.getAdvisories();
+    const { advisoriesFuture } = this.props;
+    if (!advisoriesFuture) {
+      return;
+    }
+
+    const [advisories] = advisoriesFuture;
     if (!advisories) {
       return;
     }
@@ -96,7 +60,11 @@ class LineAdvisory extends React.Component<IProps> {
       win.document.write(
         `<base href="http://subwaytime.mta.info/">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <style>body {font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;}</style>
+        <style>
+          body { font-family: 'Helvetica Neue', Helvetica, sans-serif; line-height:1.6; }
+          img { vertical-align: baseline; }
+          .plannedWorkDetail { padding-left: 2em; }
+        </style>
         <script>function ShowHide (id) {document.getElementById(id).style.display=''} </script>
         ${joinedHtml}`,
       );

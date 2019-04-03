@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 
 import { lineActions, lineState } from '~/state/line';
 import { stationState, stationActions } from '~/state/station';
 
-import TimeTable from '~/components/TimeTable';
 import ErrorMessage from '~/components/ErrorMessage';
+import TimeTable from '~/components/TimeTable';
 import { Link } from '@reach/router';
 
 interface IProps {
@@ -24,19 +24,16 @@ const Station = ({ stationId }: IProps) => {
     ({ advisoriesByLineId }) => advisoriesByLineId,
   );
 
-  const linesFuture = lineState.useFutureObserver(({ linesById }) => linesById);
-
   const platformsByStationId = stationState.useObserver(
     ({ platformsByStationId }) => platformsByStationId,
   );
 
-  const stationsFuture = stationState.useFutureObserver(
+  const [stationsById] = stationState.useFutureObserver(
     ({ stationsById }) => stationsById,
   );
 
   // # Data
 
-  const [stationsById] = stationsFuture;
   const station = stationsById ? stationsById[stationId] : null;
   const lineIds = station ? station.lineIds : [];
 
@@ -48,7 +45,7 @@ const Station = ({ stationId }: IProps) => {
 
   useEffect(() => {
     fetchAdvisories(lineIds);
-  }, [lineIds.join()]);
+  }, [lineIds]);
 
   const fetchAdvisories = (lineIds: string[]) => {
     lineIds.forEach(lineId => {
@@ -62,10 +59,10 @@ const Station = ({ stationId }: IProps) => {
     stationActions.fetchStationPlatformsByStationId(stationId);
   };
 
-  const reloadAll = () => {
+  const reloadAll = useCallback(() => {
     fetchStationPlatforms();
     fetchAdvisories(lineIds);
-  };
+  }, [lineIds]);
 
   // # Render
 
@@ -87,7 +84,6 @@ const Station = ({ stationId }: IProps) => {
       </Helmet>
       <TimeTable
         advisoriesByLineId={advisoriesByLineId}
-        linesFuture={linesFuture}
         platformsByStationId={platformsByStationId}
         reloadData={reloadAll}
         station={station}

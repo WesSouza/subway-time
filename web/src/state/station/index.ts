@@ -73,7 +73,7 @@ const fetchStationPlatformsByStationId = async (stationId: string) => {
   await stationState.set(({ platformsByStationId }) => ({
     platformsByStationId: {
       ...platformsByStationId,
-      [stationId]: loadingFuture(),
+      [stationId]: loadingFuture(platformsByStationId[stationId]),
     },
   }));
 
