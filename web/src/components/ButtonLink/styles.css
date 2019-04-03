@@ -1,0 +1,8 @@
+.ButtonLink {
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-color: var(--color-gray);
+}
