@@ -1,15 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import 'sanitize.css/sanitize.css';
 
-import { flatFutures } from '~/lib/future';
-import { lineActions, lineState } from '~/state/line';
-import { stationActions, stationState } from '~/state/station';
-import Router from '~/screens/Router';
-import Search from '~/screens/Search';
+import ErrorMessage from './components/ErrorMessage';
+import { LinedBlock } from './components/LinedBlock';
+import { flatFutures } from './lib/future';
+import { lineActions, lineState } from './state/line';
+import { stationActions, stationState } from './state/station';
+import Router from './screens/Router';
 
 import styles from './App.styles.css';
-import LineId from './components/LineId';
-import ErrorMessage from './components/ErrorMessage';
 
 const App = () => {
   // # Data dependencies
@@ -33,33 +32,24 @@ const App = () => {
 
   // # Actions
 
-  const reloadPage = () => {
+  const reloadPage = useCallback(() => {
     location.reload();
-  };
+  }, []);
 
   // # Render
 
-  if (error) {
-    console.error(error);
-    return (
-      <ErrorMessage retryOnClick={reloadPage}>
-        There was a problem loading the app.
-      </ErrorMessage>
-    );
-  }
-
-  if (loading) {
-    return (
-      <div className={`${styles.App} ${styles.loading}`}>
-        <LineId id={'S'} className={styles.splashLineId} color={null} />
-      </div>
-    );
-  }
-
   return (
     <div className={styles.App}>
-      <Search />
-      <Router />
+      {/* <Header /> */}
+      {error ? (
+        <LinedBlock flexGrow={true}>
+          <ErrorMessage retryOnClick={reloadPage}>
+            There was a problem loading the app.
+          </ErrorMessage>
+        </LinedBlock>
+      ) : !loading ? (
+        <Router />
+      ) : null}
     </div>
   );
 };
