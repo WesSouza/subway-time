@@ -35,6 +35,7 @@
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-react": "^7.0.0",
+    "@svgr/parcel-plugin-svgr": "^4.1.0",
     "@types/reach__router": "^1.2.3",
     "@types/react": "^16.8.10",
     "@types/react-dom": "^16.8.3",
