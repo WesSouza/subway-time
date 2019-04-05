@@ -3,6 +3,7 @@
   "name": "subway-time",
   "alias": ["subwayti.me"],
   "scope": "wessouza",
+  "regions": ["iad"],
   "builds": [
     {
       "src": "web/package.json",
