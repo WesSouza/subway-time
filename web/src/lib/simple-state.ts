@@ -50,9 +50,10 @@ export const createState = <T>(initialState: T): IState<T> => {
     stateOrFunction: IStatePartial<T> | ((currentState: T) => IStatePartial<T>),
   ): Promise<void> => {
     if (isCallingObservers) {
-      throw new Error(
+      console.warn(
         'Calling set while observers are being called is not allowed.',
       );
+      return;
     }
 
     let state: IStatePartial<T>;
@@ -104,8 +105,8 @@ export const createState = <T>(initialState: T): IState<T> => {
 
   const callObservers = () => {
     isCallingObservers = true;
-    try {
-      observers.forEach(observer => {
+    observers.forEach(observer => {
+      try {
         if (!observer) {
           return;
         }
@@ -115,12 +116,11 @@ export const createState = <T>(initialState: T): IState<T> => {
           observer.lastSelectorResult = selectorResult;
           callback(selectorResult);
         }
-      });
-    } catch (error) {
-      throw error;
-    } finally {
-      isCallingObservers = false;
-    }
+      } catch (error) {
+        console.error(error);
+      }
+    });
+    isCallingObservers = false;
   };
 
   const useObserver = <U>(
