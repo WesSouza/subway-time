@@ -1,50 +1,70 @@
-const { execFileSync } = require('child_process');
+const { access, F_OK, ...fs } = require('fs');
+const { promisify } = require('util');
 const express = require('express');
 const proxy = require('express-http-proxy');
-const { existsSync, readFileSync } = require('fs');
 const https = require('https');
 const { resolve } = require('path');
+const execFile = promisify(require('child_process').execFile);
+const readFile = promisify(fs.readFile);
 
-// Certificate generation
+const exists = file =>
+  new Promise(resolve => {
+    access(file, F_OK, error => {
+      if (error) resolve(false);
+      resolve(true);
+    });
+  });
 
-const CERT_PATH = resolve('./certs/localhost.pem');
-const KEY_PATH = resolve('./certs/localhost-key.pem');
+(async () => {
+  // Certificate generation
 
-if (!existsSync(CERT_PATH) || !existsSync(KEY_PATH)) {
-  execFileSync('mkcert', [
-    '-cert-file',
-    CERT_PATH,
-    '-key-file',
-    KEY_PATH,
-    'localhost',
-    '127.0.0.1',
-    '::1',
-  ]);
-}
+  const CERT_PATH = resolve('./certs/localhost.pem');
+  const KEY_PATH = resolve('./certs/localhost-key.pem');
 
-if (!existsSync(CERT_PATH) || !existsSync(KEY_PATH)) {
-  throw 'Unable to create certificates using mkcert.\n\nhttps://github.com/FiloSottile/mkcert';
-}
+  const hasCert = await exists(CERT_PATH);
+  const hasKey = await exists(KEY_PATH);
 
-// Express App
+  if (!hasCert || !hasKey) {
+    await execFile('mkcert', [
+      '-cert-file',
+      CERT_PATH,
+      '-key-file',
+      KEY_PATH,
+      'localhost',
+      '127.0.0.1',
+      '::1',
+    ]);
+  }
 
-const app = express();
+  if (!hasCert || !hasKey) {
+    throw new Error(
+      'Unable to create certificates using mkcert.\n\nhttps://github.com/FiloSottile/mkcert',
+    );
+  }
 
-const proxyReqPathResolver = req => req.originalUrl;
+  // Express App
 
-app.use('/api/*', proxy('localhost:3080', { proxyReqPathResolver }));
-app.use('/', proxy('localhost:1234'));
+  const app = express();
 
-// HTTPS server
+  const proxyReqPathResolver = req => req.originalUrl;
 
-const server = https.createServer(
-  {
-    key: readFileSync(KEY_PATH),
-    cert: readFileSync(CERT_PATH),
-  },
-  app,
-);
+  app.use('/api/*', proxy('localhost:3080', { proxyReqPathResolver }));
+  app.use('/', proxy('localhost:1234'));
 
-const PORT = 3000;
-console.log(`Listening on https://localhost:${PORT}`);
-server.listen(PORT);
+  // HTTPS server
+
+  const cert = readFile(CERT_PATH);
+  const key = await readFile(KEY_PATH);
+
+  const server = https.createServer(
+    {
+      cert,
+      key,
+    },
+    app,
+  );
+
+  const PORT = 3000;
+  console.log(`Listening on https://localhost:${PORT}`);
+  server.listen(PORT);
+})();
