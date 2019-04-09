@@ -20,7 +20,7 @@ export const emptyFuture = (): IFuture<any> => [
   },
 ];
 
-export const errorFuture = (error: Error): IFuture<any> => [
+export const errorFuture = <T>(error: Error): IFuture<T> => [
   null,
   {
     error,
@@ -28,8 +28,8 @@ export const errorFuture = (error: Error): IFuture<any> => [
   },
 ];
 
-export const loadingFuture = (): IFuture<any> => [
-  null,
+export const loadingFuture = <T>(currentFuture?: IFuture<T>): IFuture<T> => [
+  currentFuture ? currentFuture[0] : null,
   {
     error: null,
     loading: { isLoading: true },
