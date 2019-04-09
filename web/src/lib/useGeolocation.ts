@@ -63,7 +63,7 @@ export const useGeolocation = (
     return () => {
       navigator.geolocation.clearWatch(watchId);
     };
-  }, []);
+  }, [currentCoordinates]);
 
   return [currentCoordinates, { error, loading }];
 };
