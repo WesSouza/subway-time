@@ -5,7 +5,7 @@ import { useGeolocation, GeolocationErrors } from '~/lib/useGeolocation';
 import { lineState, lineActions } from '~/state/line';
 import { IStation, stationState, stationActions } from '~/state/station';
 
-import TimeTable from '~/components/TimeTable';
+import { TimeTable } from '~/components/TimeTable';
 
 interface IProps {
   path: string;

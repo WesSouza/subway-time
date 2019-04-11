@@ -3,7 +3,7 @@ import React, { useCallback } from 'react';
 import { Helmet } from 'react-helmet';
 
 import ErrorMessage from '~/components/ErrorMessage';
-import TimeTable from '~/components/TimeTable';
+import { TimeTable } from '~/components/TimeTable';
 import { lineActions, lineState } from '~/state/line';
 import { stationState, stationActions, IStation } from '~/state/station';
 

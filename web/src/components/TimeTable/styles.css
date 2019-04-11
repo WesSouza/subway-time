@@ -30,3 +30,7 @@
   font-weight: 300;
   font-size: 1.4rem;
 }
+
+.minute {
+  white-space: nowrap;
+}
