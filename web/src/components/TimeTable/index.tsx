@@ -22,8 +22,8 @@ import sortByObjectKey from '~/lib/sortByObjectKey';
 
 interface IProps {
   advisoriesByLineId: IEntities<IFuture<ILineAdvisory[] | null>>;
+  loadData: (station: IStation) => void;
   platformsByStationId: IEntities<IFuture<IStationPlatform[]> | null>;
-  reloadData: (stationIds: string[], lineIds: string[]) => void;
   station: IStation;
 }
 
@@ -38,13 +38,19 @@ class TimeTable extends React.Component<IProps, IState> {
   };
 
   public componentDidMount() {
+    this.initData();
     this.updateLastUpdateString();
   }
 
   public componentDidUpdate(prevProps: IProps) {
-    const { platformsByStationId } = this.props;
+    const { platformsByStationId, station } = this.props;
+
     if (platformsByStationId !== prevProps.platformsByStationId) {
       this.updateLastUpdateString();
+    }
+
+    if (station !== prevProps.station) {
+      this.initData();
     }
   }
 
@@ -73,7 +79,7 @@ class TimeTable extends React.Component<IProps, IState> {
   }
 
   public renderErrorLine = (lineId: string) => {
-    const { advisoriesByLineId, reloadData, station } = this.props;
+    const { advisoriesByLineId, loadData, station } = this.props;
 
     return (
       <LinedBlock
@@ -87,11 +93,7 @@ class TimeTable extends React.Component<IProps, IState> {
         subtitle={
           <>
             <LineAdvisories advisoriesFuture={advisoriesByLineId[lineId]} />
-            <ButtonLink
-              onClick={() => reloadData([station.id], station.lineIds)}
-            >
-              reload
-            </ButtonLink>
+            <ButtonLink onClick={() => loadData(station)}>reload</ButtonLink>
           </>
         }
       >
@@ -143,12 +145,7 @@ class TimeTable extends React.Component<IProps, IState> {
 
   public renderPlatform = ({ lineId, directions }: IStationPlatform) => {
     const { lastUpdateString } = this.state;
-    const {
-      advisoriesByLineId,
-      platformsByStationId,
-      reloadData,
-      station,
-    } = this.props;
+    const { advisoriesByLineId, platformsByStationId, station } = this.props;
 
     const platformFuture = platformsByStationId[station.id];
     if (!platformFuture) {
@@ -176,11 +173,7 @@ class TimeTable extends React.Component<IProps, IState> {
               {lastUpdateString && (
                 <>
                   {', '}
-                  <ButtonLink
-                    onClick={() => reloadData([station.id], station.lineIds)}
-                  >
-                    reload
-                  </ButtonLink>
+                  <ButtonLink onClick={this.loadData}>reload</ButtonLink>
                 </>
               )}
             </>
@@ -264,6 +257,23 @@ class TimeTable extends React.Component<IProps, IState> {
     this.timer = setTimeout(() => {
       this.updateLastUpdateString();
     }, 5000);
+  };
+
+  public initData = () => {
+    const { platformsByStationId, station } = this.props;
+    const platformFuture = platformsByStationId[station.id];
+
+    // If there is data, don't reload
+    if (platformFuture) {
+      return;
+    }
+
+    this.loadData();
+  };
+
+  public loadData = () => {
+    const { loadData, station } = this.props;
+    loadData(station);
   };
 }
 
