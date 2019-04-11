@@ -1,7 +1,6 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 
-import { sortStationsByProximity } from '~/lib/sortStationsByProximity';
 import { useGeolocation, GeolocationErrors } from '~/lib/useGeolocation';
 import { lineState, lineActions } from '~/state/line';
 import { IStation, stationState, stationActions } from '~/state/station';
@@ -28,6 +27,10 @@ const Home = (_props: IProps) => {
     ({ advisoriesByLineId }) => advisoriesByLineId,
   );
 
+  const [nearbyStationIds] = stationState.useFutureObserver(
+    ({ nearbyStationIds }) => nearbyStationIds,
+  );
+
   const [stationsById] = stationState.useFutureObserver(
     ({ stationsById }) => stationsById,
   );
@@ -36,44 +39,20 @@ const Home = (_props: IProps) => {
     ({ platformsByStationId }) => platformsByStationId,
   );
 
-  // # Data
-  const [sortedStations, setSortedStations] = useState<IStation[]>([]);
-  const [sortedStationIds, setSortedStationIds] = useState<string[]>([]);
-  const [lineIds, setLineIds] = useState<string[]>([]);
-
   // # Effects
 
   useEffect(() => {
-    if (!stationsById || !coordinates) {
-      return;
-    }
-
-    const stations = Object.values(stationsById);
-
-    const localSortedStations = sortStationsByProximity(
-      stations,
-      coordinates.latitude,
-      coordinates.longitude,
-    ).slice(0, 5);
-    setSortedStations(localSortedStations);
-    setSortedStationIds(localSortedStations.map(station => station.id));
-
-    setLineIds([
-      ...new Set(localSortedStations.map(station => station.lineIds).flat()),
+    stationActions.handleCoordinatesUpdate([
+      coordinates,
+      { error: coordinatesError, loading: coordinatesLoading },
     ]);
-  }, [stationsById, coordinates]);
-
-  useEffect(() => {
-    reloadData(sortedStationIds, lineIds);
-  }, [sortedStationIds, lineIds]);
+  }, [coordinates, coordinatesError, coordinatesLoading]);
 
   // # Callbacks
 
-  const reloadData = useCallback((stationIds: string[], lineIds: string[]) => {
-    stationIds.forEach(stationId => {
-      stationActions.fetchStationPlatformsByStationId(stationId);
-    });
-    lineIds.forEach(lineId => {
+  const loadData = useCallback((station: IStation) => {
+    stationActions.fetchStationPlatformsByStationId(station.id);
+    station.lineIds.forEach(lineId => {
       lineActions.fetchLineAdvisories(lineId);
     });
   }, []);
@@ -81,6 +60,35 @@ const Home = (_props: IProps) => {
   const reloadPage = useCallback(() => {
     location.reload();
   }, []);
+
+  // # Renders
+
+  const renderTimeTable = useCallback(
+    (stationId: string) => {
+      if (!stationsById) {
+        return null;
+      }
+
+      const station = stationsById[stationId];
+
+      if (!station) {
+        return null;
+      }
+
+      return (
+        <TimeTable
+          advisoriesByLineId={advisoriesByLineId}
+          key={station.id}
+          loadData={loadData}
+          platformsByStationId={platformsByStationId}
+          station={station}
+        />
+      );
+    },
+    [advisoriesByLineId, platformsByStationId, stationsById],
+  );
+
+  // # Component
 
   if (coordinatesLoading) {
     return (
@@ -127,15 +135,7 @@ const Home = (_props: IProps) => {
         <title>SubwayTi.me</title>
       </Helmet>
       <div className={styles.Home}>
-        {sortedStations.map(station => (
-          <TimeTable
-            advisoriesByLineId={advisoriesByLineId}
-            key={station.id}
-            platformsByStationId={platformsByStationId}
-            reloadData={reloadData}
-            station={station}
-          />
-        ))}
+        {nearbyStationIds && nearbyStationIds.map(renderTimeTable)}
         <LinedBlock>
           <div className={styles.credits}>
             <p className={styles.smaller}>
