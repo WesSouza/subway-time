@@ -9,11 +9,13 @@ import {
   loadingFuture,
   valueFuture,
 } from '~/lib/future';
+import { sortStationsByProximity } from '~/lib/sortStationsByProximity';
 
 // # Interfaces
 
 export interface IStationState {
   currentStationId: string | null;
+  nearbyStationIds: IFuture<string[]>;
   platformsByStationId: IEntities<IFuture<IStationPlatform[]>>;
   stationsById: IFuture<IEntities<IStation>>;
 }
@@ -46,6 +48,7 @@ export interface IStationPlatformDirectionTime {
 
 export const stationState = createState<IStationState>({
   currentStationId: null,
+  nearbyStationIds: emptyFuture(),
   platformsByStationId: {},
   stationsById: emptyFuture(),
 });
@@ -101,9 +104,48 @@ const fetchStationPlatformsByStationId = async (stationId: string) => {
   }
 };
 
+const handleCoordinatesUpdate = async (
+  coordinatesFuture: IFuture<Coordinates>,
+) => {
+  const [coordinates, { error, loading }] = coordinatesFuture;
+  if (!coordinates) {
+    return;
+  }
+
+  if (error || loading) {
+    await stationState.set(({ nearbyStationIds }) => ({
+      nearbyStationIds: [nearbyStationIds[0], { error, loading }],
+    }));
+    return;
+  }
+
+  const { latitude, longitude } = coordinates;
+
+  const { stationsById: stationsByIdFuture } = stationState.get();
+  const [stationsById] = stationsByIdFuture;
+  if (!stationsById) {
+    return;
+  }
+
+  const stations = Object.values(stationsById);
+
+  const localSortedStations = sortStationsByProximity(
+    stations,
+    latitude,
+    longitude,
+  ).slice(0, 5);
+
+  await stationState.set({
+    nearbyStationIds: valueFuture(
+      localSortedStations.map(station => station.id),
+    ),
+  });
+};
+
 // # Exports
 
 export const stationActions = {
   fetchStations,
   fetchStationPlatformsByStationId,
+  handleCoordinatesUpdate,
 };
