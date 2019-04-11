@@ -51,9 +51,8 @@ export const createState = <T>(initialState: T): IState<T> => {
   ): Promise<void> => {
     if (isCallingObservers) {
       console.warn(
-        'Calling set while observers are being called is not allowed.',
+        'Calling set while observers are being called should be avoided.',
       );
-      return;
     }
 
     let state: IStatePartial<T>;
