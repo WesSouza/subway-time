@@ -3180,10 +3180,10 @@ generic-names@^1.0.3:
   dependencies:
     loader-utils "^0.2.16"
 
-geolib@^2.0.24:
-  version "2.0.24"
-  resolved "https://registry.yarnpkg.com/geolib/-/geolib-2.0.24.tgz#eb3d7fbc65f5ea3354a5af6054563ebe9f33e5f4"
-  integrity sha512-NR0AyYyEnGrFS9JvSFmmotQDxVCORJgDHdvBwSatxl5aHarOLMh3KuGI83bCvCfObjfoEiDe8Ung8GGLGAtthw==
+geolib@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/geolib/-/geolib-3.0.2.tgz#9811d6e2e0e37408e2b9d66836040e7df18e30b7"
+  integrity sha512-xa/mv8RMXOzZcOOjGSdZouFBX8lt8bTCQyvMndtEqO1onSaJgfuIL6U4bJNW5nmo9NFFBffKRbw7hvN4hxBa4w==
 
 get-caller-file@^1.0.1:
   version "1.0.3"
