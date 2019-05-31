@@ -4221,14 +4221,6 @@ js-yaml@^3.10.0, js-yaml@^3.12.0, js-yaml@^3.13.0, js-yaml@^3.13.1:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
-js-yaml@^3.13.1:
-  version "3.13.1"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.1.tgz#aff151b30bfdfa8e49e05da22e7415e9dfa37847"
-  integrity sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==
-  dependencies:
-    argparse "^1.0.7"
-    esprima "^4.0.0"
-
 jsbn@~0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
@@ -6309,10 +6301,10 @@ safer-eval@^1.3.0:
   dependencies:
     clones "^1.2.0"
 
-sanitize.css@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/sanitize.css/-/sanitize.css-8.0.0.tgz#b025845b772a2c0c996e62e3b2d1bbf10ca78e37"
-  integrity sha512-Ru+piIyTyioaaOj/pbJEo57lMXV70FV07AslpZ8K2Me8B2021v2Nx0Wq5hf29/fNwdjsXLdTbf4Ypmk24PnPtQ==
+sanitize.css@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/sanitize.css/-/sanitize.css-9.0.0.tgz#265046e3e680b499ae8b349811875688d0fce84a"
+  integrity sha512-1Ux0Tn6eoLJMzCqb1gVgWaZWurTb5PbsxZIegJ7WVggGeTKx7jaHZ6U8GJenwuJRsH1eqBmwtqcaOKXhatILtg==
 
 sax@^1.2.4, sax@~1.2.4:
   version "1.2.4"
