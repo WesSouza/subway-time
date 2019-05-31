@@ -1,4 +1,4 @@
-import { orderByDistance } from 'geolib';
+import { getDistance } from 'geolib';
 
 import { IStation } from '~/state/station';
 
@@ -7,9 +7,17 @@ export const sortStationsByProximity = (
   latitude: number,
   longitude: number,
 ): IStation[] =>
-  orderByDistance({ latitude, longitude }, stations).map(
-    ({ distance, key }) => ({
-      ...stations[Number(key)],
-      distance,
-    }),
-  );
+  stations
+    .slice()
+    .sort(
+      (a, b) =>
+        getDistance({ latitude, longitude }, a) -
+        getDistance({ latitude, longitude }, b),
+    )
+    .map(station => ({
+      ...station,
+      distance: getDistance(
+        { latitude, longitude },
+        { latitude: station.latitude, longitude: station.longitude },
+      ),
+    }));
