@@ -33,7 +33,7 @@
     "sanitize.css": "^10.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
+    "@babel/core": "^7.5.4",
     "@babel/preset-react": "^7.0.0",
     "@svgr/parcel-plugin-svgr": "^4.3.0",
     "@types/reach__router": "^1.2.4",
