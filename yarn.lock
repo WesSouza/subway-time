@@ -1321,10 +1321,10 @@
     "@types/express-serve-static-core" "*"
     "@types/serve-static" "*"
 
-"@types/got@^9.6.3":
-  version "9.6.3"
-  resolved "https://registry.yarnpkg.com/@types/got/-/got-9.6.3.tgz#476cc3d3b9fe8156fedbcc25041e87a556cd96f2"
-  integrity sha512-U6cPjwkJigmTNEsAbbmpsU4+Rb59wTkZ7+7xchi2e6uzimQKD5H0iXJTnqxIEtcF9UNV2fzfGJzbdhvpg0QzAg==
+"@types/got@^9.6.5":
+  version "9.6.5"
+  resolved "https://registry.yarnpkg.com/@types/got/-/got-9.6.5.tgz#b951331420dec5161c10a1a91e6390990398b302"
+  integrity sha512-2A8Yxbi092KD6JM/WMA8tzcS79U94EXLP4wg9ry0brgZF7fQRIe69vwnA9cW6wsmkAx15a8SJ9bOxRyyeDtbmQ==
   dependencies:
     "@types/node" "*"
     "@types/tough-cookie" "*"
