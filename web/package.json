@@ -27,7 +27,7 @@
     "color-contrast": "0.0.1",
     "geolib": "^3.0.4",
     "natural-compare-lite": "^1.4.0",
-    "react": "^16.8.6",
+    "react": "^16.9.0",
     "react-dom": "^16.8.6",
     "react-helmet": "^6.0.0-beta",
     "sanitize.css": "^11.0.0"
