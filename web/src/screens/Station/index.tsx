@@ -1,22 +1,17 @@
-import { Link } from '@reach/router';
+import { Link, RouteComponentProps } from '@reach/router';
 import React, { useCallback } from 'react';
 import { Helmet } from 'react-helmet';
 
 import ErrorMessage from '~/components/ErrorMessage';
 import { TimeTable } from '~/components/TimeTable';
 import { lineActions, lineState } from '~/state/line';
-import { stationState, stationActions, IStation } from '~/state/station';
+import { stationState, stationActions, Station } from '~/state/station';
 
-interface IProps {
-  path?: string;
+interface Props extends RouteComponentProps {
   stationId?: string;
 }
 
-const Station = ({ stationId }: IProps) => {
-  if (!stationId) {
-    return null;
-  }
-
+const Station = ({ stationId }: Props) => {
   // # Data dependencies
 
   const advisoriesByLineId = lineState.useObserver(
@@ -33,16 +28,20 @@ const Station = ({ stationId }: IProps) => {
 
   // # Data
 
-  const station = stationsById ? stationsById[stationId] : null;
+  const station = stationId && stationsById ? stationsById[stationId] : null;
 
   // # Actions
 
-  const loadData = useCallback((station: IStation) => {
+  const loadData = useCallback((station: Station) => {
     stationActions.fetchStationPlatformsByStationId(station.id);
     station.lineIds.forEach(lineId => {
       lineActions.fetchLineAdvisories(lineId);
     });
   }, []);
+
+  if (!stationId) {
+    return null;
+  }
 
   // # Render
 

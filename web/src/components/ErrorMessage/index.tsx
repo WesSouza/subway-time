@@ -4,12 +4,12 @@ import { ButtonLink } from '../ButtonLink';
 
 import styles from './styles.css';
 
-interface IProps {
+interface Props {
   children: ReactNode;
   retryOnClick?: () => void;
 }
 
-const ErrorMessage = ({ children, retryOnClick }: IProps) => {
+const ErrorMessage = ({ children, retryOnClick }: Props) => {
   return (
     <div className={styles.ErrorMessage}>
       <div className={styles.message}>

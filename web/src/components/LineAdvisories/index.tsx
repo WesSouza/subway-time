@@ -1,17 +1,17 @@
 import * as React from 'react';
 
 import { IFuture } from '~/lib/future';
-import { ILineAdvisory } from '~/state/line';
+import { LineAdvisory as LineAdvisoryType } from '~/state/line';
 
 import { ButtonLink } from '../ButtonLink';
 
 import styles from './styles.css';
 
-interface IProps {
-  advisoriesFuture: IFuture<ILineAdvisory[] | null> | null;
+interface Props {
+  advisoriesFuture: IFuture<LineAdvisoryType[] | null> | null;
 }
 
-class LineAdvisory extends React.Component<IProps> {
+class LineAdvisory extends React.Component<Props> {
   public render() {
     const { advisoriesFuture } = this.props;
     if (!advisoriesFuture) {

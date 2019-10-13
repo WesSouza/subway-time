@@ -1,23 +1,23 @@
 import { get, Endpoints } from '~/lib/api';
 
-import { ILine, ILineAdvisory } from './index';
+import { Line, LineAdvisory } from './index';
 
-export interface IApiSubwayAdvisory {
+export interface ApiSubwayAdvisory {
   SituationNumber: string;
   ReasonName: string;
   Summary: string;
   LongDescription: string;
 }
 
-export interface IApiSubwayLine {
+export interface ApiSubwayLine {
   id: string;
   color: string;
 }
 
 export const apiAdvisoriesByLineId = async (
   lineId: string,
-): Promise<ILineAdvisory[]> => {
-  const advisories = await get<IApiSubwayAdvisory[] | ''>(
+): Promise<LineAdvisory[]> => {
+  const advisories = await get<ApiSubwayAdvisory[] | ''>(
     Endpoints.LineAdvisories,
     {
       lineId,
@@ -36,6 +36,6 @@ export const apiAdvisoriesByLineId = async (
   }));
 };
 
-export const apiLines = async (): Promise<ILine[]> => {
-  return get<IApiSubwayLine[]>(Endpoints.Lines);
+export const apiLines = async (): Promise<Line[]> => {
+  return get<ApiSubwayLine[]>(Endpoints.Lines);
 };

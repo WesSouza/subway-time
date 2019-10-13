@@ -2,11 +2,11 @@ import React from 'react';
 
 import styles from './styles.css';
 
-interface IProps {
+interface Props {
   width?: number;
 }
 
-export const LoadingBlock = ({ width }: IProps) => {
+export const LoadingBlock = ({ width }: Props) => {
   return (
     <div className={styles.LoadingBlock} style={{ width }}>
       &nbsp;

@@ -1,13 +1,13 @@
 import { get, Endpoints } from '~/lib/api';
 
 import {
-  IStation,
-  IStationPlatform,
-  IStationPlatformDirection,
-  IStationPlatformDirectionTime,
+  Station,
+  StationPlatform,
+  StationPlatformDirection,
+  StationPlatformDirectionTime,
 } from './index';
 
-interface IApiStation {
+interface ApiStation {
   id: string;
   lineId: string;
   name: string;
@@ -15,22 +15,22 @@ interface IApiStation {
   longitude: number;
 }
 
-interface IApiStationPlatform {
+interface ApiStationPlatform {
   name: string;
-  times: IApiStationPlatformTime[];
+  times: ApiStationPlatformTime[];
 }
 
-interface IApiStationPlatformTime {
+interface ApiStationPlatformTime {
   route: string;
   lastStation: string;
   minutes: string | number;
 }
 
-interface IApiStationTimes {
-  [key: string]: IApiStationPlatform | IApiStationTimesMessage;
+interface ApiStationTimes {
+  [key: string]: ApiStationPlatform | ApiStationTimesMessage;
 }
 
-interface IApiStationTimesMessage {
+interface ApiStationTimesMessage {
   errorCode: string;
   message: string;
   messageType: ApiStationTimesMessageTypes;
@@ -42,10 +42,10 @@ enum ApiStationTimesMessageTypes {
 }
 
 export const apiStations = async (): Promise<{
-  [stationId: string]: IStation;
+  [stationId: string]: Station;
 }> => {
-  const apiStations = await get<IApiStation[]>(Endpoints.Stations);
-  const stationsById: { [stationId: string]: IStation } = {};
+  const apiStations = await get<ApiStation[]>(Endpoints.Stations);
+  const stationsById: { [stationId: string]: Station } = {};
   apiStations.forEach(apiStation => {
     if (!stationsById[apiStation.id]) {
       stationsById[apiStation.id] = {
@@ -64,9 +64,9 @@ export const apiStations = async (): Promise<{
 
 export const apiStationPlatformsByStationId = async (
   stationId: string,
-): Promise<IStationPlatform[]> => {
+): Promise<StationPlatform[]> => {
   const lineId = stationId.substr(0, 1);
-  const apiStationTimesProperties = await get<IApiStationTimes>(
+  const apiStationTimesProperties = await get<ApiStationTimes>(
     Endpoints.StationTrainTimes,
     {
       lineId,
@@ -89,7 +89,7 @@ export const apiStationPlatformsByStationId = async (
 
   const timesByLineAndDirection: {
     [lineId: string]: {
-      [directionName: string]: IStationPlatformDirectionTime[];
+      [directionName: string]: StationPlatformDirectionTime[];
     };
   } = {};
 
@@ -131,9 +131,9 @@ export const apiStationPlatformsByStationId = async (
     );
   });
 
-  const stationPlatforms: IStationPlatform[] = [];
+  const stationPlatforms: StationPlatform[] = [];
   Object.keys(timesByLineAndDirection).forEach(lineId => {
-    const stationPlatform: IStationPlatform = {
+    const stationPlatform: StationPlatform = {
       lastUpdate: new Date(),
       lineId,
       directions: [],
@@ -141,7 +141,7 @@ export const apiStationPlatformsByStationId = async (
 
     const directions = timesByLineAndDirection[lineId];
     Object.keys(directions).forEach(directionName => {
-      const stationPlatformDirection: IStationPlatformDirection = {
+      const stationPlatformDirection: StationPlatformDirection = {
         name: directionName,
         times: directions[directionName],
       };

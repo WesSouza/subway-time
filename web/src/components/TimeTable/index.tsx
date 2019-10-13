@@ -2,15 +2,15 @@ import { Link } from '@reach/router';
 import React, { useCallback, useState, useEffect } from 'react';
 import naturalCompare from 'natural-compare-lite';
 
-import { IEntities } from '~/lib/entities';
+import { Entities } from '~/lib/entities';
 import { IFuture } from '~/lib/future';
 import sortByObjectKey from '~/lib/sortByObjectKey';
-import { ILineAdvisory } from '~/state/line';
+import { LineAdvisory } from '~/state/line';
 import {
-  IStation,
-  IStationPlatform,
-  IStationPlatformDirection,
-  IStationPlatformDirectionTime,
+  Station,
+  StationPlatform,
+  StationPlatformDirection,
+  StationPlatformDirectionTime,
 } from '~/state/station';
 
 import { ButtonLink } from '../ButtonLink';
@@ -21,11 +21,11 @@ import { LoadingBlock } from '../LoadingBlock';
 import styles from './styles.css';
 import { Times } from '~/constants/times';
 
-interface IProps {
-  advisoriesByLineId: IEntities<IFuture<ILineAdvisory[] | null>>;
-  loadData: (station: IStation) => void;
-  platformsByStationId: IEntities<IFuture<IStationPlatform[]> | null>;
-  station: IStation;
+interface Props {
+  advisoriesByLineId: Entities<IFuture<LineAdvisory[] | null>>;
+  loadData: (station: Station) => void;
+  platformsByStationId: Entities<IFuture<StationPlatform[]> | null>;
+  station: Station;
 }
 
 export const TimeTable = ({
@@ -33,7 +33,7 @@ export const TimeTable = ({
   loadData,
   platformsByStationId,
   station,
-}: IProps) => {
+}: Props) => {
   const [lastUpdateString, setLastUpdateString] = useState<string | null>(null);
 
   // # Callbacks
@@ -93,7 +93,7 @@ export const TimeTable = ({
     }
 
     loadData(station);
-  }, [platformsByStationId, station]);
+  }, [loadData, platformsByStationId, station]);
 
   useEffect(() => {
     updateLastUpdateString();
@@ -115,12 +115,12 @@ export const TimeTable = ({
     return () => {
       clearTimeout(timer);
     };
-  }, [station]);
+  }, [loadData, station]);
 
   // # Renders
 
   const renderTime = useCallback(
-    ({ minutes }: IStationPlatformDirectionTime, index: number) => (
+    ({ minutes }: StationPlatformDirectionTime, index: number) => (
       <React.Fragment key={`${minutes} ${index}`}>
         {index !== 0 ? ', ' : ''}
         <span className={styles.minute}>
@@ -136,7 +136,7 @@ export const TimeTable = ({
   );
 
   const renderDirection = useCallback(
-    ({ name: directionName, times }: IStationPlatformDirection) => (
+    ({ name: directionName, times }: StationPlatformDirection) => (
       <div key={directionName} className={styles.direction}>
         <div className={styles.directionName}>{directionName}</div>
         <div className={styles.times}>{times.map(renderTime)}</div>
@@ -146,7 +146,7 @@ export const TimeTable = ({
   );
 
   const renderPlatform = useCallback(
-    ({ lineId, directions }: IStationPlatform) => {
+    ({ lineId, directions }: StationPlatform) => {
       const platformFuture = platformsByStationId[station.id];
       if (!platformFuture) {
         return null;

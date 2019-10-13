@@ -1,4 +1,4 @@
-import { IEntities } from '~/lib/entities';
+import { Entities } from '~/lib/entities';
 import { createState } from '~/lib/simple-state';
 
 import { apiStations, apiStationPlatformsByStationId } from './api';
@@ -13,14 +13,14 @@ import { sortStationsByProximity } from '~/lib/sortStationsByProximity';
 
 // # Interfaces
 
-export interface IStationState {
+export interface StationState {
   currentStationId: string | null;
   nearbyStationIds: IFuture<string[]>;
-  platformsByStationId: IEntities<IFuture<IStationPlatform[]>>;
-  stationsById: IFuture<IEntities<IStation>>;
+  platformsByStationId: Entities<IFuture<StationPlatform[]>>;
+  stationsById: IFuture<Entities<Station>>;
 }
 
-export interface IStation {
+export interface Station {
   id: string;
   name: string;
   lineIds: string[];
@@ -28,25 +28,25 @@ export interface IStation {
   longitude: number;
 }
 
-export interface IStationPlatform {
+export interface StationPlatform {
   lastUpdate: Date;
   lineId: string;
-  directions: IStationPlatformDirection[];
+  directions: StationPlatformDirection[];
 }
 
-export interface IStationPlatformDirection {
+export interface StationPlatformDirection {
   name: string;
-  times: IStationPlatformDirectionTime[];
+  times: StationPlatformDirectionTime[];
 }
 
-export interface IStationPlatformDirectionTime {
+export interface StationPlatformDirectionTime {
   minutes: number | string;
   lastStationName: string;
 }
 
 // # State
 
-export const stationState = createState<IStationState>({
+export const stationState = createState<StationState>({
   currentStationId: null,
   nearbyStationIds: emptyFuture(),
   platformsByStationId: {},
@@ -81,7 +81,7 @@ const fetchStationPlatformsByStationId = async (stationId: string) => {
   }));
 
   try {
-    const platformsById: { [platformId: string]: IStationPlatform } = {};
+    const platformsById: { [platformId: string]: StationPlatform } = {};
 
     const platforms = await apiStationPlatformsByStationId(stationId);
     platforms.forEach(platform => {
