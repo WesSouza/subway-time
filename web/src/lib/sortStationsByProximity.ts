@@ -1,12 +1,12 @@
 import { getDistance } from 'geolib';
 
-import { IStation } from '~/state/station';
+import { Station } from '~/state/station';
 
 export const sortStationsByProximity = (
-  stations: IStation[],
+  stations: Station[],
   latitude: number,
   longitude: number,
-): IStation[] =>
+): Station[] =>
   stations
     .slice()
     .sort(

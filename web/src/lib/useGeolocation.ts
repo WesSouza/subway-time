@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { IFuture, IFutureLoading } from './future';
+import { IFuture, FutureLoading } from './future';
 import { getDistance } from 'geolib';
 
 export enum GeolocationErrors {
@@ -26,7 +26,7 @@ export const useGeolocation = (
     currentCoordinates,
     setCurrentCoordinates,
   ] = useState<Coordinates | null>(null);
-  const [loading, setLoading] = useState<IFutureLoading | null>(null);
+  const [loading, setLoading] = useState<FutureLoading | null>(null);
   const [error, setError] = useState<Error | null>(null);
 
   useEffect(() => {
@@ -63,7 +63,7 @@ export const useGeolocation = (
     return () => {
       navigator.geolocation.clearWatch(watchId);
     };
-  }, [currentCoordinates]);
+  }, [currentCoordinates, updateMinimumDistance]);
 
   return [currentCoordinates, { error, loading }];
 };

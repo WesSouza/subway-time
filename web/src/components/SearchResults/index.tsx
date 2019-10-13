@@ -2,19 +2,19 @@ import { Link } from '@reach/router';
 import * as React from 'react';
 
 import LineId from '~/components/LineId';
-import { IEntities } from '~/lib/entities';
-import { ILine } from '~/state/line';
-import { IStation } from '~/state/station';
+import { Entities } from '~/lib/entities';
+import { Line } from '~/state/line';
+import { Station } from '~/state/station';
 
 import styles from './styles.css';
 
-interface IProps {
-  linesById: IEntities<ILine>;
-  stations: IStation[];
+interface Props {
+  linesById: Entities<Line>;
+  stations: Station[];
   onClick?: () => void;
 }
 
-const SearchResults = ({ linesById, stations, onClick }: IProps) => (
+const SearchResults = ({ linesById, stations, onClick }: Props) => (
   <ul className={styles.SearchResults}>
     {stations.map(station => (
       <li key={station.id} className={styles.station}>

@@ -19,7 +19,7 @@ const App = () => {
     ({ stationsById }) => stationsById,
   );
 
-  const [, { error, loading }] = flatFutures<any>([
+  const [, { error, loading }] = flatFutures<unknown>([
     linesFuture,
     stationsFuture,
   ]);

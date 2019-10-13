@@ -3,14 +3,14 @@ import * as React from 'react';
 
 import styles from './styles.css';
 
-interface IProps {
+interface Props {
   onSearchCommitValue?: () => void;
   onSearchChange?: (e: React.SyntheticEvent) => void;
   onSearchChangeWithValue?: (value: string) => void;
   onSearchFocusWithValue?: (value: string) => void;
 }
 
-class NavigationBar extends React.Component<IProps> {
+class NavigationBar extends React.Component<Props> {
   public render() {
     return (
       <div className={styles.NavigationBar}>

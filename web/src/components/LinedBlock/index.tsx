@@ -4,7 +4,7 @@ import { LineIcon } from '../LineIcon';
 
 import styles from './styles.css';
 
-interface IProps {
+interface Props {
   children?: ReactNode;
   icon?: ReactNode;
   lineId?: string;
@@ -18,7 +18,7 @@ export const LinedBlock = ({
   lineId,
   subtitle,
   title,
-}: IProps) => {
+}: Props) => {
   return (
     <div className={styles.LinedBlock}>
       <div className={styles.line}>

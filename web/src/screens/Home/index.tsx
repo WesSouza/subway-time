@@ -1,21 +1,18 @@
+import { RouteComponentProps } from '@reach/router';
 import React, { useCallback, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 
 import { useGeolocation, GeolocationErrors } from '~/lib/useGeolocation';
 import { lineState, lineActions } from '~/state/line';
-import { IStation, stationState, stationActions } from '~/state/station';
+import { Station, stationState, stationActions } from '~/state/station';
 
 import { TimeTable } from '~/components/TimeTable';
-
-interface IProps {
-  path: string;
-}
 
 import styles from './styles.css';
 import ErrorMessage from '~/components/ErrorMessage';
 import { LinedBlock } from '~/components/LinedBlock';
 
-const Home = (_props: IProps) => {
+const Home = (_: RouteComponentProps) => {
   // # Geolocation data
   const [
     coordinates,
@@ -50,7 +47,7 @@ const Home = (_props: IProps) => {
 
   // # Callbacks
 
-  const loadData = useCallback((station: IStation) => {
+  const loadData = useCallback((station: Station) => {
     stationActions.fetchStationPlatformsByStationId(station.id);
     station.lineIds.forEach(lineId => {
       lineActions.fetchLineAdvisories(lineId);
@@ -85,7 +82,7 @@ const Home = (_props: IProps) => {
         />
       );
     },
-    [advisoriesByLineId, platformsByStationId, stationsById],
+    [advisoriesByLineId, loadData, platformsByStationId, stationsById],
   );
 
   // # Component

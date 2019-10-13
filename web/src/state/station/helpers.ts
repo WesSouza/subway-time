@@ -1,10 +1,10 @@
-import { IStation } from '.';
+import { Station } from '.';
 
 export const search = (
-  stations: IStation[],
+  stations: Station[],
   query: string | null,
-): IStation[] => {
-  const result: IStation[] = [];
+): Station[] => {
+  const result: Station[] = [];
 
   if (!query) {
     return result;

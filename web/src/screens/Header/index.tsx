@@ -6,24 +6,24 @@ import { LinedBlock } from '~/components/LinedBlock';
 import { LineIcon } from '~/components/LineIcon';
 import SearchResults from '~/components/SearchResults';
 
-import { stationState, IStation } from '~/state/station';
+import { stationState, Station } from '~/state/station';
 import { lineState } from '~/state/line';
 import { search } from '~/state/station/helpers';
 
 import styles from './styles.css';
 
-interface IProps {
+interface Props {
   path?: string;
 }
 
-export const Header = ({  }: IProps) => {
+export const Header = ({  }: Props) => {
   const [linesById] = lineState.useFutureObserver(({ linesById }) => linesById);
   const [stationsById] = stationState.useFutureObserver(
     ({ stationsById }) => stationsById,
   );
 
   const [searchTerm, setSearchTerm] = useState('');
-  const [resultStations, setResultStations] = useState<IStation[]>([]);
+  const [resultStations, setResultStations] = useState<Station[]>([]);
 
   useEffect(() => {
     if (stationsById) {

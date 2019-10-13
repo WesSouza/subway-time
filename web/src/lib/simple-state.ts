@@ -4,42 +4,46 @@ import { IFuture } from './future';
 
 // # Interfaces
 
-export interface IState<T> {
+export interface State<T> {
   get(): T;
   observe<U>(
-    selector: IStateObserverSelector<T, U>,
-    callback: IStateObserverCallback<U>,
+    selector: StateObserverSelector<T, U>,
+    callback: StateObserverCallback<U>,
   ): () => void;
-  set(state: IStatePartial<T>): Promise<void>;
-  set(updateFunction: (currentState: T) => IStatePartial<T>): Promise<void>;
+  set(state: StatePartial<T>): Promise<void>;
+  set(updateFunction: (currentState: T) => StatePartial<T>): Promise<void>;
   useObserver<U>(
-    selector: IStateObserverSelector<T, U>,
+    selector: StateObserverSelector<T, U>,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     dependencies?: ReadonlyArray<any>,
   ): U;
   useFutureObserver<U>(
-    selector: IStateObserverSelector<T, IFuture<U>>,
+    selector: StateObserverSelector<T, IFuture<U>>,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     dependencies?: ReadonlyArray<any>,
   ): IFuture<U | null>;
 }
 
-export interface IStateObserver<T, U> {
-  callback: IStateObserverCallback<U>;
+export interface StateObserver<T, U> {
+  callback: StateObserverCallback<U>;
   lastSelectorResult?: U;
-  selector: IStateObserverSelector<T, U>;
+  selector: StateObserverSelector<T, U>;
 }
 
-export type IStateObserverCallback<T> = (selectorResult: T) => void;
+export type StateObserverCallback<T> = (selectorResult: T) => void;
 
-export type IStateObserverSelector<T, U> = (state: T) => U;
+export type StateObserverSelector<T, U> = (state: T) => U;
 
-export type IStatePartial<T> = { [P in keyof T]?: T[P] };
+export type StatePartial<T> = { [P in keyof T]?: T[P] };
 
 // # State creator
 
-export const createState = <T>(initialState: T): IState<T> => {
+export const createState = <T>(initialState: T): State<T> => {
   const data: T = initialState;
-  const observers: (IStateObserver<T, any> | null)[] = [];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const observers: (StateObserver<T, any> | null)[] = [];
   let isCallingObservers = false;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let observerTimers: any = null;
 
   const get = (): T => {
@@ -47,7 +51,7 @@ export const createState = <T>(initialState: T): IState<T> => {
   };
 
   const set = async (
-    stateOrFunction: IStatePartial<T> | ((currentState: T) => IStatePartial<T>),
+    stateOrFunction: StatePartial<T> | ((currentState: T) => StatePartial<T>),
   ): Promise<void> => {
     if (isCallingObservers) {
       console.warn(
@@ -55,7 +59,7 @@ export const createState = <T>(initialState: T): IState<T> => {
       );
     }
 
-    let state: IStatePartial<T>;
+    let state: StatePartial<T>;
 
     if (typeof stateOrFunction === 'function') {
       state = stateOrFunction.call(null, data);
@@ -73,10 +77,10 @@ export const createState = <T>(initialState: T): IState<T> => {
   };
 
   const observe = <U>(
-    selector: IStateObserverSelector<T, U>,
-    callback: IStateObserverCallback<U>,
+    selector: StateObserverSelector<T, U>,
+    callback: StateObserverCallback<U>,
   ): (() => void) => {
-    const observer: IStateObserver<T, U> = {
+    const observer: StateObserver<T, U> = {
       selector,
       callback,
       lastSelectorResult: selector(data),
@@ -123,7 +127,8 @@ export const createState = <T>(initialState: T): IState<T> => {
   };
 
   const useObserver = <U>(
-    selector: IStateObserverSelector<T, U>,
+    selector: StateObserverSelector<T, U>,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     dependencies: ReadonlyArray<any> = [],
   ): U => {
     const currentState = get();
@@ -131,7 +136,10 @@ export const createState = <T>(initialState: T): IState<T> => {
 
     const [data, setData] = useState<U>(initialValue);
 
+    // FIXME: Uhh, this is a bug, but fixing it causes a worse bug ¯\_(ツ)_/¯
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => observe(selector, (data: U) => setData(data)), [
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       ...dependencies,
     ]);
 
@@ -139,7 +147,8 @@ export const createState = <T>(initialState: T): IState<T> => {
   };
 
   const useFutureObserver = <U>(
-    selector: IStateObserverSelector<T, IFuture<U>>,
+    selector: StateObserverSelector<T, IFuture<U>>,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     dependencies: ReadonlyArray<any> = [],
   ): IFuture<U> => {
     const currentState = get();
@@ -147,8 +156,10 @@ export const createState = <T>(initialState: T): IState<T> => {
 
     const [future, setData] = useState<IFuture<U>>(initialFuture);
 
+    // FIXME: Uhh, this is a bug, but fixing it causes a worse bug ¯\_(ツ)_/¯
     useEffect(
       () => observe(selector, (future: IFuture<U>) => setData(future)),
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       [...dependencies],
     );
 

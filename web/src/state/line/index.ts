@@ -2,7 +2,7 @@ import { createState } from '~/lib/simple-state';
 
 import { apiAdvisoriesByLineId, apiLines } from './api';
 
-import { IEntities } from '~/lib/entities';
+import { Entities } from '~/lib/entities';
 import {
   emptyFuture,
   errorFuture,
@@ -13,17 +13,17 @@ import {
 
 // # Interfaces
 
-export interface ILineState {
-  advisoriesByLineId: IEntities<IFuture<ILineAdvisory[]>>;
-  linesById: IFuture<IEntities<ILine>>;
+export interface LineState {
+  advisoriesByLineId: Entities<IFuture<LineAdvisory[]>>;
+  linesById: IFuture<Entities<Line>>;
 }
 
-export interface ILine {
+export interface Line {
   id: string;
   color: string;
 }
 
-export interface ILineAdvisory {
+export interface LineAdvisory {
   id: string;
   html: string;
   reason: string;
@@ -32,7 +32,7 @@ export interface ILineAdvisory {
 
 // # State
 
-export const lineState = createState<ILineState>({
+export const lineState = createState<LineState>({
   advisoriesByLineId: {},
   linesById: emptyFuture(),
 });
@@ -72,7 +72,7 @@ const fetchLines = async () => {
   });
 
   try {
-    const linesById: { [lineId: string]: ILine } = {};
+    const linesById: { [lineId: string]: Line } = {};
 
     const lines = await apiLines();
     lines.forEach(line => {
