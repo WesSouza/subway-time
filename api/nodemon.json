@@ -1,6 +1,11 @@
 {
-  "ignore": [".git", "node_modules"],
-  "watch": ["src"],
-  "exec": "npm start",
+  "ignore": [
+    ".git",
+    "node_modules"
+  ],
+  "watch": [
+    "src"
+  ],
+  "exec": "yarn start",
   "ext": "ts"
 }

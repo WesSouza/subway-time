@@ -18,7 +18,7 @@
   "license": "MIT",
   "author": "Wes Souza <hey@wes.dev>",
   "scripts": {
-    "dev": "concurrently -r -n proxy,api,web \"npm run dev-server\" \"cd api; npm run dev\" \"cd web; npm run dev\"",
+    "dev": "concurrently -r -n proxy,api,web \"yarn run dev-server\" \"cd api; yarn run dev\" \"cd web; yarn run dev\"",
     "dev-server": "node ./dev-server.js"
   },
   "dependencies": {},
