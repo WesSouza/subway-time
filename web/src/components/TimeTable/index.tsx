@@ -30,7 +30,7 @@ interface IProps {
 
 export const TimeTable = ({
   advisoriesByLineId,
-  loadData: outerLoadData,
+  loadData,
   platformsByStationId,
   station,
 }: IProps) => {
@@ -38,9 +38,9 @@ export const TimeTable = ({
 
   // # Callbacks
 
-  const loadData = useCallback(() => {
-    outerLoadData(station);
-  }, [outerLoadData, station]);
+  const loadStationData = useCallback(() => {
+    loadData(station);
+  }, [loadData, station]);
 
   const updateLastUpdateString = useCallback(() => {
     const platformFuture = platformsByStationId[station.id];
@@ -92,7 +92,7 @@ export const TimeTable = ({
       }
     }
 
-    loadData();
+    loadData(station);
   }, [platformsByStationId, station]);
 
   useEffect(() => {
@@ -109,13 +109,13 @@ export const TimeTable = ({
 
   useEffect(() => {
     const timer = setInterval(() => {
-      loadData();
+      loadData(station);
     }, Times.stationAutoReload);
 
     return () => {
       clearTimeout(timer);
     };
-  }, [loadData]);
+  }, [station]);
 
   // # Renders
 
@@ -173,7 +173,7 @@ export const TimeTable = ({
                 {lastUpdateString && (
                   <>
                     {', '}
-                    <ButtonLink onClick={loadData}>reload</ButtonLink>
+                    <ButtonLink onClick={loadStationData}>reload</ButtonLink>
                   </>
                 )}
               </>
@@ -194,7 +194,7 @@ export const TimeTable = ({
     [
       advisoriesByLineId,
       lastUpdateString,
-      loadData,
+      loadStationData,
       platformsByStationId,
       renderDirection,
       station,
@@ -214,14 +214,14 @@ export const TimeTable = ({
         subtitle={
           <>
             <LineAdvisories advisoriesFuture={advisoriesByLineId[lineId]} />
-            <ButtonLink onClick={loadData}>reload</ButtonLink>
+            <ButtonLink onClick={loadStationData}>reload</ButtonLink>
           </>
         }
       >
         <div className={styles.directionsError}>No train information</div>
       </LinedBlock>
     ),
-    [advisoriesByLineId, loadData, station],
+    [advisoriesByLineId, loadStationData, station],
   );
 
   const renderLoadingLine = useCallback(
