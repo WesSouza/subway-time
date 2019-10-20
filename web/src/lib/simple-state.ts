@@ -131,10 +131,9 @@ export const createState = <T>(initialState: T): IState<T> => {
 
     const [data, setData] = useState<U>(initialValue);
 
-    useEffect(
-      () => observe(selector, (data: U) => setData(data)),
-      dependencies,
-    );
+    useEffect(() => observe(selector, (data: U) => setData(data)), [
+      ...dependencies,
+    ]);
 
     return data;
   };
@@ -150,7 +149,7 @@ export const createState = <T>(initialState: T): IState<T> => {
 
     useEffect(
       () => observe(selector, (future: IFuture<U>) => setData(future)),
-      dependencies,
+      [...dependencies],
     );
 
     return future;
