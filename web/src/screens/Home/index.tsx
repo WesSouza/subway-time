@@ -3,14 +3,20 @@ import React, { useCallback, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 
 import { useGeolocation, GeolocationErrors } from '~/lib/useGeolocation';
-import { lineState, lineActions } from '~/state/line';
-import { Station, stationState, stationActions } from '~/state/station';
+import { lineStore } from '~/state/line/store';
+import { fetchLineAdvisories } from '~/state/line/effects';
+import { stationStore } from '~/state/station/store';
+import { Station } from '~/state/station/types';
+import {
+  fetchStationPlatformsByStationId,
+  handleCoordinatesUpdate,
+} from '~/state/station/effects';
 
+import ErrorMessage from '~/components/ErrorMessage';
+import { LinedBlock } from '~/components/LinedBlock';
 import { TimeTable } from '~/components/TimeTable';
 
 import styles from './styles.css';
-import ErrorMessage from '~/components/ErrorMessage';
-import { LinedBlock } from '~/components/LinedBlock';
 
 const Home = (_: RouteComponentProps) => {
   // # Geolocation data
@@ -20,26 +26,24 @@ const Home = (_: RouteComponentProps) => {
   ] = useGeolocation({ updateMinimumDistance: 250 });
 
   // # Data dependencies
-  const advisoriesByLineId = lineState.useObserver(
-    ({ advisoriesByLineId }) => advisoriesByLineId,
+  const advisoriesByLineId = lineStore.useSelector(
+    state => state.advisoriesByLineId,
   );
 
-  const [nearbyStationIds] = stationState.useFutureObserver(
-    ({ nearbyStationIds }) => nearbyStationIds,
+  const [nearbyStationIds] = stationStore.useSelector(
+    state => state.nearbyStationIds,
   );
 
-  const [stationsById] = stationState.useFutureObserver(
-    ({ stationsById }) => stationsById,
-  );
+  const [stationsById] = stationStore.useSelector(state => state.stationsById);
 
-  const platformsByStationId = stationState.useObserver(
-    ({ platformsByStationId }) => platformsByStationId,
+  const platformsByStationId = stationStore.useSelector(
+    state => state.platformsByStationId,
   );
 
   // # Effects
 
   useEffect(() => {
-    stationActions.handleCoordinatesUpdate([
+    handleCoordinatesUpdate([
       coordinates,
       { error: coordinatesError, loading: coordinatesLoading },
     ]);
@@ -48,9 +52,9 @@ const Home = (_: RouteComponentProps) => {
   // # Callbacks
 
   const loadData = useCallback((station: Station) => {
-    stationActions.fetchStationPlatformsByStationId(station.id);
+    fetchStationPlatformsByStationId(station.id);
     station.lineIds.forEach(lineId => {
-      lineActions.fetchLineAdvisories(lineId);
+      fetchLineAdvisories(lineId);
     });
   }, []);
 

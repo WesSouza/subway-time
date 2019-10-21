@@ -1,4 +1,4 @@
-import { Station } from '.';
+import { Station } from './types';
 
 export const search = (
   stations: Station[],

@@ -1,6 +1,6 @@
 import { get, Endpoints } from '~/lib/api';
 
-import { Line, LineAdvisory } from './index';
+import { Line, LineAdvisory } from './types';
 
 export interface ApiSubwayAdvisory {
   SituationNumber: string;
@@ -14,9 +14,9 @@ export interface ApiSubwayLine {
   color: string;
 }
 
-export const apiAdvisoriesByLineId = async (
+export async function apiAdvisoriesByLineId(
   lineId: string,
-): Promise<LineAdvisory[]> => {
+): Promise<LineAdvisory[]> {
   const advisories = await get<ApiSubwayAdvisory[] | ''>(
     Endpoints.LineAdvisories,
     {
@@ -34,8 +34,8 @@ export const apiAdvisoriesByLineId = async (
     summary: advisory.Summary,
     html: advisory.LongDescription,
   }));
-};
+}
 
-export const apiLines = async (): Promise<Line[]> => {
+export async function apiLines(): Promise<Line[]> {
   return get<ApiSubwayLine[]>(Endpoints.Lines);
-};
+}

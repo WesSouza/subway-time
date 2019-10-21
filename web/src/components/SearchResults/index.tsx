@@ -3,8 +3,8 @@ import * as React from 'react';
 
 import LineId from '~/components/LineId';
 import { Entities } from '~/lib/entities';
-import { Line } from '~/state/line';
-import { Station } from '~/state/station';
+import { Line } from '~/state/line/types';
+import { Station } from '~/state/station/types';
 
 import styles from './styles.css';
 
