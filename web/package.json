@@ -31,6 +31,9 @@
     "react-helmet": "^6.0.0-beta",
     "sanitize.css": "^11.0.0"
   },
+  "resolutions": {
+    "react-helmet/react-side-effect": "2.1.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/preset-react": "^7.6.3",
