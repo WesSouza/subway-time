@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { IFuture, FutureLoading } from './future';
+import { Future, FutureLoading } from './future';
 import { getDistance } from 'geolib';
 
 export enum GeolocationErrors {
@@ -21,7 +21,7 @@ export const useGeolocation = (
   }: {
     updateMinimumDistance: number;
   } = { updateMinimumDistance: 0 },
-): IFuture<Coordinates> => {
+): Future<Coordinates> => {
   const [
     currentCoordinates,
     setCurrentCoordinates,

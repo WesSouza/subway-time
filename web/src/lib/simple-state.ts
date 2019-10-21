@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { IFuture } from './future';
+import { Future } from './future';
 
 // # Interfaces
 
@@ -18,10 +18,10 @@ export interface State<T> {
     dependencies?: ReadonlyArray<any>,
   ): U;
   useFutureObserver<U>(
-    selector: StateObserverSelector<T, IFuture<U>>,
+    selector: StateObserverSelector<T, Future<U>>,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     dependencies?: ReadonlyArray<any>,
-  ): IFuture<U | null>;
+  ): Future<U | null>;
 }
 
 export interface StateObserver<T, U> {
@@ -147,18 +147,18 @@ export const createState = <T>(initialState: T): State<T> => {
   };
 
   const useFutureObserver = <U>(
-    selector: StateObserverSelector<T, IFuture<U>>,
+    selector: StateObserverSelector<T, Future<U>>,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     dependencies: ReadonlyArray<any> = [],
-  ): IFuture<U> => {
+  ): Future<U> => {
     const currentState = get();
     const initialFuture = selector.call(null, currentState);
 
-    const [future, setData] = useState<IFuture<U>>(initialFuture);
+    const [future, setData] = useState<Future<U>>(initialFuture);
 
     // FIXME: Uhh, this is a bug, but fixing it causes a worse bug ¯\_(ツ)_/¯
     useEffect(
-      () => observe(selector, (future: IFuture<U>) => setData(future)),
+      () => observe(selector, (future: Future<U>) => setData(future)),
       // eslint-disable-next-line react-hooks/exhaustive-deps
       [...dependencies],
     );

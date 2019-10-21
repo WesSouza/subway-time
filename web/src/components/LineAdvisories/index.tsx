@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { IFuture } from '~/lib/future';
+import { Future } from '~/lib/future';
 import { LineAdvisory as LineAdvisoryType } from '~/state/line';
 
 import { ButtonLink } from '../ButtonLink';
@@ -8,7 +8,7 @@ import { ButtonLink } from '../ButtonLink';
 import styles from './styles.css';
 
 interface Props {
-  advisoriesFuture: IFuture<LineAdvisoryType[] | null> | null;
+  advisoriesFuture: Future<LineAdvisoryType[] | null> | null;
 }
 
 class LineAdvisory extends React.Component<Props> {

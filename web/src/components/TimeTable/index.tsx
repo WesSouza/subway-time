@@ -3,7 +3,7 @@ import React, { useCallback, useState, useEffect } from 'react';
 import naturalCompare from 'natural-compare-lite';
 
 import { Entities } from '~/lib/entities';
-import { IFuture } from '~/lib/future';
+import { Future } from '~/lib/future';
 import sortByObjectKey from '~/lib/sortByObjectKey';
 import { LineAdvisory } from '~/state/line';
 import {
@@ -22,9 +22,9 @@ import styles from './styles.css';
 import { Times } from '~/constants/times';
 
 interface Props {
-  advisoriesByLineId: Entities<IFuture<LineAdvisory[] | null>>;
+  advisoriesByLineId: Entities<Future<LineAdvisory[] | null>>;
   loadData: (station: Station) => void;
-  platformsByStationId: Entities<IFuture<StationPlatform[]> | null>;
+  platformsByStationId: Entities<Future<StationPlatform[]> | null>;
   station: Station;
 }
 

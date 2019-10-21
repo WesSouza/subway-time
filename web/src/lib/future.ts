@@ -10,9 +10,9 @@ export interface FutureState {
   loading: FutureLoading | null;
 }
 
-export type IFuture<T> = [T | null, FutureState];
+export type Future<T> = [T | null, FutureState];
 
-export const emptyFuture = (): IFuture<null> => [
+export const emptyFuture = (): Future<null> => [
   null,
   {
     error: null,
@@ -20,7 +20,7 @@ export const emptyFuture = (): IFuture<null> => [
   },
 ];
 
-export const errorFuture = <T>(error: Error): IFuture<T> => [
+export const errorFuture = <T>(error: Error): Future<T> => [
   null,
   {
     error,
@@ -28,7 +28,7 @@ export const errorFuture = <T>(error: Error): IFuture<T> => [
   },
 ];
 
-export const loadingFuture = <T>(currentFuture?: IFuture<T>): IFuture<T> => [
+export const loadingFuture = <T>(currentFuture?: Future<T>): Future<T> => [
   currentFuture ? currentFuture[0] : null,
   {
     error: null,
@@ -36,7 +36,7 @@ export const loadingFuture = <T>(currentFuture?: IFuture<T>): IFuture<T> => [
   },
 ];
 
-export const valueFuture = <T>(value: T): IFuture<T> => [
+export const valueFuture = <T>(value: T): Future<T> => [
   value,
   {
     error: null,
@@ -45,8 +45,8 @@ export const valueFuture = <T>(value: T): IFuture<T> => [
 ];
 
 export const flatFutures = <T>(
-  futures: (IFuture<T>)[],
-): IFuture<(T | null)[]> => {
+  futures: (Future<T>)[],
+): Future<(T | null)[]> => {
   let error: Error | null = null;
   let loading: FutureLoading | null = null;
   const value = futures.map(
@@ -71,8 +71,8 @@ export const flatFutures = <T>(
 };
 
 export const flatFutureEntities = <T>(
-  entities: Entities<IFuture<T>>,
-): IFuture<Entities<T | null>> => {
+  entities: Entities<Future<T>>,
+): Future<Entities<T | null>> => {
   let error: Error | null = null;
   let loading: FutureLoading | null = null;
   const value: Entities<T | null> = {};

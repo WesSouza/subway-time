@@ -6,7 +6,7 @@ import { Entities } from '~/lib/entities';
 import {
   emptyFuture,
   errorFuture,
-  IFuture,
+  Future,
   loadingFuture,
   valueFuture,
 } from '~/lib/future';
@@ -14,8 +14,8 @@ import {
 // # Interfaces
 
 export interface LineState {
-  advisoriesByLineId: Entities<IFuture<LineAdvisory[]>>;
-  linesById: IFuture<Entities<Line>>;
+  advisoriesByLineId: Entities<Future<LineAdvisory[]>>;
+  linesById: Future<Entities<Line>>;
 }
 
 export interface Line {

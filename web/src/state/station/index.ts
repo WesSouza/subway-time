@@ -5,7 +5,7 @@ import { apiStations, apiStationPlatformsByStationId } from './api';
 import {
   emptyFuture,
   errorFuture,
-  IFuture,
+  Future,
   loadingFuture,
   valueFuture,
 } from '~/lib/future';
@@ -15,9 +15,9 @@ import { sortStationsByProximity } from '~/lib/sortStationsByProximity';
 
 export interface StationState {
   currentStationId: string | null;
-  nearbyStationIds: IFuture<string[]>;
-  platformsByStationId: Entities<IFuture<StationPlatform[]>>;
-  stationsById: IFuture<Entities<Station>>;
+  nearbyStationIds: Future<string[]>;
+  platformsByStationId: Entities<Future<StationPlatform[]>>;
+  stationsById: Future<Entities<Station>>;
 }
 
 export interface Station {
@@ -105,7 +105,7 @@ const fetchStationPlatformsByStationId = async (stationId: string) => {
 };
 
 const handleCoordinatesUpdate = async (
-  coordinatesFuture: IFuture<Coordinates>,
+  coordinatesFuture: Future<Coordinates>,
 ) => {
   const [coordinates, { error, loading }] = coordinatesFuture;
   if (!coordinates) {
