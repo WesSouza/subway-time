@@ -6,8 +6,9 @@ import { LinedBlock } from '~/components/LinedBlock';
 import { LineIcon } from '~/components/LineIcon';
 import SearchResults from '~/components/SearchResults';
 
-import { stationState, Station } from '~/state/station';
-import { lineState } from '~/state/line';
+import { stationStore } from '~/state/station/store';
+import { Station } from '~/state/station/types';
+import { lineStore } from '~/state/line/store';
 import { search } from '~/state/station/helpers';
 
 import styles from './styles.css';
@@ -17,10 +18,8 @@ interface Props {
 }
 
 export const Header = ({  }: Props) => {
-  const [linesById] = lineState.useFutureObserver(({ linesById }) => linesById);
-  const [stationsById] = stationState.useFutureObserver(
-    ({ stationsById }) => stationsById,
-  );
+  const [linesById] = lineStore.useSelector(state => state.linesById);
+  const [stationsById] = stationStore.useSelector(state => state.stationsById);
 
   const [searchTerm, setSearchTerm] = useState('');
   const [resultStations, setResultStations] = useState<Station[]>([]);

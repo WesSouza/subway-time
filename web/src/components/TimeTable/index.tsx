@@ -1,17 +1,17 @@
 import { Link } from '@reach/router';
-import React, { useCallback, useState, useEffect } from 'react';
 import naturalCompare from 'natural-compare-lite';
+import React, { useCallback, useState, useEffect } from 'react';
 
 import { Entities } from '~/lib/entities';
 import { Future } from '~/lib/future';
 import sortByObjectKey from '~/lib/sortByObjectKey';
-import { LineAdvisory } from '~/state/line';
+import { LineAdvisory } from '~/state/line/types';
 import {
   Station,
   StationPlatform,
   StationPlatformDirection,
   StationPlatformDirectionTime,
-} from '~/state/station';
+} from '~/state/station/types';
 
 import { ButtonLink } from '../ButtonLink';
 import LineAdvisories from '../LineAdvisories';
@@ -278,8 +278,8 @@ export const TimeTable = ({
       {error
         ? station.lineIds.map(renderErrorLine)
         : platforms && platforms.length
-        ? platforms.sort(sortByObjectKey('lineId')).map(renderPlatform)
-        : station.lineIds.sort(naturalCompare).map(renderLoadingLine)}
+        ? [...platforms].sort(sortByObjectKey('lineId')).map(renderPlatform)
+        : [...station.lineIds].sort(naturalCompare).map(renderLoadingLine)}
     </div>
   );
 };

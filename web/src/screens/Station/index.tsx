@@ -4,8 +4,11 @@ import { Helmet } from 'react-helmet';
 
 import ErrorMessage from '~/components/ErrorMessage';
 import { TimeTable } from '~/components/TimeTable';
-import { lineActions, lineState } from '~/state/line';
-import { stationState, stationActions, Station } from '~/state/station';
+import { lineStore } from '~/state/line/store';
+import { fetchLineAdvisories } from '~/state/line/effects';
+import { fetchStationPlatformsByStationId } from '~/state/station/effects';
+import { stationStore } from '~/state/station/store';
+import { Station } from '~/state/station/types';
 
 interface Props extends RouteComponentProps {
   stationId?: string;
@@ -14,17 +17,15 @@ interface Props extends RouteComponentProps {
 const Station = ({ stationId }: Props) => {
   // # Data dependencies
 
-  const advisoriesByLineId = lineState.useObserver(
-    ({ advisoriesByLineId }) => advisoriesByLineId,
+  const advisoriesByLineId = lineStore.useSelector(
+    state => state.advisoriesByLineId,
   );
 
-  const platformsByStationId = stationState.useObserver(
-    ({ platformsByStationId }) => platformsByStationId,
+  const platformsByStationId = stationStore.useSelector(
+    state => state.platformsByStationId,
   );
 
-  const [stationsById] = stationState.useFutureObserver(
-    ({ stationsById }) => stationsById,
-  );
+  const [stationsById] = stationStore.useSelector(state => state.stationsById);
 
   // # Data
 
@@ -33,9 +34,9 @@ const Station = ({ stationId }: Props) => {
   // # Actions
 
   const loadData = useCallback((station: Station) => {
-    stationActions.fetchStationPlatformsByStationId(station.id);
+    fetchStationPlatformsByStationId(station.id);
     station.lineIds.forEach(lineId => {
-      lineActions.fetchLineAdvisories(lineId);
+      fetchLineAdvisories(lineId);
     });
   }, []);
 

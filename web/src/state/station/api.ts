@@ -5,7 +5,7 @@ import {
   StationPlatform,
   StationPlatformDirection,
   StationPlatformDirectionTime,
-} from './index';
+} from './types';
 
 interface ApiStation {
   id: string;

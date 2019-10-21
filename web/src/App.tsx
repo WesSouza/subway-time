@@ -1,11 +1,14 @@
 import React, { useCallback, useEffect } from 'react';
 import 'sanitize.css/sanitize.css';
 
+import { flatFutures } from './lib/future';
+import { lineStore } from './state/line/store';
+import { fetchLines } from './state/line/effects';
+import { stationStore } from './state/station/store';
+import { fetchStations } from './state/station/effects';
+
 import ErrorMessage from './components/ErrorMessage';
 import { LinedBlock } from './components/LinedBlock';
-import { flatFutures } from './lib/future';
-import { lineActions, lineState } from './state/line';
-import { stationActions, stationState } from './state/station';
 import { Header } from './screens/Header';
 import Router from './screens/Router';
 
@@ -13,11 +16,9 @@ import styles from './App.styles.css';
 
 const App = () => {
   // # Data dependencies
-  const linesFuture = lineState.useFutureObserver(({ linesById }) => linesById);
+  const linesFuture = lineStore.useSelector(state => state.linesById);
 
-  const stationsFuture = stationState.useFutureObserver(
-    ({ stationsById }) => stationsById,
-  );
+  const stationsFuture = stationStore.useSelector(state => state.stationsById);
 
   const [, { error, loading }] = flatFutures<unknown>([
     linesFuture,
@@ -27,8 +28,8 @@ const App = () => {
   // # Effects
 
   useEffect(() => {
-    lineActions.fetchLines();
-    stationActions.fetchStations();
+    fetchLines();
+    fetchStations();
   }, []);
 
   // # Actions

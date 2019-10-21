@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { Future } from '~/lib/future';
-import { LineAdvisory as LineAdvisoryType } from '~/state/line';
+import { LineAdvisory as LineAdvisoryType } from '~/state/line/types';
 
 import { ButtonLink } from '../ButtonLink';
 
