@@ -1,5 +1,5 @@
 import produce, { Draft } from 'immer';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, MutableRefObject } from 'react';
 
 export type SelectorFn<T, U> = (state: T) => U;
 
@@ -70,20 +70,39 @@ export class StateManager<T> {
 
   useSelector<U>(selectorFn: SelectorFn<T, U>) {
     const initialValue = selectorFn(this.internalData);
-    const resubscribing = useRef(false);
     const [state, setState] = useState<U>(initialValue);
 
-    useEffect(() => {
-      if (resubscribing.current) {
-        setState(initialValue);
-      }
-      resubscribing.current = true;
+    let closureStack: MutableRefObject<string | undefined> | null = null;
+    let numberOfReSubs: MutableRefObject<number> | null = null;
+    if (process.env.NODE_ENV === 'development') {
+      closureStack = useRef(Error().stack);
+      numberOfReSubs = useRef(0);
+    }
 
-      const callback = (newValue: U) => {
+    useEffect(() => {
+      if (process.env.NODE_ENV === 'development' && numberOfReSubs) {
+        if (numberOfReSubs.current === 1) {
+          console.warn(
+            'Warning: It looks like a selector function was passed to ' +
+              '`useSelector` as an anonymous function.\n' +
+              '\n' +
+              'This will cause your selector to re-subscribe on each ' +
+              'render, which will cause performance issues. Make sure to ' +
+              'either use a hoisted selector, or a function imported from ' +
+              'a selectors file.\n' +
+              '\n' +
+              'This error happened on:\n' +
+              '\n' +
+              (closureStack ? closureStack.current : ''),
+          );
+        }
+        numberOfReSubs.current += 1;
+      }
+
+      return this.subscribe(selectorFn, (newValue: U) => {
         setState(newValue);
-      };
-      return this.subscribe(selectorFn, callback);
-    }, [initialValue, selectorFn, state]);
+      });
+    }, [closureStack, numberOfReSubs, selectorFn]);
 
     return state;
   }
