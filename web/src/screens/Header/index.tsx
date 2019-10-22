@@ -9,7 +9,9 @@ import SearchResults from '~/components/SearchResults';
 import { stationStore } from '~/state/station/store';
 import { Station } from '~/state/station/types';
 import { lineStore } from '~/state/line/store';
+import { getLinesById } from '~/state/line/selectors';
 import { search } from '~/state/station/helpers';
+import { getStationsById } from '~/state/station/selectors';
 
 import styles from './styles.css';
 
@@ -18,8 +20,8 @@ interface Props {
 }
 
 export const Header = ({  }: Props) => {
-  const [linesById] = lineStore.useSelector(state => state.linesById);
-  const [stationsById] = stationStore.useSelector(state => state.stationsById);
+  const [linesById] = lineStore.useSelector(getLinesById);
+  const [stationsById] = stationStore.useSelector(getStationsById);
 
   const [searchTerm, setSearchTerm] = useState('');
   const [resultStations, setResultStations] = useState<Station[]>([]);

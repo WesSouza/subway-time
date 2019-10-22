@@ -7,6 +7,11 @@ import { TimeTable } from '~/components/TimeTable';
 import { lineStore } from '~/state/line/store';
 import { fetchLineAdvisories } from '~/state/line/effects';
 import { fetchStationPlatformsByStationId } from '~/state/station/effects';
+import { getAdvisoriesByLineId } from '~/state/line/selectors';
+import {
+  getPlatformsByStationId,
+  getStationsById,
+} from '~/state/station/selectors';
 import { stationStore } from '~/state/station/store';
 import { Station } from '~/state/station/types';
 
@@ -17,15 +22,11 @@ interface Props extends RouteComponentProps {
 const Station = ({ stationId }: Props) => {
   // # Data dependencies
 
-  const advisoriesByLineId = lineStore.useSelector(
-    state => state.advisoriesByLineId,
-  );
-
+  const advisoriesByLineId = lineStore.useSelector(getAdvisoriesByLineId);
   const platformsByStationId = stationStore.useSelector(
-    state => state.platformsByStationId,
+    getPlatformsByStationId,
   );
-
-  const [stationsById] = stationStore.useSelector(state => state.stationsById);
+  const [stationsById] = stationStore.useSelector(getStationsById);
 
   // # Data
 
