@@ -5,12 +5,18 @@ import { Helmet } from 'react-helmet';
 import { useGeolocation, GeolocationErrors } from '~/lib/useGeolocation';
 import { lineStore } from '~/state/line/store';
 import { fetchLineAdvisories } from '~/state/line/effects';
+import { getAdvisoriesByLineId } from '~/state/line/selectors';
 import { stationStore } from '~/state/station/store';
 import { Station } from '~/state/station/types';
 import {
   fetchStationPlatformsByStationId,
   handleCoordinatesUpdate,
 } from '~/state/station/effects';
+import {
+  getNearbyStationIds,
+  getPlatformsByStationId,
+  getStationsById,
+} from '~/state/station/selectors';
 
 import ErrorMessage from '~/components/ErrorMessage';
 import { LinedBlock } from '~/components/LinedBlock';
@@ -26,18 +32,11 @@ const Home = (_: RouteComponentProps) => {
   ] = useGeolocation({ updateMinimumDistance: 250 });
 
   // # Data dependencies
-  const advisoriesByLineId = lineStore.useSelector(
-    state => state.advisoriesByLineId,
-  );
-
-  const [nearbyStationIds] = stationStore.useSelector(
-    state => state.nearbyStationIds,
-  );
-
-  const [stationsById] = stationStore.useSelector(state => state.stationsById);
-
+  const advisoriesByLineId = lineStore.useSelector(getAdvisoriesByLineId);
+  const [nearbyStationIds] = stationStore.useSelector(getNearbyStationIds);
+  const [stationsById] = stationStore.useSelector(getStationsById);
   const platformsByStationId = stationStore.useSelector(
-    state => state.platformsByStationId,
+    getPlatformsByStationId,
   );
 
   // # Effects
