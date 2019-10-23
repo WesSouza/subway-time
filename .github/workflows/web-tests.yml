@@ -1,0 +1,30 @@
+name: Web Tests
+
+on:
+  pull_request:
+    branches:
+      - master
+    paths:
+      - 'web/**'
+  push:
+    branches:
+      - master
+    paths:
+      - 'web/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 10
+      - name: Web Tests
+        run: |
+          yarn install --ignore-scripts --ignore-optional --frozen-lockfile --non-interactive
+          cd web
+          yarn run lint
+          yarn run ts
+        env:
+          CI: true
