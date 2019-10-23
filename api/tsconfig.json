@@ -4,12 +4,17 @@
     "esModuleInterop": true,
     "inlineSourceMap": false,
     "inlineSources": false,
-    "lib": ["es2016"],
+    "lib": [
+      "es2016"
+    ],
     "module": "commonjs",
     "moduleResolution": "node",
     "outDir": "build",
     "strict": true,
     "rootDir": "./src",
-    "target": "es2016"
+    "target": "es2016",
+    "typeRoots": [
+      "./node_modules/@types/"
+    ]
   }
 }
