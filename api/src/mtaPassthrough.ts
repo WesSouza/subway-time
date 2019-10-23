@@ -6,6 +6,7 @@ import { MtaPathKeys } from './constants';
 
 const { mta } = config;
 const cache: {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [parsedUrl: string]: any;
 } = {};
 
