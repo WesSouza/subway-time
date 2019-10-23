@@ -1,0 +1,30 @@
+name: API Tests
+
+on:
+  pull_request:
+    branches:
+      - master
+    paths:
+      - 'api/**'
+  push:
+    branches:
+      - master
+    paths:
+      - 'api/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 10
+      - name: API Tests
+        run: |
+          yarn install --ignore-scripts --ignore-optional --frozen-lockfile --non-interactive
+          cd api
+          yarn run lint
+          yarn run ts
+        env:
+          CI: true
