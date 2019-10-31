@@ -24,7 +24,7 @@
     "@reach/router": "^1.2.1",
     "color-contrast": "0.0.1",
     "geolib": "^3.0.4",
-    "immer": "^4.0.2",
+    "immer": "^5.0.0",
     "natural-compare-lite": "^1.4.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
