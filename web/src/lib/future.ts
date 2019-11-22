@@ -44,9 +44,7 @@ export const valueFuture = <T>(value: T): Future<T> => [
   },
 ];
 
-export const flatFutures = <T>(
-  futures: (Future<T>)[],
-): Future<(T | null)[]> => {
+export const flatFutures = <T>(futures: Future<T>[]): Future<(T | null)[]> => {
   let error: Error | null = null;
   let loading: FutureLoading | null = null;
   const value = futures.map(

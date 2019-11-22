@@ -19,7 +19,7 @@ interface Props {
   path?: string;
 }
 
-export const Header = ({  }: Props) => {
+export const Header = ({}: Props) => {
   const [linesById] = lineStore.useSelector(getLinesById);
   const [stationsById] = stationStore.useSelector(getStationsById);
 

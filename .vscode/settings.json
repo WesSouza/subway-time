@@ -2,5 +2,6 @@
   "cSpell.words": [
     "Subwaylines",
     "subwaytime"
-  ]
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
