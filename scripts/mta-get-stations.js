@@ -36,7 +36,7 @@ const mapTypeToEnum = type => {
 
 const {
   mta: { baseUrl, getStationsByLine },
-} = require('./config');
+} = require('../config');
 
 (async () => {
   console.log('Opening data/subway-lines.json...');
@@ -50,9 +50,7 @@ const {
     console.log(`Downloading stations from line ${line.id}...`);
 
     const url = `${baseUrl}${getStationsByLine}`.replace(':lineId', line.id);
-    let result = await got(url, {
-      json: true,
-    });
+    let result = await got(url, { responseType: 'json' });
     result = JSON.parse(result.body);
 
     if (!result || !result.length) {
@@ -68,10 +66,12 @@ const {
       stations.forEach(({ id, name, status, type }) => {
         subwayStations.push({
           __typename: 'Station',
-          id,
-          lineId: line.id,
-          lineColor: color,
           boroughName: borough,
+          id,
+          latitude: null,
+          lineColor: color,
+          lineId: line.id,
+          longitude: null,
           name,
           status: mapStatusCodeToEnum(status),
           type: mapTypeToEnum(type),

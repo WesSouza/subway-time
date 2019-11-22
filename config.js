@@ -1,4 +1,8 @@
-export default {
+module.exports = {
+  camsys: {
+    baseUrl: 'http://otp-mta-demo.camsys-apps.com',
+    stops: '/otp/routers/default/index/stops',
+  },
   cityofnewyork: {
     baseUrl: 'https://data.cityofnewyork.us',
     subwayStationsGeoUrl: '/api/views/kk4q-3rt2/rows.json',

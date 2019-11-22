@@ -4,14 +4,14 @@ const { resolve } = require('path');
 
 const {
   mta: { baseUrl, getSubwaylines },
-} = require('./config');
+} = require('../config');
 
 const unsupportedLines = ['SIR'];
 
 (async () => {
   console.log('Downloading subway lines list...');
   const result = await got(`${baseUrl}${getSubwaylines}`, {
-    json: true,
+    responseType: 'json',
   });
   const subwayLines = result.body
     .filter(line => !unsupportedLines.includes(line.id))
