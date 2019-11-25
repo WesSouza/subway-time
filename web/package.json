@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
-    "@babel/preset-react": "^7.7.0",
+    "@babel/preset-react": "^7.7.4",
     "@svgr/parcel-plugin-svgr": "^4.3.3",
     "@types/node": "^12.12.11",
     "@types/reach__router": "^1.2.6",
