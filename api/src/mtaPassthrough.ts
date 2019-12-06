@@ -12,7 +12,7 @@ const cache: {
 
 const get = async (url: string, params: { [param: string]: string }) => {
   const parsedUrl = url.replace(/:([^\/]+)/g, (_, key) => params[key] || '');
-  return got(parsedUrl, { json: true });
+  return got(parsedUrl, { responseType: 'json' });
 };
 
 export const passthrough = (pathKey: MtaPathKeys, cacheExpire: number) => (

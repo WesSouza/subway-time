@@ -35,22 +35,22 @@
     "react-helmet/react-side-effect": "2.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.4",
+    "@babel/core": "^7.7.5",
     "@babel/preset-react": "^7.7.4",
     "@svgr/parcel-plugin-svgr": "^4.3.3",
     "@types/node": "^12.12.14",
     "@types/reach__router": "^1.2.6",
-    "@types/react": "^16.9.13",
+    "@types/react": "^16.9.15",
     "@types/react-dom": "^16.9.4",
     "@types/react-helmet": "^5.0.14",
-    "@typescript-eslint/eslint-plugin": "^2.9.0",
-    "@typescript-eslint/parser": "^2.9.0",
-    "autoprefixer": "^9.7.2",
+    "@typescript-eslint/eslint-plugin": "^2.10.0",
+    "@typescript-eslint/parser": "^2.10.0",
+    "autoprefixer": "^9.7.3",
     "concurrently": "^5.0.0",
-    "eslint": "^6.7.1",
+    "eslint": "^6.7.2",
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-json-url-loader": "^0.1.2",
@@ -60,7 +60,7 @@
   },
   "engines": {
     "browsers": "last 2 Chrome versions",
-    "node": ">= 8.10.0"
+    "node": ">= 10.x"
   },
   "babel": {
     "presets": [

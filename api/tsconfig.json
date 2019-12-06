@@ -5,14 +5,15 @@
     "inlineSourceMap": false,
     "inlineSources": false,
     "lib": [
-      "es2016"
+      "dom",
+      "es2017"
     ],
     "module": "commonjs",
     "moduleResolution": "node",
     "outDir": "build",
     "strict": true,
     "rootDir": "./src",
-    "target": "es2016",
+    "target": "es2017",
     "typeRoots": [
       "./node_modules/@types/"
     ]
