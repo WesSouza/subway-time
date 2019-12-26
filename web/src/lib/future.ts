@@ -12,7 +12,7 @@ export interface FutureState {
 
 export type Future<T> = [T | null, FutureState];
 
-export const emptyFuture = (): Future<null> => [
+export const emptyFuture = <T>(): Future<T> => [
   null,
   {
     error: null,
