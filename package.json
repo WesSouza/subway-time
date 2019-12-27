@@ -33,9 +33,21 @@
     "eslint-plugin-react-hooks": "^2.3.0",
     "express": "^4.17.1",
     "express-http-proxy": "^1.6.0",
-    "prettier": "1.19.1"
+    "import-sort-style-wes": "^1.0.1",
+    "prettier": "1.19.1",
+    "prettier-plugin-import-sort": "^0.0.3"
   },
   "engines": {
     "node": ">= 10.x"
+  },
+  "importSort": {
+    ".js, .jsx": {
+      "parser": "babylon",
+      "style": "wes"
+    },
+    ".ts, .tsx": {
+      "parser": "typescript",
+      "style": "wes"
+    }
   }
 }
