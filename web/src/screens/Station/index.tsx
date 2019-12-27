@@ -4,10 +4,10 @@ import { Helmet } from 'react-helmet';
 
 import ErrorMessage from '~/components/ErrorMessage';
 import { TimeTable } from '~/components/TimeTable';
-import { lineStore } from '~/state/line/store';
 import { fetchLineAdvisories } from '~/state/line/effects';
-import { fetchStationPlatformsByStationId } from '~/state/station/effects';
 import { getAdvisoriesByLineId } from '~/state/line/selectors';
+import { lineStore } from '~/state/line/store';
+import { fetchStationPlatformsByStationId } from '~/state/station/effects';
 import {
   getPlatformsByStationId,
   getStationsById,

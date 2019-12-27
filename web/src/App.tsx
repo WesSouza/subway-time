@@ -1,20 +1,19 @@
-import React, { useCallback, useEffect } from 'react';
 import 'sanitize.css/sanitize.css';
 
-import { flatFutures } from './lib/future';
-import { lineStore } from './state/line/store';
-import { fetchLines } from './state/line/effects';
-import { getLinesById } from './state/line/selectors';
-import { stationStore } from './state/station/store';
-import { fetchStations } from './state/station/effects';
-import { getStationsById } from './state/station/selectors';
-
-import ErrorMessage from './components/ErrorMessage';
-import { LinedBlock } from './components/LinedBlock';
-import { Header } from './screens/Header';
-import Router from './screens/Router';
+import React, { useCallback, useEffect } from 'react';
 
 import styles from './App.styles.css';
+import ErrorMessage from './components/ErrorMessage';
+import { LinedBlock } from './components/LinedBlock';
+import { flatFutures } from './lib/future';
+import { Header } from './screens/Header';
+import Router from './screens/Router';
+import { fetchLines } from './state/line/effects';
+import { getLinesById } from './state/line/selectors';
+import { lineStore } from './state/line/store';
+import { fetchStations } from './state/station/effects';
+import { getStationsById } from './state/station/selectors';
+import { stationStore } from './state/station/store';
 
 const App = () => {
   // # Data dependencies

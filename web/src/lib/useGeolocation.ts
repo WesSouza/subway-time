@@ -1,7 +1,7 @@
+import { getDistance } from 'geolib';
 import { useState, useEffect } from 'react';
 
 import { Future, FutureLoading } from './future';
-import { getDistance } from 'geolib';
 
 export enum GeolocationErrors {
   PERMISSION_DENIED = 'PERMISSION_DENIED',

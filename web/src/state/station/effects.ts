@@ -1,7 +1,7 @@
-import { apiStations, apiStationPlatformsByStationId } from './api';
 import { errorFuture, Future, loadingFuture, valueFuture } from '~/lib/future';
 import { sortStationsByProximity } from '~/lib/sortStationsByProximity';
 
+import { apiStations, apiStationPlatformsByStationId } from './api';
 import { stationStore } from './store';
 import { StationPlatform } from './types';
 
