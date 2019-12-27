@@ -2,6 +2,7 @@ import { Link } from '@reach/router';
 import naturalCompare from 'natural-compare-lite';
 import React, { useCallback, useState, useEffect } from 'react';
 
+import { Times } from '~/constants/times';
 import { Entities } from '~/lib/entities';
 import { Future } from '~/lib/future';
 import sortByObjectKey from '~/lib/sortByObjectKey';
@@ -17,9 +18,7 @@ import { ButtonLink } from '../ButtonLink';
 import LineAdvisories from '../LineAdvisories';
 import { LinedBlock } from '../LinedBlock';
 import { LoadingBlock } from '../LoadingBlock';
-
 import styles from './styles.css';
-import { Times } from '~/constants/times';
 
 interface Props {
   advisoriesByLineId: Entities<Future<LineAdvisory[] | null>>;

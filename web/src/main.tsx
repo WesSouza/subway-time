@@ -1,8 +1,9 @@
+import './global.css';
+
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import App from './App';
 
-import './global.css';
+import App from './App';
 
 if (process.env.NODE_ENV === 'development') {
   const debugData = {

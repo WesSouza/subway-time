@@ -1,7 +1,6 @@
 import React, { ReactNode } from 'react';
 
 import { ButtonLink } from '../ButtonLink';
-
 import styles from './styles.css';
 
 interface Props {

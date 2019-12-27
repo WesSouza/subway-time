@@ -1,7 +1,6 @@
 import React, { ReactNode } from 'react';
 
 import { LineIcon } from '../LineIcon';
-
 import styles from './styles.css';
 
 interface Props {
