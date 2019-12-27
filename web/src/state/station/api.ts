@@ -48,12 +48,50 @@ export const apiStations = async (): Promise<{
   const stationsById: { [stationId: string]: Station } = {};
   apiStations.forEach(apiStation => {
     if (!stationsById[apiStation.id]) {
+      const keywords: string[] = [];
+      const { id, name, latitude, longitude } = apiStation;
+
+      if (name.startsWith('N ')) {
+        keywords.push('north');
+      }
+
+      if (name.startsWith('E ')) {
+        keywords.push('east');
+      }
+
+      if (name.startsWith('W ')) {
+        keywords.push('west');
+      }
+
+      if (name.startsWith('S ')) {
+        keywords.push('south');
+      }
+
+      const numberMatches = name.matchAll(/(\d+) (St|Av)/g);
+      if (numberMatches) {
+        for (const numberMatch of numberMatches) {
+          const number = numberMatch[1];
+          const lastNumber = number.charAt(number.length - 1);
+
+          if (lastNumber === '1' && number !== '11') {
+            keywords.push(`${number}st`);
+          } else if (lastNumber === '2' && number !== '12') {
+            keywords.push(`${number}nd`);
+          } else if (lastNumber === '3' && number !== '13') {
+            keywords.push(`${number}rd`);
+          } else {
+            keywords.push(`${number}th`);
+          }
+        }
+      }
+
       stationsById[apiStation.id] = {
-        id: apiStation.id,
-        name: apiStation.name,
+        id,
+        keywords,
+        latitude,
         lineIds: [],
-        latitude: apiStation.latitude,
-        longitude: apiStation.longitude,
+        longitude,
+        name,
       };
     }
     stationsById[apiStation.id].lineIds.push(apiStation.lineId);

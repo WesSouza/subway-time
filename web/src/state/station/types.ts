@@ -14,6 +14,7 @@ export interface Station {
   lineIds: string[];
   latitude: number;
   longitude: number;
+  keywords: string[];
 }
 
 export interface StationPlatform {

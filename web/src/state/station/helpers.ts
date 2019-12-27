@@ -19,13 +19,21 @@ export const search = (
 
       result.push(station);
     });
-  } else if (query && query.length > 1) {
+  }
+
+  if (query && query.length > 1) {
     const queryCleaned = query
       .replace(/[^a-z0-9\s]/gi, '')
+      .replace(/\s+ave(\s+|$)/gi, 'av')
       .replace(/\s+/g, '\\s+');
     const queryRegex = new RegExp(`(^|\\s+)${queryCleaned}`, 'i');
     stations.forEach(station => {
-      if (!queryRegex.test(station.name)) {
+      const hasInName = queryRegex.test(station.name);
+      const hasInKeywords = station.keywords.some(keyword =>
+        queryRegex.test(keyword),
+      );
+
+      if (!hasInName && !hasInKeywords) {
         return;
       }
 
