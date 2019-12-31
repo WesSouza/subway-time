@@ -24,7 +24,7 @@
   "dependencies": {
     "@reach/router": "^1.2.1",
     "color-contrast": "0.0.1",
-    "geolib": "^3.2.0",
+    "geolib": "^3.2.1",
     "immer": "^5.1.0",
     "natural-compare-lite": "^1.4.0",
     "react": "^16.12.0",
