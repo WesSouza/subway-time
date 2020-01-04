@@ -36,7 +36,7 @@
     "@babel/core": "^7.7.7",
     "@babel/preset-react": "^7.7.4",
     "@svgr/parcel-plugin-svgr": "^5.0.1",
-    "@types/node": "^13.1.2",
+    "@types/node": "^13.1.4",
     "@types/reach__router": "^1.2.6",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
