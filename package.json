@@ -34,7 +34,7 @@
     "eslint-plugin-react-hooks": "^2.3.0",
     "express": "^4.17.1",
     "express-http-proxy": "^1.6.0",
-    "got": "^10.2.1",
+    "got": "^10.2.2",
     "import-sort-style-wes": "^1.0.1",
     "prettier": "1.19.1",
     "prettier-plugin-import-sort": "^0.0.3"
