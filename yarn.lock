@@ -3818,10 +3818,10 @@ ignore@^4.0.6:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-4.0.6.tgz#750e3db5862087b4737ebac8207ffd1ef27b25fc"
   integrity sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==
 
-immer@^5.2.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/immer/-/immer-5.2.1.tgz#7d4f74c242178e87151d595f48db1b5c51580485"
-  integrity sha512-9U1GEbJuH6nVoyuFRgTQDGMzcBuNBPfXM3M7Pp/sdmYKTKYOBUZGgeUb9H57GfLK/xC1DMLarWX2FrhMBfUJ8g==
+immer@^5.3.1:
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-5.3.1.tgz#c52b8a1a6c26f9e7eba4b6e8e98bc61b861eeb6f"
+  integrity sha512-4jW/VWrZyjYb8zfBYCaeJNKCat4ViYI6wS9ZFo/XPbvMSRffEJjpRhzoHz5MDmRoTmvcloWQMsnRgf/yw6uYXg==
 
 import-fresh@^2.0.0:
   version "2.0.0"
