@@ -907,10 +907,10 @@
   dependencies:
     "@babel/types" "^7.4.4"
 
-"@svgr/parcel-plugin-svgr@^5.0.1":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@svgr/parcel-plugin-svgr/-/parcel-plugin-svgr-5.0.1.tgz#a5f33713ec23bbd63b1475f906428c81bacc98f9"
-  integrity sha512-ooLq2jeVsQMOZ6SWsovrXKNachGlljABHVCK5hywsXKeoKboLl/0kq0b4byCIr61bwQhTPySlB26wbZTpr8BJA==
+"@svgr/parcel-plugin-svgr@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@svgr/parcel-plugin-svgr/-/parcel-plugin-svgr-5.1.0.tgz#daadb47e64b0c4f9b3f97b788b9fbfaacf71d57a"
+  integrity sha512-XSk19klBbluKSiu+Kc8UWdiV6OQlc93urMnpX7R+ioQ0GZHLYkM3IG8J3bCp9f/XjBbezWGj9f8tznZjbGzSzg==
   dependencies:
     "@babel/core" "^7.7.5"
     "@babel/plugin-transform-react-constant-elements" "^7.7.4"
@@ -918,7 +918,7 @@
     "@babel/preset-react" "^7.7.4"
     "@svgr/core" "^5.0.1"
     "@svgr/plugin-jsx" "^5.0.1"
-    "@svgr/plugin-svgo" "^5.0.1"
+    "@svgr/plugin-svgo" "^5.1.0"
 
 "@svgr/plugin-jsx@^5.0.1":
   version "5.0.1"
@@ -930,10 +930,10 @@
     "@svgr/hast-util-to-babel-ast" "^5.0.1"
     svg-parser "^2.0.2"
 
-"@svgr/plugin-svgo@^5.0.1":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@svgr/plugin-svgo/-/plugin-svgo-5.0.1.tgz#37cd74b7c337efbed9e29ee8b36944b4469189b6"
-  integrity sha512-h/V30j1swWANLV1mB0w+1YYZ0U0CnWm721xyUKVHJrvMe4wl5XronZdvVAD2hhQf9+JgaQARrRJ0Vg1Dxi+SFg==
+"@svgr/plugin-svgo@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@svgr/plugin-svgo/-/plugin-svgo-5.1.0.tgz#6939223f90581cd503b42893e795d659dbd7f7c4"
+  integrity sha512-yj7e6F6nlMZyKe/uezrwS8ZJ6a/NRbQkuJV5yNdnottd9FiWQKG4mkLmb3YHas3rzfv5WBJHf1NU2p58/v01MA==
   dependencies:
     cosmiconfig "^6.0.0"
     merge-deep "^3.0.2"
