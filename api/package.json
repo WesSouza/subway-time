@@ -27,7 +27,7 @@
   "devDependencies": {
     "@types/compression": "^1.0.1",
     "@types/express": "^4.17.2",
-    "@types/node": "^13.5.3",
+    "@types/node": "^13.7.0",
     "nodemon": "^2.0.2",
     "ts-node": "^8.6.2",
     "typescript": "^3.7.5"
