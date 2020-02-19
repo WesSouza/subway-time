@@ -3804,10 +3804,10 @@ import-sort-parser@^6.0.0:
   resolved "https://registry.yarnpkg.com/import-sort-parser/-/import-sort-parser-6.0.0.tgz#0d901f264d98ed7caaae71f66128a686f828f2f4"
   integrity sha512-H5L+d6HnqHvThB0GmAA3/43Sv74oCwL0iMk3/ixOv0LRJ69rCyHXeG/+UadMHrD2FefEmgPIWboEPAG7gsQrkA==
 
-import-sort-style-wes@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/import-sort-style-wes/-/import-sort-style-wes-1.0.1.tgz#5a241ad059dbc5372ba3e1c5497be266c3df0358"
-  integrity sha512-TIOzvHnTn80Mxu23pcndyxIovhhZReiqDdoHCKYYP8jSLKSWV/Tuvy7QkIVfUfEYAzEhBoN/1fPp6epSrDZusw==
+import-sort-style-wes@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/import-sort-style-wes/-/import-sort-style-wes-2.0.0.tgz#5fe610971bf2e28042701731279514b15fbf9352"
+  integrity sha512-puW9BCGYOLMYg4I6fQGRTeCia9WPdLiB3QoMaGqD6Z2bxxCjDiquVPUDwSpoCzsMTHcfw6vfgQxTW+IySu5nsA==
 
 import-sort-style@^6.0.0:
   version "6.0.0"
