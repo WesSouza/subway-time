@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 import ErrorMessage from '~/components/ErrorMessage';
 import { LinedBlock } from '~/components/LinedBlock';
 import { TimeTable } from '~/components/TimeTable';
-import { useGeolocation, GeolocationErrors } from '~/lib/useGeolocation';
+import { GeolocationErrors, useGeolocation } from '~/lib/useGeolocation';
 import { fetchLineAdvisories } from '~/state/line/effects';
 import { getAdvisoriesByLineId } from '~/state/line/selectors';
 import { lineStore } from '~/state/line/store';

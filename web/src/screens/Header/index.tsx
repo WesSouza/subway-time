@@ -1,5 +1,5 @@
 import { Link } from '@reach/router';
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { LinedBlock } from '~/components/LinedBlock';
 import { LineIcon } from '~/components/LineIcon';

@@ -1,5 +1,5 @@
 import produce, { Draft } from 'immer';
-import { useEffect, useState, useRef, MutableRefObject } from 'react';
+import { MutableRefObject, useEffect, useRef, useState } from 'react';
 
 export type SelectorFn<T, U> = (state: T) => U;
 

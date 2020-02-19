@@ -1,5 +1,5 @@
 import { getDistance } from 'geolib';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import { Future, FutureLoading } from './future';
 

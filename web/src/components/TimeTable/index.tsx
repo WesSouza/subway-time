@@ -1,6 +1,6 @@
 import { Link } from '@reach/router';
 import naturalCompare from 'natural-compare-lite';
-import React, { useCallback, useState, useEffect } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 
 import { Times } from '~/constants/times';
 import { Entities } from '~/lib/entities';
