@@ -1,4 +1,4 @@
-import { Future, errorFuture, loadingFuture, valueFuture } from '~/lib/future';
+import { errorFuture, Future, loadingFuture, valueFuture } from '~/lib/future';
 import { sortStationsByProximity } from '~/lib/sortStationsByProximity';
 
 import { apiStationPlatformsByStationId, apiStations } from './api';
