@@ -1,20 +1,37 @@
 {
   "version": 2,
-  "name": "subway-time",
-  "alias": ["subwayti.me"],
+  "alias": [
+    "subwayti.me"
+  ],
   "scope": "wessouza",
-  "regions": ["iad"],
+  "regions": [
+    "iad"
+  ],
   "builds": [
     {
       "src": "web/package.json",
       "use": "@now/static-build",
-      "config": { "distDir": "dist" }
+      "config": {
+        "distDir": "dist"
+      }
     },
-    { "src": "./api/src/server.ts", "use": "@now/node@canary" }
+    {
+      "src": "./api/src/server.ts",
+      "use": "@now/node@canary"
+    }
   ],
   "routes": [
-    { "src": "/api/.*", "dest": "api/src/server.ts" },
-    { "src": "/station/.*", "dest": "web/index.html" },
-    { "src": "/(.*)", "dest": "web/$1" }
+    {
+      "src": "/api/.*",
+      "dest": "api/src/server.ts"
+    },
+    {
+      "src": "/station/.*",
+      "dest": "web/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "web/$1"
+    }
   ]
 }
