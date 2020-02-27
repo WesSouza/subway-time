@@ -16,19 +16,19 @@
 }
 
 .direction:not(:last-child) {
-  margin-bottom: var(--spacing-medium);
+  margin-bottom: var(--spacing-small);
 }
 
 .directionName {
-  font-weight: normal;
-  font-size: 0.9rem;
-  margin-bottom: 3px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-bottom: -2px;
   text-transform: uppercase;
 }
 
 .times {
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .minute {

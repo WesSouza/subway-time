@@ -1,8 +1,17 @@
 .SearchResults {
-  margin: 0;
-  padding: 0;
+  --margin-horizontal: 16px;
+  --padding-horizontal: 12px;
+  margin: -20px var(--margin-horizontal) 0 var(--margin-horizontal);
+  padding: 20px var(--padding-horizontal) var(--spacing-xsmall)
+    var(--padding-horizontal);
+  border-radius: calc(var(--spacing-small) * 2);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: 1px solid var(--color-gray-light);
+  border-top: none;
   list-style-type: none;
   background-color: var(--color-white);
+  z-index: 1;
 }
 
 .station {
@@ -19,7 +28,6 @@
 .lines {
   display: flex;
   min-width: 85px;
-  margin-right: var(--spacing-small);
   justify-content: flex-end;
 }
 

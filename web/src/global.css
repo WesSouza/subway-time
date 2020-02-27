@@ -21,13 +21,13 @@
   --color-line-gray: #546e7a;
   --color-line-yellow: #f4c522;
 
-  --spacing-xsmall: 8px;
-  --spacing-small: 15px;
-  --spacing-medium: 30px;
-  --spacing-large: 60px;
+  --spacing-xsmall: 6px;
+  --spacing-small: 12px;
+  --spacing-medium: 25px;
+  --spacing-large: 40px;
 
   --width-app: 600px;
-  --width-line: 18px;
+  --width-line: 16px;
 }
 
 html {

@@ -4,10 +4,11 @@
 
 .searchBox {
   flex-grow: 1;
+  z-index: 2;
 }
 
 .searchInput {
-  --margin-horizontal: 21px;
+  --margin-horizontal: 16px;
   --padding-horizontal: 12px;
   width: calc(100% - var(--margin-horizontal) * 2);
   margin: 0 var(--margin-horizontal);
@@ -22,6 +23,11 @@
   border: 2px solid var(--color-gray);
   padding: calc(var(--spacing-xsmall) - 1px)
     calc(var(--padding-horizontal) - 1px);
+}
+
+.searchInput.hasResults {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .menuItems {
