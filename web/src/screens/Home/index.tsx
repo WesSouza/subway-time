@@ -51,7 +51,7 @@ const Home = (_: RouteComponentProps) => {
 
   const loadData = useCallback((station: Station) => {
     fetchStationPlatformsByStationId(station.id);
-    station.lineIds.forEach(lineId => {
+    station.lineIds.forEach((lineId) => {
       fetchLineAdvisories(lineId);
     });
   }, []);

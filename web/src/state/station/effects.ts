@@ -6,24 +6,24 @@ import { stationStore } from './store';
 import { StationPlatform } from './types';
 
 export async function fetchStations() {
-  stationStore.mutate(state => {
+  stationStore.mutate((state) => {
     state.stationsById = loadingFuture();
   });
 
   try {
     const apiStationsById = await apiStations();
-    stationStore.mutate(state => {
+    stationStore.mutate((state) => {
       state.stationsById = valueFuture(apiStationsById);
     });
   } catch (error) {
-    stationStore.mutate(state => {
+    stationStore.mutate((state) => {
       state.stationsById = errorFuture(error);
     });
   }
 }
 
 export async function fetchStationPlatformsByStationId(stationId: string) {
-  stationStore.mutate(state => {
+  stationStore.mutate((state) => {
     state.platformsByStationId[stationId] = loadingFuture(
       state.platformsByStationId[stationId],
     );
@@ -33,15 +33,15 @@ export async function fetchStationPlatformsByStationId(stationId: string) {
     const platformsById: { [platformId: string]: StationPlatform } = {};
 
     const platforms = await apiStationPlatformsByStationId(stationId);
-    platforms.forEach(platform => {
+    platforms.forEach((platform) => {
       platformsById[platform.lineId] = platform;
     });
 
-    stationStore.mutate(state => {
+    stationStore.mutate((state) => {
       state.platformsByStationId[stationId] = valueFuture(platforms);
     });
   } catch (error) {
-    stationStore.mutate(state => {
+    stationStore.mutate((state) => {
       state.platformsByStationId[stationId] = errorFuture(error);
     });
   }
@@ -56,7 +56,7 @@ export async function handleCoordinatesUpdate(
   }
 
   if (error || loading) {
-    stationStore.mutate(state => {
+    stationStore.mutate((state) => {
       state.nearbyStationIds = [state.nearbyStationIds[0], { error, loading }];
     });
     return;
@@ -78,9 +78,9 @@ export async function handleCoordinatesUpdate(
     longitude,
   ).slice(0, 5);
 
-  stationStore.mutate(state => {
+  stationStore.mutate((state) => {
     state.nearbyStationIds = valueFuture(
-      localSortedStations.map(station => station.id),
+      localSortedStations.map((station) => station.id),
     );
   });
 }

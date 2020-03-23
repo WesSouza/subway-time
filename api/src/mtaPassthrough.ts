@@ -27,7 +27,7 @@ export const passthrough = (pathKey: MtaPathKeys, cacheExpire: number) => (
 
   const { params }: { params: { [param: string]: string } } = req;
   get(`${mta.baseUrl}${mta[pathKey]}`, params)
-    .then(response => {
+    .then((response) => {
       const data = response.body;
       if (data && cacheExpire) {
         cache[path] = {
@@ -37,7 +37,7 @@ export const passthrough = (pathKey: MtaPathKeys, cacheExpire: number) => (
       }
       res.json(data);
     })
-    .catch(e => {
+    .catch((e) => {
       res.status(500);
       res.json({ error: e.toString() });
     });

@@ -12,7 +12,7 @@ export const search = (
 
   if (query && query.length === 1) {
     const lineId = query.toUpperCase();
-    stations.forEach(station => {
+    stations.forEach((station) => {
       if (!station.lineIds.includes(lineId)) {
         return;
       }
@@ -27,9 +27,9 @@ export const search = (
       .replace(/\s+ave(\s+|$)/gi, 'av')
       .replace(/\s+/g, '\\s+');
     const queryRegex = new RegExp(`(^|\\s+)${queryCleaned}`, 'i');
-    stations.forEach(station => {
+    stations.forEach((station) => {
       const hasInName = queryRegex.test(station.name);
-      const hasInKeywords = station.keywords.some(keyword =>
+      const hasInKeywords = station.keywords.some((keyword) =>
         queryRegex.test(keyword),
       );
 

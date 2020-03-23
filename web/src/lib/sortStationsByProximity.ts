@@ -14,7 +14,7 @@ export const sortStationsByProximity = (
         getDistance({ latitude, longitude }, a) -
         getDistance({ latitude, longitude }, b),
     )
-    .map(station => ({
+    .map((station) => ({
       ...station,
       distance: getDistance(
         { latitude, longitude },

@@ -36,7 +36,7 @@ const Station = ({ stationId }: Props) => {
 
   const loadData = useCallback((station: Station) => {
     fetchStationPlatformsByStationId(station.id);
-    station.lineIds.forEach(lineId => {
+    station.lineIds.forEach((lineId) => {
       fetchLineAdvisories(lineId);
     });
   }, []);

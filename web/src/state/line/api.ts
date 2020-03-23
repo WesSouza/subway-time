@@ -28,7 +28,7 @@ export async function apiAdvisoriesByLineId(
     return [];
   }
 
-  return advisories.map(advisory => ({
+  return advisories.map((advisory) => ({
     id: advisory.SituationNumber,
     reason: advisory.ReasonName,
     summary: advisory.Summary,

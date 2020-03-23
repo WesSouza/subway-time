@@ -46,7 +46,7 @@ export const apiStations = async (): Promise<{
 }> => {
   const apiStations = await get<ApiStation[]>(Endpoints.Stations);
   const stationsById: { [stationId: string]: Station } = {};
-  apiStations.forEach(apiStation => {
+  apiStations.forEach((apiStation) => {
     if (!stationsById[apiStation.id]) {
       const keywords: string[] = [];
       const { id, name, latitude, longitude } = apiStation;
@@ -131,7 +131,7 @@ export const apiStationPlatformsByStationId = async (
     };
   } = {};
 
-  Object.keys(apiStationTimesProperties).forEach(key => {
+  Object.keys(apiStationTimesProperties).forEach((key) => {
     const apiStationPlatform = apiStationTimesProperties[key];
     if (
       !apiStationPlatform ||
@@ -170,7 +170,7 @@ export const apiStationPlatformsByStationId = async (
   });
 
   const stationPlatforms: StationPlatform[] = [];
-  Object.keys(timesByLineAndDirection).forEach(lineId => {
+  Object.keys(timesByLineAndDirection).forEach((lineId) => {
     const stationPlatform: StationPlatform = {
       lastUpdate: new Date(),
       lineId,
@@ -178,7 +178,7 @@ export const apiStationPlatformsByStationId = async (
     };
 
     const directions = timesByLineAndDirection[lineId];
-    Object.keys(directions).forEach(directionName => {
+    Object.keys(directions).forEach((directionName) => {
       const stationPlatformDirection: StationPlatformDirection = {
         name: directionName,
         times: directions[directionName],

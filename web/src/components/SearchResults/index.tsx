@@ -16,7 +16,7 @@ interface Props {
 
 const SearchResults = ({ linesById, stations, onClick }: Props) => (
   <ul className={styles.SearchResults}>
-    {stations.map(station => (
+    {stations.map((station) => (
       <li key={station.id} className={styles.station}>
         <Link
           className={styles.link}

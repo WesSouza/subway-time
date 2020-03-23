@@ -75,7 +75,7 @@ export const flatFutureEntities = <T>(
   let loading: FutureLoading | null = null;
   const value: Entities<T | null> = {};
 
-  Object.keys(entities).forEach(id => {
+  Object.keys(entities).forEach((id) => {
     const [
       futureValue,
       { error: futureError, loading: futureLoading },

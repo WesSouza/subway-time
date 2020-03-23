@@ -69,7 +69,7 @@ export const createState = <T>(initialState: T): State<T> => {
 
     Object.assign(data, state);
 
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       resolve();
 
       scheduleObservers();
@@ -108,7 +108,7 @@ export const createState = <T>(initialState: T): State<T> => {
 
   const callObservers = () => {
     isCallingObservers = true;
-    observers.forEach(observer => {
+    observers.forEach((observer) => {
       try {
         if (!observer) {
           return;
