@@ -6,11 +6,13 @@ on:
       - master
     paths:
       - 'web/**'
+      - 'package.json'
   push:
     branches:
       - master
     paths:
       - 'web/**'
+      - 'package.json'
 
 jobs:
   test:
