@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 
 import ErrorMessage from '~/components/ErrorMessage';
 import { TimeTable } from '~/components/TimeTable';
+import { useSelector } from '~/hooks/useSelector';
 import { fetchLineAdvisories } from '~/state/line/effects';
 import { getAdvisoriesByLineId } from '~/state/line/selectors';
 import { lineStore } from '~/state/line/store';
@@ -22,11 +23,12 @@ interface Props extends RouteComponentProps {
 const Station = ({ stationId }: Props) => {
   // # Data dependencies
 
-  const advisoriesByLineId = lineStore.useSelector(getAdvisoriesByLineId);
-  const platformsByStationId = stationStore.useSelector(
+  const advisoriesByLineId = useSelector(lineStore, getAdvisoriesByLineId);
+  const platformsByStationId = useSelector(
+    stationStore,
     getPlatformsByStationId,
   );
-  const [stationsById] = stationStore.useSelector(getStationsById);
+  const [stationsById] = useSelector(stationStore, getStationsById);
 
   // # Data
 

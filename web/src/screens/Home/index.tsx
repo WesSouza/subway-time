@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet';
 import ErrorMessage from '~/components/ErrorMessage';
 import { LinedBlock } from '~/components/LinedBlock';
 import { TimeTable } from '~/components/TimeTable';
+import { useSelector } from '~/hooks/useSelector';
 import { GeolocationErrors, useGeolocation } from '~/lib/useGeolocation';
 import { fetchLineAdvisories } from '~/state/line/effects';
 import { getAdvisoriesByLineId } from '~/state/line/selectors';
@@ -31,10 +32,11 @@ const Home = (_: RouteComponentProps) => {
   ] = useGeolocation({ updateMinimumDistance: 250 });
 
   // # Data dependencies
-  const advisoriesByLineId = lineStore.useSelector(getAdvisoriesByLineId);
-  const [nearbyStationIds] = stationStore.useSelector(getNearbyStationIds);
-  const [stationsById] = stationStore.useSelector(getStationsById);
-  const platformsByStationId = stationStore.useSelector(
+  const advisoriesByLineId = useSelector(lineStore, getAdvisoriesByLineId);
+  const [nearbyStationIds] = useSelector(stationStore, getNearbyStationIds);
+  const [stationsById] = useSelector(stationStore, getStationsById);
+  const platformsByStationId = useSelector(
+    stationStore,
     getPlatformsByStationId,
   );
 

@@ -5,6 +5,7 @@ import { LinedBlock } from '~/components/LinedBlock';
 import { LineIcon } from '~/components/LineIcon';
 import NavigationBar from '~/components/NavigationBar';
 import SearchResults from '~/components/SearchResults';
+import { useSelector } from '~/hooks/useSelector';
 import { getLinesById } from '~/state/line/selectors';
 import { lineStore } from '~/state/line/store';
 import { search } from '~/state/station/helpers';
@@ -19,8 +20,8 @@ interface Props {
 }
 
 export const Header = ({}: Props) => {
-  const [linesById] = lineStore.useSelector(getLinesById);
-  const [stationsById] = stationStore.useSelector(getStationsById);
+  const [linesById] = useSelector(lineStore, getLinesById);
+  const [stationsById] = useSelector(stationStore, getStationsById);
 
   const [searchTerm, setSearchTerm] = useState('');
   const [resultStations, setResultStations] = useState<Station[]>([]);

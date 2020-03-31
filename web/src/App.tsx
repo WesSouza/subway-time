@@ -5,6 +5,7 @@ import React, { useCallback, useEffect } from 'react';
 import styles from './App.styles.css';
 import ErrorMessage from './components/ErrorMessage';
 import { LinedBlock } from './components/LinedBlock';
+import { useSelector } from './hooks/useSelector';
 import { flatFutures } from './lib/future';
 import { Header } from './screens/Header';
 import Router from './screens/Router';
@@ -17,9 +18,9 @@ import { stationStore } from './state/station/store';
 
 const App = () => {
   // # Data dependencies
-  const linesFuture = lineStore.useSelector(getLinesById);
+  const linesFuture = useSelector(lineStore, getLinesById);
 
-  const stationsFuture = stationStore.useSelector(getStationsById);
+  const stationsFuture = useSelector(stationStore, getStationsById);
 
   const [, { error, loading }] = flatFutures<unknown>([
     linesFuture,
