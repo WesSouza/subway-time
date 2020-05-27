@@ -1,4 +1,4 @@
-import { Request, Response } from 'express';
+import { Request, Response } from 'express-serve-static-core';
 import got from 'got';
 
 import config from './config';
@@ -16,16 +16,15 @@ const get = async (url: string, params: { [param: string]: string }) => {
 };
 
 export const passthrough = (pathKey: MtaPathKeys, cacheExpire: number) => (
-  req: Request,
+  req: Request<{ [param: string]: string }>,
   res: Response,
-) => {
-  const { path } = req;
+): void => {
+  const { params, path } = req;
   if (cacheExpire && cache[path] && cache[path].expire >= Date.now()) {
     res.send(cache[path].data);
     return;
   }
 
-  const { params }: { params: { [param: string]: string } } = req;
   get(`${mta.baseUrl}${mta[pathKey]}`, params)
     .then((response) => {
       const data = response.body;
