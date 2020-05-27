@@ -68,7 +68,6 @@ export class StateManager<T> {
     this.subscribers.delete(callback);
   }
 
-  // eslint-disable-next-line @typescript-eslint/camelcase
   DEBUG_destroy() {
     clearTimeout(this.publishTimer);
     for (const callback of this.subscribers.keys()) {
