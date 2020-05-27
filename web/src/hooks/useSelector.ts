@@ -17,7 +17,7 @@ export function useSelector<T, U>(
   const value = useRef<U>(initialValue);
   const [, setState] = useState(0);
 
-  const selectorFnCallback = useCallback(selectorFn, deps);
+  const selectorFnCallback = useCallback(selectorFn, [selectorFn, ...deps]);
   useLayoutEffect(() => {
     return stateManager.subscribe(selectorFnCallback, (newValue) => {
       value.current = newValue;
