@@ -1,4 +1,4 @@
-import deepEqual from 'fast-deep-equal-ts/es6';
+import deepEqual from 'fast-deep-equal/es6';
 import produce, { Draft } from 'immer';
 
 export type SelectorFn<T, U> = (state: T) => U;
