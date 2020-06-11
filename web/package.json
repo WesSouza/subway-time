@@ -26,7 +26,7 @@
     "color-contrast": "0.0.1",
     "fast-deep-equal-ts": "^3.1.1",
     "geolib": "^3.3.1",
-    "immer": "^6.0.9",
+    "immer": "^7.0.0",
     "natural-compare-lite": "^1.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
