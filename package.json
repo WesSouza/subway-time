@@ -31,7 +31,7 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.3",
-    "eslint-plugin-react-hooks": "^4.0.6",
+    "eslint-plugin-react-hooks": "^4.0.8",
     "express": "^4.17.1",
     "express-http-proxy": "^1.6.0",
     "got": "^11.5.0",
