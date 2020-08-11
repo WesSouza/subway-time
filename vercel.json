@@ -6,5 +6,14 @@
   "scope": "wessouza",
   "regions": [
     "iad"
+  ],
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/station/.*",
+      "dest": "/index.html"
+    }
   ]
 }
