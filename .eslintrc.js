@@ -30,5 +30,11 @@ module.exports = {
       files: ['src/**/*.ts', 'src/**/*.tsx'],
       excludedFiles: ['*.css.d.ts', '*.test.ts', '*.test.tsx'],
     },
+    {
+      files: ['scripts/**/*.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 0,
+      },
+    },
   ],
 };

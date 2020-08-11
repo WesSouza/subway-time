@@ -4,7 +4,7 @@ const { resolve } = require('path');
 
 const {
   mta: { baseUrl, getSubwaylines },
-} = require('../config');
+} = require('./config');
 
 const unsupportedLines = ['SIR'];
 
@@ -14,7 +14,7 @@ const unsupportedLines = ['SIR'];
     responseType: 'json',
   });
   const subwayLines = result.body
-    .filter(line => !unsupportedLines.includes(line.id))
+    .filter((line) => !unsupportedLines.includes(line.id))
     .map(({ id }) => ({
       __typename: 'Line',
       id,
@@ -24,4 +24,4 @@ const unsupportedLines = ['SIR'];
     JSON.stringify(subwayLines, null, 2),
   );
   console.log('Done.');
-})().catch(error => console.error(error));
+})().catch((error) => console.error(error));

@@ -5,14 +5,13 @@ const { resolve } = require('path');
 
 const {
   camsys: { baseUrl, stops: pathStops },
-} = require('../config');
+} = require('./config');
 
 const { CAMSYS_APIKEY } = process.env;
 
 assert(CAMSYS_APIKEY, 'CAMSYS_APIKEY not defined');
 
 const stopsFromCamsys = new Map();
-const subwayStations = [];
 
 (async () => {
   console.log(`Downloading stations...`);
@@ -20,7 +19,7 @@ const subwayStations = [];
   const url = `${baseUrl}${pathStops}?apikey=${CAMSYS_APIKEY}`;
   const mtaStops = await got(url, { responseType: 'json' });
 
-  mtaStops.body.forEach(stop => {
+  mtaStops.body.forEach((stop) => {
     if (
       !stop.id.startsWith('MTASBWY:') ||
       !stop.parentStation ||
@@ -55,4 +54,4 @@ const subwayStations = [];
     JSON.stringify(subwayStations, null, 2),
   );
   console.log('Done.');
-})().catch(error => console.error(error));
+})().catch((error) => console.error(error));

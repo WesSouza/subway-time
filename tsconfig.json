@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "baseUrl": "./src",
+    "baseUrl": "./",
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
@@ -16,16 +16,14 @@
     "strict": true,
     "paths": {
       "~/*": [
-        "./*"
+        "./src/*"
       ]
     },
-    "rootDir": "./src",
-    "target": "es2019",
-    "typeRoots": [
-      "./node_modules/@types/"
-    ],
-    "types": [
-      "node"
-    ]
-  }
+    "rootDir": "./",
+    "target": "es2019"
+  },
+  "include": [
+    "api",
+    "src"
+  ]
 }

@@ -2,7 +2,7 @@ const fs = require('fs');
 const got = require('got');
 const { resolve } = require('path');
 
-const mapStatusCodeToEnum = status => {
+const mapStatusCodeToEnum = (status) => {
   switch (String(status).trim()) {
     case 'undefined':
       return 'NORMAL';
@@ -17,7 +17,7 @@ const mapStatusCodeToEnum = status => {
   return 'UNKNOWN';
 };
 
-const mapTypeToEnum = type => {
+const mapTypeToEnum = (type) => {
   switch (String(type).trim()) {
     case '0':
       return 'ALWAYS_STOP';
@@ -36,7 +36,7 @@ const mapTypeToEnum = type => {
 
 const {
   mta: { baseUrl, getStationsByLine },
-} = require('../config');
+} = require('./config');
 
 (async () => {
   console.log('Opening data/subway-lines.json...');
@@ -90,4 +90,4 @@ const {
     JSON.stringify(subwayStations, null, 2),
   );
   console.log('Done.');
-})().catch(error => console.error(error));
+})().catch((error) => console.error(error));

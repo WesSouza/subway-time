@@ -6,4 +6,9 @@ export default {
     getSubwayLines: '/getSubwaylines',
     getTime: '/getTime/:lineId/:stationId',
   },
+  subwaytimeApi: {
+    baseUrl: '/api',
+    getAdvisoryDetail: '/getAdvisoryDetail/:lineId',
+    getTime: '/getTime/:lineId/:stationId',
+  },
 };

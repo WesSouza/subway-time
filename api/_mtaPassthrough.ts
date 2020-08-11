@@ -1,8 +1,8 @@
-import { Request, Response } from 'express';
+import { NowRequest, NowResponse } from '@vercel/node';
 import got from 'got';
 
-import config from './config';
-import { MtaPathKeys } from './constants';
+import config from '../src/config';
+import { MtaPathKeys } from './_constants';
 
 const { mta } = config;
 const cache: {
@@ -16,20 +16,37 @@ const get = async (url: string, params: { [param: string]: string }) => {
 };
 
 export const passthrough = (pathKey: MtaPathKeys, cacheExpire: number) => (
-  req: Request<{ [param: string]: string }>,
-  res: Response,
+  req: NowRequest,
+  res: NowResponse,
 ): void => {
-  const { params, path } = req;
-  if (cacheExpire && cache[path] && cache[path].expire >= Date.now()) {
-    res.send(cache[path].data);
+  const { query, url } = req;
+  if (!url) {
     return;
+  }
+
+  const urlString = url.toString();
+
+  if (
+    cacheExpire &&
+    cache[urlString] &&
+    cache[urlString].expire >= Date.now()
+  ) {
+    res.send(cache[urlString].data);
+    return;
+  }
+
+  const params: Record<string, string> = {};
+  for (const [key, value] of Object.entries(query)) {
+    if (typeof value === 'string') {
+      params[key] = value;
+    }
   }
 
   get(`${mta.baseUrl}${mta[pathKey]}`, params)
     .then((response) => {
       const data = response.body;
       if (data && cacheExpire) {
-        cache[path] = {
+        cache[urlString] = {
           data,
           expire: Date.now() + cacheExpire,
         };
