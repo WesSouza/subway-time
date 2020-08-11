@@ -1,5 +1,5 @@
-import { emptyFuture } from '~/lib/future';
-import { StateManager } from '~/lib/StateManager';
+import { emptyFuture } from '~/src/lib/future';
+import { StateManager } from '~/src/lib/StateManager';
 
 import { LineState } from './types';
 

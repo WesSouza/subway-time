@@ -1,5 +1,5 @@
-import { Entities } from '~/lib/entities';
-import { Future } from '~/lib/future';
+import { Entities } from '~/src/lib/entities';
+import { Future } from '~/src/lib/future';
 
 export interface StationState {
   currentStationId: string | null;

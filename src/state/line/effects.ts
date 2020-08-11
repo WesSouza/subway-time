@@ -1,4 +1,4 @@
-import { errorFuture, loadingFuture, valueFuture } from '~/lib/future';
+import { errorFuture, loadingFuture, valueFuture } from '~/src/lib/future';
 
 import { apiAdvisoriesByLineId, apiLines } from './api';
 import { lineStore } from './store';

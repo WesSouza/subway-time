@@ -2,17 +2,17 @@ import { Link } from '@reach/router';
 import naturalCompare from 'natural-compare-lite';
 import React, { useCallback, useEffect, useState } from 'react';
 
-import { Times } from '~/constants/times';
-import { Entities } from '~/lib/entities';
-import { Future } from '~/lib/future';
-import sortByObjectKey from '~/lib/sortByObjectKey';
-import { LineAdvisory } from '~/state/line/types';
+import { Times } from '~/src/constants/times';
+import { Entities } from '~/src/lib/entities';
+import { Future } from '~/src/lib/future';
+import sortByObjectKey from '~/src/lib/sortByObjectKey';
+import { LineAdvisory } from '~/src/state/line/types';
 import {
   Station,
   StationPlatform,
   StationPlatformDirection,
   StationPlatformDirectionTime,
-} from '~/state/station/types';
+} from '~/src/state/station/types';
 
 import { ButtonLink } from '../ButtonLink';
 import LineAdvisories from '../LineAdvisories';

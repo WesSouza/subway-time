@@ -2,25 +2,25 @@ import { RouteComponentProps } from '@reach/router';
 import React, { useCallback, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 
-import ErrorMessage from '~/components/ErrorMessage';
-import { LinedBlock } from '~/components/LinedBlock';
-import { TimeTable } from '~/components/TimeTable';
-import { useSelector } from '~/hooks/useSelector';
-import { GeolocationErrors, useGeolocation } from '~/lib/useGeolocation';
-import { fetchLineAdvisories } from '~/state/line/effects';
-import { getAdvisoriesByLineId } from '~/state/line/selectors';
-import { lineStore } from '~/state/line/store';
+import ErrorMessage from '~/src/components/ErrorMessage';
+import { LinedBlock } from '~/src/components/LinedBlock';
+import { TimeTable } from '~/src/components/TimeTable';
+import { useSelector } from '~/src/hooks/useSelector';
+import { GeolocationErrors, useGeolocation } from '~/src/lib/useGeolocation';
+import { fetchLineAdvisories } from '~/src/state/line/effects';
+import { getAdvisoriesByLineId } from '~/src/state/line/selectors';
+import { lineStore } from '~/src/state/line/store';
 import {
   fetchStationPlatformsByStationId,
   handleCoordinatesUpdate,
-} from '~/state/station/effects';
+} from '~/src/state/station/effects';
 import {
   getNearbyStationIds,
   getPlatformsByStationId,
   getStationsById,
-} from '~/state/station/selectors';
-import { stationStore } from '~/state/station/store';
-import { Station } from '~/state/station/types';
+} from '~/src/state/station/selectors';
+import { stationStore } from '~/src/state/station/store';
+import { Station } from '~/src/state/station/types';
 
 import styles from './styles.css';
 

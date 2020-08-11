@@ -1,4 +1,4 @@
-import { Endpoints, get } from '~/lib/api';
+import { Endpoints, get } from '~/src/lib/api';
 
 import { Line, LineAdvisory } from './types';
 

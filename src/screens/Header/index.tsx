@@ -1,17 +1,17 @@
 import { Link } from '@reach/router';
 import React, { useEffect, useState } from 'react';
 
-import { LinedBlock } from '~/components/LinedBlock';
-import { LineIcon } from '~/components/LineIcon';
-import NavigationBar from '~/components/NavigationBar';
-import SearchResults from '~/components/SearchResults';
-import { useSelector } from '~/hooks/useSelector';
-import { getLinesById } from '~/state/line/selectors';
-import { lineStore } from '~/state/line/store';
-import { search } from '~/state/station/helpers';
-import { getStationsById } from '~/state/station/selectors';
-import { stationStore } from '~/state/station/store';
-import { Station } from '~/state/station/types';
+import { LinedBlock } from '~/src/components/LinedBlock';
+import { LineIcon } from '~/src/components/LineIcon';
+import NavigationBar from '~/src/components/NavigationBar';
+import SearchResults from '~/src/components/SearchResults';
+import { useSelector } from '~/src/hooks/useSelector';
+import { getLinesById } from '~/src/state/line/selectors';
+import { lineStore } from '~/src/state/line/store';
+import { search } from '~/src/state/station/helpers';
+import { getStationsById } from '~/src/state/station/selectors';
+import { stationStore } from '~/src/state/station/store';
+import { Station } from '~/src/state/station/types';
 
 import styles from './styles.css';
 

@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 
-import { LineColorMap } from '~/constants/lines';
+import { LineColorMap } from '~/src/constants/lines';
 
 import styles from './styles.css';
 

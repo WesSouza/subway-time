@@ -2,19 +2,19 @@ import { Link, RouteComponentProps } from '@reach/router';
 import React, { useCallback } from 'react';
 import { Helmet } from 'react-helmet';
 
-import ErrorMessage from '~/components/ErrorMessage';
-import { TimeTable } from '~/components/TimeTable';
-import { useSelector } from '~/hooks/useSelector';
-import { fetchLineAdvisories } from '~/state/line/effects';
-import { getAdvisoriesByLineId } from '~/state/line/selectors';
-import { lineStore } from '~/state/line/store';
-import { fetchStationPlatformsByStationId } from '~/state/station/effects';
+import ErrorMessage from '~/src/components/ErrorMessage';
+import { TimeTable } from '~/src/components/TimeTable';
+import { useSelector } from '~/src/hooks/useSelector';
+import { fetchLineAdvisories } from '~/src/state/line/effects';
+import { getAdvisoriesByLineId } from '~/src/state/line/selectors';
+import { lineStore } from '~/src/state/line/store';
+import { fetchStationPlatformsByStationId } from '~/src/state/station/effects';
 import {
   getPlatformsByStationId,
   getStationsById,
-} from '~/state/station/selectors';
-import { stationStore } from '~/state/station/store';
-import { Station } from '~/state/station/types';
+} from '~/src/state/station/selectors';
+import { stationStore } from '~/src/state/station/store';
+import { Station } from '~/src/state/station/types';
 
 interface Props extends RouteComponentProps {
   stationId?: string;

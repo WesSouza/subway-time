@@ -1,10 +1,10 @@
 import { Link } from '@reach/router';
 import * as React from 'react';
 
-import LineId from '~/components/LineId';
-import { Entities } from '~/lib/entities';
-import { Line } from '~/state/line/types';
-import { Station } from '~/state/station/types';
+import LineId from '~/src/components/LineId';
+import { Entities } from '~/src/lib/entities';
+import { Line } from '~/src/state/line/types';
+import { Station } from '~/src/state/station/types';
 
 import styles from './styles.css';
 

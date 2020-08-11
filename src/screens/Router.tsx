@@ -1,9 +1,9 @@
 import { Router } from '@reach/router';
 import * as React from 'react';
 
-import Home from '~/screens/Home';
-import NotFound from '~/screens/NotFound';
-import Station from '~/screens/Station';
+import Home from '~/src/screens/Home';
+import NotFound from '~/src/screens/NotFound';
+import Station from '~/src/screens/Station';
 
 const AppRouter = () => (
   <Router>
