@@ -53,7 +53,7 @@ export async function fetchStationPlatformsByStationId(stationId: string) {
 }
 
 export async function handleCoordinatesUpdate(
-  coordinatesFuture: Future<Coordinates>,
+  coordinatesFuture: Future<GeolocationCoordinates>,
 ) {
   const [coordinates, { error, loading }] = coordinatesFuture;
   if (!coordinates) {

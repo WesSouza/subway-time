@@ -21,16 +21,16 @@ export const useGeolocation = (
   }: {
     updateMinimumDistance: number;
   } = { updateMinimumDistance: 0 },
-): Future<Coordinates> => {
+): Future<GeolocationCoordinates> => {
   const [
     currentCoordinates,
     setCurrentCoordinates,
-  ] = useState<Coordinates | null>(null);
+  ] = useState<GeolocationCoordinates | null>(null);
   const [loading, setLoading] = useState<FutureLoading | null>(null);
   const [error, setError] = useState<Error | null>(null);
 
   useEffect(() => {
-    const success = (position: Position) => {
+    const success = (position: GeolocationPosition) => {
       if (
         !currentCoordinates ||
         updateMinimumDistance === 0 ||
@@ -51,7 +51,7 @@ export const useGeolocation = (
       }
     };
 
-    const error = (error: PositionError) => {
+    const error = (error: GeolocationPositionError) => {
       setCurrentCoordinates(null);
       setError(new Error(GeolocationErrorsMap[String(error.code)]));
       setLoading(null);
