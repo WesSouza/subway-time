@@ -2,7 +2,7 @@ import 'sanitize.css/sanitize.css';
 
 import React, { useCallback, useEffect } from 'react';
 
-import styles from './App.styles.css';
+import * as styles from './App.styles.css';
 import ErrorMessage from './components/ErrorMessage';
 import { LinedBlock } from './components/LinedBlock';
 import { useSelector } from './hooks/useSelector';

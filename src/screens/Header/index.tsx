@@ -13,7 +13,7 @@ import { getStationsById } from '~/src/state/station/selectors';
 import { stationStore } from '~/src/state/station/store';
 import { Station } from '~/src/state/station/types';
 
-import styles from './styles.css';
+import * as styles from './styles.css';
 
 interface Props {
   path?: string;

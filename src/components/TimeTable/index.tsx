@@ -18,7 +18,7 @@ import { ButtonLink } from '../ButtonLink';
 import LineAdvisories from '../LineAdvisories';
 import { LinedBlock } from '../LinedBlock';
 import { LoadingBlock } from '../LoadingBlock';
-import styles from './styles.css';
+import * as styles from './styles.css';
 
 interface Props {
   advisoriesByLineId: Entities<Future<LineAdvisory[] | null>>;

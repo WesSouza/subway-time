@@ -6,7 +6,7 @@ import { Entities } from '~/src/lib/entities';
 import { Line } from '~/src/state/line/types';
 import { Station } from '~/src/state/station/types';
 
-import styles from './styles.css';
+import * as styles from './styles.css';
 
 interface Props {
   linesById: Entities<Line>;

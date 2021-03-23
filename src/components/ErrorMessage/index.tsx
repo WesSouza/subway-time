@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 
 import { ButtonLink } from '../ButtonLink';
-import styles from './styles.css';
+import * as styles from './styles.css';
 
 interface Props {
   children: ReactNode;

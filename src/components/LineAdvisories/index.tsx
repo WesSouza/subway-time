@@ -4,7 +4,7 @@ import { Future } from '~/src/lib/future';
 import { LineAdvisory as LineAdvisoryType } from '~/src/state/line/types';
 
 import { ButtonLink } from '../ButtonLink';
-import styles from './styles.css';
+import * as styles from './styles.css';
 
 interface Props {
   advisoriesFuture: Future<LineAdvisoryType[] | null> | null;

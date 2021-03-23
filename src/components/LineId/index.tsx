@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import styles from './styles.css';
+import * as styles from './styles.css';
 
 interface Props {
   id: string;

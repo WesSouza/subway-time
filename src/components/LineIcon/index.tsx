@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 
 import { LineColorMap } from '~/src/constants/lines';
 
-import styles from './styles.css';
+import * as styles from './styles.css';
 
 interface Props {
   children?: ReactNode;

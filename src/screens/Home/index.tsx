@@ -22,7 +22,7 @@ import {
 import { stationStore } from '~/src/state/station/store';
 import { Station } from '~/src/state/station/types';
 
-import styles from './styles.css';
+import * as styles from './styles.css';
 
 const Home = (_: RouteComponentProps) => {
   // # Geolocation data
