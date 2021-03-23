@@ -12,11 +12,11 @@ export const get = async <T>(
   params: { [k: string]: string } = {},
 ): Promise<T> => {
   if (url === Endpoints.Lines) {
-    return import('~/src/data/subway-lines.json');
+    return import('../../data/subway-lines.json');
   }
 
   if (url === Endpoints.Stations) {
-    return import('~/src/data/subway-stations.json');
+    return import('../../data/subway-stations.json');
   }
 
   const parsedUrl = url.replace(
